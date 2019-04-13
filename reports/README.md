@@ -1,3 +1,5 @@
+https://dbse-teaching.github.io/isee2019-405-Found/
+
 # Weekly Team Status Reports
 
 In this folder, you have t put your weekly reports as markdown files.
