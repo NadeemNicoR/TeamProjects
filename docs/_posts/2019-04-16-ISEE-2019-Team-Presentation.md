@@ -14,8 +14,11 @@ We have chosen to develop money control as we consider that to be an important i
 ![roles]({{site.baseurl}}/images/penpaper.png)
 
 * Mohammed: Since he has experience and devotion for code writing, he is going to be developing the back-end of the project and also helping with the design of User Interface flow
+
 * Mariam: Is very organized and also have natural people skills which will help us to obtain the right information from the customer, that will lead us to the build a useful product
+
 * Evelina : has experience in front-end design, and she also has good detail attention, which is a great combination when you are developing the User Interface
+
 * Ronald: has experience in team work and management, also he likes to just play with the software tools without any directions, so that he will be helping with the requirements gathering and also with the testing
 
 We are an agile team and we will be changing roles and responsibilities each week, for each one of us to contribute equally and learn every aspect of software development.
