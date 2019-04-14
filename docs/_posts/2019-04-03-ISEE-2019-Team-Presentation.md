@@ -1,6 +1,6 @@
 # Team Presentation
 
-![team_photo](./Team.png)
+![teamphoto]({{site.baseurl}}/images/Team.png)
 
 ## Why money control?
 
