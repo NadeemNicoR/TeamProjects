@@ -2,7 +2,26 @@
 
 # Team Presentation
 
-![teamphoto]({{site.baseurl}}/images/Team.png)
+![eva]({{site.baseurl}}/images/eva.png)
+Evelina Dukaj
+
+An Electronics Engineer from Albania, who has a deep affection for mathematics and exact sciences. She has experience in web design and communications process. Apart from work she loves to cook and try new cusines from around the world.
+
+![mariam]({{site.baseurl}}/images/mariam.png)
+Mariam Riaz
+
+Mariam is a Mechanical engineer who has gained major Management and Analytics skills by working through many roles in a major FMCG of the world. She loves to travel around and interact with new people.
+
+![nadeem]({{site.baseurl}}/images/nadeem.png)
+Mohammed Nadeem
+
+Mohammed is also an electronics Engineer, he has gained a vast experience in IT industry by working in some Major IT firms in India. 
+He loves coding and gaming.
+
+![ronald]({{site.baseurl}}/images/ronald.png)
+Ronald Mendez
+
+A Industry 4.0 Enthusiast from Ecaduor, who has worked in different areas of textile and electronics assembly industry. He wants to combine the best of both mechanical and computer science world and contribute in the changing dynamics of industries.
 
 ## Why money control?
 
