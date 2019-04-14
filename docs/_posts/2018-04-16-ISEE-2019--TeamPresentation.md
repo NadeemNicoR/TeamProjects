@@ -5,13 +5,13 @@
 ## Why money control?
 
 
-![saving pig](./pig.png)  
+![saving pig]({{site.baseurl}}/images/pig.png)  
 
 We have chosen to develop money control as we consider that to be an important issue nowadays for people. As students we face it very difficult to maintain an active life with our budget. So we thought that who can better than us give people solutions for this topic.
 
 ## Current Roles and Responsibilities
 
-![roles](./penpaper.png)
+![roles]({{site.baseurl}}/images/penpaper.png)
 
 * Mohammed: Since he has experience and devotion for code writing, he is going to be developing the back-end of the project and also helping with the design of User Interface flow
 * Mariam: Is very organized and also have natural people skills which will help us to obtain the right information from the customer, that will lead us to the build a useful product
@@ -22,7 +22,7 @@ We are an agile team and we will be changing roles and responsibilities each wee
 
 ## Communication
 
-![telephone](./telephone.png)
+![telephone]({{site.baseurl}}/images/telephone.png)
 
 For fast and effective communication we are establishing some channels and also a schedule for us to meet to keep us on track.
 * WhatsApp as an easy and fast way to send each other short pieces of information and also to organize the meetings.
