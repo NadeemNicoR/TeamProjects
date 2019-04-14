@@ -1,6 +1,6 @@
 ![companylogo]({{site.baseurl}}/images/405.jpeg)
 
-# Team Presentation
+# Our Team
 
 ![eva]({{site.baseurl}}/images/eva.png)
 Evelina Dukaj
