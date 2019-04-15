@@ -41,7 +41,7 @@ No previous report.
 
 #### 2.5 Where we got stuck:
 
-Since its the first step, there are not anything major where we stuck.
+Since its the first step, there are not major things where we are stuck.
 
 
 #### 2.6 Roles and responsibilities:
