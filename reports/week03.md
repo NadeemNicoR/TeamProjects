@@ -7,22 +7,22 @@ No previous report.
 ### __Section 2:__
 
  #### 2.1. What we did.
- During the last week, we went throw the first steps of our team set up, an also worked on the first requirements of our project, which were:
+ During the last week, we went throw the first steps of our team set up, and also worked on the first requirements of our project, which were:
 
 - Come up with a name for the team.
-- Decide which project will fit better with the team.
+- Decide which project will fit better with the team, in terms of interest and expertise that we currently have.
 - Develop a logo for the team
 - Prepare a team presentation.
 - Develop a blog in which we will report our project progress.
 - Write blog content
-- Establish Channels of communication for teamwork.
+- Establish Channels of communication for teamwork and for project management.
 - Status report.
 
 #### 2.2 What worked:
 
-- Establish the first med of communication in order to get the team in contact.
+- Establish the first mode of communication in order to get the team in contact.
 - Meetings for decision making and start with some activities.
-- Distribute activities to speed up the workflow.
+- Distribute activities equally to speed up the workflow.
 - Blog upload.
 - First GitHub push.
 
@@ -36,12 +36,12 @@ No previous report.
 #### 2.4 What trouble we had:
 
 - To start working together as a team, because we didn’t know each other.
-- Do decide the best med of communication.
-- To assign tasks, because at the beginning we weren’t sure about what was all that has to be done.
+- To decide the best mode of communication.
+- To assign tasks, because at the beginning we weren’t sure about what needs to be done and a set workflow for the tasks.
 
 #### 2.5 Where we got stuck:
 
-Since its the first step, there are not yet things stuck.
+Since its the first step, there are not anything major where we stuck.
 
 
 #### 2.6 Roles and responsibilities:
@@ -62,9 +62,10 @@ As group decisions, we selected the project and established the team name.
 
 - Establish meeting frequencies.
 - Catch-Up meeting.
+
 #### 3.2 Goals:
 
-- Use of the Stand-up meeting format as a communication med, and as a way to keep track of team activities.
+- Use of the Stand-up meeting format as a communication medium, and as a way to keep track of team activities.
 - Get a clear set of requirements from the meeting with the client.
 - Write the first set of user stories.
 
