@@ -46,7 +46,7 @@
 
 <kbd>→</kbd> Decided to setup stand-up meetings once in every week (Friday- 13:00 to 17:30).<br />
 <kbd>→</kbd> Started using Slack to communicate with the team mates effectively.<br />
-<kbd>→</kbd> Distribution/Assignment of tasks via ASANA amongst team members to keep a track of who is onto what task and the &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; deadline to accomplish the assigned task.
+<kbd>→</kbd> Distribution/Assignment of tasks via ASANA amongst team members to keep a track of who is onto what task and the deadline to accomplish the assigned task.
 
 #### 2.3 What we learned:
 <kbd>→</kbd> Get a brief info on how to go about using Argo UML to write the user stories.<br />
@@ -58,7 +58,7 @@
 <kbd>→</kbd> Checking free slots for team meetings out of our busy Lecture and exercise schedules.
 
 #### 2.5 Where we got stuck:
-<kbd>→</kbd> This being the very early stages of the project and due to team's cooperation in equally dividing the tasks & fulfilling &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;them responsibly prior to deadline we haven't gotten stuck at this point. 
+<kbd>→</kbd> This being the very early stages of the project and due to team's cooperation in equally dividing the tasks & fulfilling them responsibly prior to deadline we haven't gotten stuck at this point. 
 
 #### 2.6 Roles and responsibilities:
 
@@ -68,4 +68,4 @@ For the 4th week the tasks distributed as per the report on ASANA.
 | :------: | :------: | :------: | :------: | :------: |
 | __ROLE__       | _Developer_ |_Scrum Master_ | _Developer_|_Scrum Master_ |
 | __ACTIVITIES__       |Collect requirements from the client| Distribute tasks to be accomplished by week 04 | Build the weekly status report|Integrate all the requirements |
-|        | Search for differnt ways of representing statistics related to income and expences(graphs,charts etc)| write user stories |Brief Research on best user friendly layouts and userinterfaces on application for the stated requirements  |Improvise the layout of the blog posts |
+|        | Search for differnt ways of representing statistics related to income and expences(graphs,charts etc)| Write user stories |Brief Research on best user friendly layouts and userinterfaces on application for the stated requirements  |Improvise the layout of the blog posts |
