@@ -68,4 +68,4 @@ For the 4th week the tasks distributed as per the report on ASANA.
 | :------: | :------: | :------: | :------: | :------: |
 | __ROLE__       | _Developer_ |_Scrum Master_ | _Developer_|_Scrum Master_ |
 | __ACTIVITIES__       |Collect requirements from the client| Distribute tasks to be accomplished by week 04 | Build the weekly status report|Integrate all the requirements |
-|        | Search for differnt ways of representing statistics related to income and expences(graphs,charts etc)|  |Brief Research on best user friendly layouts and userinterfaces on application for the stated requirements  |Improvise the layout of the blog posts |
+|        | Search for differnt ways of representing statistics related to income and expences(graphs,charts etc)| write user stories |Brief Research on best user friendly layouts and userinterfaces on application for the stated requirements  |Improvise the layout of the blog posts |
