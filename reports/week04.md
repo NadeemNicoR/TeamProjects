@@ -69,3 +69,25 @@ For the 4th week the tasks distributed as per the report on ASANA.
 | __ROLE__       | _Developer_ |_Scrum Master_ | _Developer_|_Scrum Master_ |
 | __ACTIVITIES__       |Collect requirements from the client| Distribute tasks to be accomplished by week 04 | Build the weekly status report|Integrate all the requirements |
 |        | Search for differnt ways of representing statistics related to income and expences(graphs,charts etc)| Write user stories |Brief Research on best user friendly layouts and userinterfaces on application for the stated requirements  |Improvise the layout of the blog posts |
+
+### ___Section 3:___
+
+#### 3.1 Plans:
+
+ - [ ] Exchange roles between team members
+ - [ ] Evelina and Mohammed will be Scrum Master for the next two weeks with Mariam and Ronald supporting as Devs
+ - [ ] Evelina & Mohammed will be responsilbe for scrutinizing all the necessary information about behavioural diagrams required for the blog articles
+ - [ ] Mariam and Ronald will be responsible for Improving the layout design (using HtML and CSS) for the current blogs that have been posted 
+
+#### 3.2 Goals:
+
+ - [ ] Evelina will assemble all the tasks that will be completed by next week and creaet a weekly report (05)
+ - [ ] To go through Desing patterns and once done share and discuss the learnt ideas amongst the team mates 
+ - [ ] Learn how to use Android studio and try to build a basic application to get some hands on expreience before jumping into the development of the application
+ 
+### ___Section 4:___
+
+####Agenda for the meeting with the TA.
+
+<kbd>→</kbd> Present the user stories to the customer and take the appropriate feedback.<br />
+<kbd>→</kbd> Check with the customer if he has any other requirements in hand for the application .
