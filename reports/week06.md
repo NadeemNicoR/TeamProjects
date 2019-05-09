@@ -2,16 +2,16 @@
 
 #### 1.1 Plans:
 
- - [ ] Roles for this week are constant as the previous week
- - [ ] Evelina and Mohammed are the Scrum Masters and Mariam and Ronald supporting are the Developers
- - [ ] Ronald will be responsible for developing use case diagrams and user stories
- - [ ] Mariam will be responsible for taking the use case diagrams and develop UML class diagrams and activity diagrams.
+ - [x] Roles for this week are constant as the previous week
+ - [x] Evelina and Mohammed are the Scrum Masters and Mariam and Ronald supporting are the Developers
+ - [x] Ronald will be responsible for developing use case diagrams and user stories
+ - [x] Mariam will be responsible for taking the use case diagrams and develop UML class diagrams and activity diagrams.
  - [ ] Evelina and Mohammed will be responsible for starting the code and development of the prototype
 
 #### 1.2 Goals:
 
- - [ ] Mariam will be working on report for next week (06)
- - [ ] Finalize, Use case diagrams, user stories, uml class diagram and activity diagram for the final presentation of this sprint.
+ - [x] Mariam will be working on report for next week (06)
+ - [x] Finalize, Use case diagrams, user stories, uml class diagram and activity diagram for the final presentation of this sprint.
  - [ ] Start working on Android studio and try to build a basic prototype of our application.
 
 ---------- 
