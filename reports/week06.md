@@ -2,7 +2,7 @@
 
 #### 1.1 Plans:
 
- - [x] Exchange roles between team members
+ - ( ) Exchange roles between team members
  - [x] Evelina and Mohammed will be Scrum Master for the next two weeks with Mariam and Ronald supporting as Devs
  - [x] Evelina & Mohammed will be responsilbe for scrutinizing all the necessary information about behavioural diagrams required for the blog articles
  - [x] Mariam and Ronald will be responsible for Improving the layout design (using HtML and CSS) for the current blogs that have been posted 
