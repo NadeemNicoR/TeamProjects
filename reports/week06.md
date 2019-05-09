@@ -2,86 +2,94 @@
 
 #### 1.1 Plans:
 
- -  Exchange roles between team members
- - [x] Evelina and Mohammed will be Scrum Master for the next two weeks with Mariam and Ronald supporting as Devs
- - [x] Evelina & Mohammed will be responsilbe for scrutinizing all the necessary information about behavioural diagrams required for the blog articles
- - [x] Mariam and Ronald will be responsible for Improving the layout design (using HtML and CSS) for the current blogs that have been posted 
+ - [ ] Roles for this week are constant as the previous week
+ - [ ] Evelina and Mohammed are the Scrum Masters and Mariam and Ronald supporting are the Developers
+ - [ ] Ronald will be responsible for developing use case diagrams and user stories
+ - [ ] Mariam will be responsible for taking the use case diagrams and develop UML class diagrams and activity diagrams.
+ - [ ] Evelina and Mohammed will be responsible for starting the code and development of the prototype
 
 #### 1.2 Goals:
 
- - [x] Evelina will assemble all the tasks that will be completed by next week and create a weekly report (05)
- - [x] To go through Desing patterns and once done share and discuss the learnt ideas amongst the team mates 
- - [x] Learn how to use Android studio and try to build a basic application to get some hands on expreience before jumping into the development of the application
- 
- ------
- 
+ - [ ] Mariam will be working on report for next week (06)
+ - [ ] Finalize, Use case diagrams, user stories, uml class diagram and activity diagram for the final presentation of this sprint.
+ - [ ] Start working on Android studio and try to build a basic prototype of our application.
+
+---------- 
+
  ### ___Section 2:___
 
  #### 2.1. What we did:
  
-This week's agenda started with the second meeting with our customer, where we showed him the progress we made during the last week. We presented him with
-the user stories that Ronald and Mariam had been working with and also discussed our ideas about the project. After receiving a positive feedback about 
-our work till now, we are highly motivated to go further.
+After our last meeting with TA we got to know that the approach of user stories that we did was not what is asked for in the sprint, so we divided the tasks, Ronald worked on Use case diagrams and User Stories and Mariam on UML class diagram from the class diagram Eva and Mohammed took over and are now working on development. 
 
 #### 2.2 What worked:
 
-* Assigning tasks to each member in ASANA, having this way in mind the deadline and the requirements
-* Discussion of everyone's work in our weekly meeting
+* Weekly Standup meeting that we do help us a lot in assigning tasks to each individual, keeping in mind their strengths and it also help us improve tracking of deadlines.
+* We have been learning software development stages that we are working on separately and then share it with others that keeps us all on the same page.
 
 #### 2.3 What we learned:
 
-* How to make the user stories for the client
-* How to start with the development of a Android project
+* How to make the use case diagrams 
+* How to make user stories
+* How to make UML class diagrams.
+* How to start with the development of an Android project
 * What are basic features that our application will have
 * A basic idea how the layout interface of our app will look like
 
 #### 2.4 What trouble we had:
 
-* Deciding on the content of user stories
-* Distributing the tasks of each member for the next week
+* Understanding of which functionality of the application will be developed first and linking of screens
+
 
 #### 2.5 Where we got stuck:
 
-This week as a team, we experienced difficulties on starting the diagrams using UML
+This week as a team, we experienced difficulties on starting with the development in Android Studio.
 
 #### 2.6 Roles and responsibilities:
 
 During this week everyone had these tasks assigned:
 
-* Ronald: 
-  * Learn CSS and HTLM, to edit the layout of the blog
-  * Flow diagram for a new instance
-  * Research of user stories
+* *Ronald*: 
+  * Develop Use case diagrams
+  * Develop User Stories
+  * Help with the development of prototype
  
-* Mariam:
-  * Worked on the creation of user stories 
-  * Distribution/Assignment of tasks via ASANA amongst team members
+* *Mariam*:
+  * Develop UML Class diagrams
+  * Work on activity diagram
+  * Report for Week06
  
-* Evelina:
-  * Research development process of a Android project
-  * Report for week05
+* *Evelina*:
+  * Research development process of an Android project
+  * Help with the development of prototype
+  
 
-* Mohammed:
-  * Research on available projects on money control 
-  * Started working on designing the layout of the application
+* *Mohammed*:
+  * Work on the user interface of the application 
+  * Help with the development of prototype
+
+------
  
  ### ___Section 3:___
 
 #### 3.1 Plans:
 
-- [ ] Ronald: Complete user stories
-- [ ] Mariam: Design class diagram using UML and write the report for week06
-- [ ] Evelina: Handle the documentation with the steps of Android app development
-- [ ] Mohammed: Design the layouts for the app interfaces
+- [ ] Ronald: Work with Mohammed and Eva with the coding, and work on blog post 02
+- [ ] Mariam: Design activity diagram and work on the blog post 02.
+- [ ] Evelina: Code for the prototype of application
+- [ ] Mohammed: Design the layouts for the app interfaces and code for the prototype
 
 #### 3.2 Goals:
 
- - [ ] Have ready the user stories
- - [ ] Having completed the class diagrams and design of layouts so that we can start coding using Android Studio
+ - [ ] Have ready the blog post 02
+ - [ ] Have ready the prototype
+ - [ ] Have ready the final presentation for the sprint 
+
+
+-------
  
  ### ___Section 4:___
 
 #### Agenda for the meeting with the TA.
 
-The upcoming meeting's week is canceled due to a national holiday.
- 
+The upcoming with TA we will take feedback on the development process we did till now and ask for any new requirements are there from the customer end.
