@@ -28,7 +28,7 @@ Even though, we have as principle to work only on what is a requirement from our
 
 ### Use case diagram <br /> 
 
-![UserStoriesManagement1]({{site.baseurl}}/images/UserStoriesManagement1.png=600x100)
+![Usercasediagram]({{site.baseurl}}https://github.com/DBSE-teaching/isee2019-405-Found/blob/master/docs/images/UseCaseDiagram.png)
 
 This diagram depicts the in high level the interactions that the user can have with the application, among them; **"Enter PIN"** used to get access to the application, which must be verified, **"Enter expense"** necessary to register the expenditure information, **"Enter income"** where the user must detail his/her incomes, **"Check dashboard"** used to monitor the user's finances, and **"Change settings"** where the user can establish preferences for the system.
 
@@ -39,8 +39,6 @@ https://github.com/DBSE-teaching/isee2019-405-Found/blob/master/docs/images/UseC
 
 In order to write the user stories, we took the requirements expressed by the customer using the "I need" phase, and turned them into small pieces of work expressed using the format *"as a <type of user>, I want to <perform some task>, so that I can <achieve some goal>"*; and for that goal we established some acceptance criteria that should be fulfilled in order to the user story to be complete.<br /> 
 
-     
-<br /> 
 ![UserStoriesManagement_new]({{site.baseurl}}/images/UserStoriesManagement_new.png)  
 <br /> 
 ## System design
