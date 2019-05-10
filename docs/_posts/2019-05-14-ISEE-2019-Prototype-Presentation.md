@@ -10,7 +10,7 @@
 ### Requirement Gathering
 <br /> 
  
-![requirementGanthering]({{site.baseurl}}/images/RequirementGathering.jpg)
+![requirementGanthering]({{site.baseurl}}/images/RequirementGathering.jpg class="center")
 
 During the weekly team meetings, every question formulated for a team member was collected, after that we processed them into a meeting agenda, which was a powerful tool that helped as to make the correct questions that later could be clarified by the customer.
 
