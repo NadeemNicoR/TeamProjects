@@ -9,7 +9,7 @@
 
 ### Requirement Gathering
 <br /> 
- <img src="/images/RequirementGathering.jpg" alt="requirementGanthering" class="center">
+ <img src="{{site.baseurl}}/images/RequirementGathering.jpg" alt="requirementGanthering" class="center">
  
 
 
