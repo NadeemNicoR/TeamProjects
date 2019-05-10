@@ -42,9 +42,10 @@ In order to write the user stories, we took the requirements expressed by the cu
 <img src="https://github.com/DBSE-teaching/isee2019-405-Found"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 50px;" />
-
+     
+<br /> 
 ![UserStoriesManagement_new]({{site.baseurl}}/images/UserStoriesManagement_new.png)  
-
+<br /> 
 ## System design
 ---
 
