@@ -32,7 +32,7 @@ Even though, we have as principle to work only on what is a requirement from our
 
 ### Use case diagram 
 
-![Usercasediagram]({{site.baseurl}}/images/Usercase_newest1.png)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Usercasediagram]({{site.baseurl}}/images/Usercase_newest1.png)  
 
 <br /> 
 
