@@ -33,7 +33,7 @@ Even though, we have as principle to work only on what is a requirement from our
 This diagram depicts the in high level the interactions that the user can have with the application, among them; **"Enter PIN"** used to get access to the application, which must be verified, **"Enter expense"** necessary to register the expenditure information, **"Enter income"** where the user must detail his/her incomes, **"Check dashboard"** used to monitor the user's finances, and **"Change settings"** where the user can establish preferences for the system.
 
 
-
+https://github.com/DBSE-teaching/isee2019-405-Found/blob/master/docs/images/UseCaseDiagram.png
 
 ### User Stories (Excel map pic)
 
@@ -43,7 +43,7 @@ In order to write the user stories, we took the requirements expressed by the cu
      alt="Markdown Monster icon"
      style="float: left; margin-right: 50px;" />
 
-
+![UserStoriesManagement_new]({{site.baseurl}}/images/UserStoriesManagement_new.png)  
 
 ## System design
 ---
