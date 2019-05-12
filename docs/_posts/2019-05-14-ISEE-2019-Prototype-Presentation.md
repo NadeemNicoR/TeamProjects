@@ -28,7 +28,7 @@ Taking as a starting point the fact that not all the requirements are gathered s
 ![ExUserStory2]({{site.baseurl}}/images/ExUserStory2.png)
 
 <br /> 
-Even though, we have as principle to work only on what is a requirement from our customer, we couldn't avoid to come across with some features that we thought were necessary to satisfy one of the requirements, we dealt we this assumptions remaking them within the respective user story that was later explained to the customer, so that he could approve or dismiss them. One example for this was the assumption of having a user account that can be used to log in on different devices, while de desire of the client was to have a PIN that could be used to access the application.
+Even though, we have as principle to work only on what is a requirement from our customer, we couldn't avoid to come across with some features that we thought were necessary to satisfy one of the requirements, we dealt we this assumptions remaking them within the respective user story that was later explained to the customer, so that he could approve or dismiss them. One example for this was the assumption of having a user account that can be used to log in on different devices, while the desire of the client was to have a PIN that could be used to access the application.
 
 ### Use case diagram 
 
