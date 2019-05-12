@@ -13,9 +13,9 @@
 ![requirementGanthering]({{site.baseurl}}/images/RequirementGathering.jpg)
 
 
-During the weekly team meetings, every question formulated for a team member was collected, after that we processed them into a meeting agenda, which was a powerful tool that helped as to make the correct questions that later could be clarified by the customer.
+During the weekly team meetings, every question formulated for a team member was collected, after that we processed them into a meeting agenda, which was a powerful tool that helped us to make the correct questions that later could be clarified by the customer.
 
-Te customer was pretty sure about the requirements he had, and the fact the he cold manage to split them into "Required" and "Nice to have" helped us to establish priorities for the user stories, here we also mention some ideas we had for the project that were easily assign to one of the previously mentioned categories.
+Te customer was pretty sure about the requirements he had, and the fact the he managed to split them into "Required" and "Nice to have" helped us to establish priorities for the user stories, here we also mention some ideas we had for the project that were easily assign to one of the previously mentioned categories.
 
 
 
@@ -23,7 +23,7 @@ Te customer was pretty sure about the requirements he had, and the fact the he c
 
 ![requirememtAnalysis]({{site.baseurl}}/images/RequirememtAnalysis.png)
 <br /> 
-Taking as a starting point the fact that no all the requirements are gathered since the beginning, and also that some them are going to inevitably change, we tried to involve our customer as much as possible in the phase of requirement processing, this way he could see and make and early correction of every aspect that wasn't an actual requirement.<br /> 
+Taking as a starting point the fact that not all the requirements are gathered since the beginning, and also that some of them are going to inevitably change, we tried to involve our customer as much as possible in the phase of requirement processing, this way he could see and make an early correction of every aspect that wasn't an actual requirement.<br /> 
 
 ![ExUserStory2]({{site.baseurl}}/images/ExUserStory2.png)
 
