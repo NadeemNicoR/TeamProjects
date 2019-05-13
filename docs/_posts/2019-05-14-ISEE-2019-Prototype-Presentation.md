@@ -20,11 +20,13 @@ The customer was pretty sure about the requirements he had, and the fact he mana
 
 
 ### Wrong assumptions identification
-<img src="/ https://github.com/DBSE-teaching/isee2019-405-Found/blob/master/docs/images/RequirememtAnalysis.png" alt="requirememtAnalysis" title="requirememtAnalysis">
-
+<div style="text-align:center">
 ![requirememtAnalysis]({{site.baseurl}}/images/RequirememtAnalysis.png)
 <br /> 
-Taking as a starting point the fact that not all the requirements are gathered since the beginning, and also that some of them are going to inevitably change, we tried to involve our customer as much as possible in the phase of requirement processing, this way he could see and make an early correction of every aspect that wasn't an actual requirement.<br /> 
+Taking as a starting point the fact that not all the requirements are gathered since the beginning, and also that some of them are going to inevitably change, we tried to involve our customer as much as possible in the phase of requirement processing, this way he could see and make an early correction of every aspect that wasn't an actual requirement.
+  <div/>
+  
+  <br /> 
 
 ![ExUserStory2]({{site.baseurl}}/images/ExUserStory2.png)
 
