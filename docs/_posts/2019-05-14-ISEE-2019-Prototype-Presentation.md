@@ -26,7 +26,9 @@ The customer was pretty sure about the requirements he had, and the fact he mana
   
   ![requirememtAnalysis]({{site.baseurl}}/images/RequirememtAnalysis.png)
  
- </image>
+    
+  </image>
+
 
 Taking as a starting point the fact that not all the requirements are gathered since the beginning, and also that some of them are going to inevitably change, we tried to involve our customer as much as possible in the phase of requirement processing, this way he could see and make an early correction of every aspect that wasn't an actual requirement.
  
