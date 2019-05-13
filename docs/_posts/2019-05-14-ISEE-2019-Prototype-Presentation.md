@@ -10,9 +10,11 @@
 ### Requirement Gathering
 
   <br /> 
+  
 ![requirementGanthering]({{site.baseurl}}/images/RequirementGathering.jpg)
 
-
+ <br /> 
+ 
 During the weekly team meetings, every question formulated for a team member was collected, after that, we processed them into a meeting agenda, which was a powerful tool that helped us to make the correct questions that later could be clarified by the customer.
 
 The customer was pretty sure about the requirements he had, and the fact he managed to split them into "Required" and "Nice to have" helped us to establish priorities for the user stories, here we also mention some ideas we had for the project that were easily assigned to one of the previously mentioned categories.
