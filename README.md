@@ -1,9 +1,10 @@
 ### Hyperlink for Blog : https://dbse-teaching.github.io/isee2019-405-Found/
-<br /> 
+
+
 ### Release versions of the application:
-<br /> 
-#### 1.Basic Prototype (13/05/2019): https://github.com/DBSE-teaching/isee2019-405-Found/blob/master/MoneyControl-team405.zip 
-<br /> 
+
+#### 1.Basic Prototype (13/05/2019) : https://github.com/DBSE-teaching/isee2019-405-Found/blob/master/MoneyControl-team405.zip 
+
 
 # Software Engineers Blog
 
