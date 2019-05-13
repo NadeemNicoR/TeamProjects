@@ -1,4 +1,9 @@
-https://dbse-teaching.github.io/isee2019-405-Found/
+##Hyperlink for Blog : https://dbse-teaching.github.io/isee2019-405-Found/
+<br /> 
+
+##Release versions of the application:
+###Basic Prototype (13/05/2019) : https://github.com/DBSE-teaching/isee2019-405-Found/blob/master/MoneyControl-team405.zip 
+
 # Software Engineers Blog
 
 This is the main page of your repository for the course project that is a center piece of the lecture "Introduction to Software Engineering for Engineers" in summer term 2019.
