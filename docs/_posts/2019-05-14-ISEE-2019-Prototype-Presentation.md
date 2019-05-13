@@ -84,6 +84,8 @@ The Manager class has a number of methods which will allow the user to insert, u
 
 ![UC4]({{site.baseurl}}/images/UC4_resized.png)
 
+<br />
+
 ### Activity Diagrams
 
 <br />
@@ -98,7 +100,7 @@ The Manager class has a number of methods which will allow the user to insert, u
 ### Development Strategy
 <br />
 
-![Development strategy]({{site.baseurl}}/images/DevelopmentStrategy.png)
+![DevelopmentStrategy]({{site.baseurl}}/images/DevelopmentStrategy.png)
 
 <br />
 
@@ -107,6 +109,8 @@ Since the beginning of the project we decided to use the tool Asana in order to 
 ### Money control application
 <br />
 New expense activity:
+
 <br />
+
 ![Prototype1]({{site.baseurl}}/images/Prototype1.png)
 <br />
