@@ -89,6 +89,8 @@ The Manager class has a number of methods which will allow the user to insert, u
 <br />
 ![Login]({{site.baseurl}}/images/login.PNG)
 
+<br />
+
 ![AddExpense]({{site.baseurl}}/images/addexpense.PNG)
 
 <br />
