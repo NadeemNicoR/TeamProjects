@@ -3,7 +3,7 @@
 
 ### Release versions of the application:
 
-#### 1.Basic Prototype (13/05/2019) : https://github.com/DBSE-teaching/isee2019-405-Found/blob/master/MoneyControl-team405.zip 
+#### 1. Basic Prototype (13/05/2019) : https://github.com/DBSE-teaching/isee2019-405-Found/blob/master/MoneyControl-team405.zip 
 
 
 # Software Engineers Blog
