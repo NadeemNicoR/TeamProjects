@@ -86,5 +86,12 @@ The Manager class has a number of methods which will allow the user to insert, u
 
 ### Activity Diagrams
 
+<br />
+![Login]({{site.baseurl}}/images/login.PNG)
+
+![AddExpense]({{site.baseurl}}/images/addexpense.PNG)
+
+<br />
+
 ### Development Strategy
 Since the beginning of the project we decided to use the tool Asana in order to keep track of tasks and also to divide the work between the team members, which will lead us to know who is doing what so that we can exchange roles in a fair way, additionally to that we also use the estimated times for the user stories and compare them to the actual times that we spent on every user story, with which we will make better estimations for the future, and also establish a project development speed in order to know; whether the project is going to be ready on time, or if we have to speed up the development process, or else we are doing great and we will have time to add some nice-to-have features at the end.
