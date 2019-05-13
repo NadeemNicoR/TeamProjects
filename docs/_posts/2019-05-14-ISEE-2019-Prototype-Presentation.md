@@ -63,11 +63,17 @@ In order to write the user stories, we took the requirements expressed by the cu
 ### Class Diagrams
   <br /> 
   
-![ClassDiagram](https://github.com/DBSE-teaching/isee2019-405-Found/blob/master/docs/images/Blank%20Diagram.png)
+![ClassDiagram]({{site.baseurl}}/docs/images/Blank%20Diagram.png)
 
  <br /> 
  
- 
+The UML Class Diagram of our Money Control App has following main classes; User, Income, Expense, Settings and Manager Class. 
+The User class, takes in input from user such as its Name, Email and it allows the user to set a PIN which he/she can use whenever they want to log into the account after the first use (or registration).
+The Income Class, lets the user to define a Income and set its recurrence if needed. 
+The Expense Class, will allow the user to set/enter a new expense and the date whenever it occurred also it will let the user define the method of payment, currency and the category of the expense.
+The Settings Class, lets the user with the help of other classes of Currency, Method of Payment, Category, to define a new or edit a previous value in the mentioned class it also allows the user to set a new pin for the application access. 
+The Manager class has a number of methods which will allow the user to insert, update and delete operation of all other classes. Every class is contained by the manager class and no class will exist if the manager class doesn’t exist. Manager class also allows us to get the statistics defined on a specific period and class type. 
+
 
 ### Activity Diagrams
 
