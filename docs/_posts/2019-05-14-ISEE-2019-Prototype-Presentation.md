@@ -13,9 +13,9 @@
 ![requirementGanthering]({{site.baseurl}}/images/RequirementGathering.jpg)
 
 
-During the weekly team meetings, every question formulated for a team member was collected, after that we processed them into a meeting agenda, which was a powerful tool that helped us to make the correct questions that later could be clarified by the customer.
+During the weekly team meetings, every question formulated for a team member was collected, after that, we processed them into a meeting agenda, which was a powerful tool that helped us to make the correct questions that later could be clarified by the customer.
 
-Te customer was pretty sure about the requirements he had, and the fact the he managed to split them into "Required" and "Nice to have" helped us to establish priorities for the user stories, here we also mention some ideas we had for the project that were easily assign to one of the previously mentioned categories.
+The customer was pretty sure about the requirements he had, and the fact he managed to split them into "Required" and "Nice to have" helped us to establish priorities for the user stories, here we also mention some ideas we had for the project that were easily assigned to one of the previously mentioned categories.
 
 
 
@@ -28,7 +28,7 @@ Taking as a starting point the fact that not all the requirements are gathered s
 ![ExUserStory2]({{site.baseurl}}/images/ExUserStory2.png)
 
 <br /> 
-Even though, we have as principle to work only on what is a requirement from our customer, we couldn't avoid to come across with some features that we thought were necessary to satisfy one of the requirements, we dealt we this assumptions remaking them within the respective user story that was later explained to the customer, so that he could approve or dismiss them. One example for this was the assumption of having a user account that can be used to log in on different devices, while the desire of the client was to have a PIN that could be used to access the application.
+Even though, we have as a principle to work only on what is a requirement from our customer, we couldn't avoid to come across with some features that we thought were necessary to satisfy one of the requirements, we dealt with these assumptions remaking them within the respective user story that was later explained to the customer, so that he could approve or dismiss them. One example for this was the assumption of having a user account that can be used to log in on different devices, while the desire of the client was to have a PIN that could be used to access the application.
 
 ### Use case diagram 
 
@@ -41,7 +41,7 @@ This diagram depicts the in high level the interactions that the user can have w
 
 ### User Stories (Excel map pic)
 
-In order to write the user stories, we took the requirements expressed by the customer using the "I need" phase, and turned them into small pieces of work expressed using the format *"as a [type of user], I want to [perform some task], so that I can [achieve some goal]"*; and for that goal we established some acceptance criteria that should be fulfilled in order to the user story to be complete.<br /> 
+In order to write the user stories, we took the requirements expressed by the customer using the "I need" phase, and turned them into small pieces of work expressed using the format *" as a [type of user], I want to [perform some task], so that I can [achieve some goal]"*; and for that goal we established some acceptance criteria that should be fulfilled in order to the user story to be complete.<br /> 
 
 ![UserStoriesManagement]({{site.baseurl}}/images/UserStoriesManagement_newest1.png)  
 
@@ -53,3 +53,4 @@ In order to write the user stories, we took the requirements expressed by the cu
 ### Activity Diagrams
 
 ### Development Strategy
+Since the beginning of the project we decided to use the tool Asana in order to keep track of tasks and also to divide the work between the team members, which will lead us to know who is doing what so that we can exchange roles in a fair way, additionally to that we also use the estimated times for the user stories and compare them to the actual times that we spent on every user story, with which we will make better estimations for the future, and also establish a project development speed in order to know; whether the project is going to be ready on time, or if we have to speed up the development process, or else we are doing great and we will have time to add some nice-to-have features at the end.
