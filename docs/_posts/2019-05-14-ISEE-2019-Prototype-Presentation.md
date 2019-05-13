@@ -76,7 +76,7 @@ The Manager class has a number of methods which will allow the user to insert, u
 
 <br />
 
-
+![ClassDiagram]({{site.baseurl}}/images/UC1.png)
 
 
 
