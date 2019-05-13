@@ -78,7 +78,11 @@ The Manager class has a number of methods which will allow the user to insert, u
 
 ![UC1]({{site.baseurl}}/images/UC1_resized.png)
 
+![UC2]({{site.baseurl}}/images/UC2_resized.png)
 
+![UC3]({{site.baseurl}}/images/UC3_resized.png)
+
+![UC4]({{site.baseurl}}/images/UC4_resized.png)
 
 ### Activity Diagrams
 
