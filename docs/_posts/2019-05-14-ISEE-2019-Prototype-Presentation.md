@@ -74,6 +74,77 @@ The Expense Class, will allow the user to set/enter a new expense and the date w
 The Settings Class, lets the user with the help of other classes of Currency, Method of Payment, Category, to define a new or edit a previous value in the mentioned class it also allows the user to set a new pin for the application access. 
 The Manager class has a number of methods which will allow the user to insert, update and delete operation of all other classes. Every class is contained by the manager class and no class will exist if the manager class doesn’t exist. Manager class also allows us to get the statistics defined on a specific period and class type. 
 
+User Class Attributes
+Attribute Name	Attribute Type 	Description
+Name	String	Takes the name of the user
+Email	String	Takes email id of the user 
+Enter_PIN	Integer	Stores four digit PIN of the user
+Set_PIN	Integer	Takes the same PIN again
+
+User Class Methods
+Methods	Parameters  	Description
+setPIN ( ) 	Void	Sets data of all the attributes of user class
+SignIn ( )	PIN 	Checks entered PIN by user 
+
+Income Class Attributes
+Attribute Name	Attribute Type 	Description
+Amount	Double	Stores the amount of income
+Name	String	Stores Name of the income 
+date	DateTime	Takes date of the income
+
+
+
+
+Income Class Methods
+Methods	Parameters  	Description
+SaveIncome ( ) 	Void	Sets data of all the attributes of Income class
+GetAmount ( )	Double	Gets the amount from user 
+SetAmount	Double	Set and confirms the amount
+Get date	DateTime	Gets the date from user 
+Set date	DateTime	Set and confirms the date
+SaveRecurringIncome	Void	To set a recurrence on a particular Income entry
+
+Expense Class Attributes
+Attribute Name	Attribute Type 	Description
+Amount	Double	Stores the amount of Expense 
+Category	String	Stores the category of the expense
+date	DateTime	Takes date of the expense
+Payment	String	Stores the method of Payment of the expense
+Currency	String	Stores the Currency of the expense
+Notes	String	Stores the additional comments by the user on expense
+
+Expense Class Methods
+Methods	Parameters  	Description
+Expense ( )	Void	Sets data of all the attributes of expense class
+GetExpense ( )	Void	Get the values of a new expense set by the user 
+SetExpense	Void	Sets the values of a new expense set by the user
+DeleteExpense	Boolean	Delete a previously set expense 
+SaveRecurringExpense	Void	To set a recurrence on a particular Expense entry
+
+Setting Attributes
+Attribute Name	Attribute Type 	Description
+Payment	String	Stores the existing options in methods of Payment Class 
+Category	String	Stores the existing options in Category Class
+Currency	String	Stores the existing options in Currency Class
+Reset_PIN	String	Stores the new value for PIN 
+
+Setting Class Methods
+Methods	Parameters  	Description
+DefineMethodofPayment	Void	Sets data of all the attributes of MethodofPaymentClass
+DefineExpenseCategory ( )	Void	Sets data of all the attributes of ExpenseCategoryClass
+DefineCurrency	Void	Sets data of all the attributes of CurrenyClass
+
+Manager Class Methods
+Methods	Parameters  	Description
+Add_Expense ( )	Void	To create a expense entry in database 
+Add_RecurringExpense( )	Void	Sets recurrence on a particular expense entry
+Add_Income ( )	Void	To create a Income entry in database
+Add_RecurringIncome ( )	Void	Sets recurrence on a particular income entry
+Get_Income_InPeriod ( )	Void	To retrieve the Income on the basis of specific DateTime
+Get_Expense_InPeriod ( )	Void	To retrieve the Expense on the basis of specific DateTime
+……		
+
+
 
 ### Activity Diagrams
 
