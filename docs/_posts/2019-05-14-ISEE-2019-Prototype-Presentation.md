@@ -63,7 +63,7 @@ In order to write the user stories, we took the requirements expressed by the cu
 ### Class Diagrams
   <br /> 
   
-![ClassDiagrams]({{site.baseurl}}/images/Blank Diagram.png)
+![ClassDiagram](https://github.com/DBSE-teaching/isee2019-405-Found/blob/master/docs/images/Blank%20Diagram.png)
 
  <br /> 
  
