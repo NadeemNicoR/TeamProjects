@@ -20,6 +20,7 @@ The customer was pretty sure about the requirements he had, and the fact he mana
 
 
 ### Wrong assumptions identification
+<img src="/ https://github.com/DBSE-teaching/isee2019-405-Found/blob/master/docs/images/RequirememtAnalysis.png" alt="requirememtAnalysis" title="requirememtAnalysis">
 
 ![requirememtAnalysis]({{site.baseurl}}/images/RequirememtAnalysis.png)
 <br /> 
