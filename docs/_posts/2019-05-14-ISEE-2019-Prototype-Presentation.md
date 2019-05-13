@@ -63,7 +63,7 @@ In order to write the user stories, we took the requirements expressed by the cu
 ### Class Diagrams
   <br /> 
   
-![ClassDiagram]({{site.baseurl}}/images/UMLClassDiagram.jpeg)
+![ClassDiagrams]({{site.baseurl}}/images/Blank Diagram.png)
 
  <br /> 
  
