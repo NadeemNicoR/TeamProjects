@@ -2,59 +2,78 @@
 ---
 ## __Week report__
 ### __Section 1:__
-No previous report.
+#### 1.1 Plans:
+
+- [ ] Ronald: Work with Mohammed and Eva with the coding, and work on blog post 02
+- [ ] Mariam: Design activity diagram and work on the blog post 02.
+- [ ] Evelina: Code for the prototype of application
+- [ ] Mohammed: Design the layouts for the app interfaces and code for the prototype
+
+#### 1.2 Goals:
+
+ - [ ] Have ready the blog post 02
+ - [ ] Have ready the prototype
+ - [ ] Have ready the final presentation for the sprint 
 
 ### __Section 2:__
 
  #### 2.1. What we did.
- During the last week, we went throw the first steps of our team set up, and also worked on the first requirements of our project, which were:
+ During the last week, we devoted all our atention to the deploiment of the prototype and the imformation related to it, and for that we coplete:
 
-- Come up with a name for the team.
-- Decide which project will fit better with the team, in terms of interest and expertise that we currently have.
-- Develop a logo for the team
-- Prepare a team presentation.
-- Develop a blog in which we will report our project progress.
-- Write blog content
-- Establish Channels of communication for teamwork and for project management.
-- Status report.
+1. Finalise the __use-case diagram__.
+2. Establish acceptance criteria for  __user stories__ of the epic user story required for the prototype.
+3. Redesign UML __class Diagram__.
+4. Develope __activity diagrams__.
+5. __Develope the application__.
+6. Design __user interface__.
+7. Record times for the __development speed__.
+8. Up date the __blog__ with prototype information.
+9. __Prototype presentation__.
 
 #### 2.2 What worked:
 
-- Establish the first mode of communication in order to get the team in contact.
-- Meetings for decision making and start with some activities.
-- Distribute activities equally to speed up the workflow.
-- Blog upload.
-- First GitHub push.
+- Estrablish the work chain for the development process
+- Communicate problems immediatelly in order to solve them faster
+- Have team sesions of development so that the development speed is increased
+- Parallel lines of work. 
 
 #### 2.3 What we learned:
 
-- How to use Markdown language to give format to README files and write Blogs.
-- How to navigate the GitHub window.
-- Tools present on the market for team management (Asana, Slack).
-- It’s a good technique for the team to gain confidence in each other, to have lunch together.
+- Develop special features in Android Studio
+- Use of terminal to a better file control of GitHub repocitory
+- Establish activity transitions in Android Studio
+- Different associations un UML language
+- Relations between HTML and MarkDown languages
 
 #### 2.4 What trouble we had:
 
-- To start working together as a team, because we didn’t know each other.
-- To decide the best mode of communication.
-- To assign tasks, because at the beginning we weren’t sure about what needs to be done and a set workflow for the tasks.
+- Syntax to handle images on GitHub blog
+- Undestanding of the structure of someone else's code
+- Connect Androd Studio whit the phone to test the application
+- Undestanding the syntax for a "Drop down" method in Android Studio
+- Improve some features of the Blog apparence
+- Constrain the position of botons in the activities of the application
 
 #### 2.5 Where we got stuck:
 
-Since its the first step, there are not major things where we are stuck.
+- Formating images in GitHub's blog
+- Linking string enteries between two activities
+- Improve the blog interface
+- Change interface of activities in Android studio
+- Implement constrains for PIN entering
+- Integrate a data base with the application
 
 
 #### 2.6 Roles and responsibilities:
 
-As group decisions, we selected the project and established the team name.
 
 |TEAM MEMBER | Evelina | Mariam | Mohammed | Ronald |
 | :------: | :------: | :------: | :------: | :------: |
-| __ROLE__       | _Developer_ |_Scrum Master_ | _Developer_|_Scrum Master_ |
-| __ACTIVITIES__       |Blog development | Logo| Blog development|Logo |
-|     |Blog Content |Team presentation |Blog Content |  Status report |
-|     | |Blog Content | |Blog Content |
-|     | |Channels of team management | |Channels of communication |
+| __ROLE__       | _Front end Developer_ |_Structure Designer_ | _Back end Developer_|_Scrum Master_ |
+| __ACTIVITIES__       |Develope the application |Class Diagram |Develope the application|User stories |
+|     |user interface|Activity diagrams |Test The application |  use-case diagram |
+|     | |Blog Content |Blog Content |Development speed |
+|     | |Last week report | |Blog Content |
 
 ### __Section 3:__
 
