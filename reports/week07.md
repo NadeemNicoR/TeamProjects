@@ -4,16 +4,16 @@
 ### __Section 1:__
 #### 1.1 Plans:
 
-- [ ] Ronald: Work with Mohammed and Eva with the coding, and work on blog post 02
-- [ ] Mariam: Design activity diagram and work on the blog post 02.
-- [ ] Evelina: Code for the prototype of application
-- [ ] Mohammed: Design the layouts for the app interfaces and code for the prototype
+- [X] Ronald: Work with Mohammed and Eva with the coding, and work on blog post 02
+- [X] Mariam: Design activity diagram and work on the blog post 02.
+- [X] Evelina: Code for the prototype of application
+- [X] Mohammed: Design the layouts for the app interfaces and code for the prototype
 
 #### 1.2 Goals:
 
- - [ ] Have ready the blog post 02
- - [ ] Have ready the prototype
- - [ ] Have ready the final presentation for the sprint 
+ - [X] Have ready the blog post 02
+ - [X] Have ready the prototype
+ - [X] Have ready the final presentation for the sprint 
 
 ### __Section 2:__
 
@@ -23,7 +23,7 @@
 1. Finalise the __use-case diagram__.
 2. Establish acceptance criteria for  __user stories__ of the epic user story required for the prototype.
 3. Redesign UML __class Diagram__.
-4. Develope __activity diagrams__.
+4. Develop __activity diagrams__.
 5. __Develope the application__.
 6. Design __user interface__.
 7. Record times for the __development speed__.
@@ -79,14 +79,16 @@
 
 #### 3.1 Plans:
 
-- Establish meeting frequencies.
-- Catch-Up meeting.
+- Improve the code integration
+- Implement features (Navigation pane)
+- Implement data base
+- Implemet charts in the aplication
 
 #### 3.2 Goals:
 
-- Use of the Stand-up meeting format as a communication medium, and as a way to keep track of team activities.
-- Get a clear set of requirements from the meeting with the client.
-- Write the first set of user stories.
+- Improve the blog interface
+- Implement the blog oriented development of documents
+- Improve the activity flow in the application
 
 ### __Section 4:__
 
@@ -94,13 +96,12 @@ Agenda for the meeting with the TA.
 
 #### 4.1 As a Customer
 
-Problem description: (10 minutes)
-- Explanation of the problem.
-- Questions about the problem.
+Work display: (10 minutes)
+- New set of user stories
+- Mockups of the charts required for the application
 
 #### 4.2 As a mentor:
 
 Questions about project: (5 minutes)
-- Is it better to start with a mockup of one functionality or a user interface?
-- There must be always working software or mockup presentations are allowed?
-- Should we have user cases/stories after the first meeting?
+- Data base Integration
+- New configuration of the class diagram
