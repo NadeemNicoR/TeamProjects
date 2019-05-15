@@ -74,6 +74,7 @@
 |     |User interface|Activity diagrams |Test The application |  Use-case diagram |
 |     | |Blog Content |Blog Content |Development speed |
 |     | |Last week report | |Blog Content |
+|     | | | |Prototype presentation |
 
 ### __Section 3:__
 
