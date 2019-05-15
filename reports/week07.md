@@ -18,13 +18,13 @@
 ### __Section 2:__
 
  #### 2.1. What we did.
- During the last week, we devoted all our atention to the deploiment of the prototype and the imformation related to it, and for that we coplete:
+ During the last week, we devoted all our attention to the deployment of the prototype and the information related to it, and for that we complete:
 
-1. Finalise the __use-case diagram__.
+1. Finalize the __use-case diagram__.
 2. Establish acceptance criteria for  __user stories__ of the epic user story required for the prototype.
 3. Redesign UML __class Diagram__.
 4. Develop __activity diagrams__.
-5. __Develope the application__.
+5. __Develop the application__.
 6. Design __user interface__.
 7. Record times for the __development speed__.
 8. Up date the __blog__ with prototype information.
@@ -32,15 +32,15 @@
 
 #### 2.2 What worked:
 
-- Estrablish the work chain for the development process
-- Communicate problems immediatelly in order to solve them faster
-- Have team sesions of development so that the development speed is increased
+- Establish the work chain for the development process
+- Communicate problems immediately in order to solve them faster
+- Have team sessions of development so that the development speed is increased
 - Parallel lines of work. 
 
 #### 2.3 What we learned:
 
 - Develop special features in Android Studio
-- Use of terminal to a better file control of GitHub repocitory
+- Use of terminal to a better file control of GitHub repository
 - Establish activity transitions in Android Studio
 - Different associations un UML language
 - Relations between HTML and MarkDown languages
@@ -48,16 +48,16 @@
 #### 2.4 What trouble we had:
 
 - Syntax to handle images on GitHub blog
-- Undestanding of the structure of someone else's code
-- Connect Androd Studio whit the phone to test the application
-- Undestanding the syntax for a "Drop down" method in Android Studio
-- Improve some features of the Blog apparence
-- Constrain the position of botons in the activities of the application
+- Understanding of the structure of someone else's code
+- Connect Android Studio whit the phone to test the application
+- Understanding the syntax for a "Drop down" method in Android Studio
+- Improve some features of the Blog appearance
+- Constrain the position of buttons in the activities of the application
 
 #### 2.5 Where we got stuck:
 
-- Formating images in GitHub's blog
-- Linking string enteries between two activities
+- Formatting images in GitHub's blog
+- Linking string entries between two activities
 - Improve the blog interface
 - Change interface of activities in Android studio
 - Implement constrains for PIN entering
@@ -70,8 +70,8 @@
 |TEAM MEMBER | Evelina | Mariam | Mohammed | Ronald |
 | :------: | :------: | :------: | :------: | :------: |
 | __ROLE__       | _Front end Developer_ |_Structure Designer_ | _Back end Developer_|_Scrum Master_ |
-| __ACTIVITIES__       |Develope the application |Class Diagram |Develope the application|User stories |
-|     |user interface|Activity diagrams |Test The application |  use-case diagram |
+| __ACTIVITIES__       |Develop the application |Class Diagram |Develop the application|User stories |
+|     |User interface|Activity diagrams |Test The application |  Use-case diagram |
 |     | |Blog Content |Blog Content |Development speed |
 |     | |Last week report | |Blog Content |
 
@@ -82,7 +82,7 @@
 - Improve the code integration
 - Implement features (Navigation pane)
 - Implement data base
-- Implemet charts in the aplication
+- Implement charts in the application
 
 #### 3.2 Goals:
 
