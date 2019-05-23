@@ -66,17 +66,17 @@
 
 #### 3.1 Plans:
 
--[ ] Start to work on fulfilling the advanced prototype requirements.
--[ ] Learn to import the library of icons for categories option.
--[ ] Investigate different design patterns that can be made use of .
+-[] Start to work on fulfilling the advanced prototype requirements.
+-[] Learn to import the library of icons for categories option.
+-[] Investigate different design patterns that can be made use of .
 
 #### 3.2 Goals:
 
--[ ] Modify the income screen by adding the same attributes as that of in the expense layout.
--[ ] Implement the database and have the note section added under both expenses.
--[ ] Implement the navigation pane with shortcuts to the key attribute (Income, Settings, Help etc.)
--[ ] Try to complete the database integration with the application for the current layouts and options that were added in the basic    prototype
--[ ] To get half of the advanced prototype requirements fulfilled at most, by next week.
+-[] Modify the income screen by adding the same attributes as that of in the expense layout.
+-[] Implement the database and have the note section added under both expenses.
+-[] Implement the navigation pane with shortcuts to the key attribute (Income, Settings, Help etc.)
+-[] Try to complete the database integration with the application for the current layouts and options that were added in the basic    prototype
+-[] To get half of the advanced prototype requirements fulfilled at most, by next week.
 
 ### __Section 4:__
 
