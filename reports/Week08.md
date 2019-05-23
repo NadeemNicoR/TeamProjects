@@ -60,7 +60,7 @@
 |TEAM MEMBER | Evelina | Mariam | Mohammed | Ronald |
 | :------: | :------: | :------: | :------: | :------: |
 | __ROLE__       | _Front end Developer_ |_Structure Designer_ | _Back end Developer_|_Scrum Master_ |
-| __ACTIVITIES__       |Develop the application | Gathered brief informaton on design patterns  | Integrate DB with the application built so far |use case stories for advanced prototype|
+| __ACTIVITIES__       | Implementation of naigational pane with shortcuts | Gathered brief informaton on design patterns  | Integrate DB with the application built so far |use case stories for advanced prototype|
 
 
 ### __Section 3:__
