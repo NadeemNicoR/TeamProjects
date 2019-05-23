@@ -7,7 +7,7 @@
 - [X] Ronald: Implement charts in the application.
 - [X] Mariam: Improve the code integration.
 - [X] Evelina: Implement features (Navigation pane).
-- [X] Mohammed: Implement data base.
+- [X] Mohammed: Implement database.
 
 #### 1.2 Goals:
 
