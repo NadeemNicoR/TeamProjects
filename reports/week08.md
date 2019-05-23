@@ -33,9 +33,9 @@
 #### 2.2 What worked:
 
 - Got the Basic prototype presented & got the use case stories for the advanced prototype built(Ronald).
-- Learnt basics on how to get the database integrated with the application for the attributes and the layouts built till the basic prototype (Mohammed).
+- Currently working on database integration with the application for the attributes and the layouts built till the basic prototype (Mohammed).
 - Briefing about the basics of design pattern (Mariam).
-- Learnt implement the Navigational pane for the application (Evelina).
+- Started working on implementing the Navigational Pane for the application (Evelina).
 - Collected all the basic requirements for the advanced prototype (Team).
 
 #### 2.3 What we learned:
@@ -43,7 +43,6 @@
 - Learned basics of SQLite DB and fundamentals in getting the DB integrated with the application.
 - Started looking at different design patterns that could be implemented in the project.
 - How to change the header for every layout of the application
-- How to introduce the navigational pane (one of the pending goals that we shall accomplish this week)
 
 #### 2.4 What trouble we had:
 
@@ -60,7 +59,7 @@
 |TEAM MEMBER | Evelina | Mariam | Mohammed | Ronald |
 | :------: | :------: | :------: | :------: | :------: |
 | __ROLE__       | _Front end Developer_ |_Structure Designer_ | _Back end Developer_|_Scrum Master_ |
-| __ACTIVITIES__       | Implementation of navigational pane with shortcuts | Gathered brief information on design patterns  | Integrate DB with the application built so far |use case stories for advanced prototype|
+| __ACTIVITIES__       | Working on Implementation of navigational pane with shortcuts | Gathered brief information on design patterns  | Working on DB integration with the application built so far |use case stories for advanced prototype|
 
 
 ### __Section 3:__
