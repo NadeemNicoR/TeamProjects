@@ -1,6 +1,6 @@
 ![companylogo]({{site.baseurl}}/images/405logo.png)
 
-<h1> Advanced Prototype </h1>
+<h1 class="center"> Advanced Prototype </h1>
 
 
 
