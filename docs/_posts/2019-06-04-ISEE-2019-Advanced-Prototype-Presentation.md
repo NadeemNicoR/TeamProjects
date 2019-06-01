@@ -2,14 +2,42 @@
 
 <h1> Advanced Prototype </h1>
 
-hdsbdahs
 
-<h2> Essential requirements </h2>
 
-hashasajs
+<h2> Design Pattern </h2>
 
-<h2> Requirement Gathering </h2>
+• Does your system use any design pattern?
+• Sketch at least one design pattern that you apply or that could be applied. Give reasons for the application of this
+design pattern!
 
-asaghshas
+<h2> IMPLEMENTATION & UI: </h2>
 
-<h2> Wrong assumptions identification </h2>
+
+
+<h2> Coding Conventions </h2>
+
+• report on coding standards you apply (e.g., JavaSoft conventions, own conventions)
+• How do you enforce that all code adheres to your coding conventions? 
+
+<h2> Specify Context of Use  </h2>
+
+identify the people who will use the application by developing at least two personas 
+
+<h2> Create Design Solution  </h2>
+
+ provide a storyboard (i.e., a sequence of screens) for at least two user stories) together with a brief explanation
+• What was the rationale of your chosen design? Based on which principles did you design your App?
+
+<h2> Summary of Changes: </h2>
+
+• Which requirements (compared to the basic prototype) did you add or change?
+• Reflect on how these added/changed requirements have changed your (a) user
+stories and (b) class diagram 
+
+<h2> Working Prototype (this is not required in the presentation, but in the Blog
+article): </h2>
+
+• Make a working prototype available as (a) downloadable apk file and (b) as a
+separate release branch in the git repo
+• add screenshots (2 or more) of your app with a brief explanation what they are
+about
