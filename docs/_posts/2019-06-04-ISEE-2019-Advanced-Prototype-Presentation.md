@@ -20,8 +20,12 @@ design pattern!
 
 <h2> Coding Conventions </h2>
 
+<p style="text-align:right">
+ 
 • report on coding standards you apply (e.g., JavaSoft conventions, own conventions)
 • How do you enforce that all code adheres to your coding conventions? 
+
+</p>
 
 <h2> Specify Context of Use  </h2>
 
