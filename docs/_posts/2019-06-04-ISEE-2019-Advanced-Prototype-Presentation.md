@@ -6,9 +6,13 @@
 
 <h2> Design Pattern </h2>
 
+<p class="center">
+ 
 • Does your system use any design pattern?
 • Sketch at least one design pattern that you apply or that could be applied. Give reasons for the application of this
 design pattern!
+
+</p>
 
 <h2> IMPLEMENTATION & UI: </h2>
 
