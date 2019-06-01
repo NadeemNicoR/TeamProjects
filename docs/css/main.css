@@ -30,9 +30,9 @@ p {
     line-height: 1.4em;
     color: #333;
 }
-footer {
+<!footer {
     border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    font-size: .8em;>
 }
 
 ul.posts { 
@@ -57,3 +57,9 @@ ul.posts li {
     margin: 5px;
     clear: both;
 }
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
