@@ -2,6 +2,9 @@
 
 <h1 text-aline="center"> Advanced Prototype </h1>
 
+Welcome to the third blog post of 405 Found - Money Control Application. It will give you an update on the 3rd Milestone that we have achieved in our project also how our basic prototype application has been evolved with the new requirements that has been added by our customers into a final Advanced prototype.
+
+Lets Start...
 
 
 <h2> Design Pattern </h2>
