@@ -6,7 +6,7 @@
 
 <h2> Design Pattern </h2>
 
-<p class="center">
+<p class="justify">
  
 • Does your system use any design pattern?
 • Sketch at least one design pattern that you apply or that could be applied. Give reasons for the application of this
