@@ -80,11 +80,29 @@ As the our team is working in parallel it gets very important for everyone to fo
 
 
 ### Context of Use - Personas
-Identify the people who will use the application by developing at least two personas 
 
-Example 1
+Customer Personas are fictional generalisations of our most valuable customers. They help to understand customers by bringing together demographic information like age, gender, location, and income, alongside psychographic information like interests, frustrations and personal/professional motivations.
 
-Example 2
+Understanding our customer needs, challenges and behavioural influences allows us to better understand what content appeal to them best. Alot of thought goes into developing persons in software development process:
+
+
+ ![PersonaDevelopment]({{site.baseurl}}/images/Persona2.jpg)
+
+
+The discovery question that we focused on to built our personas are as follows:
+1) Location: where do people from this persona live?
+2) Age: what is the average age/age range of this persona?
+3) Relationship Status: Single? Married? Children?
+4) Education: what level of education do they have?
+5) Frustrations: biggest challenges for people in this persona?
+6) Motivations: what motivates people in this persona to be successful?
+7) Personal/Professional Goals: what do they wish to achieve?
+
+
+The persona that we have developed are:
+
+
+ ![PersonaDevelopment]({{site.baseurl}}/images/Persona3.jpg)
 
 
 ### Create Design Solution
