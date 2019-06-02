@@ -24,10 +24,11 @@ Lets first know what Model, View and Controller means in MVC pattern and then we
 <li>The Controller exists between the view and the model. It is the logic layer, gets notified of the user’s behavior and updates the Model as needed.</li>
 
 <br />
+<p class="justify">
 The MVC implemented in our application development has, the model represented by DataBaseHelper class in our apaplication that stores all the data and manipulation methods, which is further linked with MainActivity class surving as Controller, linked to all activity classes which are the view. A graphical respresentation of the MVC pattern;
 <br />
-![companylogo]({{site.baseurl}}/images/designpattern.png)
 
+The Model-View-Controller pattern highly supports the separation of concerns. This advantage not only increases the testability of the code but it also makes it easier to extend, allowing a fairly easy implementation of new features. It also supports rapid and parallel development which we needed becuase of the tight deadlines of our delieverables we had to work in parallel.
 
 <h2> IMPLEMENTATION & UI: </h2>
 
