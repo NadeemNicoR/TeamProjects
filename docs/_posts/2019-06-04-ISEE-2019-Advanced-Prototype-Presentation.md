@@ -8,8 +8,8 @@ Without further ado, Lets Start...
 
 
 <h2> Using a particular Software Design Pattern and the reasons behind it!  </h2>
----------------
 <p class="justify">
+---------------
 <br /> 
 In Software development world, design pattern is referred to as a general repeatable solution to a commonly occuring problem in your software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
 <br />
@@ -25,10 +25,8 @@ Lets first know what Model, View and Controller means in MVC pattern and then we
 <br />
 The MVC implemented in our application development has, the model represented by DataBaseHelper class in our apaplication that stores all the data and manipulation methods, which is further linked with MainActivity class surving as Controller, linked to all activity classes which are the view. A graphical respresentation of the MVC pattern;
 <br />
- 
-![MVC pattern]({{site.baseurl}}/images/designpattern.PNG)
+![companylogo]({{site.baseurl}}/images/designpattern.png)
 
-<br />
 
 <h2> IMPLEMENTATION & UI: </h2>
 
