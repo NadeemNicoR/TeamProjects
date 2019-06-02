@@ -97,8 +97,8 @@ Provide a storyboard (i.e., a sequence of screens) for at least two user stories
 
 Our Customer wants to develop an app for Money Management. Requirements given by the customer in both the sprints are described in the table below:
 
+<br>
 
- 
 | Requirements Sprint 1                                  | Requirements Sprint 2		                                                |
 | -------------------------------                        |------------------------------	                                          | 
 | **System Requirements:**                               |			                                                                  |
@@ -122,6 +122,13 @@ Our Customer wants to develop an app for Money Management. Requirements given by
 |                                                        | **Additional:**                                                          |
 |                                                        | 1) Option to send in email to an id with Monthly summary of transactions |
 |                                                        | 2) Dashboard with charts displaying transaction by categories	         |
+
+
+Due to the change/addition in requirement few of the user stories have new acceptance criteria:
+
+
+![UserStoryChange]({{site.baseurl}}/images/UserStory.jpg)
+
 
 ## Working Prototype
 -----
