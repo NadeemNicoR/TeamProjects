@@ -94,13 +94,16 @@ Provide a storyboard (i.e., a sequence of screens) for at least two user stories
 ----------
 
  
-| Requirements Sprint 1				                    | Requirements Sprint 2		      |
-| -------------------------------			           |:------------------------------:	| 
-| System Requirements:      			                 | right-aligned 			         |
-| 1) Compatibility with Andriod version 6 and above. | centered      		            |
-| 2) Numeric Keyboard to enter transactions. 	     | are neat     			            |  
-| 3) QWETRY Keyboard elsewhere.                      | are neat     			            |  
-
+| Requirements Sprint 1				                    | Requirements Sprint 2		                                 |
+| -------------------------------			           |:------------------------------:	                           | 
+| System Requirements:      			                 |			                                                   |
+| 1) Compatibility with Andriod version 6 and above. |       		                                                |
+| 2) Numeric Keyboard to enter transactions. 	     |      			                                             |  
+| 3) QWETRY Keyboard elsewhere.                      |      			                                             |  
+|                              			              | 	                                                         |
+| Security Requirements                              |               		                                       |
+| 1) Single user access                       	     |              			                                       |  
+| 2) Security Pin to open the app.                   |Changed to: User can enable and disable the Security Pin.   |  
 
 
 
