@@ -94,9 +94,12 @@ Provide a storyboard (i.e., a sequence of screens) for at least two user stories
 ----------
 
  
-• Which requirements (compared to the basic prototype) did you add or change?
-• Reflect on how these added/changed requirements have changed your (a) user
-stories and (b) class diagram 
+| Requirements Sprint 1		| Requirements Sprint 2		|
+| -------------------------|:-----------------------:	| 
+| col 3 is      		   	| right-aligned 		   	|
+| col 2 is      		   	| centered      		   	|
+| zebra stripes 			   | are neat     			   |  
+
 
 
 
