@@ -37,10 +37,11 @@ The Model-View-Controller pattern highly supports the separation of concerns. Th
 <h2> Coding Conventions </h2>
 
 <p class="justify">
+Coding Covention helps different developers working in the same team to read through each other codes and also following these conventions helps in developing a clean code which make it easier for maintenance and enhance its efficiency. Coding convention that is followed through out in 405-Found are Java Code Conventions - as the software is developed using Java Language so it makes sense to follow them. 
  
-• report on coding standards you apply (e.g., JavaSoft conventions, own conventions)
-• How do you enforce that all code adheres to your coding conventions? 
+Example from Code 
 
+As the team is working in parallel it gets very important for everyone to follow a style of code development that is standard throughout, for this reason everytime a new development in terms of coding is done in the application it is reviewed by the SCRUM MASTER of our team. It enables us to keep a strict check that the coding conventions are not violated throughout our code. 
 
 
 </p>
