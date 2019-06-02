@@ -39,24 +39,30 @@ Some of the Examples from the Coding Conventions and related code fragments from
 
 1) The convention states that files in the program should not exceed 2000 lines 
 
-Every class in our program is less than 500 lines.
+- Every class in our program is less than 500 lines.
 
 2) Naming convention states that each class in the program should follow, CamelCasing. Meaning, first letter of each internal word capitalized.
 
-Every class in our program followed CamelCasing rule. e.g: Categories, DatabaseHelper.
+- Every class in our program followed CamelCasing rule. e.g: Categories, DatabaseHelper.
 
 3) The if and if-else statements according to coding convention should be stated as 
 
 
 if  (condition) { 
+   
    statements;  
+   
    }
        
        
 if  (condition) { 
+   
    statements; 
+  
   } else {
-   statements;
+  
+  statements;
+  
   }
     
     
@@ -66,6 +72,7 @@ if  (condition) {
 
 
 [You can have a look at the full Java Coding Convention, HERE](https://www.oracle.com/technetwork/java/codeconventions-150003.pdf)
+
 
 As the team is working in parallel it gets very important for everyone to follow a style of code development that is standard throughout, for this reason everytime a new development in terms of coding is done in the application it is reviewed by the SCRUM MASTER of our team. It enables us to keep a strict check that the coding conventions are not violated throughout our code. 
 
