@@ -17,10 +17,12 @@ The design pattern, that we are using in our Money Control- Application is "Mode
 Let's first know what Model, View and Controller means in MVC pattern and then we can move to an example on how this concept in used in our Application.
 
 • The Model contains only the pure application data, it contains no logic describing how to present the data to a user.
+
 • The View is the UI layer  —  it does visualisation of the data from the Model.
+
 • The Controller exists between the view and the model. It is the logic layer, gets notified of the user’s behavior and updates the Model as needed.
 
-The MVC implemented in our application development has, the model represented by DataBaseHelper class in our apaplication that stores all the data and manipulation methods, which is further linked with MainActivity class surving as Controller, linked to all activity classes which are the view. A graphical respresentation of the MVC pattern;
+The MVC implemented in our application development has, the model represented by DataBaseHelper class in our apaplication that stores all the data and manipulation methods, which is further linked with MainActivity class surving as Controller, linked to all activity classes which are the view. A graphical respresentation of the MVC pattern:
 
 ![MVCPattern]({{site.baseurl}}/images/designpattern.jpg)
 
@@ -39,11 +41,11 @@ Some of the Examples from the Coding Conventions and related code fragments from
 
 1) The convention states that files in the program should not exceed 2000 lines 
 
-- Every class in our program is less than 500 lines.
+*Every class in our program is less than 500 lines.*
 
 2) Naming convention states that each class in the program should follow, CamelCasing. Meaning, first letter of each internal word capitalized.
 
-- Every class in our program followed CamelCasing rule. e.g: Categories, DatabaseHelper.
+*Every class in our program followed CamelCasing rule. e.g: Categories, DatabaseHelper.*
 
 3) The if and if-else statements according to coding convention should be stated as 
 
@@ -71,7 +73,7 @@ if  (condition) {
  ![MVCPattern]({{site.baseurl}}/images/CodeExample.JPG)
 
 
-[You can have a look at the full Java Coding Convention, HERE](https://www.oracle.com/technetwork/java/codeconventions-150003.pdf)
+<span style="color:blue">[You can have a look at the full Java Coding Convention, HERE](https://www.oracle.com/technetwork/java/codeconventions-150003.pdf)</span>
 
 
 As the team is working in parallel it gets very important for everyone to follow a style of code development that is standard throughout, for this reason everytime a new development in terms of coding is done in the application it is reviewed by the SCRUM MASTER of our team. It enables us to keep a strict check that the coding conventions are not violated throughout our code. 
@@ -107,10 +109,15 @@ Our Customer wants to develop an app for Money Management. Requirements given by
 | **Security Requirements:**                             |               		                                                |
 | 1) Single user access.                                 |              			                                             |  
 | 2) Security Pin to open the app.                       | **Additional:** User can enable and disable the Security Pin.      |  
+|                                                        | 	                                                                  |
 | **Input Requirements:**                                |			                                                            |
-| 1) Compatibility with Andriod version 6 and above.     |       		                                                         |
-| 2) Numeric Keyboard to enter transactions.             |      			                                                      |  
-| 3) QWETRY Keyboard elsewhere.                          |      			                                                      |  
+| 1) User must be able to input their income/expense.    |       		                                                         |
+| 2) Predefined categories of the expenses.              |      			                                                      |  
+| 3) Option for user to define expense categories.       |      			                                                      |  
+| 4) Records generated as per spending and date.         |                                                                    |
+| 5) Payment Method can be selected by user (Card/Cash). |                                                                    |
+| 6) Recurrence can be defined at each transaction.      |                                                                    |
+| 7) Every transaction should have a field of notes.     |                                                                    |
 
 
 ## Working Prototype
