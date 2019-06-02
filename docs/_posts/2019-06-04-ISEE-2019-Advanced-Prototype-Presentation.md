@@ -1,4 +1,4 @@
-![companylogo]({{site.baseurl}}/images/405logo.png)
+![companylogo]({{site.baseurl}}/images/405Logo.JPG)
 
 # Advanced Prototype 
 
@@ -76,7 +76,7 @@ if  (condition) {
 <span style="color:#0000FF">[You can have a look at the full Java Coding Convention, HERE](https://www.oracle.com/technetwork/java/codeconventions-150003.pdf)</span>
 
 
-As the team is working in parallel it gets very important for everyone to follow a style of code development that is standard throughout, for this reason everytime a new development in terms of coding is done in the application it is reviewed by the SCRUM MASTER of our team. It enables us to keep a strict check that the coding conventions are not violated throughout our code. 
+As the our team is working in parallel it gets very important for everyone to follow a style of code development that is standard throughout, for this reason everytime a new development in terms of coding is done in the application it is reviewed by the SCRUM MASTER of our team. It enables us to keep a strict check that the coding conventions are not violated throughout our code. 
 
 
 ### Context of Use - Personas
@@ -124,7 +124,7 @@ Our Customer wants to develop an app for Money Management. Requirements given by
 |                                                        | 1) Option to send in email to an id with Monthly summary of transactions |
 |                                                        | 2) Dashboard with charts displaying transaction by categories	         |
 
-
+<br>
 
 
 Due to the change/addition in requirement few of the user stories have new acceptance criteria:
