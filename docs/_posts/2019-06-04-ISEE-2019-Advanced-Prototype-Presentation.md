@@ -30,7 +30,7 @@ The Model-View-Controller pattern highly supports the separation of concerns. Th
 -----------
 
 
-#### Coding Conventions:
+### Coding Conventions:
 
 Coding Covention helps different developers working in the same team to read through each other codes and also following these conventions helps in developing a clean code which make it easier for maintenance and enhance its efficiency. Coding convention that is followed through out in 405-Found are Java Code Conventions (by Oracle) - as the software is developed using Java Language so it makes sense to follow them. 
 
@@ -77,7 +77,7 @@ if  (condition) {
 As the team is working in parallel it gets very important for everyone to follow a style of code development that is standard throughout, for this reason everytime a new development in terms of coding is done in the application it is reviewed by the SCRUM MASTER of our team. It enables us to keep a strict check that the coding conventions are not violated throughout our code. 
 
 
-#### Context of Use - Personas
+### Context of Use - Personas
 Identify the people who will use the application by developing at least two personas 
 
 Example 1
@@ -85,7 +85,7 @@ Example 1
 Example 2
 
 
-#### Create Design Solution
+### Create Design Solution
 Provide a storyboard (i.e., a sequence of screens) for at least two user stories) together with a brief explanation
 • What was the rationale of your chosen design? Based on which principles did you design your App?
 
