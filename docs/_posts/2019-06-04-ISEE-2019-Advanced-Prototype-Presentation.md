@@ -32,9 +32,16 @@ The Model-View-Controller pattern highly supports the separation of concerns. Th
 
 #### Coding Conventions:
 
-Coding Covention helps different developers working in the same team to read through each other codes and also following these conventions helps in developing a clean code which make it easier for maintenance and enhance its efficiency. Coding convention that is followed through out in 405-Found are Java Code Conventions - as the software is developed using Java Language so it makes sense to follow them. 
- 
-Example from Code 
+Coding Covention helps different developers working in the same team to read through each other codes and also following these conventions helps in developing a clean code which make it easier for maintenance and enhance its efficiency. Coding convention that is followed through out in 405-Found are Java Code Conventions (by Oracle) - as the software is developed using Java Language so it makes sense to follow them. 
+
+
+Some of the Examples from the Coding Conventions and related code fragments from our project are as follows;
+
+1) The convention states that files in the program should not exceed 2000 lines 
+- Every class in our program is less than 500 lines.
+
+2) Naming convention states that each class in the program should follow, CamelCasing. Meaning, first letter of each internal word capitalized.
+- Every class in our program followed CamelCasing rule. e.g: Categories, DatabaseHelper.
 
 As the team is working in parallel it gets very important for everyone to follow a style of code development that is standard throughout, for this reason everytime a new development in terms of coding is done in the application it is reviewed by the SCRUM MASTER of our team. It enables us to keep a strict check that the coding conventions are not violated throughout our code. 
 
