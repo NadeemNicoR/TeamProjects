@@ -40,6 +40,7 @@ The Model-View-Controller pattern highly supports the separation of concerns. Th
 
 <h2> IMPLEMENTATION & UI: </h2>
 -----------
+<p class="justify">
 
 <h2> Coding Conventions </h2>
 
