@@ -1,13 +1,13 @@
 ![companylogo]({{site.baseurl}}/images/405logo.png)
 
-# <h1 text-aline="center"> Advanced Prototype </h1>
+<h1 text-aline="center"> Advanced Prototype </h1>
 
 Welcome to the third blog post of 405 Found - Money Control Application. It will give you an update on the 3rd Milestone that we have achieved in our project also how our basic prototype application has been evolved with the new requirements that has been added by our customers into a final Advanced prototype.
 
 Without further ado, Lets Start...
 
 
-##<h2> Using a particular Software Design Pattern and the reasons behind it!  </h2>
+<h2> Using a particular Software Design Pattern and the reasons behind it!  </h2>
 ---------------
 <p class="justify">
  
@@ -35,7 +35,7 @@ The MVC implemented in our application development has, the model represented by
 
 
 
-## <h2> IMPLEMENTATION & UI: </h2>
+<h2> IMPLEMENTATION & UI: </h2>
 
 
 
