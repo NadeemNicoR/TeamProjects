@@ -100,7 +100,7 @@ Our Customer wants to develop an app for Money Management. Requirements given by
 
  
 | Requirements Sprint 1                                  | Requirements Sprint 2		                                                |
-| -------------------------------                        |------------------------------:	                                          | 
+| -------------------------------                        |------------------------------	                                          | 
 | **System Requirements:**                               |			                                                                  |
 | 1) Compatibility with Andriod version 6 and above.     |       		                                                               |
 | 2) Numeric Keyboard to enter transactions.             |      			                                                            |  
