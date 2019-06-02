@@ -67,10 +67,10 @@ if  (condition) {
   
   }
     
-    
- - an example from our code is;
  
- ![MVCPattern]({{site.baseurl}}/images/CodeExample.JPG)
+ *an example from our code is:*
+ 
+ ![CodeExample]({{site.baseurl}}/images/CodeExample.JPG)
 
 
 <span style="color:blue">[You can have a look at the full Java Coding Convention, HERE](https://www.oracle.com/technetwork/java/codeconventions-150003.pdf)</span>
