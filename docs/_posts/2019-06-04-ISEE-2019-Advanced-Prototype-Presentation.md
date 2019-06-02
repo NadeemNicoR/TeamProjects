@@ -93,18 +93,24 @@ Provide a storyboard (i.e., a sequence of screens) for at least two user stories
 ## Summary of Changes:
 ----------
 
- 
-| Requirements Sprint 1				                    | Requirements Sprint 2		                                       |
-| -------------------------------			           |:------------------------------:	                                 | 
-| **System Requirements:**      			              |			                                                         |
-| 1) Compatibility with Andriod version 6 and above. |       		                                                      |
-| 2) Numeric Keyboard to enter transactions. 	     |      			                                                   |  
-| 3) QWETRY Keyboard elsewhere.                      |      			                                                   |  
-|                              			              | 	                                                               |
-| **Security Requirements:**                         |               		                                             |
-| 1) Single user access                       	     |              			                                             |  
-| 2) Security Pin to open the app.                   | **Additional:** User can enable and disable the Security Pin.    |  
+Our Customer wants to develop an app for Money Management. Requirements given by the customer in both the sprints are described in the table below:
 
+
+ 
+| Requirements Sprint 1                                  | Requirements Sprint 2		                                          |
+| -------------------------------                        |:------------------------------:	                                 | 
+| **System Requirements:**                               |			                                                            |
+| 1) Compatibility with Andriod version 6 and above.     |       		                                                         |
+| 2) Numeric Keyboard to enter transactions.             |      			                                                      |  
+| 3) QWETRY Keyboard elsewhere.                          |      			                                                      |  
+|                                                        | 	                                                                  |
+| **Security Requirements:**                             |               		                                                |
+| 1) Single user access.                                 |              			                                             |  
+| 2) Security Pin to open the app.                       | **Additional:** User can enable and disable the Security Pin.      |  
+| **Input Requirements:**                                |			                                                            |
+| 1) Compatibility with Andriod version 6 and above.     |       		                                                         |
+| 2) Numeric Keyboard to enter transactions.             |      			                                                      |  
+| 3) QWETRY Keyboard elsewhere.                          |      			                                                      |  
 
 
 ## Working Prototype
