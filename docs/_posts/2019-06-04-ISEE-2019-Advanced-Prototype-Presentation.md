@@ -21,14 +21,14 @@ Without further ado, Lets Start...
 • The View is the UI layer — it does visualisation of the data from the Model.
 • The Controller exists between the view and the model. It is the logic layer, gets notified of the user’s behavior and updates the Model as needed.
 
-The MVC implemented in our application development has, the model represented by DataBaseHelper class in our apaplication that stores all the data and manipulation methods, which is further linked with MainActivity class surving as Controller, linked to all activity classes which are the view. 
+The MVC implemented in our application development has, the model represented by DataBaseHelper class in our apaplication that stores all the data and manipulation methods, which is further linked with MainActivity class surving as Controller, linked to all activity classes which are the view. A graphical respresentation of the MVC pattern;
+
+![MVC pattern]({{site.baseurl}}/images/designpattern.PNG)
 
 
 
 
 
-
-A graphical respresentation of the MVC pattern
 
 
 
