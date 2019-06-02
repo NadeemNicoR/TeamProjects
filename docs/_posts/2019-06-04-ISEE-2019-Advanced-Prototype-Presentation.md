@@ -46,14 +46,26 @@ Some of the Examples from the Coding Conventions and related code fragments from
 3) The if and if-else statements according to coding convention should be stated as 
    
    if  (condition) { 
+   
+   
         statements;
-        }
+   
+   
+   }
         
    if  (condition) { 
-        statements;
+   
+   
+         statements;
+    
+    
     } else {
-        statements;
+    
+    
+         statements;
     }
+    
+    
  - an example from our code is;
  
  ![MVCPattern]({{site.baseurl}}/images/CodeExample.JPG)
