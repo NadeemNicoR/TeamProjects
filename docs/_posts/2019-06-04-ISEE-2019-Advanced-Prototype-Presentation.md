@@ -90,12 +90,19 @@ Understanding our customer needs, challenges and behavioural influences allows u
 
 
 The discovery question that we focused on to built our personas are as follows:
+
 1) Location: where do people from this persona live?
+
 2) Age: what is the average age/age range of this persona?
+
 3) Relationship Status: Single? Married? Children?
+
 4) Education: what level of education do they have?
+
 5) Frustrations: biggest challenges for people in this persona?
+
 6) Motivations: what motivates people in this persona to be successful?
+
 7) Personal/Professional Goals: what do they wish to achieve?
 
 
