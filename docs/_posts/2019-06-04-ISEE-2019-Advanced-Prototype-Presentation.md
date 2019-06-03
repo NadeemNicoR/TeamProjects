@@ -192,6 +192,8 @@ Our Customer wants to develop an app for Money Management. Requirements given by
 <br>
 
 
+![Requirements]({{site.baseurl}}/images/Requirements.jpg)
+
 Due to the change/addition in requirement few of the user stories that involved for example login activity and adding transaction have changed to incorporate the new requirements. Similarly, in UML class diagram, methods like disabling pin, sending summary of transactions by email, method to delete transactions etc. have been added. An example from user case stories is below: 
 
 
