@@ -110,7 +110,7 @@ The persona that we have developed are:
 ![PersonaDevelopment]({{site.baseurl}}/images/Persona11.jpg)
 
 
-![PersonaDevelopment]({{site.baseurl}}/images/Picture22.jpg)
+![PersonaDevelopment]({{site.baseurl}}/images/Persona22.jpg)
 
 
 ## Story Board 
