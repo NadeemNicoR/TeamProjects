@@ -7,7 +7,7 @@ Welcome to the third blog post of 405 Found - Money Control Application. It will
 Without further ado, Lets Start...
 
 ## Using a particular Software Design Pattern and the reasons behind it:  
----------------
+-----------
 
 
 In software development world, design pattern is referred to as a general repeatable solution to a commonly occurring problem in your software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
@@ -158,7 +158,7 @@ We have applied as many principles as we could to our project. The goal is to de
 
 
 ## Summary of Changes:
-----------
+-----------
 
 Our Customer wants to develop an app for Money Management. Requirements given by the customer in both the sprints are described in the table below:
 
@@ -169,7 +169,13 @@ Our Customer wants to develop an app for Money Management. Requirements given by
 Due to the change/addition in requirement few of the user stories that involved for example login activity and adding transaction have changed to incorporate the new requirements. Similarly, in UML class diagram, methods like disabling pin, sending summary of transactions by email, method to delete transactions etc. have been added. An example from user case stories is below: 
 
 
-![UserStoryChange]({{site.baseurl}}/images/UserStory.jpg)
+Before the change
+
+![UserStoryChange]({{site.baseurl}}/images/US_Bef.png)
+
+After the change
+
+![UserStoryChange]({{site.baseurl}}/images/US_Bef.png)
 
 
 ## Working Prototype
