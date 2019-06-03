@@ -2,7 +2,7 @@
 
 # Advanced Prototype 
 
-Welcome to the third blog post of 405 Found - Money Control Application. It will give you an update on the 3rd Milestone that we have achieved in our project also how our basic prototype application has been evolved with the new requirements that has been added by our customers into a final Advanced prototype.
+Welcome to the third blog post of 405 Found - Money Control Application. It will give you an update on the 3rd Milestone that we have achieved in our project also how our basic prototype application has been evolved with the new requirements that has been added by our customers into a final advanced prototype.
 
 Without further ado, Lets Start...
 
@@ -10,7 +10,7 @@ Without further ado, Lets Start...
 ---------------
 
 
-In Software development world, design pattern is referred to as a general repeatable solution to a commonly occuring problem in your software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
+In software development world, design pattern is referred to as a general repeatable solution to a commonly occuring problem in your software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
 
 The design pattern, that we are using in our Money Control- Application is "Model-View-Controller (MVC)" design pattern, which specifies that an application consist of a data model, presentation information, and control information.
 
@@ -34,12 +34,12 @@ The Model-View-Controller pattern highly supports the separation of concerns. Th
 
 ## Coding Conventions:
 
-Coding Covention helps different developers working in the same team to read through each other codes and also following these conventions helps in developing a clean code which make it easier for maintenance and enhance its efficiency. Coding convention that is followed through out in 405-Found are Java Code Conventions (by Oracle) - as the software is developed using Java Language so it makes sense to follow them. 
+Coding covention helps different developers working in the same team to read through each other´s codes, and also following these conventions helps in developing a clean code which make it easier for maintenance and enhance its efficiency. Coding convention that is followed through out in 405-Found are Java Code Conventions (by Oracle) - as the software is developed using Java Language so it makes sense to follow them. 
 
 
 Some of the Examples from the Coding Conventions and related code fragments from our project are as follows;
 
-1) The convention states that files in the program should not exceed 2000 lines 
+1) The convention states that files in the program should not exceed 2000 lines. 
 
 *Every class in our program is less than 500 lines.*
 
@@ -47,7 +47,7 @@ Some of the Examples from the Coding Conventions and related code fragments from
 
 *Every class in our program followed CamelCasing rule. e.g: Categories, DatabaseHelper.*
 
-3) The if and if-else statements according to coding convention should be stated as 
+3) The if and if-else statements according to coding convention should be stated as, 
 
 
 if  (condition) { 
@@ -107,10 +107,10 @@ The persona that we have developed are:
 
 
 
-![PersonaDevelopment]({{site.baseurl}}/images/Persona1.jpg)
+![PersonaDevelopment]({{site.baseurl}}/images/Persona11.jpg)
 
 
-![PersonaDevelopment]({{site.baseurl}}/images/Picture2.jpg)
+![PersonaDevelopment]({{site.baseurl}}/images/Picture22.jpg)
 
 
 ## Story Board 
@@ -185,4 +185,4 @@ Please find the downloadable application link here: Download
 
 ---------
 
-> With every sprint we are getting closer to our goal and also completing our project. I hope you have enjoyed reading our journey of the Third Sprint. See you soon, AGAIN!!! (in the next ONE)
+> With every sprint we are getting closer to our goal and also completing our project. I hope you have enjoyed reading our journey of the Third Sprint. See you soon, AGAIN!!! (in a next ONE).
