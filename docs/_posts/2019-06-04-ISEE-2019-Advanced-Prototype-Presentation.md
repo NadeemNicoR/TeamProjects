@@ -137,7 +137,7 @@ In this picture you can see a journey of a user when he opens an app and wants t
 Above picture depectis how a user can sends/share a summary of all his/her transactions for the month, through email.
 
 
-## Create Design Solution
+## Design Principles
 
 
 Design Principles are fundamental points of advice for making easy-to-use, pleasurable designs as we select, create and organize elements and features in our work. The design principles that we have followed to use to develop our app are *"Andriod Design Principles"*, developed by and for the Android User Experience Team to keep users' best interests in mind.
