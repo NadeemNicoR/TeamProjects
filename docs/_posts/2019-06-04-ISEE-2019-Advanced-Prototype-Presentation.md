@@ -2,22 +2,31 @@
 
 # Advanced Prototype 
 
+<br>
+
 <p class="justified">
    
 Welcome to the third blog post of 405 Found - Money Control Application. It will give you an update on the 3rd Milestone that we have achieved in our project also how our basic prototype application has been evolved with the new requirements that has been added by our customers into a final advanced prototype.
 
 </p>
 
+</br>
+
+
 Without further ado, Lets Start...
 
 ## Using a particular Software Design Pattern and the reasons behind it:  
 -----------
+
+<br>
 
 <p class="justified">
    
 In software development world, design pattern is referred to as a general repeatable solution to a commonly occurring problem in your software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
 
 </p>
+
+</br>
 
 <p class="justified">
 
