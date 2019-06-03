@@ -162,37 +162,9 @@ We have applied as many principles as we could to our project. The goal is to de
 
 Our Customer wants to develop an app for Money Management. Requirements given by the customer in both the sprints are described in the table below:
 
-<br>
-
-
-| Requirements Sprint 1                                  | Requirements Sprint 2		                                                |
-| -------------------------------                        |------------------------------	                                          | 
-| **System Requirements:**                               |			                                                                  |
-| 1) Compatibility with Andriod version 6 and above.     |       		                                                               |
-| 2) Numeric Keyboard to enter transactions.             |      			                                                            |  
-| 3) QWETRY Keyboard elsewhere.                          |      			                                                            |  
-|                                                        | 	                                                                        |
-| **Security Requirements:**                             |               		                                                      |
-| 1) Single user access.                                 |              			                                                   |  
-| 2) Security Pin to open the app.                       | **Additional:** User can enable and disable the Security Pin.            |  
-|                                                        | 	                                                                        |
-| **Input Requirements:**                                |			                                                                  |
-| 1) User must be able to input their income/expense.    | **Additional:** Option to delete existing transactions.              		|
-| 2) Predefined categories of the expenses.              |      			                                                            |  
-| 3) Option for user to define expense categories.       | **Additional:** Icons realted to each category and library of icons.     |  
-|                                                        | **Additional:** Threshold as per category                                |
-| 4) Records generated as per spending and date.         |                                                                          |
-| 5) Payment Method can be selected by user (Card/Cash). |                                                                          |
-| 6) Recurrence can be defined at each transaction.      |                                                                          |
-| 7) Every transaction should have a field of notes.     |                                                                          |
-|                                                        | **Additional:**                                                          |
-|                                                        | 1) Option to send in email to an id with Monthly summary of transactions |
-|                                                        | 2) Dashboard with charts displaying transaction by categories	         |
-
-<br>
-
 
 ![Requirements]({{site.baseurl}}/images/Requirements.jpg)
+
 
 Due to the change/addition in requirement few of the user stories that involved for example login activity and adding transaction have changed to incorporate the new requirements. Similarly, in UML class diagram, methods like disabling pin, sending summary of transactions by email, method to delete transactions etc. have been added. An example from user case stories is below: 
 
