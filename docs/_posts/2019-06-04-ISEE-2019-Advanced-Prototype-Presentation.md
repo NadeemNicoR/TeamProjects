@@ -1,4 +1,4 @@
-   ![companylogo]({{site.baseurl}}/images/405Logo.JPG)
+   ![companylogo]({{site.baseurl}}/images/405logo.png)
 
 # Advanced Prototype 
 
@@ -177,7 +177,7 @@ Lets have a look.
 **1. PIN activation screen sequence:**
 
 
-![StoryBoard1]({{site.baseurl}}/images/StoryBoard11.jpg)
+![StoryBoard1]({{site.baseurl}}/images/StoryBoard11.png)
 
 
 In this picture you can see a journey of a user when he opens an app and wants to save a PIN for the furture access of the app.
@@ -186,7 +186,7 @@ In this picture you can see a journey of a user when he opens an app and wants t
 **2. Email Summary screen sequence:**
 
 
-![StoryBoard2]({{site.baseurl}}/images/StoryBoard22.jpg)
+![StoryBoard2]({{site.baseurl}}/images/StoryBoard22.png)
 
 
 Above picture depectis how a user can sends/share a summary of all his/her transactions for the month, through email.
@@ -209,25 +209,25 @@ We have applied as many principles as we could to our project. The goal is to de
 <br>
 <p class="justify">
 
-**Keep it brief:** Through out our application we have used short phrases and simple words. People are likely to skip sentences if they're long and get frustrated if they don't know at the end what action they need to take or if encoutaring an error what that error really mean.
+<b>Keep it brief:</b> Through out our application we have used short phrases and simple words. People are likely to skip sentences if they're long and get frustrated if they don't know at the end what action they need to take or if encoutaring an error what that error really mean.
 
 </p>
 <br>
 <p class="justify">
 
-**Let me make it mine:** People love to add personal touches because it helps them feel at home and in control. We have provided sensible, beautiful defaults, in our categories section but also considered optional customizations that can be done by the user that doesn't hinder primary tasks.
+<b>Let me make it mine:</b> People love to add personal touches because it helps them feel at home and in control. We have provided sensible, beautiful defaults, in our categories section but also considered optional customizations that can be done by the user that doesn't hinder primary tasks.
 
 </p>
 <br>
 <p class="justify">
 
-**Decide for me but let me have the final say:** Taking your best guess and act rather than asking first we have made our app to be able to open without a PIN. Too many choices and decisions make people unhappy. Just in case user needs the app security, we have kept an option to enable the PIN.
+<b>Decide for me but let me have the final say:</b> Taking your best guess and act rather than asking first we have made our app to be able to open without a PIN. Too many choices and decisions make people unhappy. Just in case user needs the app security, we have kept an option to enable the PIN.
 
 </p>
 <br>
 <p class="justify">
 
-**Do the heavy lifting for me:** This features has been incoporated in our app by providing the user with drop down lists and date and time pickers which will not only restrict the user to put in the right values in right formats in the app but will also make it easier for them to log in the data.
+<b>Do the heavy lifting for me:</b> This features has been incoporated in our app by providing the user with drop down lists and date and time pickers which will not only restrict the user to put in the right values in right formats in the app but will also make it easier for them to log in the data.
 
 </p>
 <br>
@@ -269,7 +269,9 @@ After the change:
 Have a look at our advanced prototype and some key features of Sprint 3:
 
 
+
 ![AdvancedPrototype]({{site.baseurl}}/images/AdvancedPrototype2.png)
+
 
 
 Please find the downloadable application link here: Download
