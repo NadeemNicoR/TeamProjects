@@ -176,6 +176,7 @@ Lets have a look.
 
 **1. PIN activation screen sequence:**
 
+![StoryBoard1]({{site.baseurl}}/images/StoryBoard1.1.png)
 
 ![StoryBoard1]({{site.baseurl}}/images/StoryBoard11.png)
 
@@ -185,6 +186,7 @@ In this picture you can see a journey of a user when he opens an app and wants t
 
 **2. Email Summary screen sequence:**
 
+![StoryBoard2]({{site.baseurl}}/images/StoryBoard2.1.png)
 
 ![StoryBoard2]({{site.baseurl}}/images/StoryBoard22.png)
 
@@ -238,7 +240,7 @@ We have applied as many principles as we could to our project. The goal is to de
 <br>
 <p class="justify">
 
-Our Customer wants to develop an app for Money Management. Requirements given by him for both of the epic-user stories are described in the table below:
+The illustration below, depicts the requirements for the first epic-user story as well as the second, it needs to be mentioned that, among the second set of user stories there are new requirements and changed requirements.
 
 </p>
 <br>
@@ -248,7 +250,7 @@ Our Customer wants to develop an app for Money Management. Requirements given by
 <br>
 <p class="justify">
 
-Due to the change/addition in requirements few of the user stories that involved for example login activity and adding transaction have changed to incorporate the new requirements. Similarly, in UML class diagram, methods like disabling pin, sending summary of transactions by email, method to delete transactions etc. have been added. An example from user case stories is below: 
+To remark the previously mentioned changes, we decided to show the most explicit one, which is related with the use of a PIN in order to enter the application.
 
 </p>
 <br>
@@ -261,13 +263,22 @@ After the change:
 
 ![UserStoryChange]({{site.baseurl}}/images/US_Bef.png)
 
-![UserStoryChange]({{site.baseurl}}/images/ClassDiagram.jpeg)
+<p class="justify">
+   
+Since the changes and the new requirements influenced the structure of the application itself, the best way to visualize them is by using the class diagram. There the most significative changes (Class level) have been especified.
+
+</p>
+
+![UserStoryChange]({{site.baseurl}}/images/ClassDiagram.png)
 
 ## Working Prototype
 -----
 
 Have a look at our advanced prototype and some key features of Sprint 3:
 
+
+
+![AdvancedPrototype]({{site.baseurl}}/images/AdvancedPrototype2.1.png)
 
 
 ![AdvancedPrototype]({{site.baseurl}}/images/AdvancedPrototype2.png)
