@@ -140,6 +140,22 @@ Above picture depectis how a user can sends/share a summary of all his/her trans
 ## Create Design Solution
 
 
+Design Principles are fundamental points of advice for making easy-to-use, pleasurable designs as we select, create and organize elements and features in our work. The design principles that we have followed to use to develop our app are *"Andriod Design Principles"*, developed by and for the Android User Experience Team to keep users' best interests in mind.
+
+We have applied as many principles as we could to our project. The goal is to develop an app that is widely loved by a variety of users.
+
+
+**Keep it brief:** Through out our application we have used short phrases and simple words. People are likely to skip sentences if they're long and get frustrated if they don't know at the end what action they need to take or if encoutaring an error what that error really mean.
+
+
+**Let me make it mine:** People love to add personal touches because it helps them feel at home and in control. We have provided sensible, beautiful defaults, in our categories section but also considered optional customizations that can be done by the user that doesn't hinder primary tasks.
+
+
+**Decide for me but let me have the final say:** Taking your best guess and act rather than asking first we have made our app to be able to open without a PIN. Too many choices and decisions make people unhappy. Just in case user needs the app security, we have kept an option to enable the PIN.
+
+
+**Do the heavy lifting for me:** This features has been incoporated in our app by providing the user with drop down lists and date and time pickers which will not only restrict the user to put in the right values in right formats in the app but will also make it easier for them to log in the data.
+
 
 ## Summary of Changes:
 ----------
@@ -185,7 +201,10 @@ Due to the change/addition in requirement few of the user stories that involved 
 ## Working Prototype
 -----
 
-Screenshots of Application
+Have a look at our advanced prototype and some key features of Sprint 3:
+
+
+![AdvancedPrototype]({{site.baseurl}}/images/AdvancedPrototype.jpg)
 
 
 Please find the downloadable application link here: Download
