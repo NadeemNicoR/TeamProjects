@@ -1,4 +1,4 @@
-                                   ![companylogo]({{site.baseurl}}/images/405Logo.JPG)
+   ![companylogo]({{site.baseurl}}/images/405Logo.JPG)
 
 # Advanced Prototype 
 
