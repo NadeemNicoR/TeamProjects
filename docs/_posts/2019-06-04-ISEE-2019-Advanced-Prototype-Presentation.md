@@ -32,7 +32,7 @@ The Model-View-Controller pattern highly supports the separation of concerns. Th
 -----------
 
 
-### Coding Conventions:
+## Coding Conventions:
 
 Coding Covention helps different developers working in the same team to read through each other codes and also following these conventions helps in developing a clean code which make it easier for maintenance and enhance its efficiency. Coding convention that is followed through out in 405-Found are Java Code Conventions (by Oracle) - as the software is developed using Java Language so it makes sense to follow them. 
 
@@ -79,7 +79,7 @@ if  (condition) {
 As our team is working in parallel it gets very important for everyone to follow a style of code development that is standard throughout, for this reason everytime a new development in terms of coding is done in the application it is reviewed by the SCRUM MASTER of our team. It enables us to keep a strict check that the coding conventions are not violated throughout our code. 
 
 
-### Context of Use - Personas
+## Context of Use - Personas
 
 Customer Personas are fictional generalisations of our most valuable customers. They help to understand customers by bringing together demographic information like age, gender, location, and income, alongside psychographic information like interests, frustrations and personal/professional motivations.
 
@@ -113,7 +113,7 @@ The persona that we have developed are:
 ![PersonaDevelopment]({{site.baseurl}}/images/Picture2.jpg)
 
 
-### Story Board 
+## Story Board 
 
 Here in the Story board we will potray how our app transitions through two of the user stories/scenarios. Are you ready??
 
@@ -137,7 +137,7 @@ In this picture you can see a journey of a user when he opens an app and wants t
 Above picture depectis how a user can sends/share a summary of all his/her transactions for the month, through email.
 
 
-### Create Design Solution
+## Create Design Solution
 
 
 
