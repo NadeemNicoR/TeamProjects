@@ -2,7 +2,11 @@
 
 # Advanced Prototype 
 
+<p class="justified">
+   
 Welcome to the third blog post of 405 Found - Money Control Application. It will give you an update on the 3rd Milestone that we have achieved in our project also how our basic prototype application has been evolved with the new requirements that has been added by our customers into a final advanced prototype.
+
+<p>
 
 Without further ado, Lets Start...
 
@@ -160,20 +164,21 @@ We have applied as many principles as we could to our project. The goal is to de
 ## Summary of Changes:
 -----------
 
-Our Customer wants to develop an app for Money Management. Requirements given by the customer in both the sprints are described in the table below:
+Our Customer wants to develop an app for Money Management. Requirements given by him for both of the epic-user stories are described in the table below:
 
 
 ![Requirements]({{site.baseurl}}/images/Requirements.jpg)
 
 
-Due to the change/addition in requirement few of the user stories that involved for example login activity and adding transaction have changed to incorporate the new requirements. Similarly, in UML class diagram, methods like disabling pin, sending summary of transactions by email, method to delete transactions etc. have been added. An example from user case stories is below: 
+
+Due to the change/addition in requirements few of the user stories that involved for example login activity and adding transaction have changed to incorporate the new requirements. Similarly, in UML class diagram, methods like disabling pin, sending summary of transactions by email, method to delete transactions etc. have been added. An example from user case stories is below: 
 
 
-Before the change
+Before the change:
 
 ![UserStoryChange]({{site.baseurl}}/images/US_Bef.png)
 
-After the change
+After the change:
 
 ![UserStoryChange]({{site.baseurl}}/images/US_Bef.png)
 
