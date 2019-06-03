@@ -122,7 +122,7 @@ Lets have a look.
 **1. PIN activation screen sequence:**
 
 
-![StoryBoard1]({{site.baseurl}}/images/StoryBoard1.JPG)
+![StoryBoard1]({{site.baseurl}}/images/StoryBoard11.jpg)
 
 
 In this picture you can see a journey of a user when he opens an app and wants to save a PIN for the furture access of the app.
@@ -131,7 +131,7 @@ In this picture you can see a journey of a user when he opens an app and wants t
 **2. Email Summary screen sequence:**
 
 
-![StoryBoard2]({{site.baseurl}}/images/StoryBoard2.jpg)
+![StoryBoard2]({{site.baseurl}}/images/StoryBoard22.jpg)
 
 
 Above picture depectis how a user can sends/share a summary of all his/her transactions for the month, through email.
@@ -204,7 +204,7 @@ Due to the change/addition in requirement few of the user stories that involved 
 Have a look at our advanced prototype and some key features of Sprint 3:
 
 
-![AdvancedPrototype]({{site.baseurl}}/images/AdvancedPrototype.jpg)
+![AdvancedPrototype]({{site.baseurl}}/images/AdvancedPrototype2.jpg)
 
 
 Please find the downloadable application link here: Download
