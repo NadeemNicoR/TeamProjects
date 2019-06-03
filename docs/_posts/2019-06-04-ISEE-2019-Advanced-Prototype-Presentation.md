@@ -261,6 +261,7 @@ After the change:
 
 ![UserStoryChange]({{site.baseurl}}/images/US_Bef.png)
 
+![UserStoryChange]({{site.baseurl}}/images/ClassDiagram.jpeg)
 
 ## Working Prototype
 -----
@@ -268,7 +269,7 @@ After the change:
 Have a look at our advanced prototype and some key features of Sprint 3:
 
 
-![AdvancedPrototype]({{site.baseurl}}/images/AdvancedPrototype2.jpg)
+![AdvancedPrototype]({{site.baseurl}}/images/AdvancedPrototype2.png)
 
 
 Please find the downloadable application link here: Download
