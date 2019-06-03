@@ -113,9 +113,16 @@ The persona that we have developed are:
 ![PersonaDevelopment]({{site.baseurl}}/images/Picture2.jpg)
 
 
-
-
 ### Story Board 
+
+Here in the Story board we will potray how our app transitions through two of the user stories/scenarios. Are you ready??
+
+Lets have a look.
+
+
+![StoryBoard1]({{site.baseurl}}/images/StoryBoard1.JPG)
+
+
 
 
 ### Create Design Solution
