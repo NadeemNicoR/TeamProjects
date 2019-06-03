@@ -76,17 +76,14 @@ if  (condition) {
 <span style="color:#0000FF">[You can have a look at the full Java Coding Convention, HERE](https://www.oracle.com/technetwork/java/codeconventions-150003.pdf)</span>
 
 
-As the our team is working in parallel it gets very important for everyone to follow a style of code development that is standard throughout, for this reason everytime a new development in terms of coding is done in the application it is reviewed by the SCRUM MASTER of our team. It enables us to keep a strict check that the coding conventions are not violated throughout our code. 
+As our team is working in parallel it gets very important for everyone to follow a style of code development that is standard throughout, for this reason everytime a new development in terms of coding is done in the application it is reviewed by the SCRUM MASTER of our team. It enables us to keep a strict check that the coding conventions are not violated throughout our code. 
 
 
 ### Context of Use - Personas
 
 Customer Personas are fictional generalisations of our most valuable customers. They help to understand customers by bringing together demographic information like age, gender, location, and income, alongside psychographic information like interests, frustrations and personal/professional motivations.
 
-Understanding our customer needs, challenges and behavioural influences allows us to better understand what content appeal to them best. Alot of thought goes into developing persons in software development process:
-
-
- ![PersonaDevelopment]({{site.baseurl}}/images/Persona2.jpg)
+Understanding our customer needs, challenges and behavioural influences allows us to better understand what content appeal to them best. Alot of thought goes into developing persons in software development process.
 
 
 The discovery question that we focused on to built our personas are as follows:
@@ -109,12 +106,21 @@ The discovery question that we focused on to built our personas are as follows:
 The persona that we have developed are:
 
 
- ![PersonaDevelopment]({{site.baseurl}}/images/Persona3.jpg)
+
+![PersonaDevelopment]({{site.baseurl}}/images/Persona1.jpg)
+
+
+![PersonaDevelopment]({{site.baseurl}}/images/Picture2.jpg)
+
+
+
+
+### Story Board 
 
 
 ### Create Design Solution
 Provide a storyboard (i.e., a sequence of screens) for at least two user stories) together with a brief explanation
-• What was the rationale of your chosen design? Based on which principles did you design your App?
+What was the rationale of your chosen design? Based on which principles did you design your App?
 
 
 ## Summary of Changes:
@@ -152,7 +158,7 @@ Our Customer wants to develop an app for Money Management. Requirements given by
 <br>
 
 
-Due to the change/addition in requirement few of the user stories have new acceptance criteria:
+Due to the change/addition in requirement few of the user stories that involved for example login activity and adding transaction have changed to incorporate the new requirements. Similarly, in UML class diagram, methods like disabling pin, sending summary of transactions by email, method to delete transactions etc. have been added. An example from user case stories is below: 
 
 
 ![UserStoryChange]({{site.baseurl}}/images/UserStory.jpg)
