@@ -157,6 +157,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor res = db.rawQuery("select * from "+TABLE_CATEGORIES,null);
         return res;
+        //////
     }
     public Cursor dynamic_query(String query) {
         SQLiteDatabase db = this.getWritableDatabase();
