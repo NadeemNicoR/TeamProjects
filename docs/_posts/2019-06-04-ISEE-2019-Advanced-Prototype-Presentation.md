@@ -6,7 +6,7 @@
 
 <p class="justify">
    
-Welcome to the third blog post of 405 Found - Money Control Application. It will give you an update on the 3rd Milestone that we have achieved in our project also how our basic prototype application has been evolved with the new requirements that has been added by our customers into a final advanced prototype.
+Welcome to the third blog post of 405 Found - Money Control Application. It will give you an update on the 3rd Milestone that we have achieved in our project. Also how our basic prototype application has been evolved with the new requirements that has been added by our customer into a final advanced prototype.
 
 </p>
 
@@ -22,7 +22,7 @@ Without further ado, Lets Start...
 
 <p class="justify">
    
-In software development world, design pattern is referred to as a general repeatable solution to a commonly occurring problem in your software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
+In software development world design pattern is referred to as a general repeatable solution to a commonly occurring problem in your software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
 
 </p>
 
@@ -30,7 +30,7 @@ In software development world, design pattern is referred to as a general repeat
 
 <p class="justify">
 
-The design pattern, that we are using in our Money Control- Application is "Model-View-Controller (MVC)" design pattern, which specifies that an application consist of a data model, presentation information, and control information.
+The design pattern, that we are using in our Money Control- Application is Model-View-Controller (MVC) design pattern, which specifies that an application consist of a data model, presentation information, and control information.
 
 </p>
 <br>
@@ -41,16 +41,16 @@ Let's first know what Model, View and Controller means in MVC pattern and then w
 </p>
 <br>
 
-• The Model contains only the pure application data, it contains no logic describing how to present the data to a user.
+• The Model contains only the pure application data. It contains no logic describing how to present the data to a user.
 
-• The View is the UI layer  —  it does visualisation of the data from the Model.
+• The View is the UI layer. It does visualisation of the data from the Model.
 
 • The Controller exists between the view and the model. It is the logic layer, gets notified of the user’s behavior and updates the Model as needed.
 
 <br>
 <p class="justify">
 
-The MVC implemented in our application development has, the model represented by DataBaseHelper class in our apaplication that stores all the data and manipulation methods, which is further linked with MainActivity class surving as Controller, linked to all activity classes which are the view. A graphical respresentation of the MVC pattern:
+The MVC implemented in our application development has, the model represented by DataBaseHelper class in our application that stores all the data and manipulation methods. That is further linked with MainActivity class surving as Controller, linked to all activity classes which are the view. A graphical respresentation of the MVC pattern:
 
 </p>
 <br>
@@ -60,7 +60,7 @@ The MVC implemented in our application development has, the model represented by
 <br>
 <p class="justify">
 
-The Model-View-Controller pattern highly supports the separation of concerns. This advantage not only increases the testability of the code but it also makes it easier to extend, allowing a fairly easy implementation of new features. It also supports rapid and parallel development which we needed becuase of the tight deadlines of our delieverables we had to work in parallel.
+The Model-View-Controller pattern highly supports the separation of concerns. This advantage not only increases the testability of the code but it also makes it easier to extend, allowing a fairly easy implementation of new features. It also supports rapid and parallel development which we needed because of the tight deadlines of our delieverables we had to work in parallel.
 
 </p>
 <br>
@@ -74,39 +74,36 @@ The Model-View-Controller pattern highly supports the separation of concerns. Th
 <br>
 <p class="justify">
 
-Coding covention helps different developers working in the same team to read through each other´s codes, and also following these conventions helps in developing a clean code which make it easier for maintenance and enhance its efficiency. Coding convention that is followed through out in 405-Found are Java Code Conventions (by Oracle) - as the software is developed using Java Language so it makes sense to follow them. 
+Coding covention helps different developers working in the same team to read through each other´s codes. Following these conventions helps also in developing a clean code which make it easier for maintenance and enhance its efficiency. Coding convention that is followed through out in 405-Found are Java Code Conventions (by Oracle) - as the software is developed using Java Language so it makes sense to follow them. 
 
 </p>
 <br>
 
-Some of the Examples from the Coding Conventions and related code fragments from our project are as follows;
+Some of the Examples from the Coding Conventions and related code fragments from our project are as follows:
 
 1) The convention states that files in the program should not exceed 2000 lines. 
 
 *Every class in our program is less than 500 lines.*
 
-2) Naming convention states that each class in the program should follow, CamelCasing. Meaning, first letter of each internal word capitalized.
+2) Naming convention states that each class in the program should follow CamelCasing. Meaning first letter of each internal word is  capitalized.
 
 *Every class in our program followed CamelCasing rule. e.g: Categories, DatabaseHelper.*
 
-3) The if and if-else statements according to coding convention should be stated as, 
+3) The if and if-else statements according to coding convention should be stated as:
 
 
-if  (condition) { 
-   
-   statements;  
-   
+if  (condition) 
+{ 
+   statements;     
    }
-       
-       
-if  (condition) { 
-   
+             
+if  (condition) 
+{    
    statements; 
-  
-  } else {
-  
-  statements;
-  
+  } 
+  else 
+  {  
+  statements;  
   }
     
  
@@ -120,7 +117,7 @@ if  (condition) {
 <br>
 <p class="justify">
 
-As our team is working in parallel it gets very important for everyone to follow a style of code development that is standard throughout, for this reason everytime a new development in terms of coding is done in the application it is reviewed by the SCRUM MASTER of our team. It enables us to keep a strict check that the coding conventions are not violated throughout our code. 
+As our team is working in parallel it gets very important for everyone to follow a style of code development that is standard throughout. For this reason everytime a new development in terms of coding is done in the application, it is reviewed by the SCRUM MASTER of our team. It enables us to keep a strict check that the coding conventions are not violated throughout our code. 
 
 </p>
 <br>
@@ -136,7 +133,7 @@ Customer Personas are fictional generalisations of our most valuable customers. 
 <br>
 <p class="justify">
 
-Understanding our customer needs, challenges and behavioural influences allows us to better understand what content appeal to them best. Alot of thought goes into developing persons in software development process.
+Understanding our customer needs, challenges and behavioural influences allows us to better understand what content appeal to them best. A lot of thought goes into developing persons in software development process.
 
 </p>
 <br>
@@ -151,7 +148,7 @@ The discovery question that we focused on to built our personas are as follows:
 
 4) Education: what level of education do they have?
 
-5) Frustrations: biggest challenges for people in this persona?
+5) Frustrations: the biggest challenges for people in this persona?
 
 6) Motivations: what motivates people in this persona to be successful?
 
@@ -170,7 +167,7 @@ The persona that we have developed are:
 
 ## Story Board 
 
-Here in the Story board we will potray how our app transitions through two of the user stories/scenarios. Are you ready??
+Here in the Story board we will potray how our app transitions through two of the user stories/scenarios. Are you ready?
 
 Lets have a look.
 
@@ -181,7 +178,7 @@ Lets have a look.
 ![StoryBoard1]({{site.baseurl}}/images/StoryBoard11.png)
 
 
-In this picture you can see a journey of a user when he opens an app and wants to save a PIN for the furture access of the app.
+In this picture you can see a journey of a user when he opens an app and wants to save a PIN for the future access of the app.
 
 
 **2. Email Summary screen sequence:**
@@ -191,7 +188,7 @@ In this picture you can see a journey of a user when he opens an app and wants t
 ![StoryBoard2]({{site.baseurl}}/images/StoryBoard22.png)
 
 
-Above picture depectis how a user can sends/share a summary of all his/her transactions for the month, through email.
+Above picture depicts how a user can send/share a summary of all his/her transactions for the month through email.
 
 
 ## Design Principles
@@ -211,13 +208,13 @@ We have applied as many principles as we could to our project. The goal is to de
 <br>
 <p class="justify">
 
-<b>Keep it brief:</b> Through out our application we have used short phrases and simple words. People are likely to skip sentences if they're long and get frustrated if they don't know at the end what action they need to take or if encoutaring an error what that error really mean.
+<b>Keep it brief:</b> Throughout our application we have used short phrases and simple words. People are likely to skip sentences if they're long and get frustrated if they don't know at the end what action they need to take or when encountering an error what that error really mean.
 
 </p>
 <br>
 <p class="justify">
 
-<b>Let me make it mine:</b> People love to add personal touches because it helps them feel at home and in control. We have provided sensible, beautiful defaults, in our categories section but also considered optional customizations that can be done by the user that doesn't hinder primary tasks.
+<b>Let me make it mine:</b> People love to add personal touches because it makes them feel at home and in control. We have provided sensible, beautiful defaults, in our categories section but also considered optional customizations that can be done by the user that doesn't hinder primary tasks.
 
 </p>
 <br>
@@ -240,12 +237,12 @@ We have applied as many principles as we could to our project. The goal is to de
 <br>
 <p class="justify">
 
-The illustration below, depicts the requirements for the first epic-user story as well as the second, it needs to be mentioned that, among the second set of user stories there are new requirements and changed requirements.
+The illustration below depicts the requirements for the first epic-user story as well as the second. It needs to be mentioned that, among the second set of user stories there are new requirements and changed requirements.
 
 </p>
 <br>
 
-![Requirements]({{site.baseurl}}/images/Requirements.png)
+![Requirements]({{site.baseurl}}/images/Requirements.jpg)
 
 <br>
 <p class="justify">
@@ -285,7 +282,7 @@ Have a look at our advanced prototype and some key features of Sprint 3:
 
 
 
-Please find the downloadable application link here: Download
+Please find the downloadable application link here: https://github.com/DBSE-teaching/isee2019-405-Found/blob/master/MoneyControl_AdvancedPrototype.apk
 
 ---------
 
