@@ -101,6 +101,7 @@ public class Newexpense extends AppCompatActivity
         Category.add("Internet");
         Category.add("Electricity Bill");
         Category.add("Movies");
+        Category.add("Miscellaneous");
 
         spinner2 = findViewById(R.id.editCategoryField);
         ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, Category);
@@ -234,12 +235,15 @@ public class Newexpense extends AppCompatActivity
                     public void onClick(View v) {
                         boolean isInserted = myDb.insertData(editCategory.getSelectedItem().toString(),
                                 editDate.getText().toString(),editRecurrecny.getSelectedItem().toString(),editAmount.getText().toString(),editPaymentType.getSelectedItem().toString(),editCurrency.getSelectedItem().toString(),editNote.getText().toString());
-                        if(isInserted == true)
-                            Toast.makeText(Newexpense.this,"Data Inserted",Toast.LENGTH_LONG).show();
+                        if(isInserted == true) {
+                            Toast.makeText(Newexpense.this, "Data Inserted", Toast.LENGTH_LONG).show();
+                        }
                         else
                             Toast.makeText(Newexpense.this,"Data not Inserted",Toast.LENGTH_LONG).show();
                     }
+
                 }
+
         );
     }
 
@@ -426,4 +430,4 @@ public class Newexpense extends AppCompatActivity
     }
 }
 */
-
+////

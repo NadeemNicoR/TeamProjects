@@ -45,6 +45,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final boolean column_status_defult_value=false;
     public static final String column_pin_defult_value=null;
 
+    public static final String TABLE_BUDGET = "Budget"; // TABLE_NAME
+    public static final String column_budget_ID = "Budget_ID";  // COL_1
+    public static final String column_amount_B = "Amount_B";  // COL_2
+    public static final String column_category_B = "Category_B"; //COl_3
+    public static final String column_date_B = "Date_B"; //COL_4
+    public static final String column_Time_B = "Time"; //COL_5
+
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);
     }
@@ -66,6 +73,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         db.execSQL("create table " + TABLE_CATEGORIES +" (Category_Id INTEGER PRIMARY KEY AUTOINCREMENT, Category_Name TEXT)");
 
+        db.execSQL("create table " + TABLE_BUDGET +" (Budget_ID INTEGER PRIMARY KEY AUTOINCREMENT,Amount_B INTEGER,Category_B TEXT,Date_B TEXT,Time TEXT)");
+
         ContentValues contentValues = new ContentValues();
         contentValues.put(column_status, column_status_defult_value);
         contentValues.put(column_pin, column_pin_defult_value);
@@ -81,6 +90,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS "+TABLE_INCOMES);
         db.execSQL("DROP TABLE IF EXISTS "+TABLE_PIN);
         db.execSQL("DROP TABLE IF EXISTS "+TABLE_CATEGORIES);
+        db.execSQL("DROP TABLE IF EXISTS "+TABLE_BUDGET);
         onCreate(db);
     }
 
@@ -132,6 +142,22 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 return true;
         }
     }
+    //for Budget
+    public boolean insertDataB(String amount_b,String category_b,String date_b,String time_b)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(column_amount_B,amount_b);
+        contentValues.put(column_category_B,category_b);
+        contentValues.put(column_date_B,date_b);
+        contentValues.put(column_Time_B,time_b);
+
+        long result = db.insert(TABLE_BUDGET,null ,contentValues);
+        if(result == -1)
+            return false;
+        else
+            return true;
+    }
     public boolean insertCategories(String category_Name)
     {
         SQLiteDatabase db=this.getWritableDatabase();
@@ -158,6 +184,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Cursor res = db.rawQuery("select * from "+TABLE_CATEGORIES,null);
         return res;
         //////
+    }
+    public Cursor getAllDataB() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor bdg = db.rawQuery("select * from "+TABLE_BUDGET,null);
+        return bdg;
     }
     public Cursor dynamic_query(String query) {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -253,5 +284,44 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         return db.delete(TABLE_CATEGORIES, "Category_Id = ?",new String[] {categoryID});
     }
+
+    public Integer deleteDataB (String budgetID) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        return db.delete(TABLE_BUDGET, "Budget_ID = ?",new String[] {budgetID});
+    }
+
+
+
+    public int lastAmount;
+    public int chartQuery1() {
+        SQLiteDatabase db1 = this.getWritableDatabase();
+        Cursor insuranceAmount = db1.rawQuery( "select last " + column_amount_B + " from " + TABLE_BUDGET + " Where " + column_category_B,  null);
+        int lastAmount= insuranceAmount.getInt(0);
+        return lastAmount;
+    }
+    public int getLastAmount(){
+        return this.lastAmount;
+    }
+
+    public boolean getAllAmountB(){
+        SQLiteDatabase db= this.getWritableDatabase();
+        //String query_string = "select sum(Amount), Amount_B from " + TABLE_EXPENSES + "inner join " + TABLE_BUDGET + "on Category=Category_B";
+        //Cursor res = db.rawQuery(query_string, null);
+        Cursor res = db.rawQuery("select sum(Amount) from " + TABLE_EXPENSES + " where Category = 'Rent'", null);
+        Cursor res1 = db.rawQuery("select sum(Amount) from " + TABLE_EXPENSES + " where Category = 'Movies'", null);
+        Cursor res2 = db.rawQuery("select sum(Amount) from " + TABLE_EXPENSES + " where Category = 'ElectricityBill'", null);
+        Cursor res3 = db.rawQuery("select sum(Amount) from " + TABLE_EXPENSES + " where Category = 'WaterBill'", null);
+        Cursor res4 = db.rawQuery("select sum(Amount) from " + TABLE_EXPENSES + " where Category = 'Food'", null);
+        Cursor res5 = db.rawQuery("select Amount from " + TABLE_BUDGET + " where Category = 'Rent'", null);
+        Cursor res6 = db.rawQuery("select Amount from " + TABLE_BUDGET + " where Category = 'Movies'", null);
+        Cursor res7 = db.rawQuery("select Amount from " + TABLE_BUDGET + " where Category = 'ElectricityBill'", null);
+        Cursor res8 = db.rawQuery("select Amount from " + TABLE_BUDGET + " where Category = 'WaterBill'", null);
+        Cursor res9 = db.rawQuery("select Amount from " + TABLE_BUDGET + " where Category = 'Food'", null);
+
+        if (res== res5 || res1==res6 || res2==res7 || res3==res8 || res4==res9)
+            return true;
+        else return false;
+    }
+
 
 }
