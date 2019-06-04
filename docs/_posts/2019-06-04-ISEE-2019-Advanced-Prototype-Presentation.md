@@ -245,7 +245,7 @@ The illustration below, depicts the requirements for the first epic-user story a
 </p>
 <br>
 
-![Requirements]({{site.baseurl}}/images/Requirements.jpg)
+![Requirements]({{site.baseurl}}/images/Requirements.png)
 
 <br>
 <p class="justify">
