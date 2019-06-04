@@ -4,6 +4,8 @@
 ### Release versions of the application:
 
 #### 1. Basic Prototype (13/05/2019) : https://github.com/DBSE-teaching/isee2019-405-Found/blob/master/MoneyControl-team405.zip 
+#### 1. Advanced Prototype (04/06/2019) : https://github.com/DBSE-teaching/isee2019-405-Found/blob/master/MoneyControl_AdvancedPrototype.apk 
+
 
 
 # Software Engineers Blog
