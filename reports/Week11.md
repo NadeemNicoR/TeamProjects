@@ -86,4 +86,4 @@ Work display: (10 minutes)
 #### 4.2 As a mentor:
 
 Questions about project: (5 minutes)
--Tips to improve the complete application performance.
+- Tips to improve the complete application performance.
