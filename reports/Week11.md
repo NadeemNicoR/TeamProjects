@@ -57,7 +57,7 @@ During the present sprint we decide to role off as below:
 |TEAM MEMBER | Evelina | Mariam | Mohammed | Ronald |
 | :------: | :------: | :------: | :------: | :------: |
 | __ROLE__       | _Project Manager_ |_Scrum Master_ | _UX designer_| _Backend developer_ |
-| __ACTIVITIES__ | Sprint planning / Task distribution|Meeting facilitation / Keep track on the features to implement |Usability design, test / Asses the user experience with the app |Feature options research / Chart design and development|     
+| __ACTIVITIES__ | Sprint planning / Task distribution|Meeting facilitation / Keep track on the features to implement |Usability design, test / Assess the user experience with the app |Feature options research / Chart design and development|     
 ### __Section 3:__
 
 #### 3.1 Plans:
