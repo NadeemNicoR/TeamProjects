@@ -9,7 +9,7 @@
     <Switch
         android:id="@+id/enablePinSwitch"
         android:checked="false"
-        android:text="Pin Enabled"
+        android:text="Enable Pin"
         android:textSize="20sp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
