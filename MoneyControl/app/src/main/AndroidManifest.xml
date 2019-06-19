@@ -13,8 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_background"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".BChart"></activity>
         <activity android:name=".Chart" />
+=======
+        <activity android:name=".EnablePin"></activity>
+>>>>>>> c11752b08b91784fe547dcfc64af801ff421c5ca
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"

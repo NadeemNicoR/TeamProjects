@@ -18,7 +18,7 @@ public class Settings extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Intent resetpinIntent=new Intent(getApplicationContext(), Resetpin_screen.class);
+                Intent resetpinIntent=new Intent(getApplicationContext(), EnablePin.class);
                 startActivity(resetpinIntent);
             }
         });
