@@ -111,4 +111,6 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
     //MenuItem incomes = (MenuItem) findViewById(R.id.incomes);
     //incomes.OnMenuItemClickListener =
 
+
+
 }
