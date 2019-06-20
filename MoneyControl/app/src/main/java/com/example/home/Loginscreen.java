@@ -52,7 +52,7 @@ public class Loginscreen extends AppCompatActivity
                 }
             });
         }
-        else startActivity(new1);
+        else startActivity(new1);  
 
 
     }
