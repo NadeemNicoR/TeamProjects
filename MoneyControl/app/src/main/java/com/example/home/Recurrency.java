@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 
 public class Recurrency extends AppCompatActivity
 {
@@ -17,7 +18,7 @@ public class Recurrency extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recurrency);
         setTitle("Add Recurrency");
-        TextInputLayout AddNewRecurrency = (TextInputLayout) findViewById(R.id.AddNewRecurrency);
+        EditText AddNewRecurrency = (EditText) findViewById(R.id.addRecurrencyText);
 
         Button DoneRecurrency = (Button) findViewById(R.id.DoneRecurrency);
         DoneRecurrency.setOnClickListener(new View.OnClickListener()

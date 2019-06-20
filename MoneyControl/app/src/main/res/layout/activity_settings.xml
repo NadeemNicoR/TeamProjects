@@ -39,12 +39,12 @@
         app:layout_constraintVertical_bias="0.11" />
 
     <Button
-        android:id="@+id/Recurrence"
+        android:id="@+id/Recurrency"
         android:layout_width="410dp"
         android:layout_height="59dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="RECURRENCE"
+        android:text="Recurrency"
         android:textAlignment="viewStart"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

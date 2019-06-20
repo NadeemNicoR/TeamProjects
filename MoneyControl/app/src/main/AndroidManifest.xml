@@ -13,19 +13,15 @@
         android:roundIcon="@mipmap/ic_launcher_background"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
-        <activity android:name=".BChart"></activity>
+        <activity android:name=".Budget"></activity>
+        <activity android:name=".BChart" />
         <activity android:name=".Chart" />
-=======
-        <activity android:name=".EnablePin"></activity>
->>>>>>> c11752b08b91784fe547dcfc64af801ff421c5ca
+        <activity android:name=".EnablePin" />
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".EmailReport" />
-        <activity android:name=".Spinnertest" />
-        <activity android:name=".Main3Activity" />
         <activity android:name=".Recurrency" />
         <activity android:name=".Categories" />
         <activity android:name=".Currency" />

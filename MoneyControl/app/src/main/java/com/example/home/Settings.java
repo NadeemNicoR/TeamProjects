@@ -42,7 +42,7 @@ public class Settings extends AppCompatActivity {
                 startActivity(categoriesIntent);
             }
         });
-        Button recurrence1= (Button) findViewById(R.id.Recurrence);
+        Button recurrence1= (Button) findViewById(R.id.Recurrency);
         recurrence1.setOnClickListener(new View.OnClickListener()
         {
             @Override

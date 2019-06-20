@@ -45,6 +45,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final boolean column_status_defult_value=false;
     public static final String column_pin_defult_value=null;
 
+    public static final String TABLE_BUDGET = "Budget"; // TABLE_NAME
+    public static final String column_budget_ID = "Budget_ID";  // COL_1
+    public static final String column_amount_B = "Amount_B";  // COL_2
+    public static final String column_category_B = "Category_B"; //COl_3
+    public static final String column_date_B = "Date_B"; //COL_4
+    public static final String column_Time_B = "Time"; //COL_5
+
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);
     }
@@ -73,6 +80,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         long result = db.insert(TABLE_PIN,null ,contentValues);
         if(result == -1)
             throw new IllegalStateException("PIN Could not be initialized");
+
+        db.execSQL("create table " + TABLE_BUDGET +" (Budget_ID INTEGER PRIMARY KEY AUTOINCREMENT,Amount_B INTEGER,Category_B TEXT,Date_B TEXT,Time TEXT)");
     }
 
     @Override
@@ -81,6 +90,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS "+TABLE_INCOMES);
         db.execSQL("DROP TABLE IF EXISTS "+TABLE_PIN);
         db.execSQL("DROP TABLE IF EXISTS "+TABLE_CATEGORIES);
+        db.execSQL("DROP TABLE IF EXISTS "+TABLE_BUDGET);
         onCreate(db);
     }
 
@@ -143,6 +153,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         else
             return true;
     }
+    public boolean insertData_B(String amount,String category,String date,String time)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(column_amount_B,amount);
+        contentValues.put(column_category_B,category);
+        contentValues.put(column_date_B,date);
+        contentValues.put(column_Time_B,time);
+        long result = db.insert(TABLE_BUDGET,null ,contentValues);
+        if(result == -1)
+            return false;
+        else
+            return true;
+    }
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public Cursor getAllData() {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor res = db.rawQuery("select * from "+TABLE_EXPENSES,null);
@@ -158,6 +183,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Cursor res = db.rawQuery("select * from "+TABLE_CATEGORIES,null);
         return res;
     }
+    public Cursor getAllData_B() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("select * from "+TABLE_BUDGET,null);
+        return res;
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////
     public Cursor dynamic_query(String query) {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor res = db.rawQuery(query,null);
@@ -205,7 +236,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.update(TABLE_PIN, contentValues, "id = ?",new String[] { "1" });
         return true;
     }
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public boolean updateData(String expenseID,String category,String date,String Recurrency,String amount,String payment, String currency, String note) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -237,7 +268,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return true;
     }
 
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public Integer deleteData (String expenseID) {
         SQLiteDatabase db = this.getWritableDatabase();
         return db.delete(TABLE_EXPENSES, "Expense_ID = ?",new String[] {expenseID});
@@ -252,5 +283,81 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         return db.delete(TABLE_CATEGORIES, "Category_Id = ?",new String[] {categoryID});
     }
+    public Integer deleteData_B (String budgetID) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        return db.delete(TABLE_BUDGET, "Budget_ID = ?",new String[] {budgetID});
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////
+}
+/*
+package com.example.budget;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+
+class DatabaseHelper extends SQLiteOpenHelper {
+    public static final String DATABASE_NAME = "MoneyControl.db";
+
+
+
+    public DatabaseHelper(Context context) {
+        super(context, DATABASE_NAME, null, 1);
+    }
+
+    @Override
+    public void onCreate(SQLiteDatabase db) {
+        db.execSQL("create table " + TABLE_BUDGET +" (Budget_ID INTEGER PRIMARY KEY AUTOINCREMENT,Amount_B INTEGER,Category_B TEXT,Date_B TEXT,Time TEXT)");
+
+    }
+
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        db.execSQL("DROP TABLE IF EXISTS "+TABLE_BUDGET);
+        onCreate(db);
+    }
+
+    public boolean insertData(String Amount_B,String Category_B,String Date_B,String Time)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(column_amount_B,Amount_B);
+        contentValues.put(column_category_B,Category_B);
+        contentValues.put(column_date_B,Date_B);
+        contentValues.put(column_Time_B,Time);
+
+
+
+        long result = db.insert(TABLE_BUDGET,null ,contentValues);
+        if(result == -1)
+            return false;
+        else
+            return true;
+    }
+    public Integer deleteData (String expenseID) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        return db.delete(TABLE_BUDGET, "Expense_ID = ?",new String[] {expenseID});
+    }
+
+    public Cursor getAllData() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor bdg = db.rawQuery("select * from "+TABLE_BUDGET,null);
+        return bdg;
+    }
+    public int lastAmount;
+    public int chartQuery1() {
+        SQLiteDatabase db1 = this.getWritableDatabase();
+        Cursor insuranceAmount = db1.rawQuery( "select last " + column_amount_B + " from " + TABLE_BUDGET + " Where " + column_category_B,  null);
+        int lastAmount= insuranceAmount.getInt(0);
+        return lastAmount;
+    }
+    public int getLastAmount(){
+        return this.lastAmount;
+    }
+
 
 }
+ */
