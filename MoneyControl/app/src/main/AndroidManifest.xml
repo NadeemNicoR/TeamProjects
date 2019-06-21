@@ -13,23 +13,48 @@
         android:roundIcon="@mipmap/ic_launcher_background"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".TransactionReport"></activity>
         <activity android:name=".Budget"></activity>
-        <activity android:name=".BChart" />
-        <activity android:name=".Chart" />
-        <activity android:name=".EnablePin" />
+        <activity
+            android:name=".BChart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Chart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EnablePin"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".EmailReport" />
-        <activity android:name=".Recurrency" />
-        <activity android:name=".Categories" />
-        <activity android:name=".Currency" />
-        <activity android:name=".Resetpin_screen" />
-        <activity android:name=".Newexpense" />
-        <activity android:name=".Settings" />
-        <activity android:name=".Income" />
-        <activity android:name=".Mainactivity" />
+        <activity
+            android:name=".EmailReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Recurrency"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Categories"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Currency"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Resetpin_screen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Newexpense"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Income"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Mainactivity"
+            android:screenOrientation="portrait" />
         <activity android:name=".Loginscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
