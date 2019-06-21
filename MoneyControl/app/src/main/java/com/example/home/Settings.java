@@ -62,6 +62,15 @@ public class Settings extends AppCompatActivity {
                 startActivity(emailIntent);
             }
         });
+        Button budget=(Button) findViewById(R.id.bttnBudget);
+        budget.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent budgetIntent=new Intent(getApplicationContext(), Budget.class);
+                startActivity(budgetIntent);
+            }
+        });
     }
 }
 

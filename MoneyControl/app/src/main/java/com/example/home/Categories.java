@@ -15,7 +15,6 @@ import android.widget.Toast;
 public class Categories extends AppCompatActivity
 {
     DatabaseHelper myDbCategory;
-
     EditText categoryID,categoryName;
 
     Button btnAddData_C;
@@ -50,11 +49,15 @@ public class Categories extends AppCompatActivity
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        if(Integer.valueOf(categoryID.getText().toString()) > 5){
                         Integer deletedRows = myDbCategory.deleteCategory(categoryID.getText().toString());
                         if (deletedRows > 0)
                             Toast.makeText(Categories.this, "Category Deleted", Toast.LENGTH_LONG).show();
                         else
-                            Toast.makeText(Categories.this, "Category not Deleted", Toast.LENGTH_LONG).show();
+                            Toast.makeText(Categories.this, "Category not Deleted", Toast.LENGTH_LONG).show();}
+                        else
+                            Toast.makeText(Categories.this, "Cannot delete default categories", Toast.LENGTH_LONG).show();
+
                     }
                 }
         );
@@ -65,11 +68,19 @@ public class Categories extends AppCompatActivity
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        boolean isAdded= myDbCategory.insertCategories(categoryName.getText().toString());
-                        if (isAdded == true)
-                            Toast.makeText(Categories.this, "Category Added", Toast.LENGTH_LONG).show();
-                        else
+                        CategoryConst newCate = new CategoryConst();
+                        String nonNull =categoryName.getText().toString();
+                        if(nonNull.isEmpty())
+                        {
                             Toast.makeText(Categories.this, "Category Not Added", Toast.LENGTH_LONG).show();
+                        }
+                        else
+                        {
+                            newCate.setCategory_name(categoryName.getText().toString());
+                            boolean isAdded= myDbCategory.insertCategories(newCate);
+                            if (isAdded == true)
+                                Toast.makeText(Categories.this, "Category Added", Toast.LENGTH_LONG).show();
+                        }
                     }
                 }
         );

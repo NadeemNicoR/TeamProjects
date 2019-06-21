@@ -53,8 +53,6 @@ public class Loginscreen extends AppCompatActivity
             });
         }
         else startActivity(new1);
-
-
     }
 
 }

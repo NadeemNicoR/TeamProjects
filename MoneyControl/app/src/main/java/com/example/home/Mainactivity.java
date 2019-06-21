@@ -6,9 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Mainactivity extends AppCompatActivity {
+
+    DatabaseHelper myDb;
 
 
     @Override
@@ -57,6 +61,46 @@ public class Mainactivity extends AppCompatActivity {
                 startActivity(chart1Intent);
             }
         });
+
+        Button traRep=(Button) findViewById(R.id.transaction_report);
+        traRep.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent traRepIntent=new Intent(getApplicationContext(), TransactionReport.class);
+                startActivity(traRepIntent);
+            }
+        });
+
+        myDb = new DatabaseHelper(this);
+
+        List<String> deftaultCateList = new ArrayList<>();
+        deftaultCateList = myDb.getNewCategories();
+
+        if (deftaultCateList.isEmpty()) {
+
+            CategoryConst cat0 = new CategoryConst();
+            cat0.setCategory_name("Choose category");
+            myDb.insertCategories(cat0);
+
+            CategoryConst cat1 = new CategoryConst();
+            cat1.setCategory_name("Rent");
+            myDb.insertCategories(cat1);
+
+            CategoryConst cat2 = new CategoryConst();
+            cat2.setCategory_name("Food");
+            myDb.insertCategories(cat2);
+
+            CategoryConst cat3 = new CategoryConst();
+            cat3.setCategory_name("Internet");
+            myDb.insertCategories(cat3);
+
+            CategoryConst cat4 = new CategoryConst();
+            cat4.setCategory_name("Electricity Bill");
+            myDb.insertCategories(cat4);
+
+        }
 
 
     }

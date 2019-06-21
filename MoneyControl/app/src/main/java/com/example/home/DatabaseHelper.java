@@ -6,6 +6,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import java.util.ArrayList;
+
 
 /**
  * Created by ProgrammingKnowledge on 4/3/2015.
@@ -13,8 +15,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "MoneyControl.db";
 
-    public static final String TABLE_EXPENSES = "Expenses"; // TABLE_NAME
-    public static final String column_expense_ID = "Expense_ID";  // COL_1
+    public static final String TABLE_TRANSACTIONS = "Transcation"; // TABLE_NAME
+    public static final String column_transaction_ID = "_id";  // COL_1
+    public static final String column_transactionType="TransactionType";
     public static final String column_category_E = "Category"; //COl_4
     public static final String column_date_E = "Date"; //COL_2
     public static final String column_recurrency_E="Recurrency"; //COL8
@@ -59,7 +62,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         //EXPENSE
-        db.execSQL("create table " + TABLE_EXPENSES +" (Expense_ID INTEGER PRIMARY KEY AUTOINCREMENT,Category TEXT,Date TEXT,Recurrency TEXT,Amount INTEGER,Payment TEXT,Currency TEXT,Note TEXT)");
+        db.execSQL("create table " + TABLE_TRANSACTIONS +" (_id INTEGER PRIMARY KEY AUTOINCREMENT,TransactionType TEXT ,Category TEXT,Date TEXT,Recurrency TEXT,Amount INTEGER,Payment TEXT,Currency TEXT,Note TEXT)");
 
         //INCOME
         db.execSQL("create table " + TABLE_INCOMES +" (Income_ID INTEGER PRIMARY KEY AUTOINCREMENT,Category_I TEXT,Date_I TEXT,Recurrency_I TEXT,Amount_I INTEGER,Payment_I TEXT,Currency_I TEXT,Note_I TEXT)");
@@ -86,7 +89,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS "+TABLE_EXPENSES);
+        db.execSQL("DROP TABLE IF EXISTS "+TABLE_TRANSACTIONS);
         db.execSQL("DROP TABLE IF EXISTS "+TABLE_INCOMES);
         db.execSQL("DROP TABLE IF EXISTS "+TABLE_PIN);
         db.execSQL("DROP TABLE IF EXISTS "+TABLE_CATEGORIES);
@@ -99,13 +102,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
 
-    public boolean insertData(String category,String date,String Recurrency,String amount,String payment, String currency, String note)
+    public boolean insertData(String transactiontype1,String category,String date,String Recurrency,String amount,String payment, String currency, String note)
     {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-        //for EXPENSE
-
+        //for Transaction
+        contentValues.put(column_transactionType,transactiontype1);
         contentValues.put(column_category_E,category);
         contentValues.put(column_date_E,date);
         contentValues.put(column_recurrency_E,Recurrency);
@@ -113,7 +116,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(column_payment_E,payment);
         contentValues.put(column_currency_E,currency);
         contentValues.put(column_note_E,note);
-        long result = db.insert(TABLE_EXPENSES,null ,contentValues);
+        long result = db.insert(TABLE_TRANSACTIONS,null ,contentValues);
 
         if(result == -1)
             return false;
@@ -142,11 +145,28 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 return true;
         }
     }
-    public boolean insertCategories(String category_Name)
+    public ArrayList<String> getNewCategories()
+    {
+        ArrayList<String> NewCategory= new ArrayList<>();
+        String newCategory= "SELECT " + column_category_name + " FROM " + TABLE_CATEGORIES;
+        SQLiteDatabase db=this.getReadableDatabase();
+        Cursor c = db.rawQuery(newCategory,null);
+        if(c.moveToNext()){
+            do{
+                CategoryConst cate = new CategoryConst();
+                cate.setCategory_name(c.getString(c.getColumnIndex(column_category_name)));
+                NewCategory.add(cate.getCategory_name());
+            }while (c.moveToNext());
+        }
+        return NewCategory;
+    }
+
+
+    public boolean insertCategories(CategoryConst cat)
     {
         SQLiteDatabase db=this.getWritableDatabase();
         ContentValues contentValues=new ContentValues();
-        contentValues.put(column_category_name,category_Name);
+        contentValues.put(column_category_name,cat.getCategory_name());
         long resultCategory = db.insert(TABLE_CATEGORIES,null ,contentValues);
         if(resultCategory == -1)
             return false;
@@ -170,7 +190,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public Cursor getAllData() {
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor res = db.rawQuery("select * from "+TABLE_EXPENSES,null);
+        Cursor res = db.rawQuery("select * from "+TABLE_TRANSACTIONS,null);
         return res;
     }
     public Cursor getAllData_I() {
@@ -237,10 +257,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return true;
     }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    public boolean updateData(String expenseID,String category,String date,String Recurrency,String amount,String payment, String currency, String note) {
+    public boolean updateData(String transactionID, String transcationType,String category,String date,String Recurrency,String amount,String payment, String currency, String note) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put(column_expense_ID,expenseID);
+        //contentValues.put(column_transaction_ID,transactionID);
+        contentValues.put(column_transactionType,transcationType);
         contentValues.put(column_category_E,category);
         contentValues.put(column_date_E,date);
         contentValues.put(column_recurrency_E,Recurrency);
@@ -249,7 +270,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(column_currency_E,currency);
         contentValues.put(column_note_E,note);
 
-        db.update(TABLE_EXPENSES, contentValues, "Expense_ID = ?",new String[] { expenseID });
+        db.update(TABLE_TRANSACTIONS, contentValues, "Transaction_ID = ?",new String[] { transactionID });
         return true;
     }
     public boolean updateData_I(String incomeID,String category_I,String date_I,String Recurrency_I,String amount_I,String payment_I, String currency_I, String note_I) {
@@ -269,9 +290,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    public Integer deleteData (String expenseID) {
+    public Integer deleteData (String transactionID) {
         SQLiteDatabase db = this.getWritableDatabase();
-        return db.delete(TABLE_EXPENSES, "Expense_ID = ?",new String[] {expenseID});
+        return db.delete(TABLE_TRANSACTIONS, "Transaction_ID = ?",new String[] {transactionID});
     }
     public Integer deleteData_I (String incomeID)
     {
@@ -289,75 +310,3 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
     ////////////////////////////////////////////////////////////////////////////////////////
 }
-/*
-package com.example.budget;
-
-import android.content.ContentValues;
-import android.content.Context;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
-
-
-class DatabaseHelper extends SQLiteOpenHelper {
-    public static final String DATABASE_NAME = "MoneyControl.db";
-
-
-
-    public DatabaseHelper(Context context) {
-        super(context, DATABASE_NAME, null, 1);
-    }
-
-    @Override
-    public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table " + TABLE_BUDGET +" (Budget_ID INTEGER PRIMARY KEY AUTOINCREMENT,Amount_B INTEGER,Category_B TEXT,Date_B TEXT,Time TEXT)");
-
-    }
-
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS "+TABLE_BUDGET);
-        onCreate(db);
-    }
-
-    public boolean insertData(String Amount_B,String Category_B,String Date_B,String Time)
-    {
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-        contentValues.put(column_amount_B,Amount_B);
-        contentValues.put(column_category_B,Category_B);
-        contentValues.put(column_date_B,Date_B);
-        contentValues.put(column_Time_B,Time);
-
-
-
-        long result = db.insert(TABLE_BUDGET,null ,contentValues);
-        if(result == -1)
-            return false;
-        else
-            return true;
-    }
-    public Integer deleteData (String expenseID) {
-        SQLiteDatabase db = this.getWritableDatabase();
-        return db.delete(TABLE_BUDGET, "Expense_ID = ?",new String[] {expenseID});
-    }
-
-    public Cursor getAllData() {
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor bdg = db.rawQuery("select * from "+TABLE_BUDGET,null);
-        return bdg;
-    }
-    public int lastAmount;
-    public int chartQuery1() {
-        SQLiteDatabase db1 = this.getWritableDatabase();
-        Cursor insuranceAmount = db1.rawQuery( "select last " + column_amount_B + " from " + TABLE_BUDGET + " Where " + column_category_B,  null);
-        int lastAmount= insuranceAmount.getInt(0);
-        return lastAmount;
-    }
-    public int getLastAmount(){
-        return this.lastAmount;
-    }
-
-
-}
- */
