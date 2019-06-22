@@ -3,6 +3,7 @@ package com.example.home;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -324,4 +325,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return db.delete(TABLE_BUDGET, "Category_B = ?",new String[] {categoryB});
     }
     ////////////////////////////////////////////////////////////////////////////////////////
+
+
+    public boolean deleteTransaction(long id) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        try {
+            boolean result = db.delete(TABLE_TRANSACTIONS, column_transaction_ID + " =" + id + " ;", null) > 0;
+            return result;
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+
 }

@@ -1,23 +1,24 @@
 package com.example.home;
 
-import android.database.Cursor;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.util.SparseBooleanArray;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.ListAdapter;
-import android.widget.ListView;
-import android.widget.SimpleCursorAdapter;
-import android.widget.Toast;
-import android.app.ListActivity;
+        import android.database.Cursor;
+        import android.support.v7.app.AppCompatActivity;
+        import android.os.Bundle;
+        import android.util.SparseBooleanArray;
+        import android.view.View;
+        import android.view.ViewGroup;
+        import android.widget.AdapterView;
+        import android.widget.ArrayAdapter;
+        import android.widget.Button;
+        import android.widget.ListAdapter;
+        import android.widget.ListView;
+        import android.widget.SimpleCursorAdapter;
+        import android.widget.Toast;
+        import android.app.ListActivity;
 
 
 
-import java.util.ArrayList;
-import java.util.HashMap;
+        import java.util.ArrayList;
+        import java.util.HashMap;
 
 public class TransactionReport extends AppCompatActivity
 {
@@ -34,7 +35,7 @@ public class TransactionReport extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transaction_report);
-        setTitle("Transaction Overview");
+        setTitle("Transaction Report");
 
         myDb = new DatabaseHelper(this);
         listTransactions=new ArrayList<>();
@@ -67,6 +68,20 @@ public class TransactionReport extends AppCompatActivity
             };
 
             traList.setAdapter(ada);
+            btnDel = (Button) findViewById(R.id.btn_delete);
+
+            traList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+                {
+                    DatabaseHelper myDb2;
+                    ListActivity la=new ListActivity();
+                    SparseBooleanArray checkedItemPositions = la.getListView().getCheckedItemPositions();
+                    myDb2 =new DatabaseHelper(getApplicationContext()) ;
+                    boolean result = myDb2.deleteTransaction(id);
+
+                }
+            });
 
 
 

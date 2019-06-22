@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="56dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="256dp"
+        android:layout_marginTop="132dp"
         android:layout_marginEnd="8dp"
         android:lineSpacingExtra="10sp"
         android:text="SETTINGS"
@@ -24,31 +24,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-<<<<<<< HEAD
-        android:id="@+id/Income"
-        android:layout_width="wrap_content"
-        android:layout_height="57dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="136dp"
-        android:layout_marginEnd="8dp"
-        android:lineSpacingExtra="10sp"
-        android:text="INCOME"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-=======
->>>>>>> master
         android:id="@+id/NewExpense"
         android:layout_width="wrap_content"
         android:layout_height="56dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="196dp"
+        android:layout_marginTop="76dp"
         android:layout_marginEnd="8dp"
         android:lineSpacingExtra="10sp"
         android:text="Transactions"
@@ -65,7 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="56dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="312dp"
+        android:layout_marginTop="188dp"
         android:layout_marginEnd="8dp"
         android:lineSpacingExtra="10sp"
         android:text="Chart Report"
@@ -73,7 +53,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -82,7 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="56dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="368dp"
+        android:layout_marginTop="244dp"
         android:layout_marginEnd="8dp"
         android:lineSpacingExtra="10sp"
         android:text="Transaction Report"
