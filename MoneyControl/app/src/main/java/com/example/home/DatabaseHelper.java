@@ -161,6 +161,22 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return NewCategory;
     }
 
+    public ArrayList<String> getCategoriesB()
+    {
+        ArrayList<String> NewCategoryB= new ArrayList<>();
+        String newCategoryB = "SELECT " + column_category_B + " FROM " + TABLE_BUDGET;
+        SQLiteDatabase db=this.getReadableDatabase();
+        Cursor c = db.rawQuery(newCategoryB, null);
+        if (c.moveToNext()){
+            do {
+                CategoryConst cateB = new CategoryConst();
+                cateB.setCategory_name(c.getString(c.getColumnIndex(column_category_B)));
+                NewCategoryB.add(cateB.getCategory_name());
+            }while (c.moveToNext());
+        }
+        return NewCategoryB;
+    }
+
 
     public boolean insertCategories(CategoryConst cat)
     {
@@ -173,14 +189,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         else
             return true;
     }
-    public boolean insertData_B(String amount,String category,String date,String time)
+    //public boolean insertData_B(String amount,String category,String date,String time)
+    public  boolean insertData_B(CategoryConst cat)
     {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put(column_amount_B,amount);
-        contentValues.put(column_category_B,category);
-        contentValues.put(column_date_B,date);
-        contentValues.put(column_Time_B,time);
+        contentValues.put(column_amount_B,cat.getAmount());
+        contentValues.put(column_category_B,cat.getCategory_name());
         long result = db.insert(TABLE_BUDGET,null ,contentValues);
         if(result == -1)
             return false;
@@ -304,9 +319,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         return db.delete(TABLE_CATEGORIES, "Category_Id = ?",new String[] {categoryID});
     }
-    public Integer deleteData_B (String budgetID) {
+    public Integer deleteData_B (String categoryB) {
         SQLiteDatabase db = this.getWritableDatabase();
-        return db.delete(TABLE_BUDGET, "Budget_ID = ?",new String[] {budgetID});
+        return db.delete(TABLE_BUDGET, "Category_B = ?",new String[] {categoryB});
     }
     ////////////////////////////////////////////////////////////////////////////////////////
 }

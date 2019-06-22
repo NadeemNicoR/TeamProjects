@@ -2,7 +2,18 @@ package com.example.home;
 
 public class CategoryConst {
     int category_id;
+    int Amount;
+
     public String category_name;
+
+    public int getAmount() {
+        return Amount;
+    }
+
+    public void setAmount(int amount) {
+        Amount = amount;
+    }
+
 
     public int getCategory_id() {
         return category_id;

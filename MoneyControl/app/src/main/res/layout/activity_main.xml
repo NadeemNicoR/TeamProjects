@@ -24,6 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+<<<<<<< HEAD
         android:id="@+id/Income"
         android:layout_width="wrap_content"
         android:layout_height="57dp"
@@ -41,6 +42,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+=======
+>>>>>>> master
         android:id="@+id/NewExpense"
         android:layout_width="wrap_content"
         android:layout_height="56dp"

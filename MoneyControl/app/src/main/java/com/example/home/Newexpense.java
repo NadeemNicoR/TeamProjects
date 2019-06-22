@@ -39,7 +39,7 @@ public class Newexpense extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_expense);
-        setTitle("Expenses");
+        setTitle("Add New Transaction");
 
         List<String> Transaction = new ArrayList<>();
         Transaction.add(0, "Choose Transaction");
