@@ -1,6 +1,7 @@
 package com.example.home;
 
-        import android.annotation.SuppressLint;
+        import android.app.DatePickerDialog;
+        import android.content.Intent;
         import android.database.Cursor;
         import android.graphics.Color;
         import android.support.v7.app.AlertDialog;
@@ -10,35 +11,40 @@ package com.example.home;
         import android.widget.AdapterView;
         import android.widget.ArrayAdapter;
         import android.widget.Button;
+        import android.widget.DatePicker;
         import android.widget.EditText;
         import android.widget.Spinner;
         import android.widget.TextView;
         import android.widget.Toast;
 
         import java.util.ArrayList;
+        import java.util.Calendar;
         import java.util.List;
 
 public class Budget extends AppCompatActivity {
-
-    Spinner spinner_B;
+    private Spinner spinnerR;
+    private Spinner spinnerC;
+    private Spinner spinnerDelete;
 
     EditText editBudget_ID;
     EditText editAmount_B;
-    EditText editCategory_B;
+    Spinner editCategory_B;
     EditText editDate_B;
-    Spinner editTime;
+    Spinner editRecurrencyB;
+    Spinner deleteBudget;
     Button btnSave_B,btnDelete_B,btnView_B;
     DatabaseHelper myDb_B;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_budget);
+        setTitle("Budget");
         myDb_B = new DatabaseHelper(this);
-        editBudget_ID = (EditText)findViewById(R.id.budget_ID);
         editAmount_B = (EditText)findViewById(R.id.amount_B);
-        editCategory_B = (EditText)findViewById(R.id.category_B);
-        editDate_B = (EditText)findViewById(R.id.date_B);
-        editTime = (Spinner) findViewById(R.id.Time);
+        editCategory_B = (Spinner)findViewById(R.id.category_B);
+        editDate_B = (EditText)findViewById(R.id.enterDateB);
+        editRecurrencyB = (Spinner) findViewById(R.id.spinnerRecurrencyB);
+        deleteBudget = (Spinner) findViewById(R.id.spinnerDeleteB);
         //Buttons
         btnSave_B = (Button)findViewById(R.id.button_saveB2);
         btnDelete_B = (Button)findViewById(R.id.button_deleteB2);
@@ -47,17 +53,18 @@ public class Budget extends AppCompatActivity {
         Delete_B();
         View_B();
 
-        List<String> Ttime = new ArrayList<>();
-        Ttime.add(0, "Year");
-        Ttime.add("Semester");
-        Ttime.add("Month");
-        Ttime.add("Week");
+        List<String> RecurrencyB = new ArrayList<>();
+        RecurrencyB.add(0, "Choose Recurrency");
+        RecurrencyB.add("None");
+        RecurrencyB.add("Weekly");
+        RecurrencyB.add("Monthly");
+        RecurrencyB.add("Yearly");
 
-        spinner_B = findViewById(R.id.Time);
-        ArrayAdapter<String> adapter_B = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, Ttime);
-        adapter_B.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner_B.setAdapter(adapter_B);
-        spinner_B.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        spinnerR = findViewById(R.id.spinnerRecurrencyB);
+        ArrayAdapter<String> adapter_R = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, RecurrencyB);
+        adapter_R.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerR.setAdapter(adapter_R);
+        spinnerR.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -71,6 +78,76 @@ public class Budget extends AppCompatActivity {
 
             }
         });
+
+        Button selectDate = findViewById(R.id.DateB);
+        final TextView date = findViewById(R.id.enterDateB);
+        selectDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Calendar calendar = Calendar.getInstance();
+                int year = calendar.get(Calendar.YEAR);
+                int month = calendar.get(Calendar.MONTH);
+                int dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
+                DatePickerDialog datePickerDialog = new DatePickerDialog(Budget.this,
+                        new DatePickerDialog.OnDateSetListener() {
+                            @Override
+                            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
+                                date.setText(day + "/" + month + "/" + year);
+                            }
+                        }, year, month, dayOfMonth);
+                datePickerDialog.show();
+            }
+        });
+
+        List<String> deftaultCateList = new ArrayList<>();
+        myDb_B = new DatabaseHelper(this);
+
+        deftaultCateList = myDb_B.getNewCategories();
+
+
+        spinnerC = (Spinner) findViewById(R.id.category_B);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(getApplicationContext(), R.layout.support_simple_spinner_dropdown_item, deftaultCateList);
+//        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerC.setAdapter(adapter2);
+//        spinner2.setOnItemSelectedListener(this);
+        spinnerC.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
+                ((TextView) parent.getChildAt(0)).setTextSize(20);
+                String item = parent.getItemAtPosition(position).toString();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+        List<String> defaultBudgetList = new ArrayList<>();
+        myDb_B = new DatabaseHelper(this);
+
+        defaultBudgetList = myDb_B.getCategoriesB();
+
+        spinnerDelete = (Spinner) findViewById(R.id.spinnerDeleteB);
+        ArrayAdapter<String> adapterB = new ArrayAdapter<String>(getApplicationContext(), R.layout.support_simple_spinner_dropdown_item, defaultBudgetList);
+//        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerDelete.setAdapter(adapterB);
+//        spinner2.setOnItemSelectedListener(this);
+        spinnerDelete.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
+                ((TextView) parent.getChildAt(0)).setTextSize(20);
+                String item = parent.getItemAtPosition(position).toString();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+
     }
 
     //Button methods
@@ -79,23 +156,39 @@ public class Budget extends AppCompatActivity {
             new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    boolean isInserted = myDb_B.insertData_B(editAmount_B.getText().toString(), editCategory_B.getText().toString(), editDate_B.getText().toString(),editTime.getSelectedItem().toString());
-                    if(isInserted == true)
-                        Toast.makeText(Budget.this,"Budget Inserted",Toast.LENGTH_LONG).show();
-                    else
-                        Toast.makeText(Budget.this,"Budget not Inserted",Toast.LENGTH_SHORT).show();
+                    if (editCategory_B.getSelectedItemPosition() == 0 || editRecurrencyB.getSelectedItemPosition() == 0 || editAmount_B.getText().toString() == "") {
+                        Toast.makeText(Budget.this, "Please select missing values", Toast.LENGTH_SHORT).show();
+                    } else {
+                        //boolean isInserted = myDb_B.insertData_B(editAmount_B.getText().toString(), editCategory_B.getSelectedItem().toString(), editDate_B.getText().toString(), editRecurrencyB.getSelectedItem().toString());
+                        CategoryConst cat = new CategoryConst();
+                        cat.setAmount(Integer.parseInt(editAmount_B.getText().toString()));
+                        cat.setCategory_name(editCategory_B.getSelectedItem().toString());
+
+                        boolean isInserted = myDb_B.insertData_B(cat);
+                        if (isInserted == true) {
+                            Intent intent = new Intent(getApplicationContext(),Budget.class);
+                            startActivity(intent);
+                            Toast.makeText(Budget.this, "Budget Inserted", Toast.LENGTH_LONG).show();
+                        } else {
+                            Toast.makeText(Budget.this, "Budget not Inserted", Toast.LENGTH_SHORT).show();
+                        }
+                    }
                 }
             }
     );
     }
 
+
     public void Delete_B() {
         btnDelete_B.setOnClickListener(new View.OnClickListener() {
                                            @Override
                                            public void onClick(View v) {
-                                               Integer deletedRows = myDb_B.deleteData_B(editBudget_ID.getText().toString());
-                                               if(deletedRows > 0)
-                                                   Toast.makeText(Budget.this,"Data Deleted",Toast.LENGTH_SHORT).show();
+                                               Integer deletedRows = myDb_B.deleteData_B(deleteBudget.getSelectedItem().toString());
+                                               if(deletedRows > 0) {
+                                                   Intent intent = new Intent(getApplicationContext(),Budget.class);
+                                                   startActivity(intent);
+                                                   Toast.makeText(Budget.this, "Data Deleted", Toast.LENGTH_SHORT).show();
+                                               }
                                                else
                                                    Toast.makeText(Budget.this,"Data not Deleted",Toast.LENGTH_SHORT).show();
                                            }
@@ -118,7 +211,7 @@ public class Budget extends AppCompatActivity {
                                                  buffer.append("Amount :"+ bdg.getString(1)+"\n");
                                                  buffer.append("Category :"+ bdg.getString(2)+"\n");
                                                  buffer.append("Date :"+ bdg.getString(3)+"\n");
-                                                 buffer.append("Time :"+ bdg.getString(4)+"\n");
+                                                 buffer.append("Time :"+ bdg.getString(4)+"\n\n\n");
                                              }
                                              showMessage("Budget",buffer.toString());
                                          }

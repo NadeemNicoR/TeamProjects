@@ -21,6 +21,7 @@ public class BChart extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bchart);
+        setTitle("Bar Chart Report");
 
         mChart = (BarChart) findViewById(R.id.chart1);
         mChart.getDescription().setEnabled(false);

@@ -39,22 +39,6 @@
         app:layout_constraintVertical_bias="0.11" />
 
     <Button
-        android:id="@+id/Recurrency"
-        android:layout_width="410dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="Recurrency"
-        android:textAlignment="viewStart"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.33" />
-
-    <Button
         android:id="@+id/Categories"
         android:layout_width="410dp"
         android:layout_height="59dp"
@@ -84,7 +68,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintVertical_bias="0.438" />
 
     <Button
         android:id="@+id/bttnBudget"
@@ -100,6 +84,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44" />
+        app:layout_constraintVertical_bias="0.331" />
 
 </android.support.constraint.ConstraintLayout>

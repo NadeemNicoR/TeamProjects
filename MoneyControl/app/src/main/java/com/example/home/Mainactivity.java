@@ -20,7 +20,7 @@ public class Mainactivity extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setTitle("Main Menu");
+        setTitle("Home");
         Button settings_Main=(Button) findViewById(R.id.Settings);
         settings_Main.setOnClickListener(new View.OnClickListener()
         {
@@ -31,7 +31,7 @@ public class Mainactivity extends AppCompatActivity {
                     startActivity(settingsIntent);
                 }
         });
-        Button income=(Button) findViewById(R.id.Income);
+        /*Button income=(Button) findViewById(R.id.Income);
         income.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -40,7 +40,7 @@ public class Mainactivity extends AppCompatActivity {
                 Intent incomeIntent=new Intent(getApplicationContext(), Income.class);
                 startActivity(incomeIntent);
             }
-        });
+        });*/
         Button expense=(Button) findViewById(R.id.NewExpense);
         expense.setOnClickListener(new View.OnClickListener()
         {
@@ -100,6 +100,16 @@ public class Mainactivity extends AppCompatActivity {
             cat4.setCategory_name("Electricity Bill");
             myDb.insertCategories(cat4);
 
+        }
+
+        List<String> defaultBudgetList = new ArrayList<>();
+        defaultBudgetList = myDb.getCategoriesB();
+
+        if (defaultBudgetList.isEmpty()){
+            CategoryConst cat0 = new CategoryConst();
+            cat0.setCategory_name("Choose budget to delete");
+            cat0.setAmount(0);
+            myDb.insertData_B(cat0);
         }
 
 

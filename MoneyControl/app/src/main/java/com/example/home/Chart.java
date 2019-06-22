@@ -34,6 +34,7 @@ public class Chart extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chart);
+        setTitle("Chart Report");
 
         Button chart1=(Button) findViewById(R.id.BarChartB);
         chart1.setOnClickListener(new View.OnClickListener()

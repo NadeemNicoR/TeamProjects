@@ -24,6 +24,7 @@ public class EnablePin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enable_pin);
+        setTitle("Set PIN");
 
         myDb = new DatabaseHelper(this);
 

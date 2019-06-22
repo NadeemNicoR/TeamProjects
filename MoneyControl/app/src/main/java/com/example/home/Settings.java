@@ -42,7 +42,7 @@ public class Settings extends AppCompatActivity {
                 startActivity(categoriesIntent);
             }
         });
-        Button recurrence1= (Button) findViewById(R.id.Recurrency);
+        /*Button recurrence1= (Button) findViewById(R.id.Recurrency);
         recurrence1.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -51,7 +51,7 @@ public class Settings extends AppCompatActivity {
                 Intent recurrenceIntent=new Intent(getApplicationContext(), Recurrency.class);
                 startActivity(recurrenceIntent);
             }
-        });
+        });*/
         Button email= (Button) findViewById(R.id.BttnEmail);
         email.setOnClickListener(new View.OnClickListener()
         {
