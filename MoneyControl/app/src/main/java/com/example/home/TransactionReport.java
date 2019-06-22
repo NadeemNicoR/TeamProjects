@@ -3,13 +3,18 @@ package com.example.home;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.SparseBooleanArray;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
+import android.app.ListActivity;
+
+
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,6 +25,9 @@ public class TransactionReport extends AppCompatActivity
     DatabaseHelper myDb;
     ArrayList<String> listTransactions;
     ArrayAdapter adapter;
+
+
+    Button btnDel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -48,9 +56,9 @@ public class TransactionReport extends AppCompatActivity
         else {
             String[] columns = new String[] {myDb.column_amount_E,
                     myDb.column_category_E, myDb.column_transactionType,
-                    myDb.column_date_E};
+                    myDb.column_date_E,myDb.column_payment_E};
 
-            int[] to = new int[] {R.id.textViewAmt, R.id.textViewCate, R.id.textViewType, R.id.textViewDte};
+            int[] to = new int[] {R.id.textViewAmt, R.id.textViewCate, R.id.textViewType, R.id.textViewDte,R.id.textViewpaytype};
             ListAdapter ada = new SimpleCursorAdapter(this, R.layout.row, cursor, columns, to, 0){
                 public View getView(int position, View convertView, ViewGroup parent){
                     View view = super.getView(position, convertView, parent);
@@ -59,7 +67,6 @@ public class TransactionReport extends AppCompatActivity
             };
 
             traList.setAdapter(ada);
-
 
 
 

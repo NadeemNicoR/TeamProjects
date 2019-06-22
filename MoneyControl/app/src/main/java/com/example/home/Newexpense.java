@@ -56,7 +56,7 @@ public class Newexpense extends AppCompatActivity {
 
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
-                ((TextView) parent.getChildAt(0)).setTextSize(20);
+                ((TextView) parent.getChildAt(0)).setTextSize(18);
                 String item = parent.getItemAtPosition(position).toString();
 
             }
@@ -85,7 +85,7 @@ public class Newexpense extends AppCompatActivity {
 
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
-                ((TextView) parent.getChildAt(0)).setTextSize(20);
+                ((TextView) parent.getChildAt(0)).setTextSize(18);
                 String item = parent.getItemAtPosition(position).toString();
 
             }
@@ -109,7 +109,7 @@ public class Newexpense extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
-                ((TextView) parent.getChildAt(0)).setTextSize(20);
+                ((TextView) parent.getChildAt(0)).setTextSize(18);
                 String item = parent.getItemAtPosition(position).toString();
 
             }
@@ -169,7 +169,7 @@ public class Newexpense extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
-                ((TextView) parent.getChildAt(0)).setTextSize(20);
+                ((TextView) parent.getChildAt(0)).setTextSize(18);
                 String item = parent.getItemAtPosition(position).toString();
             }
 
@@ -194,7 +194,7 @@ public class Newexpense extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
-                ((TextView) parent.getChildAt(0)).setTextSize(20);
+                ((TextView) parent.getChildAt(0)).setTextSize(18);
                 String item = parent.getItemAtPosition(position).toString();
 
                 /*if (item.equals("Choose Recurrence")) {
