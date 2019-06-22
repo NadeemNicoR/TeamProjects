@@ -9,10 +9,10 @@
 
     <Button
         android:id="@+id/Settings"
-        android:layout_width="409dp"
+        android:layout_width="wrap_content"
         android:layout_height="56dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="132dp"
         android:layout_marginEnd="8dp"
         android:lineSpacingExtra="10sp"
         android:text="SETTINGS"
@@ -25,10 +25,10 @@
 
     <Button
         android:id="@+id/NewExpense"
-        android:layout_width="409dp"
+        android:layout_width="wrap_content"
         android:layout_height="56dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="76dp"
         android:layout_marginEnd="8dp"
         android:lineSpacingExtra="10sp"
         android:text="Transactions"
@@ -36,15 +36,16 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/chart"
-        android:layout_width="409dp"
+        android:layout_width="wrap_content"
         android:layout_height="56dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="188dp"
         android:layout_marginEnd="8dp"
         android:lineSpacingExtra="10sp"
         android:text="Chart Report"
@@ -52,15 +53,16 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/transaction_report"
-        android:layout_width="409dp"
+        android:layout_width="wrap_content"
         android:layout_height="56dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="256dp"
+        android:layout_marginTop="244dp"
         android:layout_marginEnd="8dp"
         android:lineSpacingExtra="10sp"
         android:text="Transaction Report"

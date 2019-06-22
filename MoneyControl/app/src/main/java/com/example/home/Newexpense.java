@@ -39,7 +39,7 @@ public class Newexpense extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_expense);
-        setTitle("Add New Transaction");
+        setTitle("Add Transaction");
 
         List<String> Transaction = new ArrayList<>();
         Transaction.add(0, "Choose Transaction");
@@ -56,7 +56,7 @@ public class Newexpense extends AppCompatActivity {
 
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
-                ((TextView) parent.getChildAt(0)).setTextSize(20);
+                ((TextView) parent.getChildAt(0)).setTextSize(18);
                 String item = parent.getItemAtPosition(position).toString();
 
             }
@@ -85,7 +85,7 @@ public class Newexpense extends AppCompatActivity {
 
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
-                ((TextView) parent.getChildAt(0)).setTextSize(20);
+                ((TextView) parent.getChildAt(0)).setTextSize(18);
                 String item = parent.getItemAtPosition(position).toString();
 
             }
@@ -98,6 +98,7 @@ public class Newexpense extends AppCompatActivity {
 
         List<String> Payment_Method = new ArrayList<>();
         Payment_Method.add(0, "Choose payment");
+        Payment_Method.add("Debit Card");
         Payment_Method.add("Credit Card");
         Payment_Method.add("Cash");
 
@@ -109,7 +110,7 @@ public class Newexpense extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
-                ((TextView) parent.getChildAt(0)).setTextSize(20);
+                ((TextView) parent.getChildAt(0)).setTextSize(18);
                 String item = parent.getItemAtPosition(position).toString();
 
             }
@@ -169,7 +170,7 @@ public class Newexpense extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
-                ((TextView) parent.getChildAt(0)).setTextSize(20);
+                ((TextView) parent.getChildAt(0)).setTextSize(18);
                 String item = parent.getItemAtPosition(position).toString();
             }
 
@@ -194,7 +195,7 @@ public class Newexpense extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
-                ((TextView) parent.getChildAt(0)).setTextSize(20);
+                ((TextView) parent.getChildAt(0)).setTextSize(18);
                 String item = parent.getItemAtPosition(position).toString();
 
                 /*if (item.equals("Choose Recurrence")) {
@@ -293,7 +294,7 @@ public class Newexpense extends AppCompatActivity {
                     public void onClick(View v) {
 
 
-                            if (spinner.getSelectedItemPosition() == 0 || spinner1.getSelectedItemPosition() == 0 || spinner2.getSelectedItemPosition() == 0 || spinner3.getSelectedItemPosition() == 0 || transactionSpinner.getSelectedItemPosition() == 0)
+                            if (spinner.getSelectedItemPosition() == 0 || spinner1.getSelectedItemPosition() == 0 || spinner2.getSelectedItemPosition() == 0 || spinner3.getSelectedItemPosition() == 0 || transactionSpinner.getSelectedItemPosition() == 0 ||editAmount.getText().toString().isEmpty() || editDate.getText().toString().isEmpty() )
                             {
                                 Toast.makeText(Newexpense.this, "Please select missing values", Toast.LENGTH_SHORT).show();
                             }
