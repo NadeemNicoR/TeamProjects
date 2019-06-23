@@ -314,11 +314,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         return db.delete(TABLE_INCOMES, "Income_ID = ?",new String[] {incomeID});
     }
-    public Integer deleteCategory (String categoryID)
+    public Integer deleteCategory (String categoryName)
     {
         SQLiteDatabase db = this.getWritableDatabase();
-        return db.delete(TABLE_CATEGORIES, "Category_Id = ?",new String[] {categoryID});
+        return db.delete(TABLE_CATEGORIES, "Category_Name = ?",new String[] {categoryName});
     }
+
     public Integer deleteData_B (String categoryB) {
         SQLiteDatabase db = this.getWritableDatabase();
         return db.delete(TABLE_BUDGET, "Category_B = ?",new String[] {categoryB});
