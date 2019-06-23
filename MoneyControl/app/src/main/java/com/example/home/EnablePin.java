@@ -70,7 +70,7 @@ public class EnablePin extends AppCompatActivity {
                     myDb.updatePin(newPinText, pinStatus);
                     myDb.close();
                     Toast.makeText(getBaseContext(), "Pin Updated", Toast.LENGTH_SHORT).show();
-                    Intent save = new Intent(getApplicationContext(), Settings.class);
+                    Intent save = new Intent(getApplicationContext(), Mainactivity.class);
                     startActivity(save);
                 }
             }

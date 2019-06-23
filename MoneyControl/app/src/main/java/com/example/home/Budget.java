@@ -69,7 +69,7 @@ public class Budget extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
-                ((TextView) parent.getChildAt(0)).setTextSize(20);
+                ((TextView) parent.getChildAt(0)).setTextSize(18);
                 String item = parent.getItemAtPosition(position).toString();
             }
 
@@ -114,7 +114,7 @@ public class Budget extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
-                ((TextView) parent.getChildAt(0)).setTextSize(20);
+                ((TextView) parent.getChildAt(0)).setTextSize(18);
                 String item = parent.getItemAtPosition(position).toString();
             }
 
@@ -137,7 +137,7 @@ public class Budget extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
-                ((TextView) parent.getChildAt(0)).setTextSize(20);
+                ((TextView) parent.getChildAt(0)).setTextSize(18);
                 String item = parent.getItemAtPosition(position).toString();
             }
 
@@ -156,13 +156,16 @@ public class Budget extends AppCompatActivity {
             new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (editCategory_B.getSelectedItemPosition() == 0 || editRecurrencyB.getSelectedItemPosition() == 0 || editAmount_B.getText().toString() == "") {
+                    if (editCategory_B.getSelectedItemPosition() == 0 || editRecurrencyB.getSelectedItemPosition() == 0 || editAmount_B.getText().toString().isEmpty() || editDate_B.getText().toString().isEmpty()) {
                         Toast.makeText(Budget.this, "Please select missing values", Toast.LENGTH_SHORT).show();
                     } else {
                         //boolean isInserted = myDb_B.insertData_B(editAmount_B.getText().toString(), editCategory_B.getSelectedItem().toString(), editDate_B.getText().toString(), editRecurrencyB.getSelectedItem().toString());
                         CategoryConst cat = new CategoryConst();
                         cat.setAmount(Integer.parseInt(editAmount_B.getText().toString()));
                         cat.setCategory_name(editCategory_B.getSelectedItem().toString());
+                        cat.setRecurrencyOfBudget(editRecurrencyB.getSelectedItem().toString());
+                        cat.setDateOfBudget(editDate_B.getText().toString());
+
 
                         boolean isInserted = myDb_B.insertData_B(cat);
                         if (isInserted == true) {
@@ -183,14 +186,17 @@ public class Budget extends AppCompatActivity {
         btnDelete_B.setOnClickListener(new View.OnClickListener() {
                                            @Override
                                            public void onClick(View v) {
-                                               Integer deletedRows = myDb_B.deleteData_B(deleteBudget.getSelectedItem().toString());
-                                               if(deletedRows > 0) {
-                                                   Intent intent = new Intent(getApplicationContext(),Budget.class);
-                                                   startActivity(intent);
-                                                   Toast.makeText(Budget.this, "Data Deleted", Toast.LENGTH_SHORT).show();
+                                               if(deleteBudget.getSelectedItemPosition()>1) {
+                                                   Integer deletedRows = myDb_B.deleteData_B(deleteBudget.getSelectedItem().toString());
+                                                   if (deletedRows > 0) {
+                                                       Intent intent = new Intent(getApplicationContext(), Budget.class);
+                                                       startActivity(intent);
+                                                       Toast.makeText(Budget.this, "Data Deleted", Toast.LENGTH_SHORT).show();
+                                                   } else
+                                                       Toast.makeText(Budget.this, "Data not Deleted", Toast.LENGTH_SHORT).show();
                                                }
                                                else
-                                                   Toast.makeText(Budget.this,"Data not Deleted",Toast.LENGTH_SHORT).show();
+                                                   Toast.makeText(Budget.this, "Choose a budget from dropdown delete", Toast.LENGTH_SHORT).show();
                                            }
                                        }
         );
@@ -210,8 +216,8 @@ public class Budget extends AppCompatActivity {
                                                  buffer.append("Budget ID :"+ bdg.getString(0)+"\n");
                                                  buffer.append("Amount :"+ bdg.getString(1)+"\n");
                                                  buffer.append("Category :"+ bdg.getString(2)+"\n");
-                                                 buffer.append("Date :"+ bdg.getString(3)+"\n");
-                                                 buffer.append("Time :"+ bdg.getString(4)+"\n\n\n");
+                                                 buffer.append("Recurrency :"+ bdg.getString(3)+"\n");
+                                                 buffer.append("Date :"+ bdg.getString(4)+"\n\n\n");
                                              }
                                              showMessage("Budget",buffer.toString());
                                          }
@@ -278,8 +284,5 @@ public class Budget extends AppCompatActivity {
                 }
             }
         });*/
-
-
-
 
 }
