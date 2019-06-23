@@ -40,8 +40,8 @@ public class EmailReport extends AppCompatActivity
             buffer.append("Reccurrency :" + res_E.getString(4) + "\n");
             buffer.append("Amount :" + res_E.getString(5) + "\n");
             buffer.append("Payment :" + res_E.getString(6) + "\n");
-            buffer.append("Currency :" + res_E.getString(7) + "\n\n\n");
-            buffer.append("Note :" + res_E.getString(8) + "\n");
+            buffer.append("Currency :" + res_E.getString(7) + "\n");
+            buffer.append("Note :" + res_E.getString(8) + "\n\n\n");
         }
        // buffer.append("--------------------------------\n");
         //buffer.append("All Income Transactions:\n");

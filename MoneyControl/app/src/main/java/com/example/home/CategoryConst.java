@@ -16,7 +16,6 @@ public class CategoryConst {
         Amount = amount;
     }
 
-
     public int getCategory_id() {
         return category_id;
     }
