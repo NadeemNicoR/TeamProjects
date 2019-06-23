@@ -83,7 +83,7 @@ public class Categories extends AppCompatActivity
                     @Override
                     public void onClick(View v) {
 
-                        if(deleteCategory.getSelectedItemPosition()>5)
+                        if(deleteCategory.getSelectedItemPosition()>4)
                         {
                         Integer deletedRows = myDbCategory.deleteCategory(deleteCategory.getSelectedItem().toString());
                         if (deletedRows > 0) {
