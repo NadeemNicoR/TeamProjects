@@ -27,7 +27,7 @@ public class Categories extends AppCompatActivity
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categories);
-        setTitle("Available Categories");
+        setTitle("Add/Delete Categories");
         myDbCategory = new DatabaseHelper(this);
 
 

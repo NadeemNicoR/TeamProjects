@@ -29,22 +29,23 @@ public class EmailReport extends AppCompatActivity
         StringBuffer buffer = new StringBuffer();
 
         buffer.append("--------------------------------\n");
-        buffer.append("All Expense Transactions:\n");
+        buffer.append(" Transaction Summary:\n");
         buffer.append("--------------------------------\n");
 
         while (res_E.moveToNext()) {
-            buffer.append("Expense ID :" + res_E.getString(0) + "\n");
-            buffer.append("Category :" + res_E.getString(1) + "\n");
-            buffer.append("Date :" + res_E.getString(2) + "\n");
-            buffer.append("Reccurrency :" + res_E.getString(3) + "\n");
-            buffer.append("Amount :" + res_E.getString(4) + "\n");
-            buffer.append("Payment :" + res_E.getString(5) + "\n");
-            buffer.append("Note :" + res_E.getString(7) + "\n");
-            buffer.append("Currency :" + res_E.getString(6) + "\n\n\n");
+            buffer.append("Transaction Number :" + res_E.getString(0) + "\n");
+            buffer.append("Transaction Type :" + res_E.getString(1) + "\n");
+            buffer.append("Category :" + res_E.getString(2) + "\n");
+            buffer.append("Date :" + res_E.getString(3) + "\n");
+            buffer.append("Reccurrency :" + res_E.getString(4) + "\n");
+            buffer.append("Amount :" + res_E.getString(5) + "\n");
+            buffer.append("Payment :" + res_E.getString(6) + "\n");
+            buffer.append("Currency :" + res_E.getString(7) + "\n\n\n");
+            buffer.append("Note :" + res_E.getString(8) + "\n");
         }
-        buffer.append("--------------------------------\n");
-        buffer.append("All Income Transactions:\n");
-        buffer.append("--------------------------------\n");
+       // buffer.append("--------------------------------\n");
+        //buffer.append("All Income Transactions:\n");
+       // buffer.append("--------------------------------\n");
         Cursor res_I = myDb.getAllData_I();
 
         while (res_I.moveToNext()) {
@@ -88,6 +89,5 @@ public class EmailReport extends AppCompatActivity
             intent.setType("message/rfc822");
             startActivity(Intent.createChooser(intent, "Choose an email client"));
         }
-
 
 }
