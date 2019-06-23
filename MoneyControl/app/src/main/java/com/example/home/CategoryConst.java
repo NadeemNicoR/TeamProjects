@@ -5,6 +5,8 @@ public class CategoryConst {
     int Amount;
 
     public String category_name;
+    public String recurrency;
+    public String date;
 
     public int getAmount() {
         return Amount;
@@ -30,4 +32,21 @@ public class CategoryConst {
     public void setCategory_name(String category_name) {
         this.category_name = category_name;
     }
+
+    public void setRecurrencyOfBudget(String recurrency) {
+        this.recurrency = recurrency;
+    }
+
+    public String getRecurrencyOfBudget() {
+        return recurrency;
+    }
+    public void setDateOfBudget(String dateLocal) {
+        this.date = dateLocal;
+    }
+
+    public String getDateOfBudget() {
+        return date;
+    }
+
+
 }
