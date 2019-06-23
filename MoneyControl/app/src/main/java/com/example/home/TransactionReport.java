@@ -80,6 +80,7 @@ public class TransactionReport extends AppCompatActivity
                     myDb2 =new DatabaseHelper(getApplicationContext()) ;
                     boolean result = myDb2.deleteTransaction(id);
 
+
                 }
             });
 
