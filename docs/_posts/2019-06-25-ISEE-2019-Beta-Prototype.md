@@ -6,23 +6,23 @@
 
 <p class="justify"/>
 
-Welcome to the fourth blog of team 405 Found - Money Control Application. In this blog we will give an overview of how we have put our application to test and which testing approach we have used.
+Welcome to the fourth blog of team 405 Found - Money Control Application. In this blog we will give an overview of how we have put our application to test and the testing methods that we have used.
 <br>
 
 <p class="justify"/>
 
-An application is a product and products always serves the users in some ways or another. It is very important that our application brings the value that it promises, hence it should work properly to ensure great customer experience. Development of an app has many processes and testing gets a glimpse of every bit – it checks if the apps graphics are aligned properly, tests the main functionality, checks if menus are intuitive, etc. After developers fix issues, sometimes another issue may appear unexpectedly somewhere else, that’s just how testing goes, so it’s great to find those issues to be resolved and deliver a quality product in the marketplace.
+Since the beginning for us it was very important that our application should bring the value that it promises. Hence it should work properly to ensure great customer experience. Among the processes of building an application, testing plays a very integral part. It checks if the apps graphics are aligned properly, tests the main functionality, checks if menus are intuitive, etc. When making changes according to customer requirements, we faced problems with the methods and their functionalities. This is where testing came in to work. It helped finding bugs, defects and fixing them.
 <br>
 
 <p class="justify"/>
 
 
-If we look into a more technical definition of software testing then according to ANSI/IEEE 1059 standard – Software testing is a process of analyzing a software item to detect the differences between existing and required conditions (i.e., defects) and to evaluate the features of the software item.
+If we look into a more technical definition of software testing, according to ANSI/IEEE 1059 standard Software testing is a process of analyzing a software item to detect the differences between existing and required conditions (i.e., defects) and to evaluate the features of the software item.
 <br>
 
 <p class="justify"/>
 
-There are several approarches to test your software, but the one we chose for our application is *Black Box Testing*.
+Two classifications of testing are *White BoxTesting* and *Black Box Testing*. For testing our application we have used both of them.
 <br>
 
 <p class="justify"/>
@@ -30,56 +30,9 @@ There are several approarches to test your software, but the one we chose for ou
 
 ## Black Box Testing
 
+Black Box Testing is a software testing method in which testers evaluate the functionality of the software without knowing the internal code structure.
 
-![BlackBox]({{site.baseurl}}/images/BlackBox.JPG)
-
-
-Black box testing is also called Behavioral/Specification-Based/Input-Output Testing. Black Box Testing is a software testing method in which testers evaluate the functionality of the software under test without looking at the internal code structure.
-
-This method attempts to find errors in the following categories:
-
-- Incorrect or missing functions.
-
-- User interface errors.
-
-- Errors in data structures or external database access.
-
-- Behaviour or performance errors.
-
-- Initialization and termination errors.
-
-
-### **Advantages**   
-
-Some of the advantages of black box testing are:
-
-
-- Tests are done from a user's perspective and will help in exposing any incompatibility in the specification of the software.
-
-- Software tester doesn't need to know programming language or how the software has been implemented.
-
-- Test can be conducted by anybody independent from the developer's team.
-
-- Test cases can be designed as soon as the specifications are complete.
-
-
-## Test cases
-
-
-The test cases that we have performed in order to check the functionality and robustness of our application followed the funtional testing methodology, i.e.
-
-
-- Identify the use case scenario.
-
-- For each use case scenario, identify one or more test cases.
-
-- For each test case, identify the condition that will cause it to execute. 
-
-- Complete the test case by adding data values. 
-
-
-Following are our test cases;
-
+For this approach we tested 5 functionalities manually and the details are shown below:
 
 **Test Case - 01**
 
@@ -111,7 +64,45 @@ Following are our test cases;
 <p class="justify"/>
 
 
-Using these test cases we have examined how our application will be interating with our customer.
+## White Box Testing
+
+White Box Testing is a software testing method in which testers evaluate the methods of each class of the software application knowing the internal code structure.
+
+For this approach we tested methods from 5 classes of our application and the details are shown below:
+
+**Test Case - 01**
+
+![Testcase1]({{site.baseurl}}/images/JunitTestEnablePin.JPG)
+
+In this test case we have tested the EnablePin.java class, using the scenario when both PIN match.
+
+
+**Test Case - 02**
+
+![Testcase2]({{site.baseurl}}/images/JunitTestEmailReport.jpg)
+
+In this test case we have tested the EmailReport.java class, using the scenario of entering a correct and wrong e-mail.
+
+
+**Test Case - 03**
+
+![Testcase3]({{site.baseurl}}/images/JunitTestDateFormat.jpg)
+
+In this test case we have tested the NewExpense.java class, using the scenario of entering a correct and wrong date format.
+
+
+**Test Case - 04**
+
+![Testcase4]({{site.baseurl}}/images/JunitTestDatabaseHelp.jpg)
+
+In this test case we have tested the method insertCategories() from the DatabaseHelper.java class.
+
+
+**Test Case - 05**
+
+![Testcase5]({{site.baseurl}}/images/JunitTestBudgetShowMessage.jpg)
+
+In this test case we have tested the Budget.java class.
 
 
 <br>
