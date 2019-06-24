@@ -115,13 +115,6 @@ In this test case we have tested the showMessage() method inside Budget.java cla
 
 <p class="justify"/>
 
-
-The changes that we have done in this sprint can be seen through UML Class diagram below.
-
-
-*Please insert uml class diagram here*
-![UML]({{site.baseurl}}/images/UML_BetaPrototype.png)
-
 Key changes that we have done in our application:
 
 - Combined the income and expense class into one and made a transaction class. User can choose the transaction type from a drop down list.
@@ -131,6 +124,10 @@ Key changes that we have done in our application:
 - Entered enable pin toggle button in settings.
 
 - Developed budget class which will enable user to set a budget per category for his/her spendings.
+
+The changes that we have done in this sprint can be seen through UML Class diagram below.
+
+![UML]({{site.baseurl}}/images/UML_BetaPrototype.png)
 
 Have a look at our **Beta Prototype**.
 
