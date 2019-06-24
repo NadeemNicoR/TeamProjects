@@ -37,15 +37,15 @@ Black box testing is also called Behavioral/Specification-Based/Input-Output Tes
 
 This method attempts to find errors in the following categories:
 
-1) Incorrect or missing functions.
+- Incorrect or missing functions.
 
-2) User interface errors.
+- User interface errors.
 
-3) Errors in data structures or external database access.
+- Errors in data structures or external database access.
 
-4) Behaviour or performance errors.
+- Behaviour or performance errors.
 
-5) Initialization and termination errors.
+- Initialization and termination errors.
 
 
 ### **Advantages**   
@@ -53,13 +53,13 @@ This method attempts to find errors in the following categories:
 Some of the advantages of black box testing are:
 
 
-1) Tests are done from a user's perspective and will help in exposing any incompatibility in the specification of the software.
+- Tests are done from a user's perspective and will help in exposing any incompatibility in the specification of the software.
 
-2) Tester doesn't need to know programming language or how the software has been implemented.
+- Tester doesn't need to know programming language or how the software has been implemented.
 
-3) Test can be conducted by anybody independent from the developer's team.
+- Test can be conducted by anybody independent from the developer's team.
 
-4) Test cases can be designed as soon as the specifications are complete.
+- Test cases can be designed as soon as the specifications are complete.
 
 
 ## Test cases
@@ -68,7 +68,7 @@ Some of the advantages of black box testing are:
 The test cases that we have performed in order to check the functionality and robustness of our application followed the funtional testing methodology, i.e.
 
 
-- Identify the use case scenario
+- Identify the use case scenario.
 
 - For each use case scenario, identify one or more test cases.
 
