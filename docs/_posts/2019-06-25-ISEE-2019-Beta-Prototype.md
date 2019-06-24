@@ -17,9 +17,6 @@ An application is a product and products always serves the users in some ways or
 <p class="justify"/>
 
 
-![SoftwareTest]({{site.baseurl}}/images/SoftwareTest.jpg)
-
-
 If we look into a more technical definition of software testing then according to ANSI/IEEE 1059 standard – Software testing is a process of analyzing a software item to detect the differences between existing and required conditions (i.e., defects) and to evaluate the features of the software item.
 <br>
 
@@ -32,6 +29,10 @@ There are several approarches to test your software, but the one we chose for ou
 
 
 ## Black Box Testing
+
+
+![BalckBox]({{site.baseurl}}/images/BlackBox.jpg)
+
 
 Black box testing is also called Behavioral/Specification-Based/Input-Output Testing. Black Box Testing is a software testing method in which testers evaluate the functionality of the software under test without looking at the internal code structure.
 
