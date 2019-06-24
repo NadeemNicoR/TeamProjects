@@ -29,7 +29,6 @@ There are several approarches to test your software, but the one we chose for ou
 
 ## Black Box Testing
 <br>
-
 <p class="justify"/>
 Black box testing is also called Behavioral/Specification-Based/Input-Output Testing. Black Box Testing is a software testing method in which testers evaluate the functionality of the software under test without looking at the internal code structure.
 
