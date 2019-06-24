@@ -111,4 +111,15 @@ Following are our test cases;
 <p class="justify"/>
 
 
+Using these test cases we have examined how our application will be interating with our customer.
 
+
+<br>
+
+<p class="justify"/>
+
+# SUMMARY OF CHANGES
+
+<br>
+
+<p class="justify"/>
