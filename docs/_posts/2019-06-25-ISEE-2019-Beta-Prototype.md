@@ -152,7 +152,9 @@ Have a look at our **Beta Prototype**.
 
 <p class="justify"/>
 
-We are almost near the finishing line of our project. We will catch you again in the next and last blog in a week :) 
-We hope you have enjoyed reading about our journey till here. See you soon, AGAIN!!! (in a next ONE).
+*We are almost near the finishing line of our project. We will catch you again in the next and last blog in a week :) 
+We hope you have enjoyed reading about our journey till here. See you soon, AGAIN!!! (in a next ONE).*
  
- </p>
+<br>
+
+<p class="justify"/>
