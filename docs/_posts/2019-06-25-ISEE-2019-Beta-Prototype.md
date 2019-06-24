@@ -103,7 +103,7 @@ Following are our test cases;
 
 **Test Case - 05**
 
-![companylogo]({{site.baseurl}}/images/405logo.png)
+![Testcase5]({{site.baseurl}}/images/TC5.jpg)
 
 
 <br>
