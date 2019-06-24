@@ -93,7 +93,7 @@ Following are our test cases;
 
 **Test Case - 03**
 
-![companylogo]({{site.baseurl}}/images/TC3.png)
+![TC3]({{site.baseurl}}/images/TC3.jpg)
 
 
 **Test Case - 04**
