@@ -129,7 +129,7 @@ The changes that we have done in this sprint can be seen through UML Class diagr
 
 
 *Please insert uml class diagram here*
-
+![UML]({{site.baseurl}}/images/UML_Beta_Prototype.png)
 
 Key changes that we have done in our application:
 
