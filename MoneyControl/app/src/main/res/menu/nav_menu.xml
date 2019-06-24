@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/category_switch"
+        android:title="Category"
+        app:actionLayout="@layout/switch_item" />
+
+    <item
+        android:id="@+id/amount_switch"
+        android:title="Amount"
+        app:actionLayout="@layout/switch_item" />
+
+    <item
+        android:id="@+id/date_switch"
+        android:title="Date"
+        app:actionLayout="@layout/switch_item" />
+</menu>

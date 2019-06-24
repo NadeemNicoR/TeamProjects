@@ -1,13 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.v4.widget.DrawerLayout
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BChart">
 
-    <com.github.mikephil.charting.charts.BarChart
-        android:id="@+id/chart1"
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="500sp" />
-</RelativeLayout>
+        android:layout_height="match_parent"
+        tools:context=".BChart">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart1"
+            android:layout_width="match_parent"
+            android:layout_height="400sp" />
+
+        <Button
+            android:id="@+id/button_rent"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="66dp"
+            android:background="#AFC5BC"
+            android:text="Rent" />
+        <Button
+            android:id="@+id/button_food"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="66dp"
+            android:background="#AFC5BC"
+            android:text="Food" />
+        <Button
+            android:id="@+id/button_electricity"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="125dp"
+            android:layout_marginBottom="66dp"
+            android:background="#AFC5BC"
+            android:text="Electricity" />
+        <Button
+            android:id="@+id/button_internet"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="210dp"
+            android:layout_marginBottom="66dp"
+            android:background="#AFC5BC"
+            android:text="Internet" />
+
+        <Button
+            android:id="@+id/button_all"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="295dp"
+            android:layout_marginBottom="66dp"
+            android:background="#AFC5BC"
+            android:text="ALL" />
+        <Button
+            android:id="@+id/button_pieChart"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="135dp"
+            android:layout_marginBottom="11dp"
+            android:background="#AFC5BC"
+            android:text="Pie Chart" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="left|center_horizontal"
+        android:layoutDirection="ltr"
+        android:layout_gravity="start"
+        app:menu="@menu/nav_menu">
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>
+    <!--android:animateLayoutChanges="true"-->
+    <!--android:layoutAnimation="@dimen/activity_horizontal_margin"-->
