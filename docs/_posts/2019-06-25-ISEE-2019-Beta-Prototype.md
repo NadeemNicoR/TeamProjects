@@ -31,6 +31,32 @@ There are several approarches to test your software, but the one we chose for ou
 
 Black box testing is also called Behavioral/Specification-Based/Input-Output Testing. Black Box Testing is a software testing method in which testers evaluate the functionality of the software under test without looking at the internal code structure.
 
+This method attempts to find errors in the following categories:
+
+1) Incorrect or missing functions.
+
+2) User interface errors.
+
+3) Errors in data structures or external database access.
+
+4) Behaviour or performance errors.
+
+5) Initialization and termination errors.
+
+
+### Advantages
+
+Some of the advantages of black box testing are:
+
+
+1) Tests are done from a user's perspective and will help in exposing any incompatibility in the specification of the software.
+
+2) Tester doesn't need to know programming language or how the software has been implemented.
+
+3) Test can be conducted by anybody independent from the developer'S team.
+
+4) Test cases can be designed as soon as the specifications are complete.
+
 
 
 
