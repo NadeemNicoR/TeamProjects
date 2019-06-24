@@ -52,9 +52,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String TABLE_BUDGET = "Budget"; // TABLE_NAME
     public static final String column_budget_ID = "Budget_ID";  // COL_1
     public static final String column_amount_B = "Amount_B";  // COL_2
-    public static final String column_category_B = "Category_B"; //COl_3
+    public static final String column_category_B = "Category_Bud"; //COl_3
+    public static final String column_recurrency_B = "Recurrency_B"; //COl_3
     public static final String column_date_B = "Date_B"; //COL_4
-    public static final String column_Time_B = "Time"; //COL_5
+   // public static final String column_Time_B = "Time"; //COL_5
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);
@@ -85,7 +86,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         if(result == -1)
             throw new IllegalStateException("PIN Could not be initialized");
 
-        db.execSQL("create table " + TABLE_BUDGET +" (Budget_ID INTEGER PRIMARY KEY AUTOINCREMENT,Amount_B INTEGER,Category_B TEXT,Date_B TEXT,Time TEXT)");
+        db.execSQL("create table " + TABLE_BUDGET +" (Budget_ID INTEGER PRIMARY KEY AUTOINCREMENT,Amount_B INTEGER,Category_Bud TEXT,Recurrency_B TEXT,Date_B DATE)");
     }
 
     @Override
@@ -197,12 +198,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         ContentValues contentValues = new ContentValues();
         contentValues.put(column_amount_B,cat.getAmount());
         contentValues.put(column_category_B,cat.getCategory_name());
+        contentValues.put(column_recurrency_B,cat.getRecurrencyOfBudget());
+        contentValues.put(column_date_B,cat.getDateOfBudget());
         long result = db.insert(TABLE_BUDGET,null ,contentValues);
         if(result == -1)
             return false;
         else
             return true;
     }
+
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public Cursor getAllData() {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -315,11 +319,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         return db.delete(TABLE_INCOMES, "Income_ID = ?",new String[] {incomeID});
     }
-    public Integer deleteCategory (String categoryID)
+    public Integer deleteCategory (String categoryName)
     {
         SQLiteDatabase db = this.getWritableDatabase();
-        return db.delete(TABLE_CATEGORIES, "Category_Id = ?",new String[] {categoryID});
+        return db.delete(TABLE_CATEGORIES, "Category_Name = ?",new String[] {categoryName});
     }
+
     public Integer deleteData_B (String categoryB) {
         SQLiteDatabase db = this.getWritableDatabase();
         return db.delete(TABLE_BUDGET, "Category_B = ?",new String[] {categoryB});

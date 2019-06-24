@@ -163,6 +163,9 @@ public class Budget extends AppCompatActivity {
                         CategoryConst cat = new CategoryConst();
                         cat.setAmount(Integer.parseInt(editAmount_B.getText().toString()));
                         cat.setCategory_name(editCategory_B.getSelectedItem().toString());
+                        cat.setRecurrencyOfBudget(editRecurrencyB.getSelectedItem().toString());
+                        cat.setDateOfBudget(editDate_B.getText().toString());
+
 
                         boolean isInserted = myDb_B.insertData_B(cat);
                         if (isInserted == true) {
@@ -213,8 +216,8 @@ public class Budget extends AppCompatActivity {
                                                  buffer.append("Budget ID :"+ bdg.getString(0)+"\n");
                                                  buffer.append("Amount :"+ bdg.getString(1)+"\n");
                                                  buffer.append("Category :"+ bdg.getString(2)+"\n");
-                                                 buffer.append("Date :"+ bdg.getString(3)+"\n");
-                                                 buffer.append("Time :"+ bdg.getString(4)+"\n\n\n");
+                                                 buffer.append("Recurrency :"+ bdg.getString(3)+"\n");
+                                                 buffer.append("Date :"+ bdg.getString(4)+"\n\n\n");
                                              }
                                              showMessage("Budget",buffer.toString());
                                          }
@@ -281,8 +284,5 @@ public class Budget extends AppCompatActivity {
                 }
             }
         });*/
-
-
-
 
 }
