@@ -53,7 +53,7 @@ Some of the advantages of black box testing are:
 
 2) Tester doesn't need to know programming language or how the software has been implemented.
 
-3) Test can be conducted by anybody independent from the developer'S team.
+3) Test can be conducted by anybody independent from the developer's team.
 
 4) Test cases can be designed as soon as the specifications are complete.
 
