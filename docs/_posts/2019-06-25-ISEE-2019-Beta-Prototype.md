@@ -88,7 +88,7 @@ Following are our test cases;
 
 **Test Case - 02**
 
-![Testcase2]({{site.baseurl}}/images/TC2.jpg)
+![TC2]({{site.baseurl}}/images/TC2.jpg)
 
 
 **Test Case - 03**
