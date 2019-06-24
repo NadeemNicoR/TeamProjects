@@ -16,6 +16,10 @@ An application is a product and products always serves the users in some ways or
 
 <p class="justify"/>
 
+
+![companylogo]({{site.baseurl}}/images/CAPTURE.JPG)
+
+
 If we look into a more technical definition of software testing then according to ANSI/IEEE 1059 standard – Software testing is a process of analyzing a software item to detect the differences between existing and required conditions (i.e., defects) and to evaluate the features of the software item.
 <br>
 
