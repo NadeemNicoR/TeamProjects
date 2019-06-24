@@ -31,7 +31,7 @@ There are several approarches to test your software, but the one we chose for ou
 ## Black Box Testing
 
 
-![BalckBox]({{site.baseurl}}/images/BlackBox.JPG)
+![BlackBox]({{site.baseurl}}/images/BlackBox.JPG)
 
 
 Black box testing is also called Behavioral/Specification-Based/Input-Output Testing. Black Box Testing is a software testing method in which testers evaluate the functionality of the software under test without looking at the internal code structure.
@@ -83,7 +83,7 @@ Following are our test cases;
 
 **Test Case - 01**
 
-![companylogo]({{site.baseurl}}/images/405logo.png)
+![Testcase1]({{site.baseurl}}/images/Testcase1.JPG)
 
 
 **Test Case - 02**
