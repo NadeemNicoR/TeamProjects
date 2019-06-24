@@ -18,6 +18,6 @@ If we look into a more technical definition of software testing then according t
 There are several approarches to test your software, but the one we chose for our application is *Black Box Testing*.
 
 
-## Black Box Testing _____
+## Black Box Testing
 
 
