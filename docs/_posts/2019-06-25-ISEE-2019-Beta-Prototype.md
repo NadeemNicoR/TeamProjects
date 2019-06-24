@@ -58,5 +58,22 @@ Some of the advantages of black box testing are:
 4) Test cases can be designed as soon as the specifications are complete.
 
 
+## Test cases
+
+
+The test cases that we have performed in order to check the functionality and robustness of our application followed the funtional testing methodology, i.e.
+
+
+- Identify the use case scenario
+
+- For each use case scenario, identify one or more test cases.
+
+- For each test case, identify the condition that will cause it to execute. 
+
+- Complete the test case by adding data values. 
+
+
+Following are our test cases;
+
 
 
