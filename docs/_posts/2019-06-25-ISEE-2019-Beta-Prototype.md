@@ -149,7 +149,7 @@ Have a look at our **Beta Prototype**.
 ![StoryBoard]({{site.baseurl}}/images/StoryBoard55.jpg)
 
 
-![StoryBoard]({{site.baseurl}}/images/StoryBoard66.jpg)
+![StoryBoard]({{site.baseurl}}/images/StoryBoard66.JPG)
 
 
 <br>
