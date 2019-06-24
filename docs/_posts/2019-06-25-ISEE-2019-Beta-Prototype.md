@@ -96,7 +96,7 @@ Following are our test cases;
 ![companylogo]({{site.baseurl}}/images/405logo.png)
 
 
-**Test Case - 04 **
+**Test Case - 04**
 
 ![companylogo]({{site.baseurl}}/images/405logo.png)
 
