@@ -123,3 +123,36 @@ Using these test cases we have examined how our application will be interating w
 <br>
 
 <p class="justify"/>
+
+
+The changes that we have done in this sprint can be seen through UML Class diagram below.
+
+
+*Please insert uml class diagram here*
+
+
+Key changes that we have done in our application:
+
+- Combined the income and expense class into one and made a transaction class. User can choose the transaction type from a drop down list.
+
+-  Developed pie and bar charts that can be filtered by expense type and categories to give a better visualization of user's spendings.
+
+- Entered enable pin toggle button in settings.
+
+- Developed budget class which will enable user to set a budget per category for his/her spendings.
+
+Have a look at our **Beta Prototype**.
+
+![StoryBoard]({{site.baseurl}}/images/StoryBoard44.jpg)
+
+
+![StoryBoard]({{site.baseurl}}/images/StoryBoard55.jpg)
+
+<br>
+
+<p class="justify"/>
+
+We are almost near the finishing line of our project. We will catch you again in the next and last blog in a week :) 
+We hope you have enjoyed reading our journey of till here. See you soon, AGAIN!!! (in a next ONE).
+ 
+ </p>
