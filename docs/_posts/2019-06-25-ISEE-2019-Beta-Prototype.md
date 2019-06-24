@@ -109,7 +109,7 @@ In this test case we have tested the showMessage() method inside Budget.java cla
 
 <p class="justify"/>
 
-# SUMMARY OF CHANGES
+## SUMMARY OF CHANGES
 
 <br>
 
