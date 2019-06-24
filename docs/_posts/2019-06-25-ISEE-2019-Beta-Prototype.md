@@ -44,7 +44,7 @@ This method attempts to find errors in the following categories:
 5) Initialization and termination errors.
 
 
-### Advantages
+### **Advantages**   
 
 Some of the advantages of black box testing are:
 
