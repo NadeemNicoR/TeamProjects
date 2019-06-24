@@ -88,17 +88,17 @@ Following are our test cases;
 
 **Test Case - 02**
 
-![TC2]({{site.baseurl}}/images/TC2.jpg)
+![Testcase2]({{site.baseurl}}/images/TC2.jpg)
 
 
 **Test Case - 03**
 
-![TC3]({{site.baseurl}}/images/TC3.jpg)
+![Testcase3]({{site.baseurl}}/images/TC3.jpg)
 
 
 **Test Case - 04**
 
-![companylogo]({{site.baseurl}}/images/405logo.png)
+![Testcase4]({{site.baseurl}}/images/TC4.jpg)
 
 
 **Test Case - 05**
