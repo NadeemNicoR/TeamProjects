@@ -11,18 +11,34 @@ Welcome to the fourth blog of team 405 Found - Money Control Application. In thi
 
 <p class="justify"/>
 
-Since the beginning for us it was very important that our application should bring the value that it promises. Hence we always make sure it works properly to ensure great customer experience. Among the processes of building an application, testing plays a very integral part. It checks if the apps graphics are aligned properly, tests the main functionality, checks if menus are intuitive, etc. When making changes according to customer requirements, we faced problems with the methods and their functionalities. This is where testing came in to work. It helped finding bugs, defects and fixing them.
+Since the beginning for us it was very important that our application should bring the value that it promises. Hence we always make sure it works properly to ensure great customer experience. Among the processes of building an application, testing plays a very important part.
 <br>
 
 <p class="justify"/>
 
+Test phases according to the The Common V-Model are:
 
-If we look into a more technical definition of software testing, according to ANSI/IEEE 1059 standard Software testing is a process of analyzing a software item to detect the differences between existing and required conditions (i.e., defects) and to evaluate the features of the software item.
-<br>
+- Unit Testing
+- Integration Testing
+- System Testing
+- Acceptance Testing
 
-<p class="justify"/>
+Two methods of testing are *White BoxTesting* and *Black Box Testing*.
 
-Two classifications of testing are *White BoxTesting* and *Black Box Testing*. For testing our application we have used both of them.
+- Black Box Testing is a software testing method in which testers evaluate the functionality of the software without knowing the internal code structure.
+
+- White Box Testing is a software testing method in which testers evaluate the methods of each class of the software application knowing the internal code structure.
+
+For each of the phases we have used the following testing methods:
+
+*Unit Testing* : For this phase we used White Box Testing. We developed Junit Test Cases for each class, testing the methods used. 
+
+*Integration Testing* : For the second phase we used Black Box Testing to test if the communication between components works.
+
+*System Testing* : For this phase the app was tested from the customer point of view. We tested our app in two different type of Android Versions as Oreo 8.0 and Marshmallow 6.0.
+
+*Acceptance Testing* : In the final phase we showed the application to our customer and received his review and opinion about the app until now. We used Black Box Testing for this phase.
+
 <br>
 
 <p class="justify"/>
@@ -30,33 +46,11 @@ Two classifications of testing are *White BoxTesting* and *Black Box Testing*. F
 
 ## Black Box Testing
 
-Black Box Testing is a software testing method in which testers evaluate the functionality of the software without knowing the internal code structure.
 
 For this approach we tested 5 functionalities manually and the details are shown below:
 
-**Test Case - 01**
 
-![Testcase1]({{site.baseurl}}/images/TC1.JPG)
-
-
-**Test Case - 02**
-
-![Testcase2]({{site.baseurl}}/images/TC2.jpg)
-
-
-**Test Case - 03**
-
-![Testcase3]({{site.baseurl}}/images/TC3.jpg)
-
-
-**Test Case - 04**
-
-![Testcase4]({{site.baseurl}}/images/TC4.jpg)
-
-
-**Test Case - 05**
-
-![Testcase5]({{site.baseurl}}/images/TC5.jpg)
+![Testcase1]({{site.baseurl}}/images/Black_Box_Testing.png)
 
 
 <br>
@@ -66,9 +60,9 @@ For this approach we tested 5 functionalities manually and the details are shown
 
 ## White Box Testing
 
-White Box Testing is a software testing method in which testers evaluate the methods of each class of the software application knowing the internal code structure.
 
 For this approach we tested methods from 5 classes of our application and the details are shown below:
+
 
 **Test Case - 01**
 
@@ -124,11 +118,10 @@ Key changes that we have done in our application:
 
 - Combined the income and expense class into one and made a transaction class. User can choose the transaction type from a drop down list.
 
--  Developed pie and bar charts that can be filtered by expense type and categories to give a better visualization of user's spendings.
+- Developed pie and bar charts that can be filtered by categories, amount and date to give a better visualization of user's spendings.
 
 - Entered enable pin toggle button in settings.
 
-- Developed budget class which will enable user to set a budget per category for his/her spendings.
 
 The changes that we have done in this sprint can be seen through UML Class diagram below.
 
