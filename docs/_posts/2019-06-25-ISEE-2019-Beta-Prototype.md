@@ -11,7 +11,7 @@ Welcome to the fourth blog of team 405 Found - Money Control Application. In thi
 
 <p class="justify"/>
 
-An application is a product and products always serves the users in some ways or another.It is very important that our application brings the value that it promises, hence it should work properly to ensure great customer experience. Development of an app, has many processes and testing gets a glimpse of every bit – it checks if the apps graphics are aligned properly, tests the main functionality, checks if menus are intuitive, etc. After developers fix issues, sometimes another issue may appear unexpectedly somewhere else, that’s just how testing goes, so it’s great to find those issues to be resolved and deliver a quality product in the marketplace.
+An application is a product and products always serves the users in some ways or another. It is very important that our application brings the value that it promises, hence it should work properly to ensure great customer experience. Development of an app has many processes and testing gets a glimpse of every bit – it checks if the apps graphics are aligned properly, tests the main functionality, checks if menus are intuitive, etc. After developers fix issues, sometimes another issue may appear unexpectedly somewhere else, that’s just how testing goes, so it’s great to find those issues to be resolved and deliver a quality product in the marketplace.
 <br>
 
 <p class="justify"/>
