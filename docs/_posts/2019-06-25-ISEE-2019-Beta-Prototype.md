@@ -11,7 +11,7 @@ Welcome to the fourth blog of team 405 Found - Money Control Application. In thi
 
 <p class="justify"/>
 
-Since the beginning for us it was very important that our application should bring the value that it promises. Hence it should work properly to ensure great customer experience. Among the processes of building an application, testing plays a very integral part. It checks if the apps graphics are aligned properly, tests the main functionality, checks if menus are intuitive, etc. When making changes according to customer requirements, we faced problems with the methods and their functionalities. This is where testing came in to work. It helped finding bugs, defects and fixing them.
+Since the beginning for us it was very important that our application should bring the value that it promises. Hence we always make sure it works properly to ensure great customer experience. Among the processes of building an application, testing plays a very integral part. It checks if the apps graphics are aligned properly, tests the main functionality, checks if menus are intuitive, etc. When making changes according to customer requirements, we faced problems with the methods and their functionalities. This is where testing came in to work. It helped finding bugs, defects and fixing them.
 <br>
 
 <p class="justify"/>
