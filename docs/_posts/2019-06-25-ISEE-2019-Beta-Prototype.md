@@ -41,22 +41,22 @@ For this approach we tested 5 functionalities manually and the details are shown
 
 **Test Case - 02**
 
-![Testcase2]({{site.baseurl}}/images/TC2.JPG)
+![Testcase2]({{site.baseurl}}/images/TC2.jpg)
 
 
 **Test Case - 03**
 
-![Testcase3]({{site.baseurl}}/images/TC3.JPG)
+![Testcase3]({{site.baseurl}}/images/TC3.jpg)
 
 
 **Test Case - 04**
 
-![Testcase4]({{site.baseurl}}/images/TC4.JPG)
+![Testcase4]({{site.baseurl}}/images/TC4.jpg)
 
 
 **Test Case - 05**
 
-![Testcase5]({{site.baseurl}}/images/TC5.JPG)
+![Testcase5]({{site.baseurl}}/images/TC5.jpg)
 
 
 <br>
@@ -136,10 +136,10 @@ The changes that we have done in this sprint can be seen through UML Class diagr
 
 Have a look at our **Beta Prototype**.
 
-![StoryBoard]({{site.baseurl}}/images/StoryBoard44.JPG)
+![StoryBoard]({{site.baseurl}}/images/StoryBoard44.jpg)
 
 
-![StoryBoard]({{site.baseurl}}/images/StoryBoard55.JPG)
+![StoryBoard]({{site.baseurl}}/images/StoryBoard55.jpg)
 
 
 ![StoryBoard]({{site.baseurl}}/images/StoryBoard66.JPG)
