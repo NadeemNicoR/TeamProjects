@@ -41,22 +41,22 @@ For this approach we tested 5 functionalities manually and the details are shown
 
 **Test Case - 02**
 
-![Testcase2]({{site.baseurl}}/images/TC2.jpg)
+![Testcase2]({{site.baseurl}}/images/TC2.JPG)
 
 
 **Test Case - 03**
 
-![Testcase3]({{site.baseurl}}/images/TC3.jpg)
+![Testcase3]({{site.baseurl}}/images/TC3.JPG)
 
 
 **Test Case - 04**
 
-![Testcase4]({{site.baseurl}}/images/TC4.jpg)
+![Testcase4]({{site.baseurl}}/images/TC4.JPG)
 
 
 **Test Case - 05**
 
-![Testcase5]({{site.baseurl}}/images/TC5.jpg)
+![Testcase5]({{site.baseurl}}/images/TC5.JPG)
 
 
 <br>
@@ -83,7 +83,7 @@ In this test case we have tested the arePinsSame() method inside EnablePin.java 
 In this test case we have tested the isValidEmail() method inside EmailReport.java class, using the scenario of entering a correct and wrong e-mail.
 
 
-![Testcase2]({{site.baseurl}}/images/JunitTestEmailReport1.jpg)
+![Testcase2]({{site.baseurl}}/images/JunitTestEmailReport1.JPG)
 
 
 **Test Case - 03**
@@ -91,7 +91,7 @@ In this test case we have tested the isValidEmail() method inside EmailReport.ja
 In this test case we have tested the isDateValid() method inside NewExpense.java class, using the scenario of entering a correct and wrong date format.
 
 
-![Testcase3]({{site.baseurl}}/images/JunitTestDateFormat1.jpg)
+![Testcase3]({{site.baseurl}}/images/JunitTestDateFormat1.JPG)
 
 
 **Test Case - 04**
@@ -99,7 +99,7 @@ In this test case we have tested the isDateValid() method inside NewExpense.java
 In this test case we have tested the method insertCategories() from the DatabaseHelper.java class.
 
 
-![Testcase4]({{site.baseurl}}/images/JunitTestDatabaseHelp1.jpg)
+![Testcase4]({{site.baseurl}}/images/JunitTestDatabaseHelp1.JPG)
 
 
 **Test Case - 05**
@@ -107,7 +107,7 @@ In this test case we have tested the method insertCategories() from the Database
 In this test case we have tested the showMessage() method inside Budget.java class.
 
 
-![Testcase5]({{site.baseurl}}/images/JunitTestBudgetShowMessage1.jpg)
+![Testcase5]({{site.baseurl}}/images/JunitTestBudgetShowMessage1.JPG)
 
 
 <br>
@@ -136,10 +136,10 @@ The changes that we have done in this sprint can be seen through UML Class diagr
 
 Have a look at our **Beta Prototype**.
 
-![StoryBoard]({{site.baseurl}}/images/StoryBoard44.jpg)
+![StoryBoard]({{site.baseurl}}/images/StoryBoard44.JPG)
 
 
-![StoryBoard]({{site.baseurl}}/images/StoryBoard55.jpg)
+![StoryBoard]({{site.baseurl}}/images/StoryBoard55.JPG)
 
 
 ![StoryBoard]({{site.baseurl}}/images/StoryBoard66.JPG)
