@@ -72,37 +72,37 @@ For this approach we tested methods from 5 classes of our application and the de
 
 **Test Case - 01**
 
-![Testcase1]({{site.baseurl}}/images/JunitTestEnablePin.JPG)
+![Testcase1]({{site.baseurl}}/images/JunitTestEnablePin1.JPG)
 
-In this test case we have tested the EnablePin.java class, using the scenario when both PIN match.
+In this test case we have tested the arePinsSame() method inside EnablePin.java class, using the scenario when both PIN match.
 
 
 **Test Case - 02**
 
-![Testcase2]({{site.baseurl}}/images/JunitTestEmailReport.jpg)
+![Testcase2]({{site.baseurl}}/images/JunitTestEmailReport1.jpg)
 
-In this test case we have tested the EmailReport.java class, using the scenario of entering a correct and wrong e-mail.
+In this test case we have tested the isValidEmail() method inside EmailReport.java class, using the scenario of entering a correct and wrong e-mail.
 
 
 **Test Case - 03**
 
-![Testcase3]({{site.baseurl}}/images/JunitTestDateFormat.jpg)
+![Testcase3]({{site.baseurl}}/images/JunitTestDateFormat1.jpg)
 
-In this test case we have tested the NewExpense.java class, using the scenario of entering a correct and wrong date format.
+In this test case we have tested the isDateValid() method inside NewExpense.java class, using the scenario of entering a correct and wrong date format.
 
 
 **Test Case - 04**
 
-![Testcase4]({{site.baseurl}}/images/JunitTestDatabaseHelp.jpg)
+![Testcase4]({{site.baseurl}}/images/JunitTestDatabaseHelp1.jpg)
 
 In this test case we have tested the method insertCategories() from the DatabaseHelper.java class.
 
 
 **Test Case - 05**
 
-![Testcase5]({{site.baseurl}}/images/JunitTestBudgetShowMessage.jpg)
+![Testcase5]({{site.baseurl}}/images/JunitTestBudgetShowMessage1.jpg)
 
-In this test case we have tested the Budget.java class.
+In this test case we have tested the showMessage() method inside Budget.java class.
 
 
 <br>
