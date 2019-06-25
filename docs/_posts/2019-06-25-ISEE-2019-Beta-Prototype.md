@@ -10,6 +10,7 @@ Welcome to the fourth blog of team 405 Found - Money Control Application. In thi
 <br>
 
 ## Testing Process
+
 <p class="justify"/>
 
 Since the beginning for us it was very important that our application should bring the value that it promises. Hence we always make sure it works properly to ensure great customer experience. Among the processes of building an application, testing plays a very important part.
@@ -32,11 +33,11 @@ Two methods of testing are *White BoxTesting* and *Black Box Testing*.
 
 For each of the phases we have used the following testing methods:
 
-*Unit Testing* : For this phase we used White Box Testing. We developed Junit Test Cases for each class, testing the methods used. 
+*Unit Testing* : For this phase we used White Box Testing. We developed JUnit Test Cases for each class, testing the methods used. 
 
 *Integration Testing* : For the second phase we used Black Box Testing to test if the communication between components works.
 
-*System Testing* : For this phase the app was tested from the customer point of view. We tested our app in two different type of Android Versions as Oreo 8.0 and Marshmallow 6.0.
+*System Testing* : For this phase the app was tested from the customer's point of view. We tested our app in two different Android Versions, which are; Oreo 8.0 and Marshmallow 6.0.
 
 *Acceptance Testing* : In the final phase we showed the application to our customer and received his review and opinion about the app until now. We used Black Box Testing for this phase.
 
@@ -67,7 +68,7 @@ For this approach we tested methods from 5 classes of our application and the de
 
 **Test Case - 01**
 
-In this test case we have tested the arePinsSame() method inside EnablePin.java class, using the scenario when both PIN match.
+In this test case we have tested the "arePinsSame()" method inside EnablePin.java class, using the scenario when both of the PIN examples match.
 
 
 ![Testcase1]({{site.baseurl}}/images/JunitTestEnablePin1.JPG)
@@ -75,7 +76,7 @@ In this test case we have tested the arePinsSame() method inside EnablePin.java 
 
 **Test Case - 02**
 
-In this test case we have tested the isValidEmail() method inside EmailReport.java class, using the scenario of entering a correct and wrong e-mail.
+In this test case we have tested the "isValidEmail()" method inside EmailReport.java class, using the scenario of entering a correct and wrong e-mail.
 
 
 ![Testcase2]({{site.baseurl}}/images/JunitTestEmailReport1.JPG)
@@ -83,7 +84,7 @@ In this test case we have tested the isValidEmail() method inside EmailReport.ja
 
 **Test Case - 03**
 
-In this test case we have tested the isDateValid() method inside NewExpense.java class, using the scenario of entering a correct and wrong date format.
+In this test case we have tested the "isDateValid()" method inside NewExpense.java class, using the scenario of entering a correct and wrong date format.
 
 
 ![Testcase3]({{site.baseurl}}/images/JunitTestDateFormat1.JPG)
@@ -91,7 +92,7 @@ In this test case we have tested the isDateValid() method inside NewExpense.java
 
 **Test Case - 04**
 
-In this test case we have tested the method insertCategories() from the DatabaseHelper.java class.
+In this test case we have tested the method "insertCategories()" from the DatabaseHelper.java class.
 
 
 ![Testcase4]({{site.baseurl}}/images/JunitTestDatabaseHelp1.JPG)
@@ -99,7 +100,7 @@ In this test case we have tested the method insertCategories() from the Database
 
 **Test Case - 05**
 
-In this test case we have tested the showMessage() method inside Budget.java class.
+In this test case we have tested the "showMessage()" method inside Budget.java class.
 
 
 ![Testcase5]({{site.baseurl}}/images/JunitTestBudgetShowMessage1.JPG)
@@ -117,18 +118,18 @@ In this test case we have tested the showMessage() method inside Budget.java cla
 
 Key changes that we have done in our application:
 
-- Combined the income and expense class into one and made a transaction class. User can choose the transaction type from a drop down list.
+- Combined the income and expense classes into a transaction class. User can choose the transaction type from a drop down list.
 
 - Developed pie and bar charts that can be filtered by categories, amount and date to give a better visualization of user's spendings.
 
-- Entered enable pin toggle button in settings.
+- Entered the enable pin toggle button in settings.
 
 
-The changes that we have done in this sprint can be seen through UML Class diagram below.
+The changes that we have done in this sprint can be seen highlighted on UML Class diagram below.
 
 ![UML]({{site.baseurl}}/images/UML_BetaPrototype.png)
 
-Have a look at our **Beta Prototype**.
+Take a look at our **Beta Prototype**.
 
 ![StoryBoard]({{site.baseurl}}/images/StoryBoard44.jpg)
 
@@ -143,7 +144,7 @@ Have a look at our **Beta Prototype**.
 
 <p class="justify"/>
 
-*We are almost near the finishing line of our project. We will catch you again in the next and last blog in a week :) 
+*We are near to the end line of our project. We will catch up with you again in the next and last blog in a week :) 
 We hope you have enjoyed reading about our journey till here. See you soon, AGAIN!!! (in a next ONE).*
  
 <br>
