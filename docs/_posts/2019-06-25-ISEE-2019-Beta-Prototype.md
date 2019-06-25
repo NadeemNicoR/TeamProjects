@@ -31,8 +31,11 @@ Test phases according to the The Common V-Model are:
 <br>
 
 - Unit Testing
+
 - Integration Testing
+
 - System Testing
+
 - Acceptance Testing
 
 
