@@ -94,33 +94,32 @@ For this approach we tested methods from 5 classes of our application and the de
 
 <p class="justify">
 
-In this test case we have tested the "arePinsSame()" method inside EnablePin.java class, using the scenario when both of the PIN examples match.
-
+In this test case we have tested the "addData()" method inside Transactions.java class, using the branch coverage technique.
 </p>
 
-![Testcase1]({{site.baseurl}}/images/JunitTestEnablePin1.JPG)
+![Testcase1]({{site.baseurl}}/images/WhiteBox1.PNG) ![Testcase1]({{site.baseurl}}/images/WhiteBox1S.PNG)
 
 
 **Test Case - 02**
 
 <p class="justify">
    
-In this test case we have tested the "isValidEmail()" method inside EmailReport.java class, using the scenario of entering a correct and wrong e-mail.
+In this test case we have tested the "delete_Data_C()" method inside Categories.java class, using the branch coverage technique.
 
 </p>
 
-![Testcase2]({{site.baseurl}}/images/JunitTestEmailReport1.JPG)
+![Testcase2]({{site.baseurl}}/images/WhiteBox2.PNG) ![Testcase2]({{site.baseurl}}/images/WhiteBox2S.PNG)
 
 
 **Test Case - 03**
 
 <p class="justify">
 
-In this test case we have tested the "isDateValid()" method inside NewExpense.java class, using the scenario of entering a correct and wrong date format.
+In this test case we have tested the "onCreate()" method inside MainActivity.java class, using the statement coverage technique.
 
 </p>
 
-![Testcase3]({{site.baseurl}}/images/JunitTestDateFormat1.JPG)
+![Testcase3]({{site.baseurl}}/images/WhiteBox3.PNG) ![Testcase3]({{site.baseurl}}/images/WhiteBox3S.PNG)
 
 
 **Test Case - 04**
@@ -128,22 +127,22 @@ In this test case we have tested the "isDateValid()" method inside NewExpense.ja
 
 <p class="justify">
 
-In this test case we have tested the method "insertCategories()" from the DatabaseHelper.java class.
+In this test case we have tested the method "onCreate()" from the LogInScreen.java class, using the branch coverage technique.
 
 </p>
 
-![Testcase4]({{site.baseurl}}/images/JunitTestDatabaseHelp1.JPG)
+![Testcase4]({{site.baseurl}}/images/WhiteBox4.PNG) ![Testcase4]({{site.baseurl}}/images/WhiteBox4S.PNG)
 
 
 **Test Case - 05**
 
 <p class="justify">
    
-In this test case we have tested the "showMessage()" method inside Budget.java class.
+In this test case we have tested the "viewData()" method inside TransactionReport.java class, using the branch coverage technique.
 
 </p>
 
-![Testcase5]({{site.baseurl}}/images/JunitTestBudgetShowMessage1.JPG)
+![Testcase5]({{site.baseurl}}/images/WhiteBox5.PNG) ![Testcase4]({{site.baseurl}}/images/WhiteBox5S.PNG)
 
 
 <br>
@@ -159,7 +158,7 @@ Key changes that we have done in our application:
 
 - Combined the income and expense classes into a transaction class. User can choose the transaction type from a drop down list.
 
-- Developed pie and bar charts that can be filtered by categories, amount and date to give a better visualization of user's spendings.
+- Developed pie and bar charts that can be filtered by categories, amount and date to give a better visualization of user's spending.
 
 - Entered the enable pin toggle button in settings.
 
