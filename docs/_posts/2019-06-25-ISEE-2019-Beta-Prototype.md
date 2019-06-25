@@ -26,6 +26,8 @@ Since the beginning for us it was very important that our application should bri
 
 Test phases according to the The Common V-Model are:
 
+</p>
+
 <br>
 
 - Unit Testing
@@ -33,11 +35,11 @@ Test phases according to the The Common V-Model are:
 - System Testing
 - Acceptance Testing
 
-</p>
+
 
 Two methods of testing are *White BoxTesting* and *Black Box Testing*.
 
-<p class="justify">
+
 
 - Black Box Testing is a software testing method in which testers evaluate the functionality of the software without knowing the internal code structure.
 
@@ -53,7 +55,7 @@ For each of the phases we have used the following testing methods:
 
 *Acceptance Testing* : In the final phase we showed the application to our customer and received his review and opinion about the app until now. We used Black Box Testing for this phase.
 
-</p>
+
 
 <br>
 
@@ -74,7 +76,7 @@ For this approach we tested 5 functionalities manually and the details are shown
 
 <br>
 
-<p class="justify">
+
 
 
 ## White Box Testing
@@ -150,7 +152,7 @@ In this test case we have tested the "showMessage()" method inside Budget.java c
 
 <br>
 
-<p class="justify">
+
 
 Key changes that we have done in our application:
 
@@ -163,7 +165,7 @@ Key changes that we have done in our application:
 
 The changes that we have done in this sprint can be seen highlighted on UML Class diagram below.
 
-</p>
+
 
 <br>
 
