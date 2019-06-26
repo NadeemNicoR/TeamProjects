@@ -8,13 +8,8 @@ import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.List;
-
-
 public class Mainactivity extends AppCompatActivity {
-
     DatabaseHelper myDb;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -31,16 +26,6 @@ public class Mainactivity extends AppCompatActivity {
                     startActivity(settingsIntent);
                 }
         });
-        /*Button income=(Button) findViewById(R.id.Income);
-        income.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Intent incomeIntent=new Intent(getApplicationContext(), Income.class);
-                startActivity(incomeIntent);
-            }
-        });*/
         Button expense=(Button) findViewById(R.id.NewExpense);
         expense.setOnClickListener(new View.OnClickListener()
         {
@@ -75,6 +60,39 @@ public class Mainactivity extends AppCompatActivity {
 
         myDb = new DatabaseHelper(this);
 
+
+        List<String> defaultBudgetList = new ArrayList<>();
+        defaultBudgetList = myDb.getCategoriesB();
+
+        if (defaultBudgetList.isEmpty()){
+            CategoryConst cat0 = new CategoryConst();
+            cat0.setCategory_name("Choose budget to delete");
+            cat0.setAmount(0);
+            myDb.insertData_B(cat0);
+        }
+
+       List<String> defaultCurrencyList = new ArrayList<>();
+        defaultCurrencyList = myDb.getNewCurrency();
+
+        if (defaultCurrencyList.isEmpty())
+        {
+            CurrencyConst curr1 = new CurrencyConst();
+            curr1.setCurrencyName("Euro");
+            myDb.insertCurrency(curr1);
+
+            CurrencyConst curr2 = new CurrencyConst();
+            curr2.setCurrencyName("Rupee");
+            myDb.insertCurrency(curr2);
+
+            CurrencyConst curr3 = new CurrencyConst();
+            curr3.setCurrencyName("Lekë");
+            myDb.insertCurrency(curr3);
+
+            CurrencyConst curr4 = new CurrencyConst();
+            curr4.setCurrencyName("Dollar");
+            myDb.insertCurrency(curr4);
+        }
+
         List<String> deftaultCateList = new ArrayList<>();
         deftaultCateList = myDb.getNewCategories();
 
@@ -99,19 +117,7 @@ public class Mainactivity extends AppCompatActivity {
             CategoryConst cat4 = new CategoryConst();
             cat4.setCategory_name("Electricity Bill");
             myDb.insertCategories(cat4);
-
         }
-
-        List<String> defaultBudgetList = new ArrayList<>();
-        defaultBudgetList = myDb.getCategoriesB();
-
-        if (defaultBudgetList.isEmpty()){
-            CategoryConst cat0 = new CategoryConst();
-            cat0.setCategory_name("Choose budget to delete");
-            cat0.setAmount(0);
-            myDb.insertData_B(cat0);
-        }
-
 
     }
 }

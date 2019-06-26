@@ -14,9 +14,6 @@ package com.example.home;
         import android.widget.SimpleCursorAdapter;
         import android.widget.Toast;
         import android.app.ListActivity;
-
-
-
         import java.util.ArrayList;
         import java.util.HashMap;
 
@@ -43,7 +40,6 @@ public class TransactionReport extends AppCompatActivity
         viewData();
 
     }
-
     private void viewData() {
 
         ListView traList = (ListView) findViewById(R.id.list_view);
@@ -51,24 +47,24 @@ public class TransactionReport extends AppCompatActivity
 
         if (cursor.getCount() == 0)
         {
-
             Toast.makeText(this, "No data to show", Toast.LENGTH_SHORT).show();
         }
         else {
             String[] columns = new String[] {myDb.column_amount_E,
                     myDb.column_category_E, myDb.column_transactionType,
-                    myDb.column_date_E,myDb.column_payment_E};
+                    myDb.column_date_E};
 
-            int[] to = new int[] {R.id.textViewAmt, R.id.textViewCate, R.id.textViewType, R.id.textViewDte,R.id.textViewpaytype};
+            int[] to = new int[] {R.id.textViewAmt, R.id.textViewCate, R.id.textViewType, R.id.textViewDte};
             ListAdapter ada = new SimpleCursorAdapter(this, R.layout.row, cursor, columns, to, 0){
-                public View getView(int position, View convertView, ViewGroup parent){
+                public View getView(int position, View convertView, ViewGroup parent)
+                {
                     View view = super.getView(position, convertView, parent);
                     return view;
                 }
             };
 
-            traList.setAdapter(ada);
-            btnDel = (Button) findViewById(R.id.btn_delete);
+           traList.setAdapter(ada);
+           /* btnDel = (Button) findViewById(R.id.btn_delete);
 
             traList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
@@ -79,30 +75,9 @@ public class TransactionReport extends AppCompatActivity
                     SparseBooleanArray checkedItemPositions = la.getListView().getCheckedItemPositions();
                     myDb2 =new DatabaseHelper(getApplicationContext()) ;
                     boolean result = myDb2.deleteTransaction(id);
-
-
                 }
-            });
+            });*/
 
-
-
-//            ArrayList<String> ExpenceList = new ArrayList<>();
-//            while (cursor.moveToNext()){
-//                ExpenceList.add(cursor.getString(0) );
-//                ExpenceList.add(cursor.getString(1));
-//                ExpenceList.add(cursor.getString(2));
-//                ExpenceList.add(cursor.getString(3));
-//                ExpenceList.add(cursor.getString(4));
-//                ExpenceList.add(cursor.getString(5));
-//                ExpenceList.add(cursor.getString(6));
-//                ExpenceList.add(cursor.getString(7));
-//                ExpenceList.add(cursor.getString(8));
-//            }
-//            ArrayList<HashMap<String,String>> myMapList = new ArrayList<>();
-//            for(int i=0; i<ExpenceList.size();i++){
-//                HashMap<String,String> myMap = new HashMap<>();
-//                myMap.put("amount",ExpenceList.get(i).);
-//            }
 
         }
     }

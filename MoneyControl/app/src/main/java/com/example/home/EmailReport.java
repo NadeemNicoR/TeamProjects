@@ -14,24 +14,18 @@ public class EmailReport extends AppCompatActivity
     private EditText mEditTextTo;
     private EditText mEditTextSubject;
     private EditText mEditTextMessage;
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_email_report);
         setTitle("Email Report");
-
         myDb = new DatabaseHelper(this);
-
         Cursor res_E = myDb.getAllData();
-
         StringBuffer buffer = new StringBuffer();
-
         buffer.append("--------------------------------\n");
         buffer.append(" Transaction Summary:\n");
         buffer.append("--------------------------------\n");
-
         while (res_E.moveToNext()) {
             buffer.append("Transaction Number :" + res_E.getString(0) + "\n");
             buffer.append("Transaction Type :" + res_E.getString(1) + "\n");
@@ -40,8 +34,8 @@ public class EmailReport extends AppCompatActivity
             buffer.append("Reccurrency :" + res_E.getString(4) + "\n");
             buffer.append("Amount :" + res_E.getString(5) + "\n");
             buffer.append("Payment :" + res_E.getString(6) + "\n");
-            buffer.append("Currency :" + res_E.getString(7) + "\n");
-            buffer.append("Note :" + res_E.getString(8) + "\n\n\n");
+            //buffer.append("Currency :" + res_E.getString(7) + "\n");
+            buffer.append("Note :" + res_E.getString(7) + "\n\n\n");
         }
        // buffer.append("--------------------------------\n");
         //buffer.append("All Income Transactions:\n");

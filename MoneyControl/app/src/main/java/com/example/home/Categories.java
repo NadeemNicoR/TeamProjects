@@ -45,7 +45,6 @@ public class Categories extends AppCompatActivity
 
         //categoryID = (EditText) findViewById(R.id.addCatID);
         categoryName = (EditText) findViewById(R.id.addCategoryName);
-
         btnAddData_C=(Button) findViewById(R.id.DoneCategory);
         btnViewAll_C=(Button) findViewById(R.id.viewCategory);
         btnDelete_C=(Button) findViewById(R.id.deleteCategory);
@@ -56,7 +55,6 @@ public class Categories extends AppCompatActivity
 
         List<String> deftaultCateList = new ArrayList<>();
         myDbCategory = new DatabaseHelper(this);
-
         deftaultCateList = myDbCategory.getNewCategories();
 
         spinner = (Spinner) findViewById(R.id.spinnerDeleteC);
@@ -87,7 +85,7 @@ public class Categories extends AppCompatActivity
                         {
                         Integer deletedRows = myDbCategory.deleteCategory(deleteCategory.getSelectedItem().toString());
                         if (deletedRows > 0) {
-                            Intent intent = new Intent(getApplicationContext(), Categories.class);
+                            Intent intent = new Intent(getApplicationContext(), Categories.class);//to refresh the activity as soon as you delet
                             startActivity(intent);
                             Toast.makeText(Categories.this, "Category Deleted", Toast.LENGTH_LONG).show();
                         }
@@ -95,11 +93,9 @@ public class Categories extends AppCompatActivity
                             Toast.makeText(Categories.this, "Category not Deleted", Toast.LENGTH_LONG).show();}
                         else
                             Toast.makeText(Categories.this, "Cannot delete default categories", Toast.LENGTH_LONG).show();
-
                     }
                 }
         );
-
     }
     public void addData_C() {
         btnAddData_C.setOnClickListener(

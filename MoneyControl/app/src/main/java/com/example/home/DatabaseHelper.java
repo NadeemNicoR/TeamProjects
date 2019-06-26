@@ -57,6 +57,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String column_date_B = "Date_B"; //COL_4
    // public static final String column_Time_B = "Time"; //COL_5
 
+    public static final String TABLE_CURRENCY = "Currency";
+    public static final String column_currency_ID= "Currency_ID";
+    public static final String column_currency_Name="Currency_Name";
+
+   // public static final String TABLE_Currency = "Currencytable"; // TABLE_NAME
+    //public static final String column_currency= "CurrencyColumn";  // COL_1
+
+
+
+
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);
     }
@@ -64,7 +74,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         //EXPENSE
-        db.execSQL("create table " + TABLE_TRANSACTIONS +" (_id INTEGER PRIMARY KEY AUTOINCREMENT,TransactionType TEXT ,Category TEXT,Date TEXT,Recurrency TEXT,Amount INTEGER,Payment TEXT,Currency TEXT,Note TEXT)");
+        db.execSQL("create table " + TABLE_TRANSACTIONS +" (_id INTEGER PRIMARY KEY AUTOINCREMENT,TransactionType TEXT ,Category TEXT,Date TEXT,Recurrency TEXT,Amount INTEGER,Payment TEXT, Currency TEXT,Note TEXT)");
 
         //INCOME
         db.execSQL("create table " + TABLE_INCOMES +" (Income_ID INTEGER PRIMARY KEY AUTOINCREMENT,Category_I TEXT,Date_I TEXT,Recurrency_I TEXT,Amount_I INTEGER,Payment_I TEXT,Currency_I TEXT,Note_I TEXT)");
@@ -87,6 +97,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             throw new IllegalStateException("PIN Could not be initialized");
 
         db.execSQL("create table " + TABLE_BUDGET +" (Budget_ID INTEGER PRIMARY KEY AUTOINCREMENT,Amount_B INTEGER,Category_Bud TEXT,Recurrency_B TEXT,Date_B DATE)");
+        db.execSQL("create table " + TABLE_CURRENCY+ " (Currency_ID INTEGER PRIMARY KEY AUTOINCREMENT, Currency_Name TEXT)");
     }
 
     @Override
@@ -104,7 +115,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
 
-    public boolean insertData(String transactiontype1,String category,String date,String Recurrency,String amount,String payment, String currency, String note)
+    public boolean insertData(String transactiontype1,String category,String date,String Recurrency,String amount,String payment,String currency, String note)
     {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -147,6 +158,29 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 return true;
         }
     }
+
+    public boolean insertCategories(CategoryConst cat)
+    {
+        SQLiteDatabase db=this.getWritableDatabase();
+        ContentValues contentValues=new ContentValues();
+        contentValues.put(column_category_name,cat.getCategory_name());
+        long resultCategory = db.insert(TABLE_CATEGORIES,null ,contentValues);
+        if(resultCategory == -1)
+            return false;
+        else
+            return true;
+    }
+    public boolean insertCurrency(CurrencyConst currCost)
+    {
+        SQLiteDatabase db=this.getWritableDatabase();
+        ContentValues contentValues=new ContentValues();
+        contentValues.put(column_currency_Name,currCost.getCurrencyName());
+        long resultCurrency = db.insert(TABLE_CURRENCY,null ,contentValues);
+        if(resultCurrency == -1)
+            return false;
+        else
+            return true;
+    }
     public ArrayList<String> getNewCategories()
     {
         ArrayList<String> NewCategory= new ArrayList<>();
@@ -162,7 +196,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
         return NewCategory;
     }
-
+    public ArrayList<String> getNewCurrency()
+    {
+        ArrayList<String> NewCurrency= new ArrayList<>();
+        String newCurrency= "SELECT " + column_currency_Name+ " FROM " + TABLE_CURRENCY;
+        SQLiteDatabase db=this.getReadableDatabase();
+        Cursor c = db.rawQuery(newCurrency,null);
+        if(c.moveToNext()){
+            do{
+                CurrencyConst CurrencyConst1 = new CurrencyConst();
+                CurrencyConst1.setCurrencyName(c.getString(c.getColumnIndex(column_currency_Name)));
+                NewCurrency.add(CurrencyConst1.getCurrencyName());
+            }while (c.moveToNext());
+        }
+        return NewCurrency;
+    }
     public ArrayList<String> getCategoriesB()
     {
         ArrayList<String> NewCategoryB= new ArrayList<>();
@@ -180,17 +228,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
 
-    public boolean insertCategories(CategoryConst cat)
-    {
-        SQLiteDatabase db=this.getWritableDatabase();
-        ContentValues contentValues=new ContentValues();
-        contentValues.put(column_category_name,cat.getCategory_name());
-        long resultCategory = db.insert(TABLE_CATEGORIES,null ,contentValues);
-        if(resultCategory == -1)
-            return false;
-        else
-            return true;
-    }
+
+
+
     //public boolean insertData_B(String amount,String category,String date,String time)
     public  boolean insertData_B(CategoryConst cat)
     {
@@ -287,7 +327,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(column_recurrency_E,Recurrency);
         contentValues.put(column_amount_E,amount);
         contentValues.put(column_payment_E,payment);
-        contentValues.put(column_currency_E,currency);
+        //contentValues.put(column_currency_E,currency);
         contentValues.put(column_note_E,note);
 
         db.update(TABLE_TRANSACTIONS, contentValues, "Transaction_ID = ?",new String[] { transactionID });
@@ -342,6 +382,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             e.printStackTrace();
         }
         return false;
+    }
+
+    public boolean chooseCurrency(String currencySelected)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(column_currency_Name,currencySelected);
+        long result = db.insert(TABLE_TRANSACTIONS,null ,contentValues);
+
+        if(result == -1)
+            return false;
+        else
+            return true;
     }
 
 

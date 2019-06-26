@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d865c75-9902-4ef2-8a2f-dcc9412be92b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoneyControl/app/src/main/java/com/example/home/Categories.java" beforeDir="false" afterPath="$PROJECT_DIR$/MoneyControl/app/src/main/java/com/example/home/Categories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoneyControl/app/src/main/java/com/example/home/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/MoneyControl/app/src/main/java/com/example/home/Currency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoneyControl/app/src/main/java/com/example/home/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/MoneyControl/app/src/main/java/com/example/home/DatabaseHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoneyControl/app/src/main/java/com/example/home/EmailReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/MoneyControl/app/src/main/java/com/example/home/EmailReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoneyControl/app/src/main/java/com/example/home/Mainactivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/MoneyControl/app/src/main/java/com/example/home/Mainactivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoneyControl/app/src/main/java/com/example/home/Newexpense.java" beforeDir="false" afterPath="$PROJECT_DIR$/MoneyControl/app/src/main/java/com/example/home/Newexpense.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoneyControl/app/src/main/java/com/example/home/TransactionReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/MoneyControl/app/src/main/java/com/example/home/TransactionReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoneyControl/app/src/main/res/layout/activity_budget.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MoneyControl/app/src/main/res/layout/activity_budget.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoneyControl/app/src/main/res/layout/activity_categories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MoneyControl/app/src/main/res/layout/activity_categories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoneyControl/app/src/main/res/layout/activity_currency.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MoneyControl/app/src/main/res/layout/activity_currency.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoneyControl/app/src/main/res/layout/activity_new_expense.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MoneyControl/app/src/main/res/layout/activity_new_expense.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoneyControl/app/src/main/res/layout/activity_transaction_report.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MoneyControl/app/src/main/res/layout/activity_transaction_report.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoneyControl/app/src/main/res/layout/row.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MoneyControl/app/src/main/res/layout/row.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,6 +94,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -96,7 +107,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -132,7 +142,7 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.34039333" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.34568834" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -143,7 +153,7 @@
       <window_info anchor="bottom" id="TODO" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="4" visible="true" weight="0.32850242" />
+      <window_info active="true" anchor="bottom" id="Build" order="4" visible="true" weight="0.2753623" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />

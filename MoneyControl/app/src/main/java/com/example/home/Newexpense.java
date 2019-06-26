@@ -22,6 +22,7 @@ import java.util.List;
 
 public class Newexpense extends AppCompatActivity {
     DatabaseHelper myDb;
+    Currency cur=new Currency();
     private Spinner spinner;
     private Spinner spinner1;
     private Spinner spinner2;
@@ -67,10 +68,11 @@ public class Newexpense extends AppCompatActivity {
             }
         });
 
-
+        /*
         List<String> Currency = new ArrayList<>();
         Currency.add(0, "Choose currency");
         Currency.add("Euro");
+        Currency.add("Dollar");
         Currency.add("Rupee");
         Currency.add("Lekë");
         Currency.add("Dollar");
@@ -94,7 +96,7 @@ public class Newexpense extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
 
             }
-        });
+        });*/
 
         List<String> Payment_Method = new ArrayList<>();
         Payment_Method.add(0, "Choose payment");
@@ -243,7 +245,7 @@ public class Newexpense extends AppCompatActivity {
         editRecurrecny = (Spinner) findViewById(R.id.editRecurrencyField);
         editAmount = (EditText) findViewById(R.id.editAmountField);
         editPaymentType = (Spinner) findViewById(R.id.editPaymentField);
-        editCurrency = (Spinner) findViewById(R.id.editCurrencyField);
+       // editCurrency = (Spinner) findViewById(R.id.editCurrencyField);
         editNote = (EditText) findViewById(R.id.editNoteField);
 
 
@@ -292,15 +294,20 @@ public class Newexpense extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
-
-                            if (spinner.getSelectedItemPosition() == 0 || spinner1.getSelectedItemPosition() == 0 || spinner2.getSelectedItemPosition() == 0 || spinner3.getSelectedItemPosition() == 0 || transactionSpinner.getSelectedItemPosition() == 0 ||editAmount.getText().toString().isEmpty() || editDate.getText().toString().isEmpty() )
+                            if ( spinner1.getSelectedItemPosition() == 0 || spinner2.getSelectedItemPosition() == 0 ||
+                                    spinner3.getSelectedItemPosition() == 0 || transactionSpinner.getSelectedItemPosition() == 0
+                                    ||editAmount.getText().toString().isEmpty() || editDate.getText().toString().isEmpty() )
                             {
                                 Toast.makeText(Newexpense.this, "Please select missing values", Toast.LENGTH_SHORT).show();
                             }
                             else {
-                                boolean isInserted = myDb.insertData(editTransactionType.getSelectedItem().toString(), editCategory.getSelectedItem().toString(),
-                                        editDate.getText().toString(), editRecurrecny.getSelectedItem().toString(), editAmount.getText().toString(), editPaymentType.getSelectedItem().toString(), editCurrency.getSelectedItem().toString(), editNote.getText().toString());
+                                boolean isInserted = myDb.insertData(editTransactionType.getSelectedItem().toString(),
+                                                                        editCategory.getSelectedItem().toString(),
+                                                                        editDate.getText().toString(),
+                                                                        editRecurrecny.getSelectedItem().toString(),
+                                                                        editAmount.getText().toString(),
+                                                                        editPaymentType.getSelectedItem().toString(),
+                                                                            editNote.getText().toString());
 
                                 if (isInserted == true) {
                                 Toast.makeText(Newexpense.this, "Data Inserted", Toast.LENGTH_LONG).show();}
@@ -333,8 +340,8 @@ public class Newexpense extends AppCompatActivity {
                             buffer.append("Recurrency :" + res.getString(4) + "\n");
                             buffer.append("Amount :" + res.getString(5) + "\n");
                             buffer.append("Payment :" + res.getString(6) + "\n");
-                            buffer.append("Note :" + res.getString(7) + "\n");
-                            buffer.append("Currency :" + res.getString(8) + "\n\n\n");
+                            buffer.append("Note :" + res.getString(7) + "\n\n\n");
+                            //buffer.append("Currency :" + res.getString(8) + "\n\n\n");
                         }
                         showMessage("Transactions Report", buffer.toString());
 

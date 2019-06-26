@@ -25,9 +25,7 @@ public class EnablePin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enable_pin);
         setTitle("Set PIN");
-
         myDb = new DatabaseHelper(this);
-
         enablePinSwitch = (Switch) findViewById(R.id.enablePinSwitch);
         if( myDb.isPinEnabled()){
             enablePinSwitch.setChecked(true);

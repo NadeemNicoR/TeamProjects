@@ -37,7 +37,6 @@ public class Loginscreen extends AppCompatActivity
         super.onCreate(savedInstanceState);
         myDb = new DatabaseHelper(this);
         final Intent new1 = new Intent(getApplicationContext(), Mainactivity.class);
-
         if (myDb.isPinEnabled()) {
             setContentView(R.layout.activity_login_screen);
             Button signInButton_loginScreen = (Button) findViewById(R.id.signInButton_loginScreen); //creating a variable in On_create method -type button and nick naming it add button and using find view by id to search throug our resources for an id called add button
@@ -54,7 +53,6 @@ public class Loginscreen extends AppCompatActivity
         }
         else startActivity(new1);
     }
-
 }
 
 

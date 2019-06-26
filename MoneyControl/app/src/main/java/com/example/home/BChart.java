@@ -1,6 +1,5 @@
 package com.example.home;
 
-<<<<<<< HEAD
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.database.Cursor;
@@ -14,13 +13,6 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
-=======
-import android.content.Intent;
-import android.database.Cursor;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
->>>>>>> 2c95fe2bc44351283120881d33e36c19d3d50306
 import android.widget.Button;
 
 import com.github.mikephil.charting.charts.BarChart;
@@ -33,16 +25,12 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-<<<<<<< HEAD
 
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.Toast;
 
 
-=======
-
->>>>>>> 2c95fe2bc44351283120881d33e36c19d3d50306
 public class BChart extends AppCompatActivity {
     DatabaseHelper myDb = new DatabaseHelper(this);
     Cursor dbAllData;
@@ -54,7 +42,6 @@ public class BChart extends AppCompatActivity {
     public static final int DB_COLUMN_CATEGORY = 2;
     public static final int DB_COLUMN_AMOUNT = 5;
 
-<<<<<<< HEAD
     //Visibility of filters
 
     private DrawerLayout drawerLayout;
@@ -83,9 +70,6 @@ public class BChart extends AppCompatActivity {
     Map<String, Integer> fullAmount;
     Map<String, Integer> sizedFullAmount;
 
-=======
-    Map<String, Integer> fullAmount;
->>>>>>> 2c95fe2bc44351283120881d33e36c19d3d50306
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,8 +81,7 @@ public class BChart extends AppCompatActivity {
         mChart.setFitBars(true);
         dbAllData = myDb.getAllData();
         fullAmount = calculateFullAmount(dbAllData);
-<<<<<<< HEAD
-       // sizedFullAmount = calculateAmountBySize(dbAllData);
+        // sizedFullAmount = calculateAmountBySize(dbAllData);
 
         mChartReload(getBarDataForFullAmount());
 
@@ -170,10 +153,10 @@ public class BChart extends AppCompatActivity {
 
         final Button btnFood = (Button) findViewById(R.id.button_food);
         btnFood.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    ArrayList<BarEntry> foodEntries = filterByCategory(FOOD, dbAllData);
-                    mChartReload(getBarData(foodEntries, FOOD));
-                }
+            public void onClick(View v) {
+                ArrayList<BarEntry> foodEntries = filterByCategory(FOOD, dbAllData);
+                mChartReload(getBarData(foodEntries, FOOD));
+            }
         });
 
 
@@ -252,28 +235,28 @@ public class BChart extends AppCompatActivity {
         return sumByCategory;
     }
 
-   /* public Map calculateAmountBySize(Cursor dbData) {
-        HashMap<String, Integer> sumByAmountSize();
+    /* public Map calculateAmountBySize(Cursor dbData) {
+         HashMap<String, Integer> sumByAmountSize();
 
-        while (dbData.moveToNext()) {
-            String category = dbData.getString(DB_COLUMN_CATEGORY);
-            Integer amount = dbData.getInt(DB_COLUMN_AMOUNT);
+         while (dbData.moveToNext()) {
+             String category = dbData.getString(DB_COLUMN_CATEGORY);
+             Integer amount = dbData.getInt(DB_COLUMN_AMOUNT);
 
-            if (category != null && sumByAmountSize.containsKey(category) && amount<100) {
-                Integer sum1 = sumByAmountSize.get(category) + amount;
-                sumByAmountSize.put(category, sum1);
-            }
-            if (category != null && sumByAmountSize.containsKey(category) && 500>amount && amount>=100) {
-                Integer sum2 = sumByAmountSize.get(category) + amount;
-                sumByAmountSize.put(category, sum2);
-            }
-            if (category != null && sumByAmountSize.containsKey(category) && amount>500) {
-                Integer sum3 = sumByAmountSize.get(category) + amount;
-                sumByAmountSize.put(category, sum3);
-        }
-        dbData.moveToPosition(-1);
-        return sumByAmountSize;
-    }*/
+             if (category != null && sumByAmountSize.containsKey(category) && amount<100) {
+                 Integer sum1 = sumByAmountSize.get(category) + amount;
+                 sumByAmountSize.put(category, sum1);
+             }
+             if (category != null && sumByAmountSize.containsKey(category) && 500>amount && amount>=100) {
+                 Integer sum2 = sumByAmountSize.get(category) + amount;
+                 sumByAmountSize.put(category, sum2);
+             }
+             if (category != null && sumByAmountSize.containsKey(category) && amount>500) {
+                 Integer sum3 = sumByAmountSize.get(category) + amount;
+                 sumByAmountSize.put(category, sum3);
+         }
+         dbData.moveToPosition(-1);
+         return sumByAmountSize;
+     }*/
     private HashMap<String, Integer> initializeCategories() {
         HashMap<String, Integer> categories = new HashMap<String, Integer>();
         categories.put(RENT, 0);
@@ -285,98 +268,6 @@ public class BChart extends AppCompatActivity {
         return categories;
     }
 
-=======
-
-        mChartReload(getBarDataForFullAmount());
-
-        final Button btnFood = (Button) findViewById(R.id.button_food);
-        btnFood.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                ArrayList<BarEntry> foodEntries = filterByCategory(FOOD, dbAllData);
-                mChartReload(getBarData(foodEntries, FOOD));
-            }
-        });
-
-        final Button btnRent = (Button) findViewById(R.id.button_rent);
-        btnRent.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                ArrayList<BarEntry> foodEntries = filterByCategory(RENT, dbAllData);
-                mChartReload(getBarData(foodEntries, RENT));
-            }
-        });
-
-        final Button btnInternet = (Button) findViewById(R.id.button_internet);
-        btnInternet.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                ArrayList<BarEntry> foodEntries = filterByCategory(INTERNET, dbAllData);
-                mChartReload(getBarData(foodEntries, INTERNET));
-            }
-        });
-
-        final Button btnElectricity = (Button) findViewById(R.id.button_electricity);
-        btnElectricity.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                ArrayList<BarEntry> foodEntries = filterByCategory(ELECTRICITY, dbAllData);
-                mChartReload(getBarData(foodEntries, ELECTRICITY));
-            }
-        });
-
-        final Button btnAll = (Button) findViewById(R.id.button_all);
-        btnAll.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                mChartReload(getBarDataForFullAmount());
-            }
-        });
-
-        Button chart2=(Button) findViewById(R.id.button_pieChart);
-        chart2.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Intent chartIntent=new Intent(getApplicationContext(), Chart.class);
-                startActivity(chartIntent);
-            }
-        });
-    }
-
-    private void mChartReload(BarData barData) {
-        mChart.setData(barData);
-        mChart.invalidate();
-        mChart.animateY(1000);
-        mChart.setTouchEnabled(true);
-        Legend legend = mChart.getLegend();
-        legend.setEnabled(true);
-    }
-
-    public Map calculateFullAmount(Cursor dbData) {
-        HashMap<String, Integer> sumByCategory = initializeCategories();
-
-        while (dbData.moveToNext()) {
-            String category = dbData.getString(DB_COLUMN_CATEGORY);
-            Integer amount = dbData.getInt(DB_COLUMN_AMOUNT);
-
-            if (category != null && sumByCategory.containsKey(category)) {
-                Integer sum = sumByCategory.get(category) + amount;
-                sumByCategory.put(category, sum);
-            }
-        }
-        dbData.moveToPosition(-1);
-        return sumByCategory;
-    }
-
-    private HashMap<String, Integer> initializeCategories() {
-        HashMap<String, Integer> categories = new HashMap<String, Integer>();
-        categories.put(RENT, 0);
-        categories.put(FOOD, 0);
-        categories.put(INTERNET, 0);
-        categories.put(ELECTRICITY, 0);
-//        Uncomment next line to add user defined categories, with the method bellow
-//        categories = addUserCategories(categories);
-        return categories;
-    }
-
->>>>>>> 2c95fe2bc44351283120881d33e36c19d3d50306
     private HashMap<String, Integer> addUserCategories(HashMap<String, Integer> categories) {
         Cursor dbCategories = myDb.getAllCategories();
         while (dbCategories.moveToNext()) {
@@ -402,7 +293,6 @@ public class BChart extends AppCompatActivity {
         dbData.moveToPosition(-1);
         return entries;
     }
-<<<<<<< HEAD
 
     private BarData getBarDataForFullAmount() {
         ArrayList<BarEntry> entries = new ArrayList<BarEntry>();
@@ -490,25 +380,7 @@ public class BChart extends AppCompatActivity {
         BarChart view3 = findViewById(R.id.chart3);
         view3.setVisibility(View.VISIBLE);
     }
-=======
->>>>>>> 2c95fe2bc44351283120881d33e36c19d3d50306
 
-    private BarData getBarDataForFullAmount() {
-        ArrayList<BarEntry> entries = new ArrayList<BarEntry>();
-        entries.add(new BarEntry(0, fullAmount.get(RENT)));
-        entries.add(new BarEntry(1, fullAmount.get(FOOD)));
-        entries.add(new BarEntry(2, fullAmount.get(INTERNET)));
-        entries.add(new BarEntry(3, fullAmount.get(ELECTRICITY)));
-        return getBarData(entries,"All Categories");
-    }
-
-    private BarData getBarData(ArrayList<BarEntry> barEntries, String label) {
-        BarDataSet dataSet = new BarDataSet(barEntries,label);
-        dataSet.setColors(ColorTemplate.MATERIAL_COLORS);
-        dataSet.setDrawValues(true);
-        dataSet.setValueTextSize(15f);
-        return new BarData((dataSet));
-    }
 
 
 }
