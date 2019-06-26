@@ -97,7 +97,7 @@ For this approach we tested methods from 5 classes of our application and the de
 In this test case we have tested the "addData()" method inside Transactions.java class, using the branch coverage technique.
 </p>
 
-![Testcase1]({{site.baseurl}}/images/WhiteBox1.PNG) ![Testcase1]({{site.baseurl}}/images/WhiteBox1S.PNG)
+![Testcase1]({{site.baseurl}}/images/WTransactions.jpg) ![Testcase1]({{site.baseurl}}/images/WhiteBox1S.PNG)
 
 
 **Test Case - 02**
@@ -108,7 +108,7 @@ In this test case we have tested the "delete_Data_C()" method inside Categories.
 
 </p>
 
-![Testcase2]({{site.baseurl}}/images/WhiteBox2.PNG) ![Testcase2]({{site.baseurl}}/images/WhiteBox2S.PNG)
+![Testcase2]({{site.baseurl}}/images/WCategories.jpg) ![Testcase2]({{site.baseurl}}/images/WhiteBox2S.PNG)
 
 
 **Test Case - 03**
@@ -119,7 +119,7 @@ In this test case we have tested the "onCreate()" method inside MainActivity.jav
 
 </p>
 
-![Testcase3]({{site.baseurl}}/images/WhiteBox3.PNG) ![Testcase3]({{site.baseurl}}/images/WhiteBox3S.PNG)
+![Testcase3]({{site.baseurl}}/images/WStatementCoverage.jpg) ![Testcase3]({{site.baseurl}}/images/WhiteBox3S.PNG)
 
 
 **Test Case - 04**
@@ -131,7 +131,7 @@ In this test case we have tested the method "onCreate()" from the LogInScreen.ja
 
 </p>
 
-![Testcase4]({{site.baseurl}}/images/WhiteBox4.PNG) ![Testcase4]({{site.baseurl}}/images/WhiteBox4S.PNG)
+![Testcase4]({{site.baseurl}}/images/WLoginScreen.jpg) ![Testcase4]({{site.baseurl}}/images/WhiteBox4S.PNG)
 
 
 **Test Case - 05**
@@ -142,7 +142,7 @@ In this test case we have tested the "viewData()" method inside TransactionRepor
 
 </p>
 
-![Testcase5]({{site.baseurl}}/images/WhiteBox5.PNG) ![Testcase4]({{site.baseurl}}/images/WhiteBox5S.PNG)
+![Testcase5]({{site.baseurl}}/images/WTransactionReport.jpg) ![Testcase4]({{site.baseurl}}/images/WhiteBox5S.PNG)
 
 
 <br>
