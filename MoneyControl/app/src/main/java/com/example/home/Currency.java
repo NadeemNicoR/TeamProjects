@@ -57,6 +57,7 @@ public class Currency extends AppCompatActivity
             }
         });
 
+
         Button backToSettings=(Button) findViewById(R.id.DoneCurrency);
         backToSettings.setOnClickListener(new View.OnClickListener()
         {

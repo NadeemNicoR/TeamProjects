@@ -115,7 +115,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
 
-    public boolean insertData(String transactiontype1,String category,String date,String Recurrency,String amount,String payment,String currency, String note)
+    public boolean insertData(String transactiontype1,String category,String date,String Recurrency,String amount,String payment, String note)
     {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -127,7 +127,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(column_recurrency_E,Recurrency);
         contentValues.put(column_amount_E,amount);
         contentValues.put(column_payment_E,payment);
-        contentValues.put(column_currency_E,currency);
+        //contentValues.put(column_currency_E,currency);
         contentValues.put(column_note_E,note);
         long result = db.insert(TABLE_TRANSACTIONS,null ,contentValues);
 
