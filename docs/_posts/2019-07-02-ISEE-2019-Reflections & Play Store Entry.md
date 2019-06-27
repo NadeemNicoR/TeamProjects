@@ -47,28 +47,29 @@ Our team is made of four people with four different educational and professional
 
  ## About the course "Introduction to Software Engineering for Engineers"
 
-###Coming to the technical part:
+### Coming to the technical part:
 
 #### What we Learnt:
--To begin with we all were beginners in Object Oriented Programming only being able to print "Hello World" with great difficulty!
+- To begin with we all were beginners in Object Oriented Programming only being able to print "Hello World" with great difficulty!
 
--First and foremost, Thanks to references and examples on Android Developers (https://developer.android.com/training/basics/firstapp),we were able to navigate ourselves through this journey of being able to learn how to program an android application using java to such an extent that we have successfully built an application on our own as a team.
+- First and foremost, Thanks to references and examples on Android Developers (https://developer.android.com/training/basics/firstapp) , We were able to navigate ourselves through this journey of being able to learn how to program an android application using java to such an extent that we have successfully built an application on our own as a team.
 
--Secondly, we had very limited knowledge on handling repositories on GIT, now we feel well versed with it as we had to deal with all possible 'DON'T DO' mistakes with GIT which we ended up committing!
+- Secondly, we had very limited knowledge on handling repositories on GIT, now we feel well versed with it as we had to deal with all possible 'DON'T DO' mistakes with GIT which we ended up committing!
 
 #### What we belevie was inadequate:
--We have developed most of the required OOP skills but still we believe there much more to learn than what we have made use of in implementing the project.
+
+- We have developed most of the required OOP skills but still we believe there much more to learn than what we have made use of in implementing the project.
 
 ### Now coming to the organizational part
 
--we were able to amplify some of the most significant Social and Team Management skills especially the below ones:
--Decision Making (coming up with different approaches to tackle the problem & deciding the best approach which would be more feasible and better to implement as a team)
--Problem Solving & Critical Thinking (especially while dealing with null pointer exception and debugging the errors on the app)
--Team work (assisting other team members when we were done with our assigned tasks)
--Taking the leadership initiatives (driving the team as a team leader when we had our individual presentations)
+- We were able to amplify some of the most significant Social and Team Management skills especially the below ones:
+- Decision Making (coming up with different approaches to tackle the problem & deciding the best approach which would be more feasible and better to implement as a team)
+- Problem Solving & Critical Thinking (especially while dealing with null pointer exception and debugging the errors on the app)
+- Team work (assisting other team members when we were done with our assigned tasks)
+- Taking the leadership initiatives (driving the team as a team leader when we had our individual presentations)
 
 #### What we belevie that we still need to improvise on:
-Adhering to time strictly! (We could not get most of the tasks completed at an assigned time frame, most of the times we had the tasks fulfilled at the last minute of submissions)
+- Adhering to time strictly! (We could not get most of the tasks completed at an assigned time frame, most of the times we had the tasks fulfilled at the last minute of submissions)
 
 # Play Store Entry
 
@@ -100,18 +101,19 @@ Key features of our app:
 
 With Money Control now it’s easy to track your expenses, stick to a budget and save money.
 
-## Functional requirements
--Some of the most significant features of our Money Control android application
+## Significatn Features Of The Application:
 
--User can receive a Whole summary of all his transactions till date with just one click and can mail the transaction summary at one go.
+- Some of the most significant features of our Money Control android application
 
--User can add his own categories and add Income or expenses accordingly
+- User can receive a Whole summary of all his transactions till date with just one click and can mail the transaction summary at one go.
 
--User can plan budgets and manage his expenses accordingly by having received the appropriate notifications when he crosses 75% and 100% of his spending’s on expenses in comparison to budget plan set up by the user.
+- User can add his own categories and add Income or expenses accordingly
 
--We have deployed the pie & bar chart view of the summary of transactions which basically gives a better visualization to the overview of user’s earnings and spending’s
+- User can plan budgets and manage his expenses accordingly by having received the appropriate notifications when he crosses 75% and 100% of his spending’s on expenses in comparison to budget plan set up by the user.
 
--We have made the application more user friendly by adding dropdowns so that the user doesn’t have to hassle with text layout of input with the keyboard
+- We have deployed the pie & bar chart view of the summary of transactions which basically gives a better visualization to the overview of user’s earnings and spending’s
+
+- We have made the application more user friendly by adding dropdowns so that the user doesn’t have to hassle with text layout of input with the keyboard
 
 
 ## Non-functional requirements
