@@ -47,20 +47,22 @@ Our team is made of four people with four different educational and professional
 
 ## What we learnt and what remains insufficient through the course of Introduction to Software Engineering for Engineers:
 
-### Coming to the technical part:
+### 1) Coming to the technical part:
 
-#### What we Learnt:
+#### (a)What we Learnt:
 - To begin with we all were beginners in Object Oriented Programming only being able to print "Hello World" with great difficulty!
 
 - First and foremost, Thanks to references and examples on Android Developers (https://developer.android.com/training/basics/firstapp) , We were able to navigate ourselves through this journey of being able to learn how to program an android application using java to such an extent that we have successfully built an application on our own as a team.
 
 - Secondly, we had very limited knowledge on handling repositories on GIT, now we feel well versed with it as we had to deal with all possible 'DON'T DO' mistakes with GIT which we ended up committing!
 
-#### What we belevie was inadequate:
+#### (b)What we belevie was inadequate:
 
 - We have developed most of the required OOP skills but still we believe there much more to learn than what we have made use of in implementing the project.
 
-### Now coming to the organizational part
+### 2) Now coming to the organizational part:
+
+#### (a) What we Learnt:
 
 - We were able to amplify some of the most significant Social and Team Management skills especially the below ones:
 
@@ -72,7 +74,8 @@ Our team is made of four people with four different educational and professional
 
 - Taking the leadership initiatives (driving the team as a team leader when we had our individual presentations)
 
-#### What we belevie that we still need to improvise on:
+#### (b) What we belevie that we still need to improvise on:
+
 - Adhering to time strictly! (We could not get most of the tasks completed at an assigned time frame, most of the times we had the tasks fulfilled at the last minute of submissions)
 
 # Play Store Entry
