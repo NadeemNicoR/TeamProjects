@@ -28,3 +28,10 @@ Welcome to the final blog of team 405 Found - Money Control Application. In this
 - Supported devices: Android devices running the previous mentioned versions
 - Energy consumption: 0-1% per hour
 - Target group: Student and working people between 18 and 40 years old.
+
+## Application reviews
+---
+![companylogo]({{site.baseurl}}/images/RvRonald.png)
+![companylogo]({{site.baseurl}}/images/RvEva.png)
+![companylogo]({{site.baseurl}}/images/RvMAriam.png)
+![companylogo]({{site.baseurl}}/images/RvMohamed.png)
