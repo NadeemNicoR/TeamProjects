@@ -33,15 +33,15 @@ Our team is made of four people with four different educational and professional
 
 ## Benefits of team work
 
-- Our different nationalities, influenced our way of thinking and this was reflected in our approach contributions in order to solve the same problem, so that our team could always find good and interesting solutions.
+- Our different nationalities influenced our way of thinking and this was reflected in our approach contributions in order to solve the same problem so that our team could always find good and interesting solutions.
 
-- The fact that we were working within a team allowed us to learn faster from the experience of other team mates.
+- The fact that we were working within a team allowed as to learn faster from the experience of other teammates.
 
-- The different backgrounds were translated into a variety of strengths, which made us a better team.
+- The different backgrounds were translated into a variety of strengths, which made as a better team.
 
-- The fact that none of us had high programing skills, increased the douses of complexness of the project, which some times was stressing for the team, and we all learnt together how to deal with those situations.
+- The fact that none of us had high programming skills, increased the douses of complexness of the project, which some times was stressing for the team, and we all learned together how to deal with those situations.
 
-- We also learnt that the trust among team mates is important in order to be able of giving useful feedback to each other. 
+- We also learned that trust among teammates is important in order to be able of giving useful feedback to each other. 
 
 - The regular meetings are important to increase the development speed of the team, getting together for reasons not related to the project is also important for this manner. 
 
@@ -86,15 +86,15 @@ With Money Control now it’s easy to track your expenses, stick to a budget and
 
 - Age limit: 13+
 
-- Android version: 6.0.1 (Marshmallow) or above.
+- Android version: 6.0.1 (Marshmallow) or above
 
 - Security issues: None
 
-- Supported devices: Android devices running the previous mentioned versions
+- Supported devices: Android devices running the previously mentioned versions
 
 - Energy consumption: 0-1% per hour
 
-- Target group: Student and working people between 18 and 40 years old.
+- Target group: Student and working people between 18 and 40 years old
 
 ## Download app [here](please insert the link here)
 
