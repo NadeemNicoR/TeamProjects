@@ -1,6 +1,6 @@
 ![companylogo]({{site.baseurl}}/images/405logo.png)
 
-# Reflections & Play Store Entry
+# Reflections 
 
 <br>
 
@@ -10,28 +10,18 @@ Welcome to the final blog of team 405 Found - Money Control Application. In this
 
 </p>
 
-## Benefits of team work
+<br>
 
-- Our different nationalities, influenced our way of thinking and this was reflected in our approach contributions in order to solve the same problem, so that our team could always find good and interesting solutions.
-- The fact that we were working within a team allow as to learn faster from the experience of other team mates.
-- the different backgrounds was translated into a variety of strengths, which made as a better team.
-- the fact that non of us had high programing skills, increased the douses of complexness of the project, which some times was stressing for the team, and we all learnt together how to deal with those situations.
-- we also learnt that the trust among team mates is important in order to be able of giving useful feedback to each other. 
-- the regular meetings are important to increase the development speed of the team, getting together for reasons not related to the project is also important for this manner. 
+## Technical challenges our team encountered
 
-## non-functional requirements
+<p class="justify">
 
-- Category: Finance
-- Age limit: 13+
-- Android version: 6.0.1 (Marshmallow) or above.
-- Security issues: Non
-- Supported devices: Android devices running the previous mentioned versions
-- Energy consumption: 0-1% per hour
-- Target group: Student and working people between 18 and 40 years old.
+In this project we worked together with people we never met before and who came from different backgrounds of engineering. For all of us it was a challenge and an adventure at the same time to develop an android application.
 
-## Application reviews
----
-![companylogo]({{site.baseurl}}/images/RvRonald.png)
-![companylogo]({{site.baseurl}}/images/RvEva.png)
-![companylogo]({{site.baseurl}}/images/RvMAriam.png)
-![companylogo]({{site.baseurl}}/images/RvMohamed.png)
+- Our previous experience with programming was not sufficient enough as to implement such a project of this importance. We faced difficulties in the beginning when trying to understand how android studio works. However our team had a very motivational spirit and together we encouraged each-other in learning more and with the time we became Android App developers.
+
+- Beside programming in Java for the application, we had minor knowledge in building a Database and implementing it in Android Studio. After a lot of failures and testing, we managed to successfully implement and use the Database for our app thanks to our commitment and desire to improve.
+
+</p>
+
+# Play Store 
