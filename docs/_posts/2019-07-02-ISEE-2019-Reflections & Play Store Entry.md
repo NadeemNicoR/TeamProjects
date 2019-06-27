@@ -45,7 +45,7 @@ Our team is made of four people with four different educational and professional
 
 - The regular meetings are important to increase the development speed of the team, getting together for reasons not related to the project is also important for this manner. 
 
- ## About the course "Introduction to Software Engineering for Engineers"
+## What we learnt and what remains insufficient through the course of Introduction to Software Engineering for Engineers:
 
 ### Coming to the technical part:
 
@@ -63,9 +63,13 @@ Our team is made of four people with four different educational and professional
 ### Now coming to the organizational part
 
 - We were able to amplify some of the most significant Social and Team Management skills especially the below ones:
+
 - Decision Making (coming up with different approaches to tackle the problem & deciding the best approach which would be more feasible and better to implement as a team)
+
 - Problem Solving & Critical Thinking (especially while dealing with null pointer exception and debugging the errors on the app)
+
 - Team work (assisting other team members when we were done with our assigned tasks)
+
 - Taking the leadership initiatives (driving the team as a team leader when we had our individual presentations)
 
 #### What we belevie that we still need to improvise on:
