@@ -14,7 +14,6 @@ Welcome to the final blog of team 405 Found - Money Control Application. In this
 
 ## Technical challenges our team encountered
 
-<p class="justify">
 
 In this project we worked together with people we never met before and who came from different backgrounds of engineering. For all of us it was a challenge and an adventure at the same time to develop an android application.
 
@@ -22,32 +21,29 @@ In this project we worked together with people we never met before and who came 
 
 - Beside programming in Java for the application, we had minor knowledge in building a Database and implementing it in Android Studio. After a lot of failures and testing, we managed to successfully implement and use the Database for our app thanks to our commitment and desire to improve.
 
-</p>
 
 ## Challenges we experienced working as a team
 
-Our team were of four people with four different educational and professional backgrounds that were not at all related to computer science. Though this factor brought a great chance for us to learn to work in a diverse team it also brought in some challenges with it.
+Our team is made of four people with four different educational and professional backgrounds that were not at all related to computer science. Though this factor brought a great chance for us to learn to work in a diverse team, it also brought in some challenges with it.
 
+- Since we came from four completely different cultures and backgrounds, we had in our team four different personalities. Everyone brought their own methods of approaching a problem and sometimes resulted in a conflict. To our luck, every member of our team behaved very professionally when these disagreements showed up. After all we were there for a common goal.
 
-- The factor that we were coming from four completely different cultures and backgrounds, everyone brought in different personalities and their own ways to approach a problem that sometimes resulted in a conflict, but every member of our team behaved very professionally when a conflict arose and set aside personal opinions and worked as a team on achieving our goals.
-
-
-- Slight time and priority management was initially an issue we faced as different members of our teams were taking different courses that took a lot of their time. We fixed a time slot weekly for us to meet and work on our app that covered the lack we were facing in terms of completing the tasks for our application.
+- Slight time and priority management was initially an issue we faced. Different members of our teams were taking different courses that took a lot of their time and we had to came across the schedule of everyone to find the proper time for the group meetings. We fixed a time slot weekly for us to meet and work on our app that covered the lack we were facing in terms of completing the tasks for our application.
 
 
 ## Benefits of team work
 
 - Our different nationalities, influenced our way of thinking and this was reflected in our approach contributions in order to solve the same problem, so that our team could always find good and interesting solutions.
 
-- The fact that we were working within a team allow as to learn faster from the experience of other team mates.
+- The fact that we were working within a team allowed us to learn faster from the experience of other team mates.
 
-- the different backgrounds was translated into a variety of strengths, which made as a better team.
+- The different backgrounds were translated into a variety of strengths, which made us a better team.
 
-- the fact that non of us had high programing skills, increased the douses of complexness of the project, which some times was stressing for the team, and we all learnt together how to deal with those situations.
+- The fact that none of us had high programing skills, increased the douses of complexness of the project, which some times was stressing for the team, and we all learnt together how to deal with those situations.
 
-- we also learnt that the trust among team mates is important in order to be able of giving useful feedback to each other. 
+- We also learnt that the trust among team mates is important in order to be able of giving useful feedback to each other. 
 
-- the regular meetings are important to increase the development speed of the team, getting together for reasons not related to the project is also important for this manner. 
+- The regular meetings are important to increase the development speed of the team, getting together for reasons not related to the project is also important for this manner. 
 
  ## About the course "Introduction to Software Engineering for Engineers"
 
@@ -58,7 +54,7 @@ Our team were of four people with four different educational and professional ba
 ## Summary
 
 Manage your personal or family finances easily under your defined budget with Money Control.
-Money Control’s simple design helps you effortlessly track your income and daily spending’s. You need just a few seconds daily to log in your expenses and save those much needed bucks. We want you to find a right balance between your today and TOMORROW.
+Money Control’s simple design helps you effortlessly track your income and daily spending. You need just a few seconds daily to log in your expenses and save those much needed bucks. We want you to find a right balance between your today and TOMORROW.
 Key features of our app:
 
 •	Clean, easy to use, intuitive expense and income tracker.
