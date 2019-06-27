@@ -50,6 +50,7 @@ Our team is made of four people with four different educational and professional
 ### 1) Coming to the technical part:
 
 #### (a)What we Learnt:
+
 - To begin with we all were beginners in Object Oriented Programming only being able to print "Hello World" with great difficulty!
 
 - First and foremost, Thanks to references and examples on Android Developers (https://developer.android.com/training/basics/firstapp) , We were able to navigate ourselves through this journey of being able to learn how to program an android application using java to such an extent that we have successfully built an application on our own as a team.
@@ -58,7 +59,7 @@ Our team is made of four people with four different educational and professional
 
 #### (b)What we belevie was inadequate:
 
--  We have developed most of the required OOP skills but still we believe there much more to learn than what we have made use of in implementing the project.
+- We have developed most of the required OOP skills but still we believe there much more to learn than what we have made use of in implementing the project.
 
 ### 2) Now coming to the organizational part:
 
@@ -76,7 +77,7 @@ Our team is made of four people with four different educational and professional
 
 #### (b) What we belevie that we still need to improvise on:
 
--  Adhering to time strictly! (We could not get most of the tasks completed at an assigned time frame, most of the times we had the tasks fulfilled at the last minute of submissions)
+- Adhering to time strictly! (We could not get most of the tasks completed at an assigned time frame, most of the times we had the tasks fulfilled at the last minute of submissions)
 
 # Play Store Entry
 
