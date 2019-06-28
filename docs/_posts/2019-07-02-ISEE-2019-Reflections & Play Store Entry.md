@@ -7,7 +7,6 @@
 
 Welcome to the final blog of team 405 Found - Money Control Application. In this blog we will give you some reflections on our work as a team and a summary of what a Play Store Entry would be.
 
-</p>
 <br>
 
 <p class="justify">
@@ -167,4 +166,4 @@ With Money Control now it’s easy to track your expenses, stick to a budget and
 
 *Thank you for following us through this journey. We had a lot of fun coding and learned a lot of new things. We want to thank Dr. Sandro Schulze who gives students this opportunity to develop themselves in this area. It was a pleasure and you will here from us in other projects for sure!*
 
-
+</pr>
