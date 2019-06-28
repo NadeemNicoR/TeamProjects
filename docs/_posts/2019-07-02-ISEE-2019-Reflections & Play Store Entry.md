@@ -28,7 +28,7 @@ Our team is made of four people with four different educational and professional
 
 - Since we came from four completely different cultures and backgrounds, we had in our team four different personalities. Everyone brought their own methods of approaching a problem and sometimes resulted in a conflict. To our luck, every member of our team behaved very professionally when these disagreements showed up. After all we were there for a common goal.
 
-- Slight time and priority management was initially an issue we faced. Different members of our teams were taking different courses that took a lot of their time and we had to came across the schedule of everyone to find the proper time for the group meetings. We fixed a time slot weekly for us to meet and work on our app that covered the lack we were facing in terms of completing the tasks for our application.
+- Slight time and priority management was initially an issue we faced. Different members of our teams were taking different courses that took a lot of their time. We had to come across the schedule of everyone to find a proper time for the group meetings. After the initial two weeks we fixed a time slot for us to meet weekly and work on our app that covered the lack we were facing in terms of completing the tasks assigned to each of us.
 
 
 ## Benefits of team work
