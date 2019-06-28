@@ -9,8 +9,11 @@ Welcome to the final blog of team 405 Found - Money Control Application. In this
 
 </p>
 
+<br>
+
 # Reflections
 
+<p class="justify">
 
 ## Technical challenges our team encountered
 
@@ -45,9 +48,6 @@ Our team is made of four people with four different educational and professional
 
 - The regular meetings are important to increase the development speed of the team, getting together for reasons not related to the project is also important for this manner. 
 
-<br/>
-
-<p class="justify"/>
 
 ## What we learnt and what remains insufficient through the course of Introduction to Software Engineering for Engineers:
 
