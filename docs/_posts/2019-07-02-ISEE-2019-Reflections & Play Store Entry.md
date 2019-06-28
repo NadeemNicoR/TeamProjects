@@ -7,9 +7,7 @@
 
 Welcome to the final blog of team 405 Found - Money Control Application. In this blog we will give you some reflections on our work as a team and a summary of what a Play Store Entry would be.
 
-</p>
 
-<br>
 
 # Reflections
 
@@ -62,7 +60,7 @@ Our team is made of four people with four different educational and professional
 - Secondly, we had very limited knowledge on handling repositories on GIT, now we feel well versed with it as we had to deal with all the possible 'DON'T DO mistakes with GIT' which we ended up committing!
 
 
-#### (b)What we belevie was inadequate:
+#### (b)What we believe was inadequate:
 
 - We have developed most of the required OOP skills but still we believe there much more to learn than what we have made use of in implementing the project.
 
