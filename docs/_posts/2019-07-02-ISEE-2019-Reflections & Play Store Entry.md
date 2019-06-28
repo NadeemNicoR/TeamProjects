@@ -33,15 +33,15 @@ Our team is made of four people with four different educational and professional
 
 ## Benefits of team work
 
-- Our different nationalities influenced our way of thinking and this was reflected in our approach contributions in order to solve the same problem so that our team could always find good and interesting solutions.
+- Our different nationalities influenced our way of thinking and this was reflected in our different approaches to solve the same problem which led our team to always finding good and interesting solutions.
 
-- The fact that we were working within a team allowed as to learn faster from the experience of other teammates.
+- The fact that we were working within a team allowed us to learn faster from the experience of other teammates.
 
-- The different backgrounds were translated into a variety of strengths, which made as a better team.
+- Diversity in technical backgrounds was translated into a variety of strengths which in turn made us a better team.
 
-- The fact that none of us had high programming skills, increased the douses of complexness of the project, which some times was stressing for the team, and we all learned together how to deal with those situations.
+- The fact that none of us had high programming skills increased the dose of complexity of the project, which sometimes was stressful for the team and we all learned together how to deal with those situations.
 
-- We also learned that trust among teammates is important in order to be able of giving useful feedback to each other. 
+- We also learned that trust among teammates is important and how to give and take constructive criticism in order to give useful feedback to each other. 
 
 - The regular meetings are important to increase the development speed of the team, getting together for reasons not related to the project is also important for this manner. 
 
@@ -51,9 +51,9 @@ Our team is made of four people with four different educational and professional
 
 #### (a)What we Learnt:
 
-- To begin with we all were beginners in Object Oriented Programming only being able to print "Hello World" with great difficulty!
+- To begin with, we all were beginners in Object Oriented Programming only being able to print "Hello World" with great difficulty!
 
-- First and foremost, Thanks to references and examples on Android Developers (https://developer.android.com/training/basics/firstapp) , We were able to navigate ourselves through this journey of being able to learn how to program an android application using java to such an extent that we have successfully built an application on our own as a team.
+- First and foremost, Thanks to references and examples on [Android Developers](https://developer.android.com/training/basics/firstapp), We were able to navigate ourselves through this journey of being able to learn how to program an android application using java to such an extent that we have successfully built an application on our own as a team.
 
 - Secondly, we had very limited knowledge on handling repositories on GIT, now we feel well versed with it as we had to deal with all possible 'DON'T DO' mistakes with GIT which we ended up committing!
 
