@@ -7,11 +7,13 @@
 
 Welcome to the final blog of team 405 Found - Money Control Application. In this blog we will give you some reflections on our work as a team and a summary of what a Play Store Entry would be.
 
+</p>
+<br>
 
+<p class="justify">
 
 # Reflections
 
-<p class="justify">
 
 ## Technical challenges our team encountered
 
