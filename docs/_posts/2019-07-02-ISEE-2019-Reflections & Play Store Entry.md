@@ -53,9 +53,10 @@ Our team is made of four people with four different educational and professional
 
 - To begin with, we all were beginners in Object Oriented Programming only being able to print "Hello World" with great difficulty!
 
-- First and foremost, Thanks to references and examples on [Android Developers](https://developer.android.com/training/basics/firstapp), We were able to navigate ourselves through this journey of being able to learn how to program an android application using java to such an extent that we have successfully built an application on our own as a team.
+- First and foremost, thanks to references and examples on [Android Developers](https://developer.android.com/training/basics/firstapp) We were able to navigate ourselves through this journey of being able to learn how to program an android application using java to such an extent that we have successfully built an application on our own as a team.
 
-- Secondly, we had very limited knowledge on handling repositories on GIT, now we feel well versed with it as we had to deal with all possible 'DON'T DO' mistakes with GIT which we ended up committing!
+- Secondly, we had very limited knowledge on handling repositories on GIT, now we feel well versed with it as we had to deal with all the possible 'DON'T DO mistakes with GIT' which we ended up committing!
+
 
 #### (b)What we belevie was inadequate:
 
@@ -74,6 +75,7 @@ Our team is made of four people with four different educational and professional
 - Team work (assisting other team members when we were done with our assigned tasks)
 
 - Taking the leadership initiatives (driving the team as a team leader when we had our individual presentations)
+
 
 #### (b) What we belevie that we still need to improvise on:
 
