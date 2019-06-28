@@ -45,7 +45,7 @@ Our team is made of four people with four different educational and professional
 
 ### 1) Coming to the technical part:
 
-#### (a)What we Learnt:
+### (a)What we Learnt:
 
 - To begin with, we all were beginners in Object Oriented Programming only being able to print "Hello World" with great difficulty!
 
@@ -54,14 +54,14 @@ Our team is made of four people with four different educational and professional
 - Secondly, we had very limited knowledge on handling repositories on GIT, now we feel well versed with it as we had to deal with all the possible 'DON'T DO mistakes with GIT' which we ended up committing!
 
 
-#### (b)What we believe was inadequate:
+### (b)What we believe was inadequate:
 
 - We have developed most of the required OOP skills but still we believe there much more to learn than what we have made use of in implementing the project.
 
 
 ### 2) Now coming to the organizational part:
 
-#### (a) What we Learnt:
+### (a) What we Learnt:
 
 - We were able to amplify some of the most significant Social and Team Management skills especially the below ones:
 
@@ -74,7 +74,7 @@ Our team is made of four people with four different educational and professional
 - Taking the leadership initiatives (driving the team as a team leader when we had our individual presentations)
 
 
-#### (b) What we belevie that we still need to improvise on:
+### (b) What we belevie that we still need to improvise on:
 
 - Adhering to time strictly! (We could not get most of the tasks completed at an assigned time frame, most of the times we had the tasks fulfilled at the last minute of submissions)
 
