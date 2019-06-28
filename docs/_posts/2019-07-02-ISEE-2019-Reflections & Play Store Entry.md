@@ -59,6 +59,8 @@ Our team is made of four people with four different educational and professional
 - We have developed most of the required OOP skills but still we believe there much more to learn than what we have made use of in implementing the project.
 
 
+
+
 ### 2) Now coming to the organizational part:
 
 ### (a) What we Learnt:
@@ -77,6 +79,7 @@ Our team is made of four people with four different educational and professional
 ### (b) What we belevie that we still need to improvise on:
 
 - Adhering to time strictly! (We could not get most of the tasks completed at an assigned time frame, most of the times we had the tasks fulfilled at the last minute of submissions)
+
 
 
 
