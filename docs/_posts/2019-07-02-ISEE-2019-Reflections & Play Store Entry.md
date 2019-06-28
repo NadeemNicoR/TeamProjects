@@ -45,6 +45,10 @@ Our team is made of four people with four different educational and professional
 
 - The regular meetings are important to increase the development speed of the team, getting together for reasons not related to the project is also important for this manner. 
 
+<br>
+
+<p class="justify">
+
 ## What we learnt and what remains insufficient through the course of Introduction to Software Engineering for Engineers:
 
 ### 1) Coming to the technical part:
@@ -80,6 +84,10 @@ Our team is made of four people with four different educational and professional
 #### (b) What we belevie that we still need to improvise on:
 
 - Adhering to time strictly! (We could not get most of the tasks completed at an assigned time frame, most of the times we had the tasks fulfilled at the last minute of submissions)
+
+<br>
+
+<p class="justify">
 
 # Play Store Entry
 
