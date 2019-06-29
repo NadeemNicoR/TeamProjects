@@ -33,6 +33,7 @@ public class TransactionReport extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transaction_report);
         setTitle("Transaction Report");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         myDb = new DatabaseHelper(this);
         listTransactions=new ArrayList<>();

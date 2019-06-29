@@ -16,6 +16,7 @@ public class Mainactivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle("Home");
+
         Button settings_Main=(Button) findViewById(R.id.Settings);
         settings_Main.setOnClickListener(new View.OnClickListener()
         {
@@ -59,7 +60,6 @@ public class Mainactivity extends AppCompatActivity {
         });
 
         myDb = new DatabaseHelper(this);
-
 
         List<String> defaultBudgetList = new ArrayList<>();
         defaultBudgetList = myDb.getCategoriesB();

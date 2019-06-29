@@ -39,6 +39,8 @@ public class Budget extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_budget);
         setTitle("Budget");
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         myDb_B = new DatabaseHelper(this);
         editAmount_B = (EditText)findViewById(R.id.amount_B);
         editCategory_B = (Spinner)findViewById(R.id.category_B);

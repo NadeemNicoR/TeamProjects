@@ -41,6 +41,7 @@ public class Newexpense extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_expense);
         setTitle("Add Transaction");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         List<String> Transaction = new ArrayList<>();
         Transaction.add(0, "Choose Transaction");

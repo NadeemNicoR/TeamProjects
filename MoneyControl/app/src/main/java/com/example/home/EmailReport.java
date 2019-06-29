@@ -20,6 +20,7 @@ public class EmailReport extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_email_report);
         setTitle("Email Report");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         myDb = new DatabaseHelper(this);
         Cursor res_E = myDb.getAllData();
         StringBuffer buffer = new StringBuffer();

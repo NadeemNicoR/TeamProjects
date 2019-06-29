@@ -30,6 +30,7 @@ public class Currency extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_currency);
         setTitle("Default Currency");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         myDbCurrency = new DatabaseHelper(this);
         spinnerCurrency = (Spinner) findViewById(R.id.editCurrencyFielddiff);
