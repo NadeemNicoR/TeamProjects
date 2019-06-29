@@ -118,6 +118,5 @@ public class Mainactivity extends AppCompatActivity {
             cat4.setCategory_name("Electricity Bill");
             myDb.insertCategories(cat4);
         }
-
     }
 }

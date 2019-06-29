@@ -156,9 +156,27 @@ public class Budget extends AppCompatActivity {
             new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (editCategory_B.getSelectedItemPosition() == 0 || editRecurrencyB.getSelectedItemPosition() == 0 || editAmount_B.getText().toString().isEmpty() || editDate_B.getText().toString().isEmpty()) {
-                        Toast.makeText(Budget.this, "Please select missing values", Toast.LENGTH_SHORT).show();
-                    } else {
+                    if (editCategory_B.getSelectedItemPosition() == 0 && editRecurrencyB.getSelectedItemPosition() == 0 && editAmount_B.getText().toString().isEmpty() && editDate_B.getText().toString().isEmpty()) {
+                        Toast.makeText(Budget.this, "Please insert data about the budget type", Toast.LENGTH_SHORT).show();
+                    }
+                    else if (editCategory_B.getSelectedItemPosition() == 0)
+                        {
+                            Toast.makeText(Budget.this, "Please select the category type before adding the budget", Toast.LENGTH_SHORT).show();
+                        }
+                    else if(editRecurrencyB.getSelectedItemPosition() == 0)
+                    {
+                        Toast.makeText(Budget.this, "Please select the recurrency type before adding the budget", Toast.LENGTH_SHORT).show();
+                    }
+                    else if (editAmount_B.getText().toString().isEmpty())
+                    {
+                        Toast.makeText(Budget.this, "Please set the amount for budget", Toast.LENGTH_SHORT).show();
+                    }
+
+                    else if (  editDate_B.getText().toString().isEmpty())
+                    {
+                        Toast.makeText(Budget.this, "Please set the date value", Toast.LENGTH_SHORT).show();
+                    }
+                    else {
                         //boolean isInserted = myDb_B.insertData_B(editAmount_B.getText().toString(), editCategory_B.getSelectedItem().toString(), editDate_B.getText().toString(), editRecurrencyB.getSelectedItem().toString());
                         CategoryConst cat = new CategoryConst();
                         cat.setAmount(Integer.parseInt(editAmount_B.getText().toString()));
@@ -180,19 +198,20 @@ public class Budget extends AppCompatActivity {
             }
     );
     }
-
-
     public void Delete_B() {
-        btnDelete_B.setOnClickListener(new View.OnClickListener() {
+        btnDelete_B.setOnClickListener(
+                new View.OnClickListener() {
                                            @Override
                                            public void onClick(View v) {
-                                               if(deleteBudget.getSelectedItemPosition()>1) {
+                                               if(deleteBudget.getSelectedItemPosition()>0)
+                                               {
                                                    Integer deletedRows = myDb_B.deleteData_B(deleteBudget.getSelectedItem().toString());
                                                    if (deletedRows > 0) {
                                                        Intent intent = new Intent(getApplicationContext(), Budget.class);
                                                        startActivity(intent);
                                                        Toast.makeText(Budget.this, "Data Deleted", Toast.LENGTH_SHORT).show();
-                                                   } else
+                                                   }
+                                                   else
                                                        Toast.makeText(Budget.this, "Data not Deleted", Toast.LENGTH_SHORT).show();
                                                }
                                                else

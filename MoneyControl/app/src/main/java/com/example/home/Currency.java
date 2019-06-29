@@ -22,8 +22,9 @@ public class Currency extends AppCompatActivity
     private Spinner spinnerCurrency;
     DatabaseHelper myDbCurrency;
     Button btnSaveCurrency;
+    public String valueOfSlectedSpinner;
 
-    protected void onCreate(Bundle savedInstanceState)
+    public void onCreate(Bundle savedInstanceState)
     {
 
         super.onCreate(savedInstanceState);
@@ -39,11 +40,17 @@ public class Currency extends AppCompatActivity
         myDbCurrency = new DatabaseHelper(this);
         deftaultCurrencyList = myDbCurrency.getNewCurrency();
 
+
         spinnerCurrency = (Spinner) findViewById(R.id.editCurrencyFielddiff);
         btnSaveCurrency=(Button)findViewById(R.id.DoneCurrency);
 
+
         ArrayAdapter<String> adapterC = new ArrayAdapter<String>(getApplicationContext(), R.layout.support_simple_spinner_dropdown_item, deftaultCurrencyList);
         spinnerCurrency.setAdapter(adapterC);
+//        valueOfSlectedSpinner = spinnerCurrency.getSelectedItem().toString();
+//        CurrencyConst currencyConst = new CurrencyConst();
+//        currencyConst.setCurrencyName(valueOfSlectedSpinner);
+
         spinnerCurrency.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -84,7 +91,4 @@ public class Currency extends AppCompatActivity
                     }
                 }
         );*/
-
-
-
 }

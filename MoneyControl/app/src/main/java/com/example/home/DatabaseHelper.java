@@ -113,9 +113,34 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     //inserting categories in to the DB
 
+    public double getCategorySum(String cateSum){
+        double cat_sum=0;
+        String categorySumQuerry= "SELECT SUM("+column_amount_E+")"+" FROM "+ TABLE_TRANSACTIONS+" WHERE "+column_category_E+ " = '"+cateSum+"'";
+        SQLiteDatabase data=  this.getReadableDatabase();
+        Cursor cursor=data.rawQuery(categorySumQuerry,null);
+        if(cursor.moveToFirst())
+        {
+            String categorySummm=cursor.getString(cursor.getColumnIndex(cursor.getColumnName(0)));
+            cat_sum= Double.parseDouble(categorySummm);
+        }
+        return cat_sum;
+    }
+
+    public double getBudgetAmount(String cateSum){
+        double cat_sum=0;
+        String categorySumQuerry= "SELECT "+column_amount_B +" FROM "+ TABLE_BUDGET+" WHERE "+column_category_B+ " = '"+cateSum+"'";
+        SQLiteDatabase data=  this.getReadableDatabase();
+        Cursor cursor=data.rawQuery(categorySumQuerry,null);
+        if(cursor.moveToFirst())
+        {
+            String categorySummm=cursor.getString(cursor.getColumnIndex(cursor.getColumnName(0)));
+            cat_sum= Double.parseDouble(categorySummm);
+        }
+        return cat_sum;
+    }
 
 
-    public boolean insertData(String transactiontype1,String category,String date,String Recurrency,String amount,String payment, String note)
+    public boolean insertData(String transactiontype1,String category,String date,String Recurrency,int amount,String payment, String note)
     {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -367,7 +392,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public Integer deleteData_B (String categoryB) {
         SQLiteDatabase db = this.getWritableDatabase();
-        return db.delete(TABLE_BUDGET, "Category_B = ?",new String[] {categoryB});
+        return db.delete(TABLE_BUDGET, "Category_Bud = ?",new String[] {categoryB});
     }
     ////////////////////////////////////////////////////////////////////////////////////////
 
