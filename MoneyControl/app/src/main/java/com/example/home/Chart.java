@@ -26,6 +26,7 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Chart extends AppCompatActivity {
@@ -80,7 +81,20 @@ public class Chart extends AppCompatActivity {
                 sumByCategory.put(category, sum);
             }
         }
-        return sumByCategory;
+        return cleanup(sumByCategory);
+    }
+
+    private Map cleanup(HashMap<String, Integer> cleanMap) {
+        List<String> ceroValues = new ArrayList<>();
+        for(Map.Entry<String, Integer> entry : cleanMap.entrySet()) {
+            if (entry.getValue() == 0){
+                ceroValues.add(entry.getKey());
+            }
+        }
+        for (String key:ceroValues){
+            cleanMap.remove(key);
+        }
+        return cleanMap;
     }
 
 
