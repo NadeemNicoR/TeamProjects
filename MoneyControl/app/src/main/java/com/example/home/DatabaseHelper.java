@@ -65,9 +65,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     // public static final String TABLE_Currency = "Currencytable"; // TABLE_NAME
     //public static final String column_currency= "CurrencyColumn";  // COL_1
 
-
-
-
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);
     }
@@ -110,8 +107,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS "+TABLE_BUDGET);
         onCreate(db);
     }
-
-
     //inserting categories in to the DB
 
     public double getCategorySum(String cateSum){
