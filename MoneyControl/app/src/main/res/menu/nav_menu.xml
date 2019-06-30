@@ -7,16 +7,13 @@
 >>>>>>> 2c95fe2bc44351283120881d33e36c19d3d50306
     <item
         android:id="@+id/category_switch"
-        android:title="Category"
-        app:actionLayout="@layout/switch_item" />
+        android:title="Category" />
 
     <item
         android:id="@+id/amount_switch"
-        android:title="Amount"
-        app:actionLayout="@layout/switch_item" />
+        android:title="Amount" />
 
     <item
         android:id="@+id/date_switch"
-        android:title="Date"
-        app:actionLayout="@layout/switch_item" />
+        android:title="Date" />
 </menu>

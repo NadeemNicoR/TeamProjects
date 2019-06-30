@@ -27,4 +27,15 @@
         android:background="#AFC5BC"
         android:text="Bar Chart" />
 
+    <Button
+        android:id="@+id/chart_Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="16dp"
+        android:background="#AFC5BC"
+        android:text="Back" />
+
 </RelativeLayout>

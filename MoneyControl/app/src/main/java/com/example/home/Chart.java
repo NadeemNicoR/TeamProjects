@@ -26,6 +26,7 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Chart extends AppCompatActivity {
@@ -42,6 +43,7 @@ public class Chart extends AppCompatActivity {
 
     public static final int DB_COLUMN_CATEGORY = 2;
     public static final int DB_COLUMN_AMOUNT = 5;
+    public static final int DB_OLUMN_TRANSACTION = 1;
 
     Map<String, Integer> fullAmount;
 
@@ -74,13 +76,27 @@ public class Chart extends AppCompatActivity {
         while (dbAllData.moveToNext()) {
             String category = dbAllData.getString(DB_COLUMN_CATEGORY);
             Integer amount = dbAllData.getInt(DB_COLUMN_AMOUNT);
+            String transactionType = dbAllData.getString(DB_OLUMN_TRANSACTION);
 
-            if (category != null && sumByCategory.containsKey(category)) {
+            if (category != null && sumByCategory.containsKey(category) && transactionType.equals("Expense")) {
                 Integer sum = sumByCategory.get(category) + amount;
                 sumByCategory.put(category, sum);
             }
         }
-        return sumByCategory;
+        return cleanup(sumByCategory);
+    }
+
+    private Map cleanup(HashMap<String, Integer> cleanMap) {
+        List<String> ceroValues = new ArrayList<>();
+        for(Map.Entry<String, Integer> entry : cleanMap.entrySet()) {
+            if (entry.getValue() == 0){
+                ceroValues.add(entry.getKey());
+            }
+        }
+        for (String key:ceroValues){
+            cleanMap.remove(key);
+        }
+        return cleanMap;
     }
 
 
@@ -102,6 +118,18 @@ public class Chart extends AppCompatActivity {
             }
         });
 
+        Button backButton=(Button) findViewById(R.id.chart_Back);
+        backButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent chart1Intent=new Intent(getApplicationContext(), Mainactivity.class);
+                startActivity(chart1Intent);
+            }
+        });
+
+
         pieChart = (PieChart) findViewById(R.id.chart);
         pieChart.setUsePercentValues(false);
         pieChart.getDescription().setEnabled(false);
@@ -110,15 +138,16 @@ public class Chart extends AppCompatActivity {
         pieChart.setDrawHoleEnabled(true);
         pieChart.setHoleColor(Color.WHITE);
         pieChart.setTransparentCircleRadius(60f);
+        pieChart.setDrawEntryLabels(false);
         pieChart.animateX(1000, Easing.EasingOption.EaseInCubic);
         fullAmount = calculateFullAmount();
 
         ArrayList<PieEntry> yValues = new ArrayList<>();
 
-        yValues.add(new PieEntry(fullAmount.get(RENT), ""));
-        yValues.add(new PieEntry(fullAmount.get(FOOD), ""));
-        yValues.add(new PieEntry(fullAmount.get(INTERNET), ""));
-        yValues.add(new PieEntry(fullAmount.get(ELECTRICITY), ""));
+        yValues.add(new PieEntry(fullAmount.get(RENT), RENT));
+        yValues.add(new PieEntry(fullAmount.get(FOOD), FOOD));
+        yValues.add(new PieEntry(fullAmount.get(INTERNET), INTERNET));
+        yValues.add(new PieEntry(fullAmount.get(ELECTRICITY),ELECTRICITY));
 
         PieDataSet dataSet = new PieDataSet(yValues, "Expenses");
         dataSet.setSliceSpace(3f);
@@ -131,7 +160,9 @@ public class Chart extends AppCompatActivity {
 
         pieChart.setData(data);
 
+
     }
+
 }
 
 

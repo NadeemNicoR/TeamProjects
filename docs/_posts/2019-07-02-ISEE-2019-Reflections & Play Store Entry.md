@@ -45,43 +45,42 @@ Our team is made of four people with four different educational and professional
 
 ### 1) Coming to the technical part:
 
-### (a)What we Learnt:
+### (a) <u>What we Learnt:</u>
 
 - To begin with, we all were beginners in Object Oriented Programming only being able to print "Hello World" with great difficulty!
 
-- First and foremost, thanks to references and examples on [Android Developers](https://developer.android.com/training/basics/firstapp) We were able to navigate ourselves through this journey of being able to learn how to program an android application using java to such an extent that we have successfully built an application on our own as a team.
+- First and foremost, thanks to references and examples on [Android Developers](https://developer.android.com/training/basics/firstapp) .We were able to navigate ourselves through this journey of being able to learn how to program an android application using java to such an extent that we have successfully built an application on our own as a team.
 
-- Secondly, we had very limited knowledge on handling repositories on GIT, now we feel well versed with it as we had to deal with all the possible 'DON'T DO mistakes with GIT' which we ended up committing!
-
-
-### (b)What we believe was inadequate:
-
-- We have developed most of the required OOP skills but still we believe there much more to learn than what we have made use of in implementing the project.
+- Secondly, we had very limited knowledge on handling repositories on GIT, now we feel well versed with it as we had to deal with all  possible 'DON'T DO mistakes with GIT' which we ended up committing!
 
 
+### (b) <u>What we believe was inadequate:</u>
+
+- We have cultivated most of the required OOP skills but still we believe there much more to learn than what we have made use of in implementing the project.
+
+- 
 
 
 ### 2) Now coming to the organizational part:
 
-### (a) What we Learnt:
+### (a) <u>What we Learnt:</u>
 
-- We were able to amplify some of the most significant Social and Team Management skills especially the below ones:
+We were able to amplify some of the most significant Social and Team Management skills especially the below ones:
 
-- Decision Making (coming up with different approaches to tackle the problem & deciding the best approach which would be more feasible and better to implement as a team)
+- Decision Making (coming up with different approaches to tackle the problem & deciding the best approach which would be more feasible and better to implement as a team).
 
-- Problem Solving & Critical Thinking (especially while dealing with null pointer exception and debugging the errors on the app)
+- Problem Solving & Critical Thinking (especially while dealing with null pointer exception and debugging the errors on the app).
 
-- Team work (assisting other team members when we were done with our assigned tasks)
+- Team work (assisting other team members when we were done with our assigned tasks).
 
-- Taking the leadership initiatives (driving the team as a team leader when we had our individual presentations)
-
-
-### (b) What we belevie that we still need to improvise on:
-
-- Adhering to time strictly! (We could not get most of the tasks completed at an assigned time frame, most of the times we had the tasks fulfilled at the last minute of submissions)
+- Taking the leadership initiatives (driving the team as a team leader when we had our individual presentations).
 
 
+### (b) <u>What we belevie that we still need to improvise on:</u>
 
+- Adhering to time strictly! (We could not get most of the tasks completed at an assigned time frame, most of the times we had the tasks fulfilled at the last minute of submissions).
+
+- We as a team need to learn on how to divide the tasks equally amongst each other.
 
 # Play Store Entry
 
@@ -113,7 +112,7 @@ Key features of our app:
 
 With Money Control now it’s easy to track your expenses, stick to a budget and save money.
 
-## Significatn Features Of The Application:
+## Significant Features Of The Application:
 
 - Some of the most significant features of our Money Control android application
 
