@@ -45,9 +45,7 @@ public class BChart extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
 
-    //Switch category_switch;
-    //Switch amount_switch;
-    //Switch date_switch;
+
     Button btnFood;
     Button btnRent;
     Button btnInternet;
@@ -106,10 +104,7 @@ public class BChart extends AppCompatActivity {
         btnWeek.setVisibility(View.INVISIBLE);
         btnMonth.setVisibility(View.INVISIBLE);
         btnYear.setVisibility(View.INVISIBLE);
-        BarChart view1 = findViewById(R.id.chart2);
-        view1.setVisibility(View.INVISIBLE);
-        BarChart view2 = findViewById(R.id.chart3);
-        view2.setVisibility(View.INVISIBLE);
+
 
 
         drawerLayout = findViewById(R.id.drawer_layout);
@@ -494,12 +489,7 @@ public class BChart extends AppCompatActivity {
         btnWeek.setVisibility(View.INVISIBLE);
         btnMonth.setVisibility(View.INVISIBLE);
         btnYear.setVisibility(View.INVISIBLE);
-        /*BarChart view1 = findViewById(R.id.chart1);
-        view1.setVisibility(View.VISIBLE);
-        BarChart view2 = findViewById(R.id.chart2);
-        view2.setVisibility(View.INVISIBLE);
-        BarChart view3 = findViewById(R.id.chart3);
-        view3.setVisibility(View.INVISIBLE);*/
+
     }
 
     public void makeVisibleAmount() {
@@ -514,12 +504,7 @@ public class BChart extends AppCompatActivity {
         btnWeek.setVisibility(View.INVISIBLE);
         btnMonth.setVisibility(View.INVISIBLE);
         btnYear.setVisibility(View.INVISIBLE);
-        /*BarChart view1 = findViewById(R.id.chart1);
-        view1.setVisibility(View.INVISIBLE);
-        BarChart view2 = findViewById(R.id.chart2);
-        view2.setVisibility(View.VISIBLE);
-        BarChart view3 = findViewById(R.id.chart3);
-        view3.setVisibility(View.INVISIBLE);*/
+
     }
 
     public void makeVisibleTime() {
@@ -534,12 +519,7 @@ public class BChart extends AppCompatActivity {
         btnWeek.setVisibility(View.VISIBLE);
         btnMonth.setVisibility(View.VISIBLE);
         btnYear.setVisibility(View.VISIBLE);
-        /*BarChart view1 = findViewById(R.id.chart1);
-        view1.setVisibility(View.INVISIBLE);
-        BarChart view2 = findViewById(R.id.chart2);
-        view2.setVisibility(View.INVISIBLE);
-        BarChart view3 = findViewById(R.id.chart3);
-        view3.setVisibility(View.VISIBLE);*/
+
     }
 
 

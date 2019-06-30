@@ -124,15 +124,16 @@ public class Chart extends AppCompatActivity {
         pieChart.setDrawHoleEnabled(true);
         pieChart.setHoleColor(Color.WHITE);
         pieChart.setTransparentCircleRadius(60f);
+        pieChart.setDrawEntryLabels(false);
         pieChart.animateX(1000, Easing.EasingOption.EaseInCubic);
         fullAmount = calculateFullAmount();
 
         ArrayList<PieEntry> yValues = new ArrayList<>();
 
-        yValues.add(new PieEntry(fullAmount.get(RENT), ""));
-        yValues.add(new PieEntry(fullAmount.get(FOOD), ""));
-        yValues.add(new PieEntry(fullAmount.get(INTERNET), ""));
-        yValues.add(new PieEntry(fullAmount.get(ELECTRICITY), ""));
+        yValues.add(new PieEntry(fullAmount.get(RENT), RENT));
+        yValues.add(new PieEntry(fullAmount.get(FOOD), FOOD));
+        yValues.add(new PieEntry(fullAmount.get(INTERNET), INTERNET));
+        yValues.add(new PieEntry(fullAmount.get(ELECTRICITY),ELECTRICITY));
 
         PieDataSet dataSet = new PieDataSet(yValues, "Expenses");
         dataSet.setSliceSpace(3f);
@@ -145,7 +146,9 @@ public class Chart extends AppCompatActivity {
 
         pieChart.setData(data);
 
+
     }
+
 }
 
 

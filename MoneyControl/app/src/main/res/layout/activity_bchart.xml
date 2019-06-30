@@ -22,17 +22,6 @@
             android:layout_width="match_parent"
             android:layout_height="400sp" />
 
-        <!-- CHART FOR AMOUNT-->
-        <com.github.mikephil.charting.charts.BarChart
-            android:id="@+id/chart2"
-            android:layout_width="match_parent"
-            android:layout_height="400sp" />
-
-        <!-- CHART FOR TIME-->
-        <com.github.mikephil.charting.charts.BarChart
-            android:id="@+id/chart3"
-            android:layout_width="match_parent"
-            android:layout_height="400sp" />
 
         <!-- BUTTONS FOR CATEGORY-->
 
