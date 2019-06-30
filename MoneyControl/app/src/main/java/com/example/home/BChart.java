@@ -188,7 +188,7 @@ public class BChart extends AppCompatActivity {
         btnLow.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Map filteredData = filterByAmount(dbAllData, 1, 99);
-                mChartReload(getBarDataForAmountFilter(filteredData, "Between 1 and 99"));
+                mChartReload(getBarDataForAmountFilter(filteredData, "Less than 99"));
             }
         });
 
@@ -204,7 +204,7 @@ public class BChart extends AppCompatActivity {
         btnHigh.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Map filteredData = filterByAmount(dbAllData, 501, 999999999);
-                mChartReload(getBarDataForAmountFilter(filteredData, "Between 500+"));
+                mChartReload(getBarDataForAmountFilter(filteredData, "Over 500"));
             }
         });
 
@@ -246,7 +246,6 @@ public class BChart extends AppCompatActivity {
         });
 
     }
-
 
     private void mChartReload(BarData barData1) {
         mChart.setData(barData1);

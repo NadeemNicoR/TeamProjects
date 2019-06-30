@@ -116,6 +116,18 @@ public class Chart extends AppCompatActivity {
             }
         });
 
+        Button backButton=(Button) findViewById(R.id.chart_Back);
+        backButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent chart1Intent=new Intent(getApplicationContext(), Mainactivity.class);
+                startActivity(chart1Intent);
+            }
+        });
+
+
         pieChart = (PieChart) findViewById(R.id.chart);
         pieChart.setUsePercentValues(false);
         pieChart.getDescription().setEnabled(false);
