@@ -55,13 +55,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String column_category_B = "Category_Bud"; //COl_3
     public static final String column_recurrency_B = "Recurrency_B"; //COl_3
     public static final String column_date_B = "Date_B"; //COL_4
-   // public static final String column_Time_B = "Time"; //COL_5
+    // public static final String column_Time_B = "Time"; //COL_5
 
     public static final String TABLE_CURRENCY = "Currency";
     public static final String column_currency_ID= "Currency_ID";
     public static final String column_currency_Name="Currency_Name";
 
-   // public static final String TABLE_Currency = "Currencytable"; // TABLE_NAME
+    // public static final String TABLE_Currency = "Currencytable"; // TABLE_NAME
     //public static final String column_currency= "CurrencyColumn";  // COL_1
 
 
@@ -316,7 +316,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.update(TABLE_PIN, contentValues, "id = ?",new String[] { "1" });
         return true;
     }
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public boolean updateData(String transactionID, String transcationType,String category,String date,String Recurrency,String amount,String payment, String currency, String note) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -349,7 +349,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return true;
     }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public Integer deleteData (String transactionID) {
         SQLiteDatabase db = this.getWritableDatabase();
         return db.delete(TABLE_TRANSACTIONS, "Transaction_ID = ?",new String[] {transactionID});

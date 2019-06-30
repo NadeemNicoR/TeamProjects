@@ -1,18 +1,13 @@
 package com.example.home;
 
-import android.app.AlertDialog;
-import android.content.Intent;
 import android.database.Cursor;
-import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
-import android.support.v4.view.ViewCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.Button;
 
 import com.github.mikephil.charting.charts.BarChart;
@@ -22,13 +17,13 @@ import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.utils.ColorTemplate;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-
-import android.widget.CompoundButton;
-import android.widget.Switch;
-import android.widget.Toast;
 
 
 public class BChart extends AppCompatActivity {
@@ -41,6 +36,7 @@ public class BChart extends AppCompatActivity {
     public static final String ELECTRICITY = "Electricity Bill";
     public static final int DB_COLUMN_CATEGORY = 2;
     public static final int DB_COLUMN_AMOUNT = 5;
+    public static final int DB_COLUMN_DATE = 3;
 
     //Visibility of filters
 
@@ -68,7 +64,6 @@ public class BChart extends AppCompatActivity {
     //NavigationView Nav_Bar;
 
     Map<String, Integer> fullAmount;
-    Map<String, Integer> sizedFullAmount;
 
 
     @Override
@@ -192,21 +187,56 @@ public class BChart extends AppCompatActivity {
         });
 
         // Buttons for AMOUNT
+        final Button btnLow = (Button) findViewById(R.id.button_low);
+        btnLow.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Map filteredData = filterByAmount(dbAllData, 1, 99);
+                mChartReload(getBarDataForAmountFilter(filteredData, "Between 1 and 99"));
+            }
+        });
 
+        final Button btnMedium = (Button) findViewById(R.id.button_medium);
+        btnMedium.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Map filteredData = filterByAmount(dbAllData, 100, 500);
+                mChartReload(getBarDataForAmountFilter(filteredData, "Between 100 and 500"));
+            }
+        });
+
+        final Button btnHigh = (Button) findViewById(R.id.button_high);
+        btnHigh.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Map filteredData = filterByAmount(dbAllData, 501, 999999999);
+                mChartReload(getBarDataForAmountFilter(filteredData, "Between 500+"));
+            }
+        });
 
         // Buttons for TIME
 
-
-        Button chart2=(Button) findViewById(R.id.button_pieChart);
-        chart2.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Intent chartIntent=new Intent(getApplicationContext(), Chart.class);
-                startActivity(chartIntent);
+        final Button btnWeek = (Button) findViewById(R.id.button_week);
+        btnWeek.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Map filteredData = filterByWeek(dbAllData);
+                mChartReload(getBarDataForTimeFilter(filteredData,"Weeks"));
             }
         });
+
+        final Button btnMonth = (Button) findViewById(R.id.button_month);
+        btnMonth.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Map filteredData = filterByMonth(dbAllData);
+                mChartReload(getBarDataForTimeFilter(filteredData,"Months"));
+            }
+        });
+
+        final Button btnYear = (Button) findViewById(R.id.button_year);
+        btnYear.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Map filteredData = filterByMonth(dbAllData);
+                mChartReload(getBarDataForTimeFilter(filteredData,"Years"));
+            }
+        });
+
     }
 
 
@@ -220,13 +250,19 @@ public class BChart extends AppCompatActivity {
     }
 
     public Map calculateFullAmount(Cursor dbData) {
+        return filterByAmount(dbData, 0, 999999999);
+    }
+
+    public Map filterByAmount(Cursor dbData, int minimum, int maximum) {
         HashMap<String, Integer> sumByCategory = initializeCategories();
 
         while (dbData.moveToNext()) {
             String category = dbData.getString(DB_COLUMN_CATEGORY);
             Integer amount = dbData.getInt(DB_COLUMN_AMOUNT);
+            Boolean categoryIsValid = category != null && sumByCategory.containsKey(category);
+            Boolean amountIsValid = minimum <= amount && amount <= maximum;
 
-            if (category != null && sumByCategory.containsKey(category)) {
+            if (categoryIsValid && amountIsValid) {
                 Integer sum = sumByCategory.get(category) + amount;
                 sumByCategory.put(category, sum);
             }
@@ -235,28 +271,81 @@ public class BChart extends AppCompatActivity {
         return sumByCategory;
     }
 
-    /* public Map calculateAmountBySize(Cursor dbData) {
-         HashMap<String, Integer> sumByAmountSize();
+    public Map filterByMonth(Cursor dbData) {
+        HashMap<Integer, Integer> sumByDate = initializeMonths();
 
-         while (dbData.moveToNext()) {
-             String category = dbData.getString(DB_COLUMN_CATEGORY);
-             Integer amount = dbData.getInt(DB_COLUMN_AMOUNT);
+        while (dbData.moveToNext()) {
+            Integer amount = dbData.getInt(DB_COLUMN_AMOUNT);
+            Integer month = getMonthNumber(dbData.getString(DB_COLUMN_DATE));
 
-             if (category != null && sumByAmountSize.containsKey(category) && amount<100) {
-                 Integer sum1 = sumByAmountSize.get(category) + amount;
-                 sumByAmountSize.put(category, sum1);
-             }
-             if (category != null && sumByAmountSize.containsKey(category) && 500>amount && amount>=100) {
-                 Integer sum2 = sumByAmountSize.get(category) + amount;
-                 sumByAmountSize.put(category, sum2);
-             }
-             if (category != null && sumByAmountSize.containsKey(category) && amount>500) {
-                 Integer sum3 = sumByAmountSize.get(category) + amount;
-                 sumByAmountSize.put(category, sum3);
-         }
-         dbData.moveToPosition(-1);
-         return sumByAmountSize;
-     }*/
+            Boolean monthIsValid = month != null && sumByDate.containsKey(month);
+            if (monthIsValid) {
+                Integer sum = sumByDate.get(month) + amount;
+                sumByDate.put(month, sum);
+            }
+        }
+        dbData.moveToPosition(-1);
+        return sumByDate;
+    }
+
+    public Map filterByWeek(Cursor dbData) {
+        HashMap<Integer, Integer> sumByWeek = initializeWeeks();
+
+        while (dbData.moveToNext()) {
+            Integer amount = dbData.getInt(DB_COLUMN_AMOUNT);
+            Integer week = getWeekNumber(dbData.getString(DB_COLUMN_DATE));
+
+            Boolean weekIsValid = week != null && sumByWeek.containsKey(week);
+            if (weekIsValid) {
+                Integer sum = sumByWeek.get(week) + amount;
+                sumByWeek.put(week, sum);
+            }
+        }
+        dbData.moveToPosition(-1);
+        return sumByWeek;
+    }
+
+    private Integer getMonthNumber(String string) {
+        try {
+            Date date = new SimpleDateFormat("dd/MM/yyyy").parse(string);
+            Calendar calendar = Calendar.getInstance();
+            calendar.setTime(date);
+            return calendar.get(Calendar.MONTH);
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    private Integer getWeekNumber(String string) {
+        try {
+            Date date = new SimpleDateFormat("dd/MM/yyyy").parse(string);
+            Calendar calendar = Calendar.getInstance();
+            calendar.setTime(date);
+            return calendar.get(Calendar.WEEK_OF_YEAR);
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    private HashMap<Integer, Integer> initializeMonths() {
+        HashMap<Integer, Integer> months = new HashMap<Integer, Integer>();
+        for (int month = 0; month < 12; month++) {
+            months.put(month, 0);
+        }
+        return months;
+    }
+
+    private HashMap<Integer, Integer> initializeWeeks() {
+        HashMap<Integer, Integer> weeks = new HashMap<Integer, Integer>();
+        for (int week = 0; week < 52; week++) {
+            weeks.put(week, 0);
+        }
+        return weeks;
+    }
+
+
     private HashMap<String, Integer> initializeCategories() {
         HashMap<String, Integer> categories = new HashMap<String, Integer>();
         categories.put(RENT, 0);
@@ -300,20 +389,28 @@ public class BChart extends AppCompatActivity {
         entries.add(new BarEntry(1, fullAmount.get(FOOD)));
         entries.add(new BarEntry(2, fullAmount.get(INTERNET)));
         entries.add(new BarEntry(3, fullAmount.get(ELECTRICITY)));
-        return getBarData(entries,"All Categories");
+        return getBarData(entries, "All Categories");
     }
-    /*private BarData getBarDataSizedForFullAmount() {
-        ArrayList<BarEntry> entries1 = new ArrayList<BarEntry>();
-        entries1.add(new BarEntry(0, sizedFullAmount.get(RENT)));
-        entries1.add(new BarEntry(1, sizedFullAmount.get(FOOD)));
-        entries1.add(new BarEntry(2, sizedFullAmount.get(INTERNET)));
-        entries1.add(new BarEntry(3, sizedFullAmount.get(ELECTRICITY)));
-        return getBarData(entries1,"All Categories");
-    }*/
 
+    private BarData getBarDataForAmountFilter(Map<String, Integer> filteredData, String label) {
+        ArrayList<BarEntry> entries = new ArrayList<BarEntry>();
+        entries.add(new BarEntry(0, filteredData.get(RENT)));
+        entries.add(new BarEntry(1, filteredData.get(FOOD)));
+        entries.add(new BarEntry(2, filteredData.get(INTERNET)));
+        entries.add(new BarEntry(3, filteredData.get(ELECTRICITY)));
+        return getBarData(entries, label);
+    }
+
+    private BarData getBarDataForTimeFilter(Map<Integer,Integer> timeData, String label){
+        ArrayList<BarEntry> entries = new ArrayList<BarEntry>();
+        for(Map.Entry<Integer, Integer> entry : timeData.entrySet()) {
+            entries.add(new BarEntry(entry.getKey(),entry.getValue()));
+        }
+        return getBarData(entries,label);
+    }
 
     private BarData getBarData(ArrayList<BarEntry> barEntries, String label) {
-        BarDataSet dataSet = new BarDataSet(barEntries,label);
+        BarDataSet dataSet = new BarDataSet(barEntries, label);
         dataSet.setColors(ColorTemplate.MATERIAL_COLORS);
         dataSet.setDrawValues(true);
         dataSet.setValueTextSize(15f);
@@ -321,8 +418,7 @@ public class BChart extends AppCompatActivity {
     }
 
 
-
-    public void makeVisibleCategory(){
+    public void makeVisibleCategory() {
         btnFood.setVisibility(View.VISIBLE);
         btnRent.setVisibility(View.VISIBLE);
         btnInternet.setVisibility(View.VISIBLE);
@@ -334,15 +430,15 @@ public class BChart extends AppCompatActivity {
         btnWeek.setVisibility(View.INVISIBLE);
         btnMonth.setVisibility(View.INVISIBLE);
         btnYear.setVisibility(View.INVISIBLE);
-        BarChart view1 = findViewById(R.id.chart1);
+        /*BarChart view1 = findViewById(R.id.chart1);
         view1.setVisibility(View.VISIBLE);
         BarChart view2 = findViewById(R.id.chart2);
         view2.setVisibility(View.INVISIBLE);
         BarChart view3 = findViewById(R.id.chart3);
-        view3.setVisibility(View.INVISIBLE);
+        view3.setVisibility(View.INVISIBLE);*/
     }
 
-    public void makeVisibleAmount(){
+    public void makeVisibleAmount() {
         btnFood.setVisibility(View.INVISIBLE);
         btnRent.setVisibility(View.INVISIBLE);
         btnInternet.setVisibility(View.INVISIBLE);
@@ -354,14 +450,15 @@ public class BChart extends AppCompatActivity {
         btnWeek.setVisibility(View.INVISIBLE);
         btnMonth.setVisibility(View.INVISIBLE);
         btnYear.setVisibility(View.INVISIBLE);
-        BarChart view1 = findViewById(R.id.chart1);
+        /*BarChart view1 = findViewById(R.id.chart1);
         view1.setVisibility(View.INVISIBLE);
         BarChart view2 = findViewById(R.id.chart2);
         view2.setVisibility(View.VISIBLE);
         BarChart view3 = findViewById(R.id.chart3);
-        view3.setVisibility(View.INVISIBLE);
+        view3.setVisibility(View.INVISIBLE);*/
     }
-    public void makeVisibleTime(){
+
+    public void makeVisibleTime() {
         btnFood.setVisibility(View.INVISIBLE);
         btnRent.setVisibility(View.INVISIBLE);
         btnInternet.setVisibility(View.INVISIBLE);
@@ -373,14 +470,13 @@ public class BChart extends AppCompatActivity {
         btnWeek.setVisibility(View.VISIBLE);
         btnMonth.setVisibility(View.VISIBLE);
         btnYear.setVisibility(View.VISIBLE);
-        BarChart view1 = findViewById(R.id.chart1);
+        /*BarChart view1 = findViewById(R.id.chart1);
         view1.setVisibility(View.INVISIBLE);
         BarChart view2 = findViewById(R.id.chart2);
         view2.setVisibility(View.INVISIBLE);
         BarChart view3 = findViewById(R.id.chart3);
-        view3.setVisibility(View.VISIBLE);
+        view3.setVisibility(View.VISIBLE);*/
     }
-
 
 
 }
