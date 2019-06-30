@@ -43,6 +43,7 @@ public class Chart extends AppCompatActivity {
 
     public static final int DB_COLUMN_CATEGORY = 2;
     public static final int DB_COLUMN_AMOUNT = 5;
+    public static final int DB_OLUMN_TRANSACTION = 1;
 
     Map<String, Integer> fullAmount;
 
@@ -75,8 +76,9 @@ public class Chart extends AppCompatActivity {
         while (dbAllData.moveToNext()) {
             String category = dbAllData.getString(DB_COLUMN_CATEGORY);
             Integer amount = dbAllData.getInt(DB_COLUMN_AMOUNT);
+            String transactionType = dbAllData.getString(DB_OLUMN_TRANSACTION);
 
-            if (category != null && sumByCategory.containsKey(category)) {
+            if (category != null && sumByCategory.containsKey(category) && transactionType.equals("Expense")) {
                 Integer sum = sumByCategory.get(category) + amount;
                 sumByCategory.put(category, sum);
             }

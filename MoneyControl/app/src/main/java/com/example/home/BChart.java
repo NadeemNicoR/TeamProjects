@@ -5,6 +5,8 @@ import android.database.Cursor;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -39,11 +41,15 @@ public class BChart extends AppCompatActivity {
     public static final int DB_COLUMN_CATEGORY = 2;
     public static final int DB_COLUMN_AMOUNT = 5;
     public static final int DB_COLUMN_DATE = 3;
+    public static final int DB_OLUMN_TRANSACTION = 1;
+
+
 
     //Visibility of filters
 
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
+    private ActionBarDrawerToggle mToggle;
 
 
     Button btnFood;
@@ -57,11 +63,7 @@ public class BChart extends AppCompatActivity {
     Button btnWeek;
     Button btnMonth;
     Button btnYear;
-    Chart chartCategory;
-    Chart chartAmount;
-    Chart chartTime;
-    //ViewCompat.SeteBackgroundcolor
-    //NavigationView Nav_Bar;
+
 
     Map<String, Integer> fullAmount;
 
@@ -108,7 +110,12 @@ public class BChart extends AppCompatActivity {
 
 
         drawerLayout = findViewById(R.id.drawer_layout);
+        mToggle = new ActionBarDrawerToggle(this,drawerLayout,R.string.open,R.string.close);
+        drawerLayout.addDrawerListener(mToggle);
+        mToggle.syncState();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         navigationView = findViewById(R.id.nav_bar);
+
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -140,8 +147,6 @@ public class BChart extends AppCompatActivity {
             }
         });
 
-
-        // Buttons for CATEGORY:
 
         final Button btnFood = (Button) findViewById(R.id.button_food);
         btnFood.setOnClickListener(new View.OnClickListener() {
@@ -247,6 +252,14 @@ public class BChart extends AppCompatActivity {
 
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+       if(mToggle.onOptionsItemSelected(item)){
+           return true;
+       }
+        return super.onOptionsItemSelected(item);
+    }
+
     private void mChartReload(BarData barData1) {
         mChart.setData(barData1);
         mChart.invalidate();
@@ -265,8 +278,9 @@ public class BChart extends AppCompatActivity {
 
         while (dbData.moveToNext()) {
             String category = dbData.getString(DB_COLUMN_CATEGORY);
+            String transactionType = dbData.getString(DB_OLUMN_TRANSACTION);
             Integer amount = dbData.getInt(DB_COLUMN_AMOUNT);
-            Boolean categoryIsValid = category != null && sumByCategory.containsKey(category);
+            Boolean categoryIsValid = category != null && sumByCategory.containsKey(category) && transactionType.equals("Expense");
             Boolean amountIsValid = minimum <= amount && amount <= maximum;
 
             if (categoryIsValid && amountIsValid) {
@@ -284,8 +298,8 @@ public class BChart extends AppCompatActivity {
         while (dbData.moveToNext()) {
             Integer amount = dbData.getInt(DB_COLUMN_AMOUNT);
             Integer year = getYearNumber(dbData.getString(DB_COLUMN_DATE));
-
-            Boolean yearIsValid = year != null && sumByYear.containsKey(year);
+            String transactionType = dbData.getString(DB_OLUMN_TRANSACTION);
+            Boolean yearIsValid = year != null && sumByYear.containsKey(year) && transactionType.equals("Expense");
             if (yearIsValid) {
                 Integer sum = sumByYear.get(year) + amount;
                 sumByYear.put(year, sum);
@@ -301,8 +315,8 @@ public class BChart extends AppCompatActivity {
         while (dbData.moveToNext()) {
             Integer amount = dbData.getInt(DB_COLUMN_AMOUNT);
             Integer month = getMonthNumber(dbData.getString(DB_COLUMN_DATE));
-
-            Boolean monthIsValid = month != null && sumByMonth.containsKey(month);
+            String transactionType = dbData.getString(DB_OLUMN_TRANSACTION);
+            Boolean monthIsValid = month != null && sumByMonth.containsKey(month) && transactionType.equals("Expense");
             if (monthIsValid) {
                 Integer sum = sumByMonth.get(month) + amount;
                 sumByMonth.put(month, sum);
@@ -318,8 +332,8 @@ public class BChart extends AppCompatActivity {
         while (dbData.moveToNext()) {
             Integer amount = dbData.getInt(DB_COLUMN_AMOUNT);
             Integer week = getWeekNumber(dbData.getString(DB_COLUMN_DATE));
-
-            Boolean weekIsValid = week != null && sumByWeek.containsKey(week);
+            String transactionType = dbData.getString(DB_OLUMN_TRANSACTION);
+            Boolean weekIsValid = week != null && sumByWeek.containsKey(week) && transactionType.equals("Expense");
             if (weekIsValid) {
                 Integer sum = sumByWeek.get(week) + amount;
                 sumByWeek.put(week, sum);
@@ -431,8 +445,9 @@ public class BChart extends AppCompatActivity {
         int count = 0;
         while (dbData.moveToNext()) {
             String category = dbData.getString(DB_COLUMN_CATEGORY);
+            String transactionType = dbData.getString(DB_OLUMN_TRANSACTION);
             int amount = dbData.getInt(DB_COLUMN_AMOUNT);
-            if ((category != null) && category.equals(filterCategory)) {
+            if ((category != null) && transactionType.equals("Expense") && category.equals(filterCategory)) {
                 entries.add(new BarEntry(count, amount));
                 count++;
             }
@@ -488,6 +503,7 @@ public class BChart extends AppCompatActivity {
         btnWeek.setVisibility(View.INVISIBLE);
         btnMonth.setVisibility(View.INVISIBLE);
         btnYear.setVisibility(View.INVISIBLE);
+        mChartReload(getBarDataForFullAmount());
 
     }
 
@@ -503,6 +519,7 @@ public class BChart extends AppCompatActivity {
         btnWeek.setVisibility(View.INVISIBLE);
         btnMonth.setVisibility(View.INVISIBLE);
         btnYear.setVisibility(View.INVISIBLE);
+        mChartReload(getBarDataForFullAmount());
 
     }
 
@@ -518,6 +535,7 @@ public class BChart extends AppCompatActivity {
         btnWeek.setVisibility(View.VISIBLE);
         btnMonth.setVisibility(View.VISIBLE);
         btnYear.setVisibility(View.VISIBLE);
+        mChartReload(getBarDataForFullAmount());
 
     }
 
