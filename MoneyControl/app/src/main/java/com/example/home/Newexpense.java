@@ -246,7 +246,7 @@ public class Newexpense extends AppCompatActivity {
         editRecurrecny = (Spinner) findViewById(R.id.editRecurrencyField);
         editAmount = (EditText) findViewById(R.id.editAmountField);
         editPaymentType = (Spinner) findViewById(R.id.editPaymentField);
-       // editCurrency = (Spinner) findViewById(R.id.editCurrencyField);
+        // editCurrency = (Spinner) findViewById(R.id.editCurrencyField);
         editNote = (EditText) findViewById(R.id.editNoteField);
 
 
@@ -257,7 +257,7 @@ public class Newexpense extends AppCompatActivity {
         AddData();
         viewAll();
         //UpdateData();
-       // DeleteData();
+        // DeleteData();
     }
 
     /*public void DeleteData() {
@@ -296,72 +296,72 @@ public class Newexpense extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
 
-                            if(spinner1.getSelectedItemPosition() == 0 && spinner2.getSelectedItemPosition() == 0 && spinner3.getSelectedItemPosition() == 0 && transactionSpinner.getSelectedItemPosition() == 0 && editAmount.getText().toString().isEmpty()&& editDate.getText().toString().isEmpty() && editNote.getText().toString().isEmpty())
-                            {
-                                Toast.makeText(Newexpense.this, "All the entries are missing please add missing values ", Toast.LENGTH_SHORT).show();
-                            }
-                                else if ( spinner1.getSelectedItemPosition() == 0)
-                            {
-                                Toast.makeText(Newexpense.this, "Please select type of payment", Toast.LENGTH_SHORT).show();
-                            }
-                            else if(spinner2.getSelectedItemPosition() == 0)
-                            {
-                                Toast.makeText(Newexpense.this, "Please select Category field ", Toast.LENGTH_SHORT).show();
-                            }
-                            else if(spinner3.getSelectedItemPosition() == 0)
-                            {
-                                Toast.makeText(Newexpense.this, "Please select recurrency type", Toast.LENGTH_SHORT).show();
-                            }
-                            else if(transactionSpinner.getSelectedItemPosition() == 0)
-                            {
-                                Toast.makeText(Newexpense.this, "Please select TYPE OF TRANSACTION", Toast.LENGTH_SHORT).show();
-                            }
-                            else if(editAmount.getText().toString().isEmpty())
-                            {
-                                Toast.makeText(Newexpense.this, "Please enter the AMOUNT", Toast.LENGTH_SHORT).show();
-                            }
-                            else if(editDate.getText().toString().isEmpty())
-                            {
-                                Toast.makeText(Newexpense.this, "Please select DATE of transaction", Toast.LENGTH_SHORT).show();
-                            }
-                            else if(editNote.getText().toString().isEmpty())
-                            {
-                                Toast.makeText(Newexpense.this, "Please add NOTE for transaction", Toast.LENGTH_SHORT).show();
-                            }
-                            else {
-                                boolean isInserted = myDb.insertData(editTransactionType.getSelectedItem().toString(),
-                                                                        editCategory.getSelectedItem().toString(),
-                                                                        editDate.getText().toString(),
-                                                                        editRecurrecny.getSelectedItem().toString(),
-                                                                        Integer.parseInt(editAmount.getText().toString()),
-                                                                        editPaymentType.getSelectedItem().toString(),
-                                                                            editNote.getText().toString());
-                                if (isInserted == true) {
-                                    Toast.makeText(Newexpense.this, "Transaction Added", Toast.LENGTH_LONG).show();
-                                    myDb = new DatabaseHelper(getApplicationContext());
-                                    if(editTransactionType.getSelectedItem().toString()=="Expense") {
-                                        double sumCategory = myDb.getCategorySum(editCategory.getSelectedItem().toString());
-                                        double budgetAmt = myDb.getBudgetAmount(editCategory.getSelectedItem().toString());
-                                        if (sumCategory >= 0.75 * budgetAmt && sumCategory <= budgetAmt) {
-                                            AlertDialog.Builder builder = new AlertDialog.Builder(Newexpense.this);
-                                            builder.setTitle("Warning");
-                                            builder.setMessage("Careful! you have crossed 75% of the limit set on the amount of money you can spend for " + editCategory.getSelectedItem().toString());
-                                            AlertDialog alertDialog = builder.create();
-                                            alertDialog.show();
-                                        }
-                                        if (sumCategory >= budgetAmt) {
-                                            AlertDialog.Builder builder = new AlertDialog.Builder(Newexpense.this);
-                                            builder.setTitle("Warning");
-                                            builder.setMessage("Careful! you have crossed 75% of the limit set on the amount of money you can spend for " + editCategory.getSelectedItem().toString());
-                                            AlertDialog alertDialog = builder.create();
-                                            alertDialog.show();
-                                        }
+                        if(spinner1.getSelectedItemPosition() == 0 && spinner2.getSelectedItemPosition() == 0 && spinner3.getSelectedItemPosition() == 0 && transactionSpinner.getSelectedItemPosition() == 0 && editAmount.getText().toString().isEmpty()&& editDate.getText().toString().isEmpty() && editNote.getText().toString().isEmpty())
+                        {
+                            Toast.makeText(Newexpense.this, "All the entries are missing please add missing values ", Toast.LENGTH_SHORT).show();
+                        }
+                        else if ( spinner1.getSelectedItemPosition() == 0)
+                        {
+                            Toast.makeText(Newexpense.this, "Please select type of payment", Toast.LENGTH_SHORT).show();
+                        }
+                        else if(spinner2.getSelectedItemPosition() == 0)
+                        {
+                            Toast.makeText(Newexpense.this, "Please select Category field ", Toast.LENGTH_SHORT).show();
+                        }
+                        else if(spinner3.getSelectedItemPosition() == 0)
+                        {
+                            Toast.makeText(Newexpense.this, "Please select recurrency type", Toast.LENGTH_SHORT).show();
+                        }
+                        else if(transactionSpinner.getSelectedItemPosition() == 0)
+                        {
+                            Toast.makeText(Newexpense.this, "Please select TYPE OF TRANSACTION", Toast.LENGTH_SHORT).show();
+                        }
+                        else if(editAmount.getText().toString().isEmpty())
+                        {
+                            Toast.makeText(Newexpense.this, "Please enter the AMOUNT", Toast.LENGTH_SHORT).show();
+                        }
+                        else if(editDate.getText().toString().isEmpty())
+                        {
+                            Toast.makeText(Newexpense.this, "Please select DATE of transaction", Toast.LENGTH_SHORT).show();
+                        }
+                        else if(editNote.getText().toString().isEmpty())
+                        {
+                            Toast.makeText(Newexpense.this, "Please add NOTE for transaction", Toast.LENGTH_SHORT).show();
+                        }
+                        else {
+                            boolean isInserted = myDb.insertData(editTransactionType.getSelectedItem().toString(),
+                                    editCategory.getSelectedItem().toString(),
+                                    editDate.getText().toString(),
+                                    editRecurrecny.getSelectedItem().toString(),
+                                    Integer.parseInt(editAmount.getText().toString()),
+                                    editPaymentType.getSelectedItem().toString(),
+                                    editNote.getText().toString());
+                            if (isInserted == true) {
+                                Toast.makeText(Newexpense.this, "Transaction Added", Toast.LENGTH_LONG).show();
+                                myDb = new DatabaseHelper(getApplicationContext());
+                                if(editTransactionType.getSelectedItem().toString()=="Expense") {
+                                    double sumCategory = myDb.getCategorySum(editCategory.getSelectedItem().toString());
+                                    Double budgetAmt = myDb.getBudgetAmount(editCategory.getSelectedItem().toString());
+                                    if (null != budgetAmt && sumCategory >= 0.75 * budgetAmt && sumCategory <= budgetAmt) {
+                                        AlertDialog.Builder builder = new AlertDialog.Builder(Newexpense.this);
+                                        builder.setTitle("Warning");
+                                        builder.setMessage("Careful! you have crossed 75% of the limit set on the amount of money you can spend for " + editCategory.getSelectedItem().toString());
+                                        AlertDialog alertDialog = builder.create();
+                                        alertDialog.show();
+                                    }
+                                    if (null != budgetAmt && sumCategory >= budgetAmt) {
+                                        AlertDialog.Builder builder = new AlertDialog.Builder(Newexpense.this);
+                                        builder.setTitle("Warning");
+                                        builder.setMessage("Careful! you have crossed 75% of the limit set on the amount of money you can spend for " + editCategory.getSelectedItem().toString());
+                                        AlertDialog alertDialog = builder.create();
+                                        alertDialog.show();
                                     }
                                 }
-                                else{
-                                    Toast.makeText(Newexpense.this, "Transaction not added", Toast.LENGTH_LONG).show();}
-                           }
+                            }
+                            else{
+                                Toast.makeText(Newexpense.this, "Transaction not added", Toast.LENGTH_LONG).show();}
                         }
+                    }
                 }
         );
     }

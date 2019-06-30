@@ -55,13 +55,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String column_category_B = "Category_Bud"; //COl_3
     public static final String column_recurrency_B = "Recurrency_B"; //COl_3
     public static final String column_date_B = "Date_B"; //COL_4
-   // public static final String column_Time_B = "Time"; //COL_5
+    // public static final String column_Time_B = "Time"; //COL_5
 
     public static final String TABLE_CURRENCY = "Currency";
     public static final String column_currency_ID= "Currency_ID";
     public static final String column_currency_Name="Currency_Name";
+    public static final String column_currency_default="Currency_Default";
 
-   // public static final String TABLE_Currency = "Currencytable"; // TABLE_NAME
+    // public static final String TABLE_Currency = "Currencytable"; // TABLE_NAME
     //public static final String column_currency= "CurrencyColumn";  // COL_1
 
 
@@ -97,7 +98,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             throw new IllegalStateException("PIN Could not be initialized");
 
         db.execSQL("create table " + TABLE_BUDGET +" (Budget_ID INTEGER PRIMARY KEY AUTOINCREMENT,Amount_B INTEGER,Category_Bud TEXT,Recurrency_B TEXT,Date_B DATE)");
-        db.execSQL("create table " + TABLE_CURRENCY+ " (Currency_ID INTEGER PRIMARY KEY AUTOINCREMENT, Currency_Name TEXT)");
+        db.execSQL("create table " + TABLE_CURRENCY+ " (Currency_ID INTEGER PRIMARY KEY AUTOINCREMENT, Currency_Name TEXT, Currency_Default boolean DEFAULT 0)");
     }
 
     @Override
@@ -126,8 +127,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return cat_sum;
     }
 
-    public double getBudgetAmount(String cateSum){
-        double cat_sum=0;
+    public Double getBudgetAmount(String cateSum){
+        Double cat_sum=null;
         String categorySumQuerry= "SELECT "+column_amount_B +" FROM "+ TABLE_BUDGET+" WHERE "+column_category_B+ " = '"+cateSum+"'";
         SQLiteDatabase data=  this.getReadableDatabase();
         Cursor cursor=data.rawQuery(categorySumQuerry,null);
@@ -142,6 +143,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public boolean insertData(String transactiontype1,String category,String date,String Recurrency,int amount,String payment, String note)
     {
+        String defaultCurrencyValue = null;
+        String defaultCurrency= "SELECT "+column_currency_Name +" FROM "+ TABLE_CURRENCY+" WHERE "+column_currency_default+ " = 1";
+        SQLiteDatabase data=  this.getReadableDatabase();
+        Cursor cursor=data.rawQuery(defaultCurrency,null);
+        if(cursor.moveToFirst())
+        {
+            defaultCurrencyValue=cursor.getString(cursor.getColumnIndex(cursor.getColumnName(0)));
+        }
+        data.close();
+
+        defaultCurrencyValue = null == defaultCurrencyValue ? "Euro": defaultCurrencyValue;
+
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
@@ -152,7 +165,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(column_recurrency_E,Recurrency);
         contentValues.put(column_amount_E,amount);
         contentValues.put(column_payment_E,payment);
-        //contentValues.put(column_currency_E,currency);
+        contentValues.put(column_currency_E,defaultCurrencyValue);
         contentValues.put(column_note_E,note);
         long result = db.insert(TABLE_TRANSACTIONS,null ,contentValues);
 
@@ -278,6 +291,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Cursor res = db.rawQuery("select * from "+TABLE_TRANSACTIONS,null);
         return res;
     }
+
+    /*public Cursor getAllData(String filter, String filterValue){
+
+         switch (filter){
+             case "category":
+
+         }
+    }*/
+
     public Cursor getAllData_I() {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor res = db.rawQuery("select * from "+TABLE_INCOMES,null);
@@ -286,11 +308,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public Cursor getAllCategories() {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor res = db.rawQuery("select * from "+TABLE_CATEGORIES,null);
+
         return res;
     }
     public Cursor getAllData_B() {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor res = db.rawQuery("select * from "+TABLE_BUDGET,null);
+        if (res.getCount() > 1)
+            res = db.rawQuery("select * from "+TABLE_BUDGET+" where " + column_budget_ID + "> 1",null);
+
         return res;
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -341,7 +367,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.update(TABLE_PIN, contentValues, "id = ?",new String[] { "1" });
         return true;
     }
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public boolean updateData(String transactionID, String transcationType,String category,String date,String Recurrency,String amount,String payment, String currency, String note) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -374,7 +400,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return true;
     }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public Integer deleteData (String transactionID) {
         SQLiteDatabase db = this.getWritableDatabase();
         return db.delete(TABLE_TRANSACTIONS, "Transaction_ID = ?",new String[] {transactionID});
@@ -409,17 +435,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return false;
     }
 
-    public boolean chooseCurrency(String currencySelected)
+    public void chooseCurrency(String currencySelected)
     {
         SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-        contentValues.put(column_currency_Name,currencySelected);
-        long result = db.insert(TABLE_TRANSACTIONS,null ,contentValues);
+        ContentValues contentValuesSetDefault = new ContentValues();
+        ContentValues contentValuesRevokeDefault = new ContentValues();
 
-        if(result == -1)
-            return false;
-        else
-            return true;
+        contentValuesSetDefault.put(column_currency_default, 1);
+        contentValuesRevokeDefault.put(column_currency_default, 0);
+
+        db.update(TABLE_CURRENCY, contentValuesRevokeDefault, column_currency_default+" = ?",new String[] {"1"});
+        db.update(TABLE_CURRENCY, contentValuesSetDefault, column_currency_Name+" = ?",new String[] { currencySelected });
     }
 
 

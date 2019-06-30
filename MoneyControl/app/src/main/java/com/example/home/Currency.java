@@ -22,7 +22,7 @@ public class Currency extends AppCompatActivity
     private Spinner spinnerCurrency;
     DatabaseHelper myDbCurrency;
     Button btnSaveCurrency;
-    public String valueOfSlectedSpinner;
+    public String valueOfSlectedSpinner = "Euro";
 
     public void onCreate(Bundle savedInstanceState)
     {
@@ -43,7 +43,6 @@ public class Currency extends AppCompatActivity
 
 
         spinnerCurrency = (Spinner) findViewById(R.id.editCurrencyFielddiff);
-        btnSaveCurrency=(Button)findViewById(R.id.DoneCurrency);
 
 
         ArrayAdapter<String> adapterC = new ArrayAdapter<String>(getApplicationContext(), R.layout.support_simple_spinner_dropdown_item, deftaultCurrencyList);
@@ -57,7 +56,7 @@ public class Currency extends AppCompatActivity
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
                 ((TextView) parent.getChildAt(0)).setTextSize(18);
-                String item = parent.getItemAtPosition(position).toString();
+                valueOfSlectedSpinner = parent.getItemAtPosition(position).toString();
             }
 
             @Override
@@ -65,19 +64,21 @@ public class Currency extends AppCompatActivity
             }
         });
 
-
-        Button backToSettings=(Button) findViewById(R.id.DoneCurrency);
-        backToSettings.setOnClickListener(new View.OnClickListener()
+        btnSaveCurrency=(Button)findViewById(R.id.DoneCurrency);
+        btnSaveCurrency.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
+                myDbCurrency.chooseCurrency(valueOfSlectedSpinner);
+                Toast.makeText(Currency.this, "Default currency set to "+ valueOfSlectedSpinner, Toast.LENGTH_SHORT).show();
                 Intent backToSettings=new Intent(getApplicationContext(), Settings.class);
                 startActivity(backToSettings);
             }
         });
+
     }
-    /*public void spinnerPosition()
+/*    public void spinnerPosition()
     {
         btnSaveCurrency.setOnClickListener(
                 new View.OnClickListener() {
@@ -91,5 +92,6 @@ public class Currency extends AppCompatActivity
                             Toast.makeText(Currency.this, "Data not Inserted", Toast.LENGTH_SHORT).show();
                     }
                 }
-        );*/
+        );
+        }*/
 }

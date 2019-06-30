@@ -228,7 +228,7 @@ public class Budget extends AppCompatActivity {
                                          @Override
                                          public void onClick(View v) {
                                              Cursor bdg = myDb_B.getAllData_B();
-                                             if(bdg.getCount() == 0) {
+                                             if(bdg.getCount() == 1) {
                                                  showMessage("Error","Nothing found");
                                                  return;
                                              }
