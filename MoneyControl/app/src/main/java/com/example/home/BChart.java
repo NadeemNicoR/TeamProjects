@@ -64,6 +64,7 @@ public class BChart extends AppCompatActivity {
     //NavigationView Nav_Bar;
 
     Map<String, Integer> fullAmount;
+    private CalendarHelper calendarHelper;
 
 
     @Override
@@ -284,7 +285,7 @@ public class BChart extends AppCompatActivity {
 
         while (dbData.moveToNext()) {
             Integer amount = dbData.getInt(DB_COLUMN_AMOUNT);
-            Integer year = getYearNumber(dbData.getString(DB_COLUMN_DATE));
+            Integer year = calendarHelper.getYear(dbData.getString(DB_COLUMN_DATE));
 
             Boolean yearIsValid = year != null && sumByYear.containsKey(year);
             if (yearIsValid) {
@@ -301,7 +302,7 @@ public class BChart extends AppCompatActivity {
 
         while (dbData.moveToNext()) {
             Integer amount = dbData.getInt(DB_COLUMN_AMOUNT);
-            Integer month = getMonthNumber(dbData.getString(DB_COLUMN_DATE));
+            Integer month = calendarHelper.getMonthNumber(dbData.getString(DB_COLUMN_DATE));
 
             Boolean monthIsValid = month != null && sumByMonth.containsKey(month);
             if (monthIsValid) {
@@ -318,7 +319,7 @@ public class BChart extends AppCompatActivity {
 
         while (dbData.moveToNext()) {
             Integer amount = dbData.getInt(DB_COLUMN_AMOUNT);
-            Integer week = getWeekNumber(dbData.getString(DB_COLUMN_DATE));
+            Integer week = calendarHelper.getWeekNumber(dbData.getString(DB_COLUMN_DATE));
 
             Boolean weekIsValid = week != null && sumByWeek.containsKey(week);
             if (weekIsValid) {
@@ -341,43 +342,6 @@ public class BChart extends AppCompatActivity {
             cleanMap.remove(key);
         }
         return cleanMap;
-    }
-
-    private Integer getYearNumber(String string) {
-        try {
-            Date date = new SimpleDateFormat("dd/MM/yyyy").parse(string);
-            Calendar calendar = Calendar.getInstance();
-            calendar.setTime(date);
-            int u = calendar.get(Calendar.YEAR);
-            return u;
-        } catch (ParseException e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
-
-    private Integer getMonthNumber(String string) {
-        try {
-            Date date = new SimpleDateFormat("dd/MM/yyyy").parse(string);
-            Calendar calendar = Calendar.getInstance();
-            calendar.setTime(date);
-            return calendar.get(Calendar.MONTH);
-        } catch (ParseException e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
-
-    private Integer getWeekNumber(String string) {
-        try {
-            Date date = new SimpleDateFormat("dd/MM/yyyy").parse(string);
-            Calendar calendar = Calendar.getInstance();
-            calendar.setTime(date);
-            return calendar.get(Calendar.WEEK_OF_YEAR);
-        } catch (ParseException e) {
-            e.printStackTrace();
-            return null;
-        }
     }
 
     private HashMap<Integer, Integer> initializeMonths() {
