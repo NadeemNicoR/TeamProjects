@@ -43,25 +43,25 @@ Our team is made of four people with four different educational and professional
 
 ## What we learnt and what remains insufficient through the course of Introduction to Software Engineering for Engineers:
 
-### 1) Coming to the technical part:
+###1)<u>Coming to the technical part:</u>
 
 ### (a)What we Learnt:
 
 - To begin with, we all were beginners in Object Oriented Programming only being able to print "Hello World" with great difficulty!
 
-- First and foremost, thanks to references and examples on [Android Developers](https://developer.android.com/training/basics/firstapp) We were able to navigate ourselves through this journey of being able to learn how to program an android application using java to such an extent that we have successfully built an application on our own as a team.
+- First and foremost, thanks to references and examples on [Android Developers](https://developer.android.com/training/basics/firstapp) .We were able to navigate ourselves through this journey of being able to learn how to program an android application using java to such an extent that we have successfully built an application on our own as a team.
 
-- Secondly, we had very limited knowledge on handling repositories on GIT, now we feel well versed with it as we had to deal with all the possible 'DON'T DO mistakes with GIT' which we ended up committing!
+- Secondly, we had very limited knowledge on handling repositories on GIT, now we feel well versed with it as we had to deal with all  possible 'DON'T DO mistakes with GIT' which we ended up committing!
 
 
 ### (b)What we believe was inadequate:
 
-- We have developed most of the required OOP skills but still we believe there much more to learn than what we have made use of in implementing the project.
+- We have cultivated most of the required OOP skills but still we believe there much more to learn than what we have made use of in implementing the project.
 
 
 
 
-### 2) Now coming to the organizational part:
+### 2) <u>Now coming to the organizational part:</u>
 
 ### (a) What we Learnt:
 
@@ -113,7 +113,7 @@ Key features of our app:
 
 With Money Control now it’s easy to track your expenses, stick to a budget and save money.
 
-## Significatn Features Of The Application:
+## Significant Features Of The Application:
 
 - Some of the most significant features of our Money Control android application
 
