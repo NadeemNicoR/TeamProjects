@@ -13,6 +13,7 @@ public class Settings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
         setTitle("Settings");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         Button Resetpin= (Button)findViewById(R.id.Resetpin);
         Resetpin.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -19,6 +19,7 @@ public class Resetpin_screen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         myDb = new DatabaseHelper(this);
         setContentView(R.layout.activity_resetpin_screen);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Button savePin=(Button) findViewById(R.id.savePin);
         Button enablePin=(Button) findViewById(R.id.enablePin);

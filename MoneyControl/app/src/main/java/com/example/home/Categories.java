@@ -38,6 +38,7 @@ public class Categories extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categories);
         setTitle("Add/Delete Categories");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         myDbCategory = new DatabaseHelper(this);
 
 

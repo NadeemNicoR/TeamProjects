@@ -33,6 +33,7 @@ public class TransactionReport extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transaction_report);
         setTitle("Transaction Report");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         myDb = new DatabaseHelper(this);
         listTransactions=new ArrayList<>();
@@ -50,11 +51,18 @@ public class TransactionReport extends AppCompatActivity
             Toast.makeText(this, "No data to show", Toast.LENGTH_SHORT).show();
         }
         else {
+
+            Currency currency = new Currency();
+            /*String valueOfcurr = currency.valueOfSlectedSpinner;
+
+//            CurrencyConst currencyConst = new CurrencyConst();
+//            String valueOfCurrency = currencyConst.getCurrencyName();*/
+
             String[] columns = new String[] {myDb.column_amount_E,
                     myDb.column_category_E, myDb.column_transactionType,
-                    myDb.column_date_E};
+                    myDb.column_date_E,myDb.column_payment_E};
 
-            int[] to = new int[] {R.id.textViewAmt, R.id.textViewCate, R.id.textViewType, R.id.textViewDte};
+            int[] to = new int[] {R.id.textViewAmt, R.id.textViewCate, R.id.textViewType, R.id.textViewDte,R.id.textViewpaytype};
             ListAdapter ada = new SimpleCursorAdapter(this, R.layout.row, cursor, columns, to, 0){
                 public View getView(int position, View convertView, ViewGroup parent)
                 {
@@ -62,6 +70,7 @@ public class TransactionReport extends AppCompatActivity
                     return view;
                 }
             };
+
 
            traList.setAdapter(ada);
            /* btnDel = (Button) findViewById(R.id.btn_delete);
