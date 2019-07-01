@@ -28,6 +28,9 @@ Our team is made of four people with four different educational and professional
 - Slight time and priority management was initially an issue we faced. Different members of our teams were taking different courses that took a lot of their time. We had to come across the schedule of everyone to find a proper time for the group meetings. After the initial two weeks we fixed a time slot for us to meet weekly and work on our app that covered the lack we were facing in terms of completing the tasks assigned to each of us.
 
 
+![Teamwork]({{site.baseurl}}/images/Teamwork_01.jpg)
+
+
 ## Benefits of team work
 
 - Our different nationalities influenced our way of thinking and this was reflected in our different approaches to solve the same problem which led our team to always finding good and interesting solutions.
