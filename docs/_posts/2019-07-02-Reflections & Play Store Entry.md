@@ -159,11 +159,11 @@ With Money Control now it’s easy to track your expenses, stick to a budget and
 
 ![Reviews]({{site.baseurl}}/images/RvEva.png)
 
-![Reviews]({{site.baseurl}}/images/RvRonald.JPG)
+![Reviews]({{site.baseurl}}/images/RvRonald.png)
 
-![Reviews]({{site.baseurl}}/images/RvMAriam.JPG)
+![Reviews]({{site.baseurl}}/images/RvMAriam.png)
 
-![Reviews]({{site.baseurl}}/images/RvMohamed.JPG)
+![Reviews]({{site.baseurl}}/images/RvMohamed.png)
 
 
 *Thank you for following us through this journey. We had a lot of fun coding and learned a lot of new things. We want to thank Dr. Sandro Schulze who gives students this opportunity to develop themselves in this area. It was a pleasure and you will hear from us in other projects for sure!*
