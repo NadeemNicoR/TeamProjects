@@ -16,13 +16,14 @@
         <activity android:name=".TransactionSelect"></activity>
         <activity
             android:name=".TransactionReport"
-            android:parentActivityName=".Mainactivity" />
+            android:parentActivityName=".Mainactivity"></activity>
         <activity
             android:name=".Budget"
             android:parentActivityName=".Settings" />
         <activity
             android:name=".BChart"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Mainactivity"/>
         <activity
             android:name=".Chart"
             android:screenOrientation="portrait" />
@@ -70,8 +71,7 @@
             android:name=".Mainactivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Loginscreen"
-            android:parentActivityName="">
+            android:name=".Loginscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -79,5 +79,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

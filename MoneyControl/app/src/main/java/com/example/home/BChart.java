@@ -91,7 +91,7 @@ public class BChart extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bchart);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         selectTransactionName = getIntent().getExtras().get("type").toString();
 
         mChart = (BarChart) findViewById(R.id.chart1);
@@ -235,7 +235,7 @@ public class BChart extends AppCompatActivity {
             }
         });
 
-        Button btnChart=(Button) findViewById(R.id.button_pieChart);
+        /*Button btnChart=(Button) findViewById(R.id.button_pieChart);
         btnChart.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -244,7 +244,7 @@ public class BChart extends AppCompatActivity {
                 Intent chart1Intent=new Intent(getApplicationContext(), Chart.class);
                 startActivity(chart1Intent);
             }
-        });
+        });*/
 
         // Buttons for TIME
 

@@ -108,7 +108,6 @@ public class Chart extends AppCompatActivity {
     }
 
 
-    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -190,19 +189,14 @@ public class Chart extends AppCompatActivity {
                     Color.rgb(128, 0, 0)
             };
             dataSet.setColors(CUSTOM_COLORS);
-
             PieData data = new PieData((dataSet));
             data.setValueTextColor(Color.WHITE);
             data.setValueTextSize(15f);
-
             pieChart.setData(data);
             Legend legend = pieChart.getLegend();
             legend.setOrientation(Legend.LegendOrientation.VERTICAL);
             legend.setVerticalAlignment(Legend.LegendVerticalAlignment.BOTTOM);
-
         }
-
-
     }
 
     @Override
