@@ -6,6 +6,8 @@ Welcome to the final blog of team 405 Found - Money Control Application. In this
 
 # Reflections
 
+![FinishingLine]({{site.baseurl}}/images/Finishing_line.jpg)
+
 
 ## Technical challenges our team encountered
 
