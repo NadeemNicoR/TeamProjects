@@ -45,6 +45,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String TABLE_CATEGORIES= "Categories";
     public static final String column_category_id="Category_Id";
     public static final String column_category_name="Category_Name";
+    public static final String column_category_icon="Category_Icon";
 
     public static final boolean column_status_defult_value=false;
     public static final String column_pin_defult_value=null;
@@ -84,7 +85,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 + column_pin + " TEXT);";
         db.execSQL(SQL_CREATE_TABLE_PIN);
 
-        db.execSQL("create table " + TABLE_CATEGORIES +" (Category_Id INTEGER PRIMARY KEY AUTOINCREMENT, Category_Name TEXT)");
+        db.execSQL("create table " + TABLE_CATEGORIES +" (Category_Id INTEGER PRIMARY KEY AUTOINCREMENT, Category_Name TEXT, Category_Icon INTEGER)");
 
         ContentValues contentValues = new ContentValues();
         contentValues.put(column_status, column_status_defult_value);
@@ -192,7 +193,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
-    public boolean insertCategories(CategoryConst cat)
+    public boolean insertCategories(CategoryConst cat, Icon iconImage)
+    {
+        SQLiteDatabase db=this.getWritableDatabase();
+        ContentValues contentValues=new ContentValues();
+        contentValues.put(column_category_name,cat.getCategory_name());
+        contentValues.put(column_category_icon, iconImage.getIconItem());
+        long resultCategory = db.insert(TABLE_CATEGORIES,null ,contentValues);
+        if(resultCategory == -1)
+            return false;
+        else
+            return true;
+    }
+
+    public boolean insertCategoriesName(CategoryConst cat)
     {
         SQLiteDatabase db=this.getWritableDatabase();
         ContentValues contentValues=new ContentValues();
@@ -203,6 +217,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         else
             return true;
     }
+
     public boolean insertCurrency(CurrencyConst currCost)
     {
         SQLiteDatabase db=this.getWritableDatabase();
@@ -218,13 +233,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     {
         ArrayList<String> NewCategory= new ArrayList<>();
         String newCategory= "SELECT " + column_category_name + " FROM " + TABLE_CATEGORIES;
+
         SQLiteDatabase db=this.getReadableDatabase();
         Cursor c = db.rawQuery(newCategory,null);
         if(c.moveToNext()){
             do{
                 CategoryConst cate = new CategoryConst();
                 cate.setCategory_name(c.getString(c.getColumnIndex(column_category_name)));
+                //cate.setIcon(c.getInt(c.getColumnIndex(column_category_icon)));
                 NewCategory.add(cate.getCategory_name());
+                //NewCategory.add(String.valueOf(cate.getIcon()));
             }while (c.moveToNext());
         }
         return NewCategory;

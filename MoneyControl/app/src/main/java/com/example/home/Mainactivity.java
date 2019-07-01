@@ -99,24 +99,29 @@ public class Mainactivity extends AppCompatActivity {
         if (deftaultCateList.isEmpty()) {
 
             CategoryConst cat0 = new CategoryConst();
+            Icon icon0 = new Icon(R.drawable.ic_question);
             cat0.setCategory_name("Choose category");
-            myDb.insertCategories(cat0);
+            myDb.insertCategories(cat0, icon0);
 
             CategoryConst cat1 = new CategoryConst();
+            Icon icon1 = new Icon(R.drawable.ic_house);
             cat1.setCategory_name("Rent");
-            myDb.insertCategories(cat1);
+            myDb.insertCategories(cat1, icon1);
 
             CategoryConst cat2 = new CategoryConst();
+            Icon icon2 = new Icon(R.drawable.ic_groceries);
             cat2.setCategory_name("Food");
-            myDb.insertCategories(cat2);
+            myDb.insertCategories(cat2, icon2);
 
             CategoryConst cat3 = new CategoryConst();
+            Icon icon3 = new Icon(R.drawable.ic_wifi);
             cat3.setCategory_name("Internet");
-            myDb.insertCategories(cat3);
+            myDb.insertCategories(cat3, icon3);
 
             CategoryConst cat4 = new CategoryConst();
+            Icon icon4 = new Icon(R.drawable.ic_light_bulb);
             cat4.setCategory_name("Electricity Bill");
-            myDb.insertCategories(cat4);
+            myDb.insertCategories(cat4, icon4);
         }
     }
 }

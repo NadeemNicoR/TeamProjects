@@ -7,6 +7,15 @@ public class CategoryConst {
     public String category_name;
     public String recurrency;
     public String date;
+    public int icon;
+
+    public int getIcon() {
+        return icon;
+    }
+
+    public void setIcon(int icon) {
+        this.icon = icon;
+    }
 
     public int getAmount() {
         return Amount;
