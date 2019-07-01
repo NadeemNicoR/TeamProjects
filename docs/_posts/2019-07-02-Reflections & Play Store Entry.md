@@ -156,6 +156,9 @@ With Money Control now it’s easy to track your expenses, stick to a budget and
 
 ## Application reviews
 ---
+
+![Reviews]({{site.baseurl}}/images/Reviews.JPG)
+
 ![companylogo]({{site.baseurl}}/images/RvRonald.png)
 
 ![companylogo]({{site.baseurl}}/images/RvEva.png)
