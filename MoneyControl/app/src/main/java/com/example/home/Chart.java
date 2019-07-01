@@ -8,9 +8,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.BarChart;
+import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
@@ -31,9 +33,11 @@ import java.util.Map;
 
 public class Chart extends AppCompatActivity {
 
+    //String selectTransactionName22;
     PieChart pieChart;
     Cursor dbAllData;
     BarChart mChart;
+    String selectTransactionName;
     DatabaseHelper myDb = new DatabaseHelper(this);
 
     public static final String RENT = "Rent";
@@ -61,7 +65,10 @@ public class Chart extends AppCompatActivity {
     private HashMap<String, Integer> addUserCategories(HashMap<String, Integer> categories) {
         Cursor dbCategories = myDb.getAllCategories();
         while (dbCategories.moveToNext()) {
-            String userCategory = dbCategories.getString(DB_COLUMN_CATEGORY);
+            String userCategory = dbCategories.getString(1);
+            if(userCategory.equals("Choose category")){
+                continue;
+            }
             if (!(userCategory == null)) {
                 categories.put(userCategory, 0);
             }
@@ -72,13 +79,14 @@ public class Chart extends AppCompatActivity {
     public Map calculateFullAmount() {
         Cursor dbAllData = myDb.getAllData();
         HashMap<String, Integer> sumByCategory = initializeCategories();
+        addUserCategories(sumByCategory);
 
         while (dbAllData.moveToNext()) {
             String category = dbAllData.getString(DB_COLUMN_CATEGORY);
             Integer amount = dbAllData.getInt(DB_COLUMN_AMOUNT);
             String transactionType = dbAllData.getString(DB_OLUMN_TRANSACTION);
 
-            if (category != null && sumByCategory.containsKey(category) && transactionType.equals("Expense")) {
+            if (category != null && sumByCategory.containsKey(category) && transactionType.equals(selectTransactionName)) {
                 Integer sum = sumByCategory.get(category) + amount;
                 sumByCategory.put(category, sum);
             }
@@ -107,6 +115,9 @@ public class Chart extends AppCompatActivity {
         setContentView(R.layout.activity_chart);
         setTitle("Chart Report");
 
+        Bundle extras = getIntent().getExtras();
+        selectTransactionName = extras.get("type").toString();
+
         Button chart1=(Button) findViewById(R.id.BarChartB);
         chart1.setOnClickListener(new View.OnClickListener()
         {
@@ -115,6 +126,9 @@ public class Chart extends AppCompatActivity {
             {
                 Intent chart1Intent=new Intent(getApplicationContext(), BChart.class);
                 startActivity(chart1Intent);
+                Intent texIntent=new Intent(Chart.this,BChart.class);
+                texIntent.putExtra("type", selectTransactionName);
+                startActivity(texIntent);
             }
         });
 
@@ -142,25 +156,59 @@ public class Chart extends AppCompatActivity {
         pieChart.animateX(1000, Easing.EasingOption.EaseInCubic);
         fullAmount = calculateFullAmount();
 
-        ArrayList<PieEntry> yValues = new ArrayList<>();
+        if(fullAmount.keySet().size()==0){
+            Toast.makeText(Chart.this, "Database is empty", Toast.LENGTH_SHORT).show();
+            Intent save = new Intent(getApplicationContext(), Mainactivity.class);
+            startActivity(save);
+        }
 
-        yValues.add(new PieEntry(fullAmount.get(RENT), RENT));
-        yValues.add(new PieEntry(fullAmount.get(FOOD), FOOD));
-        yValues.add(new PieEntry(fullAmount.get(INTERNET), INTERNET));
-        yValues.add(new PieEntry(fullAmount.get(ELECTRICITY),ELECTRICITY));
+        else {
+            ArrayList<PieEntry> yValues = new ArrayList<>();
+            for(int ks=0; ks < fullAmount.keySet().size(); ks++){
+                yValues.add(new PieEntry(fullAmount.get(fullAmount.keySet().toArray()[ks]), fullAmount.keySet().toArray()[ks].toString()));
+            }
 
-        PieDataSet dataSet = new PieDataSet(yValues, "Expenses");
-        dataSet.setSliceSpace(3f);
-        dataSet.setSelectionShift(7f);
-        dataSet.setColors(ColorTemplate.MATERIAL_COLORS);
+//            yValues.add(new PieEntry(fullAmount.get(RENT), RENT));
+//            yValues.add(new PieEntry(fullAmount.get(FOOD), FOOD));
+//            yValues.add(new PieEntry(fullAmount.get(INTERNET), INTERNET));
+//            yValues.add(new PieEntry(fullAmount.get(ELECTRICITY), ELECTRICITY));
 
-        PieData data = new PieData((dataSet));
-        data.setValueTextColor(Color.WHITE);
-        data.setValueTextSize(15f);
+            PieDataSet dataSet = new PieDataSet(yValues, "Expenses");
+            dataSet.setSliceSpace(3f);
+            dataSet.setSelectionShift(7f);
+            int[] CUSTOM_COLORS = {
+                    Color.rgb(0, 0, 0),
+                    Color.rgb(128, 0, 128),
+                    Color.rgb(255, 0, 0),
+                    Color.rgb(0, 255, 0),
+                    Color.rgb(0, 0, 255),
+                    Color.rgb(0, 0, 128),
+                    Color.rgb(0, 255, 255),
+                    Color.rgb(255, 0, 255),
+                    Color.rgb(192, 192, 192),
+                    Color.rgb(128, 128, 128),
+                    Color.rgb(128, 0, 0)
+            };
+            dataSet.setColors(CUSTOM_COLORS);
 
-        pieChart.setData(data);
+            PieData data = new PieData((dataSet));
+            data.setValueTextColor(Color.WHITE);
+            data.setValueTextSize(15f);
+
+            pieChart.setData(data);
+            Legend legend = pieChart.getLegend();
+            legend.setOrientation(Legend.LegendOrientation.VERTICAL);
+            legend.setVerticalAlignment(Legend.LegendVerticalAlignment.BOTTOM);
+
+        }
 
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent chart1Intent=new Intent(getApplicationContext(), TransactionSelect.class);
+        startActivity(chart1Intent);
     }
 
 }

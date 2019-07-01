@@ -2,6 +2,7 @@ package com.example.home;
 
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -15,9 +16,11 @@ import android.widget.Button;
 
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.Legend;
+import com.github.mikephil.charting.components.LegendEntry;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
+import com.github.mikephil.charting.data.PieEntry;
 import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.text.ParseException;
@@ -34,6 +37,8 @@ public class BChart extends AppCompatActivity {
     DatabaseHelper myDb = new DatabaseHelper(this);
     Cursor dbAllData;
     BarChart mChart;
+    String selectTransactionName = "";
+
     public static final String RENT = "Rent";
     public static final String FOOD = "Food";
     public static final String INTERNET = "Internet";
@@ -67,11 +72,27 @@ public class BChart extends AppCompatActivity {
 
     Map<String, Integer> fullAmount;
 
+    int[] CUSTOM_COLORS = {
+            Color.rgb(0, 0, 0),
+            Color.rgb(128, 0, 128),
+            Color.rgb(255, 0, 0),
+            Color.rgb(0, 255, 0),
+            Color.rgb(0, 0, 255),
+            Color.rgb(0, 0, 128),
+            Color.rgb(0, 255, 255),
+            Color.rgb(255, 0, 255),
+            Color.rgb(192, 192, 192),
+            Color.rgb(128, 128, 128),
+            Color.rgb(128, 0, 0)
+    };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bchart);
+
+        selectTransactionName = getIntent().getExtras().get("type").toString();
 
         mChart = (BarChart) findViewById(R.id.chart1);
         mChart.getDescription().setEnabled(false);
@@ -79,8 +100,6 @@ public class BChart extends AppCompatActivity {
         dbAllData = myDb.getAllData();
         fullAmount = calculateFullAmount(dbAllData);
         // sizedFullAmount = calculateAmountBySize(dbAllData);
-
-        mChartReload(getBarDataForFullAmount());
 
         btnFood = (Button) findViewById(R.id.button_food);
         btnRent = (Button) findViewById(R.id.button_rent);
@@ -106,6 +125,9 @@ public class BChart extends AppCompatActivity {
         btnWeek.setVisibility(View.INVISIBLE);
         btnMonth.setVisibility(View.INVISIBLE);
         btnYear.setVisibility(View.INVISIBLE);
+
+//        Bundle extras = getIntent().getExtras();
+//        selectTransactionName = extras.getString("type");
 
 
 
@@ -250,6 +272,7 @@ public class BChart extends AppCompatActivity {
             }
         });
 
+        mChartReload(getBarDataForFullAmount());
     }
 
     @Override
@@ -266,7 +289,26 @@ public class BChart extends AppCompatActivity {
         mChart.animateY(1000);
         mChart.setTouchEnabled(true);
         Legend legend = mChart.getLegend();
-        legend.setEnabled(true);
+        legend.resetCustom();
+       // legend.
+        LegendEntry[] le = legend.getEntries();
+        for(int inde=0; inde<le.length; inde++){
+            if(le[inde].label == null){
+                legend.setEnabled(true);
+                le[inde].label = fullAmount.keySet().toArray()[inde].toString();
+            }
+        }
+        legend.setCustom(le);
+
+//        else {
+//            legend.setEnabled(false);
+//            System.out.println(legend.isLegendCustom());
+//        }
+
+//        legend.setPosition(Legend.LegendPosition.BELOW_CHART_CENTER);
+        legend.setOrientation(Legend.LegendOrientation.VERTICAL);
+        legend.setVerticalAlignment(Legend.LegendVerticalAlignment.CENTER);
+
     }
 
     public Map calculateFullAmount(Cursor dbData) {
@@ -275,12 +317,13 @@ public class BChart extends AppCompatActivity {
 
     public Map filterByAmount(Cursor dbData, int minimum, int maximum) {
         HashMap<String, Integer> sumByCategory = initializeCategories();
+        addUserCategories(sumByCategory);
 
         while (dbData.moveToNext()) {
             String category = dbData.getString(DB_COLUMN_CATEGORY);
             String transactionType = dbData.getString(DB_OLUMN_TRANSACTION);
             Integer amount = dbData.getInt(DB_COLUMN_AMOUNT);
-            Boolean categoryIsValid = category != null && sumByCategory.containsKey(category) && transactionType.equals("Expense");
+            Boolean categoryIsValid = category != null && sumByCategory.containsKey(category) && transactionType.equals(selectTransactionName);
             Boolean amountIsValid = minimum <= amount && amount <= maximum;
 
             if (categoryIsValid && amountIsValid) {
@@ -299,7 +342,7 @@ public class BChart extends AppCompatActivity {
             Integer amount = dbData.getInt(DB_COLUMN_AMOUNT);
             Integer year = getYearNumber(dbData.getString(DB_COLUMN_DATE));
             String transactionType = dbData.getString(DB_OLUMN_TRANSACTION);
-            Boolean yearIsValid = year != null && sumByYear.containsKey(year) && transactionType.equals("Expense");
+            Boolean yearIsValid = year != null && sumByYear.containsKey(year) && transactionType.equals(selectTransactionName);
             if (yearIsValid) {
                 Integer sum = sumByYear.get(year) + amount;
                 sumByYear.put(year, sum);
@@ -316,7 +359,7 @@ public class BChart extends AppCompatActivity {
             Integer amount = dbData.getInt(DB_COLUMN_AMOUNT);
             Integer month = getMonthNumber(dbData.getString(DB_COLUMN_DATE));
             String transactionType = dbData.getString(DB_OLUMN_TRANSACTION);
-            Boolean monthIsValid = month != null && sumByMonth.containsKey(month) && transactionType.equals("Expense");
+            Boolean monthIsValid = month != null && sumByMonth.containsKey(month) && transactionType.equals(selectTransactionName);
             if (monthIsValid) {
                 Integer sum = sumByMonth.get(month) + amount;
                 sumByMonth.put(month, sum);
@@ -333,7 +376,7 @@ public class BChart extends AppCompatActivity {
             Integer amount = dbData.getInt(DB_COLUMN_AMOUNT);
             Integer week = getWeekNumber(dbData.getString(DB_COLUMN_DATE));
             String transactionType = dbData.getString(DB_OLUMN_TRANSACTION);
-            Boolean weekIsValid = week != null && sumByWeek.containsKey(week) && transactionType.equals("Expense");
+            Boolean weekIsValid = week != null && sumByWeek.containsKey(week) && transactionType.equals(selectTransactionName);
             if (weekIsValid) {
                 Integer sum = sumByWeek.get(week) + amount;
                 sumByWeek.put(week, sum);
@@ -432,7 +475,10 @@ public class BChart extends AppCompatActivity {
     private HashMap<String, Integer> addUserCategories(HashMap<String, Integer> categories) {
         Cursor dbCategories = myDb.getAllCategories();
         while (dbCategories.moveToNext()) {
-            String userCategory = dbCategories.getString(DB_COLUMN_CATEGORY);
+            String userCategory = dbCategories.getString(1);
+            if(userCategory.equals("Choose category")){
+                continue;
+            }
             if (!(userCategory == null)) {
                 categories.put(userCategory, 0);
             }
@@ -447,7 +493,7 @@ public class BChart extends AppCompatActivity {
             String category = dbData.getString(DB_COLUMN_CATEGORY);
             String transactionType = dbData.getString(DB_OLUMN_TRANSACTION);
             int amount = dbData.getInt(DB_COLUMN_AMOUNT);
-            if ((category != null) && transactionType.equals("Expense") && category.equals(filterCategory)) {
+            if ((category != null) && transactionType.equals(selectTransactionName) && category.equals(filterCategory)) {
                 entries.add(new BarEntry(count, amount));
                 count++;
             }
@@ -458,19 +504,28 @@ public class BChart extends AppCompatActivity {
 
     private BarData getBarDataForFullAmount() {
         ArrayList<BarEntry> entries = new ArrayList<BarEntry>();
-        entries.add(new BarEntry(0, fullAmount.get(RENT)));
-        entries.add(new BarEntry(1, fullAmount.get(FOOD)));
-        entries.add(new BarEntry(2, fullAmount.get(INTERNET)));
-        entries.add(new BarEntry(3, fullAmount.get(ELECTRICITY)));
-        return getBarData(entries, "All Categories");
+        for(int ks=0; ks < fullAmount.keySet().size(); ks++){
+            entries.add(new BarEntry(ks, fullAmount.get(fullAmount.keySet().toArray()[ks].toString()), fullAmount.keySet().toArray()[ks].toString()));
+        }
+//        ArrayList<BarEntry> entries = new ArrayList<BarEntry>();
+//        entries.add(new BarEntry(0, fullAmount.get(RENT)));
+//        entries.add(new BarEntry(1, fullAmount.get(FOOD)));
+//        entries.add(new BarEntry(2, fullAmount.get(INTERNET)));
+//        entries.add(new BarEntry(3, fullAmount.get(ELECTRICITY)));
+//        return getBarData(entries, "All Categories");
+        return getBarData(entries, null);
     }
 
     private BarData getBarDataForAmountFilter(Map<String, Integer> filteredData, String label) {
         ArrayList<BarEntry> entries = new ArrayList<BarEntry>();
-        entries.add(new BarEntry(0, filteredData.get(RENT)));
-        entries.add(new BarEntry(1, filteredData.get(FOOD)));
-        entries.add(new BarEntry(2, filteredData.get(INTERNET)));
-        entries.add(new BarEntry(3, filteredData.get(ELECTRICITY)));
+        for(int ks=0; ks < fullAmount.keySet().size(); ks++){
+            entries.add(new BarEntry(ks, filteredData.get(fullAmount.keySet().toArray()[ks].toString())));
+        }
+//        ArrayList<BarEntry> entries = new ArrayList<BarEntry>();
+//        entries.add(new BarEntry(0, filteredData.get(RENT)));
+//        entries.add(new BarEntry(1, filteredData.get(FOOD)));
+//        entries.add(new BarEntry(2, filteredData.get(INTERNET)));
+//        entries.add(new BarEntry(3, filteredData.get(ELECTRICITY)));
         return getBarData(entries, label);
     }
 
@@ -484,10 +539,12 @@ public class BChart extends AppCompatActivity {
 
     private BarData getBarData(ArrayList<BarEntry> barEntries, String label) {
         BarDataSet dataSet = new BarDataSet(barEntries, label);
-        dataSet.setColors(ColorTemplate.MATERIAL_COLORS);
+//        String[] dummy = {"1", "2", "3", "4" , "5", "6", "7"};
+//        dataSet.setStackLabels(dummy);
+        dataSet.setColors(CUSTOM_COLORS);
         dataSet.setDrawValues(true);
         dataSet.setValueTextSize(15f);
-        return new BarData((dataSet));
+        return new BarData(dataSet);
     }
 
 
@@ -539,5 +596,9 @@ public class BChart extends AppCompatActivity {
 
     }
 
-
+    @Override
+    public void onBackPressed() {
+        Intent chart1Intent=new Intent(getApplicationContext(), TransactionSelect.class);
+        startActivity(chart1Intent);
+    }
 }
