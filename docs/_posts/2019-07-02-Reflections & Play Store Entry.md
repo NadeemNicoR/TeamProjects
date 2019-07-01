@@ -34,34 +34,34 @@ Our team is made of four people with four different educational and professional
 
 - Diversity in technical backgrounds was translated into a variety of strengths which in turn made us a better team.
 
-- The fact that none of us had high programming skills increased the dose of complexity of the project, which sometimes was stressful for the team and we all learned together how to deal with those situations.
+- The fact that none of us had high programming skills increased the dose of complexity of the project, which sometimes was stressful for the team but we all learned together how to deal with such situations.
 
 - We also learned that trust among teammates is important and how to give and take constructive criticism in order to give useful feedback to each other. 
 
-- The regular meetings are important to increase the development speed of the team, getting together for reasons not related to the project is also important for this manner. 
+- Regular meetings are important, to increase development speed of the team and also for reasons not related to the project as well. 
 
 
 ## What we learnt and what remains insufficient through the course of Introduction to Software Engineering for Engineers:
 
-### 1) Coming to the technical part:
+### 1) Technical part:
 
 ### (a) <u>What we Learnt:</u>
 
 - To begin with, we all were beginners in Object Oriented Programming only being able to print "Hello World" with great difficulty!
 
-- First and foremost, thanks to references and examples on [Android Developers](https://developer.android.com/training/basics/firstapp) .We were able to navigate ourselves through this journey of being able to learn how to program an android application using java to such an extent that we have successfully built an application on our own as a team.
+- First and foremost, thanks to references and examples on [Android Developers](https://developer.android.com/training/basics/firstapp). We were able to navigate ourselves through this journey of being able to learn how to program an android application using java to such an extent that we have successfully built an application on our own as a team.
 
 - Secondly, we had very limited knowledge on handling repositories on GIT, now we feel well versed with it as we had to deal with all  possible 'DON'T DO mistakes with GIT' which we ended up committing!
 
 
 ### (b) <u>What we believe was inadequate:</u>
 
-- We have cultivated most of the required OOP skills but still we believe there much more to learn than what we have made use of in implementing the project.
+- We have cultivated most of the required OOP skills but we still believe there is much more to learn than what we have made use of in implementing the project.
 
-- 
+- During the intial stages of our project we spent alot of time learning about andriod studio, how it works and how to navigate through it. We believe if an overiew on the usage of andriod studio given in the course would have had accelerated the process. 
 
 
-### 2) Now coming to the organizational part:
+### 2) Organizational part:
 
 ### (a) <u>What we Learnt:</u>
 
@@ -71,7 +71,7 @@ We were able to amplify some of the most significant Social and Team Management 
 
 - Problem Solving & Critical Thinking (especially while dealing with null pointer exception and debugging the errors on the app).
 
-- Team work (assisting other team members when we were done with our assigned tasks).
+- Team work & empathy (assisting other team members when we were done with our assigned tasks).
 
 - Taking the leadership initiatives (driving the team as a team leader when we had our individual presentations).
 
@@ -82,6 +82,7 @@ We were able to amplify some of the most significant Social and Team Management 
 
 - We as a team need to learn on how to divide the tasks equally amongst each other.
 
+
 # Play Store Entry
 
 
@@ -89,7 +90,9 @@ We were able to amplify some of the most significant Social and Team Management 
 
 Manage your personal or family finances easily under your defined budget with Money Control.
 Money Control’s simple design helps you effortlessly track your income and daily spending. You need just a few seconds daily to log in your expenses and save those much needed bucks. We want you to find a right balance between your today and TOMORROW.
-Key features of our app:
+
+
+**Key features of our app:**
 
 •	Clean, easy to use, intuitive expense and income tracker.
 
@@ -112,19 +115,19 @@ Key features of our app:
 
 With Money Control now it’s easy to track your expenses, stick to a budget and save money.
 
+
 ## Significant Features Of The Application:
 
-- Some of the most significant features of our Money Control android application
 
-- User can receive a Whole summary of all his transactions till date with just one click and can mail the transaction summary at one go.
+- User can receive a summary of all his/her transactions till date with just one click and can mail the transaction summary at one go.
 
-- User can add his own categories and add Income or expenses accordingly
+- User can customize categories of transaction as per his liking.
 
-- User can plan budgets and manage his expenses accordingly by having received the appropriate notifications when he crosses 75% and 100% of his spending’s on expenses in comparison to budget plan set up by the user.
+- User can plan budget per category and manage his expenses accordingly by having received the appropriate notifications when he crosses 75% and 100% of his spending’s on expenses in comparison to budget plan set up by the user.
 
-- We have deployed the pie & bar chart view of the summary of transactions which basically gives a better visualization to the overview of user’s earnings and spending’s
+- We have deployed the pie & bar chart view of transactions which gives a better visualization to the overview of user’s earnings and spending’s
 
-- We have made the application more user friendly by adding dropdowns so that the user doesn’t have to hassle with text layout of input with the keyboard
+- We have made the application more user friendly by adding dropdowns so that the user doesn’t have to hassle with text layout.
 
 
 ## Non-functional requirements
@@ -145,8 +148,6 @@ With Money Control now it’s easy to track your expenses, stick to a budget and
 
 ## Download app [here](please insert the link here)
 
-## here we need some screenshots
-
 
 ## Application reviews
 ---
@@ -158,5 +159,6 @@ With Money Control now it’s easy to track your expenses, stick to a budget and
 
 ![companylogo]({{site.baseurl}}/images/RvMohamed.png)
 
-*Thank you for following us through this journey. We had a lot of fun coding and learned a lot of new things. We want to thank Dr. Sandro Schulze who gives students this opportunity to develop themselves in this area. It was a pleasure and you will here from us in other projects for sure!*
+
+*Thank you for following us through this journey. We had a lot of fun coding and learned a lot of new things. We want to thank Dr. Sandro Schulze who gives students this opportunity to develop themselves in this area. It was a pleasure and you will hear from us in other projects for sure!*
 
