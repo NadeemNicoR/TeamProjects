@@ -13,70 +13,70 @@
         android:roundIcon="@mipmap/ic_logo405found"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TransactionReport" android:parentActivityName=".Mainactivity"></activity>
-        <activity android:name=".Budget" android:parentActivityName=".Settings"></activity>
+        <activity android:name=".TransactionSelect"></activity>
+        <activity
+            android:name=".TransactionReport"
+            android:parentActivityName=".Mainactivity"></activity>
+        <activity
+            android:name=".Budget"
+            android:parentActivityName=".Settings" />
         <activity
             android:name=".BChart"
-            android:screenOrientation="portrait" android:parentActivityName=".Mainactivity"/>
-
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Mainactivity"/>
         <activity
             android:name=".Chart"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".EnablePin"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".Settings"/>
+            android:parentActivityName=".Settings"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".EmailReport"
-            android:screenOrientation="portrait"
             android:parentActivityName=".Settings"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Recurrency"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".Settings"/>
+            android:parentActivityName=".Settings"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Categories"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".Settings"/>
+            android:parentActivityName=".Settings"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Currency"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".Settings"/>
+            android:parentActivityName=".Settings"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Resetpin_screen"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".Settings"/>
+            android:parentActivityName=".Settings"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Newexpense"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".Mainactivity"/>
+            android:parentActivityName=".Mainactivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Settings"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".Mainactivity"/>
+            android:parentActivityName=".Mainactivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Income"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".Mainactivity"/>
+            android:parentActivityName=".Mainactivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Mainactivity"
-            android:screenOrientation="portrait"/>
-
-
-        <activity android:name=".Loginscreen" android:parentActivityName="">
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Loginscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
-
 </manifest>

@@ -5,9 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
 import java.util.ArrayList;
 import java.util.List;
+
 public class Mainactivity extends AppCompatActivity {
     DatabaseHelper myDb;
     @Override
@@ -43,7 +43,7 @@ public class Mainactivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Intent chart1Intent=new Intent(getApplicationContext(), Chart.class);
+                Intent chart1Intent=new Intent(getApplicationContext(), TransactionSelect.class);
                 startActivity(chart1Intent);
             }
         });

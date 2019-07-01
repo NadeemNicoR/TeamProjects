@@ -49,8 +49,11 @@
         android:id="@+id/button_send"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#AFC5BC"
-        android:text="send" />
+        android:background="@drawable/button_background"
+
+        android:text="send"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
 
 
 </LinearLayout>
