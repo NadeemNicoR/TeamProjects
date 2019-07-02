@@ -162,7 +162,7 @@ With Money Control now it’s easy to track your expenses, stick to a budget and
 
 - Target group: Student and working people between 18 and 40 years old
 
-## Download app [here](https://github.com/DBSE-teaching/isee2019-405-Found/blob/master/MoneyControl(405Found)_finalversion.apk)
+## Download app [here](https://drive.google.com/drive/folders/1jmeE7sDxf9TVHBVW6Tk2Og-Niak_4CTL)
 
 
 ## Application reviews
