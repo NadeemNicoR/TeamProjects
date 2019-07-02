@@ -60,6 +60,7 @@ public class Budget extends AppCompatActivity {
         RecurrencyB.add("Weekly");
         RecurrencyB.add("Monthly");
         RecurrencyB.add("Yearly");
+        RecurrencyB.add("Others");
 
         spinnerR = findViewById(R.id.spinnerRecurrencyB);
         ArrayAdapter<String> adapter_R = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, RecurrencyB);

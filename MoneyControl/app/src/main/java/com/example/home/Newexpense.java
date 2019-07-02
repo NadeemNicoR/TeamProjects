@@ -192,6 +192,7 @@ public class Newexpense extends AppCompatActivity {
         Recurrence.add("Weekly");
         Recurrence.add("Monthly");
         Recurrence.add("Yearly");
+        Recurrence.add("Others");
 
         spinner3 = findViewById(R.id.editRecurrencyField);
         ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, Recurrence);
