@@ -134,6 +134,18 @@
         app:layout_constraintTop_toBottomOf="@+id/categories"
         app:srcCompat="@drawable/ic_info_black_24dp" />
 
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/Notesection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="12dp"
+        android:tint="#3F51B5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PaymentType"
+        app:srcCompat="@drawable/ic_speaker_notes_black_24dp" />
+
+
     <TextView
         android:id="@+id/textViewType"
         android:layout_width="wrap_content"
@@ -168,6 +180,20 @@
         android:text="Euro"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/CurrencyInfo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/notess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/Notesection"
         app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

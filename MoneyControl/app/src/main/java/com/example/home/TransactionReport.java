@@ -163,10 +163,10 @@ public class TransactionReport extends AppCompatActivity
 
         String[] columns = new String[] {myDb.column_amount_E,
                 myDb.column_category_E, myDb.column_transactionType,
-                myDb.column_date_E,myDb.column_payment_E, myDb.column_currency_E, myDb.column_transaction_ID};
+                myDb.column_date_E,myDb.column_payment_E, myDb.column_currency_E, myDb.column_transaction_ID,myDb.column_note_E};
 
         int[] to = new int[] {R.id.textViewAmt, R.id.textViewCate, R.id.textViewType, R.id.textViewDte,R.id.textViewpaytype,
-                R.id.textViewCurrency, R.id.transactionId};
+                R.id.textViewCurrency, R.id.transactionId,R.id.notess};
         ListAdapter ada = new SimpleCursorAdapter(this, R.layout.row, cursor, columns, to, 0){
             public View getView(int position, View convertView, ViewGroup parent)
             {

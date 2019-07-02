@@ -246,4 +246,5 @@ public class Categories extends AppCompatActivity
         builder.setMessage(Message);
         builder.show();
     }
+
 }
