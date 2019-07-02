@@ -1,5 +1,5 @@
 
-Welcome to the final blog of team 405 Found - Money Control Application, we have approached the finishing line. In this blog we will give you some reflections on our work as a team and a summary of what a Play Store Entry would be.
+Welcome to the final blog of team 405 Found - Money Control Application. We have approached the finish line. In this blog we will give you some reflections on our work as a team and a summary of what a Play Store Entry would be.
 
 
 ![FinishingLine]({{site.baseurl}}/images/Finishing_line.jpg)
@@ -25,7 +25,7 @@ Our team is made of four people with four different educational and professional
 
 - Since we came from four completely different cultures and backgrounds, we had in our team four different personalities. Everyone brought their own methods of approaching a problem and sometimes resulted in a conflict. To our luck, every member of our team behaved very professionally when these disagreements showed up. After all we were there for a common goal.
 
-- Slight time and priority management was initially an issue we faced. Different members of our teams were taking different courses that took a lot of their time. We had to come across the schedule of everyone to find a proper time for the group meetings. After the initial two weeks we fixed a time slot for us to meet weekly and work on our app that covered the lack we were facing in terms of completing the tasks assigned to each of us.
+- Slight time and priority management was initially an issue we faced. Different members of our teams were taking different courses that took a lot of their time. We had to come across the schedule of everyone to find a proper time for the group meetings. After the initial two weeks we fixed a time slot for us to meet weekly and work on our app, that covered the lack we were facing in terms of completing the tasks assigned to each of us.
 
 
 ![Teamwork]({{site.baseurl}}/images/Teamwork_01.jpg)
@@ -46,29 +46,29 @@ Our team is made of four people with four different educational and professional
 - Regular meetings are important, to increase development speed of the team and also for reasons not related to the project as well. 
 
 
-## What we learnt and what remains insufficient through the course of Introduction to Software Engineering for Engineers:
+## What we learnt and what remains insufficient through the course of ISEE:
 
-### 1) Technical part:
+### Technical part:
 
-### (a) <u>What we Learnt:</u>
+### *What we Learnt:*
 
 - To begin with, we all were beginners in Object Oriented Programming only being able to print "Hello World" with great difficulty!
 
 - First and foremost, thanks to references and examples on [Android Developers](https://developer.android.com/training/basics/firstapp). We were able to navigate ourselves through this journey of being able to learn how to program an android application using java to such an extent that we have successfully built an application on our own as a team.
 
-- Secondly, we had very limited knowledge on handling repositories on GIT, now we feel well versed with it as we had to deal with all  possible 'DON'T DO mistakes with GIT' which we ended up committing!
+- Secondly, we had very limited knowledge on handling repositories on GIT. Now we feel well versed with it as we had to deal with all  possible 'DON'T DO mistakes with GIT' which we ended up committing!
 
 
-### (b) <u>What we believe was inadequate:</u>
+### *What we believe was inadequate:*
 
 - We have cultivated most of the required OOP skills but we still believe there is much more to learn than what we have made use of in implementing the project.
 
-- During the intial stages of our project we spent alot of time learning about andriod studio, how it works and how to navigate through it. We believe if an overiew on the usage of andriod studio given in the course would have had accelerated the process. 
+- During the intial stages of our project we spent a lot of time learning about andriod studio, how it works and how to navigate through it. We believe if an overview on the usage of android studio given in the course would have had accelerated the process. 
 
 
-### 2) Organizational part:
+### Organizational part:
 
-### (a) <u>What we Learnt:</u>
+### *What we Learnt:*
 
 We were able to amplify some of the most significant Social and Team Management skills especially the below ones:
 
@@ -81,11 +81,11 @@ We were able to amplify some of the most significant Social and Team Management 
 - Taking the leadership initiatives (driving the team as a team leader when we had our individual presentations).
 
 
-### (b) <u>What we belevie that we still need to improvise on:</u>
+### *What we believe that we still need to improve:*
 
 - Adhering to time strictly! (We could not get most of the tasks completed at an assigned time frame, most of the times we had the tasks fulfilled at the last minute of submissions).
 
-- We as a team need to learn on how to divide the tasks equally amongst each other.
+- We as a team need to learn on how to divide the tasks equally among each other.
 
 
 # Play Store Entry
@@ -100,7 +100,7 @@ We were able to amplify some of the most significant Social and Team Management 
 ## Summary
 
 Manage your personal or family finances easily under your defined budget with Money Control.
-Money Control’s simple design helps you effortlessly track your income and daily spending. You need just a few seconds daily to log in your expenses and save those much needed bucks. We want you to find a right balance between your today and TOMORROW.
+Money Control’s simple design helps you effortlessly track your income and daily spending. You need just a few seconds daily to log in your expenses and save those much needed bucks. We want you to find a right balance between your today and tomorrow.
 
 
 **Key features of our app:**
@@ -113,13 +113,13 @@ Money Control’s simple design helps you effortlessly track your income and dai
 
 •	Multiple currency support and also feature to customize the categories.
 
-•	You can organize your bills by week, month and year by adding a recurrence to your spending.
+•	You can organize your bills by week, month and year.
 
-•	You can add budget per category and the app will send you reminders when you will be near to approaching your budget for the month.
+•	You can add budget per category and the app will send you reminders when you will be near to approach your budget for the month.
 
 •	You can send report of your transactions through email to yourself or your family for better tracking and keeping a record.
 
-•	Enable pin will allow you to secure your app and will provide you with a feature of logging in the app with a pin.
+•	Enable pin will allow you to secure your app and will provide you with a feature of logIn in the app with a pin.
 
 •	There is no advertising in our app and all the features are available for free. 
 
@@ -130,13 +130,13 @@ With Money Control now it’s easy to track your expenses, stick to a budget and
 ## Significant Features Of The Application:
 
 
-- User can receive a summary of all his/her transactions till date with just one click and can mail the transaction summary at one go.
+- User can receive a summary of all his/her transactions till date with just one click and can e-mail the transaction summary at one go.
 
 - User can customize categories of transaction as per his liking.
 
 - User can plan budget per category and manage his expenses accordingly by having received the appropriate notifications when he crosses 75% and 100% of his spending’s on expenses in comparison to budget plan set up by the user.
 
-- We have deployed the pie & bar chart view of transactions which gives a better visualization to the overview of user’s earnings and spending’s
+- We have developed the pie & bar chart view of transactions which give a better visualization to the overview of user’s earnings and spending.
 
 - We have made the application more user friendly by adding dropdowns so that the user doesn’t have to hassle with text layout.
 
@@ -148,6 +148,8 @@ With Money Control now it’s easy to track your expenses, stick to a budget and
 - Age limit: 13+
 
 - Android version: 6.0.1 (Marshmallow) or above
+
+- Size: 5.59MB
 
 - Security issues: None
 
