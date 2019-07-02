@@ -94,10 +94,10 @@ We were able to amplify some of the most significant Social and Team Management 
 ![SS1]({{site.baseurl}}/images/Screenshots1.png)
 
 
-![SS2]({{site.baseurl}}/images/SS2.JPG)
+![SS2]({{site.baseurl}}/images/Screenshot2.png)
 
 
-![SS3]({{site.baseurl}}/images/SS3.JPG)
+![SS3]({{site.baseurl}}/images/Screenshot3.png)
 
 
 ## Summary
@@ -152,7 +152,7 @@ With Money Control now it’s easy to track your expenses, stick to a budget and
 
 - Android version: 6.0.1 (Marshmallow) or above
 
-- Size: 5.59MB
+- Size: 5.64MB
 
 - Security issues: None
 
