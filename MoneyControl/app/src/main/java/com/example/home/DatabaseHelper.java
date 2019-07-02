@@ -329,7 +329,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor res = db.rawQuery("select * from "+TABLE_BUDGET,null);
         if (res.getCount() > 1)
-            res = db.rawQuery("select * from "+TABLE_BUDGET+" where " + column_budget_ID + "> 0",null);
+            res = db.rawQuery("select * from "+TABLE_BUDGET+" where " + column_budget_ID + ">= 1",null);
 
         return res;
     }

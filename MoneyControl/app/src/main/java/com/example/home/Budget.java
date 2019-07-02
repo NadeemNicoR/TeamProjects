@@ -233,6 +233,9 @@ public class Budget extends AppCompatActivity {
                                              }
                                              StringBuffer buffer = new StringBuffer();
                                                  while (bdg.moveToNext()) {
+                                                     if(bdg.getString(2).equals("Choose budget to delete")){
+                                                         continue;
+                                                     }
                                                      //buffer.append("Budget ID :"+ bdg.getString(0)+"\n");
                                                      buffer.append("Amount :" + bdg.getString(1) + "\n");
                                                      buffer.append("Category :" + bdg.getString(2) + "\n");
