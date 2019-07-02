@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -328,7 +329,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor res = db.rawQuery("select * from "+TABLE_BUDGET,null);
         if (res.getCount() > 1)
-            res = db.rawQuery("select * from "+TABLE_BUDGET+" where " + column_budget_ID + "> 1",null);
+            res = db.rawQuery("select * from "+TABLE_BUDGET+" where " + column_budget_ID + "> 0",null);
 
         return res;
     }
@@ -434,7 +435,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return db.delete(TABLE_BUDGET, "Category_Bud = ?",new String[] {categoryB});
     }
     ////////////////////////////////////////////////////////////////////////////////////////
-
+    public void deleteTransactions(List<String> transactionIds){
+        for(String transactionId: transactionIds)
+            deleteTransaction(Long.valueOf(transactionId));
+    }
 
     public boolean deleteTransaction(long id) {
         SQLiteDatabase db = this.getWritableDatabase();
