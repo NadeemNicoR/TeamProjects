@@ -91,10 +91,13 @@ We were able to amplify some of the most significant Social and Team Management 
 # Play Store Entry
 
 
-![ScreenShots1]({{site.baseurl}}/images/ScreenShots1.JPG)
+![SS1]({{site.baseurl}}/images/Screenshots1.png)
 
 
-![ScreenShots1]({{site.baseurl}}/images/ScreenShots2.JPG)
+![SS2]({{site.baseurl}}/images/Screenshot2.png)
+
+
+![SSS3]({{site.baseurl}}/images/Screenshot3.png)
 
 
 ## Summary
@@ -149,7 +152,7 @@ With Money Control now it’s easy to track your expenses, stick to a budget and
 
 - Android version: 6.0.1 (Marshmallow) or above
 
-- Size: 5.59MB
+- Size: 5.64MB
 
 - Security issues: None
 
@@ -159,7 +162,7 @@ With Money Control now it’s easy to track your expenses, stick to a budget and
 
 - Target group: Student and working people between 18 and 40 years old
 
-## Download app [here](please insert the link here)
+## Download app [here](https://drive.google.com/drive/folders/1jmeE7sDxf9TVHBVW6Tk2Og-Niak_4CTL)
 
 
 ## Application reviews
