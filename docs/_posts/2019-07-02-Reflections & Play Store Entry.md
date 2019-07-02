@@ -91,13 +91,13 @@ We were able to amplify some of the most significant Social and Team Management 
 # Play Store Entry
 
 
-![ScreenShots1]({{site.baseurl}}/images/ScreenShots1.JPG)
+![ScreenShots1]({{site.baseurl}}/images/SS1.JPG)
 
 
-![ScreenShot2]({{site.baseurl}}/images/ScreenShot2.JPG)
+![ScreenShot2]({{site.baseurl}}/images/SS2.JPG)
 
 
-![ScreenShot3]({{site.baseurl}}/images/ScreenShot3.JPG)
+![ScreenShot3]({{site.baseurl}}/images/SS3.JPG)
 
 
 ## Summary
