@@ -5,11 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Mainactivity extends AppCompatActivity {
     DatabaseHelper myDb;
+    int backButtonCount =0;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -68,6 +71,8 @@ public class Mainactivity extends AppCompatActivity {
             CategoryConst cat0 = new CategoryConst();
             cat0.setCategory_name("Choose budget to delete");
             cat0.setAmount(0);
+            cat0.setDateOfBudget("undefined");
+            cat0.setRecurrencyOfBudget("undefined");
             myDb.insertData_B(cat0);
         }
 
@@ -122,6 +127,35 @@ public class Mainactivity extends AppCompatActivity {
             Icon icon4 = new Icon(R.drawable.ic_light_bulb);
             cat4.setCategory_name("Electricity Bill");
             myDb.insertCategories(cat4, icon4);
+
+           /* CategoryConst cat5 = new CategoryConst();
+            Icon icon5 = new Icon(R.drawable.ic_airplane); // change id
+            cat5.setCategory_name("Salary");
+            myDb.insertCategories(cat5, icon5);
+
+            CategoryConst cat6 = new CategoryConst();
+            Icon icon6 = new Icon(R.drawable.ic_books); // change id
+            cat6.setCategory_name("Scholarship");
+            myDb.insertCategories(cat6, icon6);
+
+            CategoryConst cat7 = new CategoryConst();
+            Icon icon7 = new Icon(R.drawable.ic_coffee); // change id
+            cat7.setCategory_name("Reimbursement");
+            myDb.insertCategories(cat7, icon7);*/
+        }
+    }
+    public void onBackPressed()
+    {
+        int backButtonCount=0;
+        if(backButtonCount>=1)
+        {
+            Intent intent= new Intent(Intent.ACTION_MAIN);
+            startActivity(intent);
+        }
+        else
+        {
+            Toast.makeText(this, "Please press the home button to exit the application", Toast.LENGTH_SHORT).show();
+            backButtonCount++;
         }
     }
 }

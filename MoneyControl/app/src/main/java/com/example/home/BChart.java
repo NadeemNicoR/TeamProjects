@@ -93,6 +93,17 @@ public class BChart extends AppCompatActivity {
         setContentView(R.layout.activity_bchart);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         selectTransactionName = getIntent().getExtras().get("type").toString();
+        setTitle("Bar Chart");
+        Button backButton=(Button) findViewById(R.id.barr_Back);
+        backButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent chart1Intent=new Intent(getApplicationContext(), TransactionSelect.class);
+                startActivity(chart1Intent);
+            }
+        });
 
         mChart = (BarChart) findViewById(R.id.chart1);
         mChart.getDescription().setEnabled(false);

@@ -34,7 +34,8 @@
             android:layout_marginStart="0dp"
             android:layout_marginBottom="66dp"
             android:layout_toEndOf="@+id/button_food"
-            android:background="#AFC5BC"
+            android:background="#43153B"
+            android:textColor="#F5EDF3"
             android:text="Rent" />
 
         <Button
@@ -46,16 +47,18 @@
             android:layout_marginStart="0dp"
             android:layout_marginBottom="66dp"
             android:layout_toEndOf="@+id/button_electricity"
-            android:background="#AFC5BC"
+            android:background="#43153B"
+            android:textColor="#F5EDF3"
             android:text="Food" />
         <Button
             android:id="@+id/button_electricity"
-            android:layout_width="85dp"
+            android:layout_width="86dp"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="66dp"
-            android:background="#AFC5BC"
+            android:background="#43153B"
+            android:textColor="#F5EDF3"
             android:text="Electricity" />
         <Button
             android:id="@+id/button_internet"
@@ -67,7 +70,8 @@
             android:layout_marginStart="65dp"
             android:layout_marginBottom="66dp"
             android:layout_toStartOf="@+id/button_electricity"
-            android:background="#AFC5BC"
+            android:background="#43153B"
+            android:textColor="#F5EDF3"
             android:text="Internet" />
 
         <Button
@@ -78,7 +82,8 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="295dp"
             android:layout_marginBottom="66dp"
-            android:background="#AFC5BC"
+            android:background="#43153B"
+            android:textColor="#F5EDF3"
             android:text="ALL" />
 
         <!-- BUTTONS FOR AMOUNT-->
@@ -92,7 +97,8 @@
             android:layout_marginStart="0dp"
             android:layout_marginBottom="66dp"
             android:layout_toEndOf="@+id/button_medium"
-            android:background="#AFC5BC"
+            android:background="#43153B"
+            android:textColor="#F5EDF3"
             android:text="500+" />
         <Button
             android:id="@+id/button_medium"
@@ -101,7 +107,8 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="66dp"
-            android:background="#AFC5BC"
+            android:background="#43153B"
+            android:textColor="#F5EDF3"
             android:text="100-500" />
         <Button
             android:id="@+id/button_low"
@@ -113,7 +120,8 @@
             android:layout_marginStart="85dp"
             android:layout_marginBottom="66dp"
             android:layout_toStartOf="@+id/button_medium"
-            android:background="#AFC5BC"
+            android:background="#43153B"
+            android:textColor="#F5EDF3"
             android:text="1-99" />
 
 
@@ -128,7 +136,8 @@
             android:layout_marginStart="0dp"
             android:layout_marginBottom="66dp"
             android:layout_toEndOf="@+id/button_month"
-            android:background="#AFC5BC"
+            android:background="#43153B"
+            android:textColor="#F5EDF3"
             android:text="Year" />
         <Button
             android:id="@+id/button_month"
@@ -137,7 +146,8 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="66dp"
-            android:background="#AFC5BC"
+            android:background="#43153B"
+            android:textColor="#F5EDF3"
             android:text="Month" />
         <Button
             android:id="@+id/button_week"
@@ -149,8 +159,23 @@
             android:layout_marginStart="85dp"
             android:layout_marginBottom="66dp"
             android:layout_toStartOf="@+id/button_month"
-            android:background="#AFC5BC"
+            android:background="#43153B"
+            android:textColor="#F5EDF3"
             android:text="Week" />
+
+        <Button
+            android:id="@+id/barr_Back"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="300dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/button_background"
+            android:text="Back"
+            android:textColor="#ffffff" />
 
     </RelativeLayout>
 

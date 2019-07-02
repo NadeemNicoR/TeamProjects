@@ -112,7 +112,7 @@ public class Chart extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chart);
-        setTitle("Chart Report");
+        setTitle("Pie Chart");
 
         Bundle extras = getIntent().getExtras();
         selectTransactionName = extras.get("type").toString();
@@ -137,7 +137,7 @@ public class Chart extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Intent chart1Intent=new Intent(getApplicationContext(), Mainactivity.class);
+                Intent chart1Intent=new Intent(getApplicationContext(), TransactionSelect.class);
                 startActivity(chart1Intent);
             }
         });
@@ -203,10 +203,6 @@ public class Chart extends AppCompatActivity {
     public void onBackPressed() {
         Intent chart1Intent=new Intent(getApplicationContext(), TransactionSelect.class);
         startActivity(chart1Intent);
+        finish();
     }
-
 }
-
-
-
-

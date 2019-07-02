@@ -15,8 +15,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".TransactionSelect" android:parentActivityName=".Mainactivity"></activity>
         <activity
-            android:name=".TransactionReport"
-            android:parentActivityName=".Mainactivity"></activity>
+            android:name=".TransactionReport"/>
+           <!-- android:parentActivityName=".Mainactivity" />-->
         <activity
             android:name=".Budget"
             android:parentActivityName=".Settings" />
@@ -74,7 +74,6 @@
             android:name=".Loginscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

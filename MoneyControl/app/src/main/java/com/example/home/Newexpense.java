@@ -1,6 +1,7 @@
 package com.example.home;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -103,6 +104,8 @@ public class Newexpense extends AppCompatActivity {
         Payment_Method.add(0, "Choose payment");
         Payment_Method.add("Debit Card");
         Payment_Method.add("Credit Card");
+        Payment_Method.add("Cheque");
+        Payment_Method.add("Payment Order");
         Payment_Method.add("Cash");
 
         spinner1 = findViewById(R.id.editPaymentField);
@@ -251,11 +254,11 @@ public class Newexpense extends AppCompatActivity {
 
 
         btnAddData = (Button) findViewById(R.id.button_add);
-        btnviewAll = (Button)findViewById(R.id.viewReportBtn);
+       // btnviewAll = (Button)findViewById(R.id.viewReportBtn);
         //btnviewUpdate= (Button)findViewById(R.id.button_update);
         //btnDelete= (Button)findViewById(R.id.button_delete);
         AddData();
-        viewAll();
+        //viewAll();
         //UpdateData();
         // DeleteData();
     }
@@ -352,7 +355,7 @@ public class Newexpense extends AppCompatActivity {
                                     if (null != budgetAmt && sumCategory >= budgetAmt) {
                                         AlertDialog.Builder builder = new AlertDialog.Builder(Newexpense.this);
                                         builder.setTitle("Warning");
-                                        builder.setMessage("Careful! you have crossed 75% of the limit set on the amount of money you can spend for " + editCategory.getSelectedItem().toString());
+                                        builder.setMessage("Careful! you have crossed 100% of the limit set on the amount of money you can spend for " + editCategory.getSelectedItem().toString());
                                         AlertDialog alertDialog = builder.create();
                                         alertDialog.show();
                                     }
@@ -403,6 +406,11 @@ public class Newexpense extends AppCompatActivity {
         builder.setTitle(title);
         builder.setMessage(Message);
         builder.show();
+    }
+    @Override
+    public void onBackPressed() {
+        Intent chart1Intent=new Intent(getApplicationContext(), Mainactivity.class);
+        startActivity(chart1Intent);
     }
 }
 

@@ -1,5 +1,6 @@
 package com.example.home;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -39,13 +40,21 @@ public class TransactionReport extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transaction_report);
         setTitle("Transaction Report");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         myDb = new DatabaseHelper(this);
         listTransactions=new ArrayList<>();
 
         viewData();
 
+        Button backButton=(Button) findViewById(R.id. bttn_transac_back);
+        backButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent chart1Intent=new Intent(getApplicationContext(), Mainactivity.class);
+                startActivity(chart1Intent);
+            }
+        });
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

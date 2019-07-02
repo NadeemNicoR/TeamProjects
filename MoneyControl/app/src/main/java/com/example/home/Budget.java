@@ -227,20 +227,20 @@ public class Budget extends AppCompatActivity {
                                          @Override
                                          public void onClick(View v) {
                                              Cursor bdg = myDb_B.getAllData_B();
-                                             if(bdg.getCount() == 1) {
-                                                 showMessage("Error","Nothing found");
+                                             if (bdg.getCount() == 1) {
+                                                 showMessage("Error", "Nothing found");
                                                  return;
                                              }
                                              StringBuffer buffer = new StringBuffer();
-                                             while (bdg.moveToNext()) {
-                                                 buffer.append("Budget ID :"+ bdg.getString(0)+"\n");
-                                                 buffer.append("Amount :"+ bdg.getString(1)+"\n");
-                                                 buffer.append("Category :"+ bdg.getString(2)+"\n");
-                                                 buffer.append("Recurrency :"+ bdg.getString(3)+"\n");
-                                                 buffer.append("Date :"+ bdg.getString(4)+"\n\n\n");
+                                                 while (bdg.moveToNext()) {
+                                                     //buffer.append("Budget ID :"+ bdg.getString(0)+"\n");
+                                                     buffer.append("Amount :" + bdg.getString(1) + "\n");
+                                                     buffer.append("Category :" + bdg.getString(2) + "\n");
+                                                     buffer.append("Recurrency :" + bdg.getString(3) + "\n");
+                                                     buffer.append("Date :" + bdg.getString(4) + "\n\n\n");
+                                                 }
+                                                 showMessage("Budget", buffer.toString());
                                              }
-                                             showMessage("Budget",buffer.toString());
-                                         }
                                      }
         );
     }
@@ -304,5 +304,8 @@ public class Budget extends AppCompatActivity {
                 }
             }
         });*/
-
+    public void onBackPressed() {
+        Intent budgetIntent=new Intent(getApplicationContext(), Mainactivity.class);
+        startActivity(budgetIntent);
+    }
 }
