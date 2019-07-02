@@ -13,7 +13,7 @@
         android:roundIcon="@mipmap/ic_logo405found"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TransactionSelect"></activity>
+        <activity android:name=".TransactionSelect" android:parentActivityName=".Mainactivity"></activity>
         <activity
             android:name=".TransactionReport"
             android:parentActivityName=".Mainactivity"></activity>

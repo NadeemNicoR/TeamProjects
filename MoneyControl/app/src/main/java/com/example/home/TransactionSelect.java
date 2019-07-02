@@ -12,7 +12,8 @@ public class TransactionSelect extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transaction_select);
-
+        setTitle("Charts");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         Button transactionIncome=(Button) findViewById(R.id.incomeTransaction);
         transactionIncome.setOnClickListener(new View.OnClickListener()
         {

@@ -39,24 +39,6 @@ public class TransactionReport extends AppCompatActivity
         viewData();
 
     }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menuforreport,menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        int id = item.getItemId();
-
-        switch (id){
-            //case R.id.cat:
-
-        }
-        return true;
-    }
-
-
 
     private void viewData() {
 
