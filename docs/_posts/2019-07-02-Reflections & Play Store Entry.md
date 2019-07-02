@@ -91,6 +91,12 @@ We were able to amplify some of the most significant Social and Team Management 
 # Play Store Entry
 
 
+![ScreenShots1]({{site.baseurl}}/images/ScreenShots1.JPG)
+
+
+![ScreenShots1]({{site.baseurl}}/images/ScreenShots2.JPG)
+
+
 ## Summary
 
 Manage your personal or family finances easily under your defined budget with Money Control.
