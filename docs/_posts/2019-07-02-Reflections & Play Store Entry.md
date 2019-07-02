@@ -97,7 +97,7 @@ We were able to amplify some of the most significant Social and Team Management 
 ![SS2]({{site.baseurl}}/images/Screenshot2.png)
 
 
-![SS3]({{site.baseurl}}/images/Screenshot3.png)
+![SSS3]({{site.baseurl}}/images/Screenshot3.png)
 
 
 ## Summary
