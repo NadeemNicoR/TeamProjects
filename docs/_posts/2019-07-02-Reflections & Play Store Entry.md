@@ -91,13 +91,13 @@ We were able to amplify some of the most significant Social and Team Management 
 # Play Store Entry
 
 
-![ScreenShots1]({{site.baseurl}}/images/SS1.JPG)
+![SS1]({{site.baseurl}}/images/SS1.JPG)
 
 
-![ScreenShot2]({{site.baseurl}}/images/SS2.JPG)
+![SS2]({{site.baseurl}}/images/SS2.JPG)
 
 
-![ScreenShot3]({{site.baseurl}}/images/SS3.JPG)
+![SS3]({{site.baseurl}}/images/SS3.JPG)
 
 
 ## Summary
@@ -162,7 +162,7 @@ With Money Control now it’s easy to track your expenses, stick to a budget and
 
 - Target group: Student and working people between 18 and 40 years old
 
-## Download app [here](please insert the link here)
+## Download app [here](https://github.com/DBSE-teaching/isee2019-405-Found/blob/master/MoneyControl(405Found)_finalversion.apk)
 
 
 ## Application reviews
